@@ -74,9 +74,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:ae093407be99ac5b6828ca488d2015fe1"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#ae093407be99ac5b6828ca488d2015fe1">fclaw2d_clawpatch_gradient_exceeds_th</a> (blockno, qval, qmin, qmax, quad, dx, dy, xc, yc, threshold, init_flag, is_ghost)</td></tr>
-<tr class="memdesc:ae093407be99ac5b6828ca488d2015fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the gradient exceeds the threshold.  <a href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#ae093407be99ac5b6828ca488d2015fe1">More...</a><br /></td></tr>
-<tr class="separator:ae093407be99ac5b6828ca488d2015fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be6378a21239b5f39b55537c9f5423f"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#a6be6378a21239b5f39b55537c9f5423f">fclaw2d_clawpatch_gradient_exceeds_th</a> (blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</td></tr>
+<tr class="memdesc:a6be6378a21239b5f39b55537c9f5423f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the gradient exceeds the threshold.  <a href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#a6be6378a21239b5f39b55537c9f5423f">More...</a><br /></td></tr>
+<tr class="separator:a6be6378a21239b5f39b55537c9f5423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac387ac3d2f39462bf29f91f6a718a01a"><td class="memItemLeft" align="right" valign="top">double precision function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#ac387ac3d2f39462bf29f91f6a718a01a">clawpatch_gradient_dot</a> (u, v)</td></tr>
 <tr class="memdesc:ac387ac3d2f39462bf29f91f6a718a01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product of two vector.  <a href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#ac387ac3d2f39462bf29f91f6a718a01a">More...</a><br /></td></tr>
 <tr class="separator:ac387ac3d2f39462bf29f91f6a718a01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,8 +121,8 @@ Functions/Subroutines</h2></td></tr>
 
 </div>
 </div>
-<a id="ae093407be99ac5b6828ca488d2015fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae093407be99ac5b6828ca488d2015fe1">&#9670;&nbsp;</a></span>fclaw2d_clawpatch_gradient_exceeds_th()</h2>
+<a id="a6be6378a21239b5f39b55537c9f5423f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be6378a21239b5f39b55537c9f5423f">&#9670;&nbsp;</a></span>fclaw2d_clawpatch_gradient_exceeds_th()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,25 +136,31 @@ Functions/Subroutines</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>meqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmax</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision, dimension(-1:1,-1:1)&#160;</td>
+          <td class="paramtype">double precision, dimension(-1:1,-1:1,meqn)&#160;</td>
           <td class="paramname"><em>quad</em>, </td>
         </tr>
         <tr>
@@ -180,6 +186,12 @@ Functions/Subroutines</h2></td></tr>
           <td></td>
           <td class="paramtype">double precision&#160;</td>
           <td class="paramname"><em>yc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>ivar_threshold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -77,9 +77,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:afac3838cfec622ac724fb6d777d5b12d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch46__tag4coarsening_8f.html#afac3838cfec622ac724fb6d777d5b12d">fclaw2d_clawpatch46_fort_tag4coarsening</a> (mx, my, mbc, meqn, xlower, ylower, dx, dy, blockno, q0, q1, q2, q3, coarsen_threshold, initflag, tag_patch)</td></tr>
 <tr class="memdesc:afac3838cfec622ac724fb6d777d5b12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags a quad of patches for coarsening.  <a href="fclaw2d__clawpatch46__tag4coarsening_8f.html#afac3838cfec622ac724fb6d777d5b12d">More...</a><br /></td></tr>
 <tr class="separator:afac3838cfec622ac724fb6d777d5b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f597db27ce7b91ea25bef44a3886f9"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch46__tag4coarsening_8f.html#ab7f597db27ce7b91ea25bef44a3886f9">fclaw2d_clawpatch46_test_refine</a> (blockno, mx, my, mbc, meqn, mq, q, qmin, qmax, dx, dy, xlower, ylower, coarsen_threshold, init_flag, tag_patch)</td></tr>
-<tr class="memdesc:ab7f597db27ce7b91ea25bef44a3886f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests a single patch to see if it exceeds threshold.  <a href="fclaw2d__clawpatch46__tag4coarsening_8f.html#ab7f597db27ce7b91ea25bef44a3886f9">More...</a><br /></td></tr>
-<tr class="separator:ab7f597db27ce7b91ea25bef44a3886f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a12b954b126484f85ed92184ad0d32a"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch46__tag4coarsening_8f.html#a2a12b954b126484f85ed92184ad0d32a">fclaw2d_clawpatch46_test_refine</a> (blockno, mx, my, mbc, meqn, q, qmin, qmax, dx, dy, xlower, ylower, coarsen_threshold, init_flag, tag_patch)</td></tr>
+<tr class="memdesc:a2a12b954b126484f85ed92184ad0d32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests a single patch to see if it exceeds threshold.  <a href="fclaw2d__clawpatch46__tag4coarsening_8f.html#a2a12b954b126484f85ed92184ad0d32a">More...</a><br /></td></tr>
+<tr class="separator:a2a12b954b126484f85ed92184ad0d32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tag4coarsening routine for clawpack 4.6 </p>
@@ -214,8 +214,8 @@ Functions/Subroutines</h2></td></tr>
 
 </div>
 </div>
-<a id="ab7f597db27ce7b91ea25bef44a3886f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f597db27ce7b91ea25bef44a3886f9">&#9670;&nbsp;</a></span>fclaw2d_clawpatch46_test_refine()</h2>
+<a id="a2a12b954b126484f85ed92184ad0d32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a12b954b126484f85ed92184ad0d32a">&#9670;&nbsp;</a></span>fclaw2d_clawpatch46_test_refine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,25 +253,19 @@ Functions/Subroutines</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">integer&#160;</td>
-          <td class="paramname"><em>mq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">double precision, dimension(1-mbc:mx+mbc,1-mbc:my+mbc,meqn)&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmax</em>, </td>
         </tr>
         <tr>

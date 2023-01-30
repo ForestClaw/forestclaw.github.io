@@ -74,15 +74,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:ad1054f65b358825a88e360162ebc994a"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#ad1054f65b358825a88e360162ebc994a">fclaw2d_clawpatch_difference_exceeds_th</a> (blockno, qval, qmin, qmax, quad, dx, dy, xc, yc, threshold, init_flag, is_ghost)</td></tr>
-<tr class="memdesc:ad1054f65b358825a88e360162ebc994a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the difference exceeds the threshold.  <a href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#ad1054f65b358825a88e360162ebc994a">More...</a><br /></td></tr>
-<tr class="separator:ad1054f65b358825a88e360162ebc994a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f98233340261f66dc563f50df4bacc0"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#a3f98233340261f66dc563f50df4bacc0">fclaw2d_clawpatch_difference_exceeds_th</a> (blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</td></tr>
+<tr class="memdesc:a3f98233340261f66dc563f50df4bacc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the difference exceeds the threshold.  <a href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#a3f98233340261f66dc563f50df4bacc0">More...</a><br /></td></tr>
+<tr class="separator:a3f98233340261f66dc563f50df4bacc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>check to see if value exceeds threshold </p>
 </div><h2 class="groupheader">Function/Subroutine Documentation</h2>
-<a id="ad1054f65b358825a88e360162ebc994a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1054f65b358825a88e360162ebc994a">&#9670;&nbsp;</a></span>fclaw2d_clawpatch_difference_exceeds_th()</h2>
+<a id="a3f98233340261f66dc563f50df4bacc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f98233340261f66dc563f50df4bacc0">&#9670;&nbsp;</a></span>fclaw2d_clawpatch_difference_exceeds_th()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,25 +96,31 @@ Functions/Subroutines</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>meqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision&#160;</td>
+          <td class="paramtype">double precision, dimension(meqn)&#160;</td>
           <td class="paramname"><em>qmax</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double precision, dimension(-1:1,-1:1)&#160;</td>
+          <td class="paramtype">double precision, dimension(-1:1,-1:1,meqn)&#160;</td>
           <td class="paramname"><em>quad</em>, </td>
         </tr>
         <tr>
@@ -140,6 +146,12 @@ Functions/Subroutines</h2></td></tr>
           <td></td>
           <td class="paramtype">double precision&#160;</td>
           <td class="paramname"><em>yc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>ivar_threshold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
