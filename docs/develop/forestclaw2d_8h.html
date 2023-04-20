@@ -103,9 +103,7 @@ Data Types</h2></td></tr>
 <a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251a31a398381417f166cb4009d775c28d8d">FCLAW2D_PATCH_ON_BLOCK_FACE_2</a> = 0x100, 
 <a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251a0fa378c254e9639d9b9f28dae0d7e60d">FCLAW2D_PATCH_ON_BLOCK_FACE_3</a> = 0x200, 
 <br />
-&#160;&#160;<a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251ae0b84b181504847dabea57511a6a7347">FCLAW2D_PATCH_ON_BLOCK_FACE_4_ONLY_FOR_3D</a> = 0x400, 
-<a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251a28859f7f33fd450b112473d846f2c9db">FCLAW2D_PATCH_ON_BLOCK_FACE_5_ONLY_FOR_3D</a> = 0x800, 
-<a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251a7b07bde395f672d09598616ee1b49031">FCLAW2D_PATCH_ON_BLOCK_BOUNDARY</a> = 0xFC0
+&#160;&#160;<a class="el" href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251a7b07bde395f672d09598616ee1b49031">FCLAW2D_PATCH_ON_BLOCK_BOUNDARY</a> = 0xFC0
 <br />
  }</td></tr>
 <tr class="memdesc:a548e65f98d107032d82b1234168e6251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for encoding patch information.  <a href="forestclaw2d_8h.html#a548e65f98d107032d82b1234168e6251">More...</a><br /></td></tr>
@@ -347,6 +345,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fo
 <tr class="memitem:a11e58fcf97917be776ca927c2d45fd07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw2d_8h.html#a11e58fcf97917be776ca927c2d45fd07">fclaw2d_domain_serialization_leave</a> (<a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *domain)</td></tr>
 <tr class="memdesc:a11e58fcf97917be776ca927c2d45fd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a section of code.  <a href="forestclaw2d_8h.html#a11e58fcf97917be776ca927c2d45fd07">More...</a><br /></td></tr>
 <tr class="separator:a11e58fcf97917be776ca927c2d45fd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Meta Domains</h2></td></tr>
+<tr class="memitem:a3c263dd5336e37fb14631bd0599a7710"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw2d_8h.html#a3c263dd5336e37fb14631bd0599a7710">fclaw2d_domain_is_meta</a> (<a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *domain)</td></tr>
+<tr class="memdesc:a3c263dd5336e37fb14631bd0599a7710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if <em>domain</em> is an artifical domain.  <a href="forestclaw2d_8h.html#a3c263dd5336e37fb14631bd0599a7710">More...</a><br /></td></tr>
+<tr class="separator:a3c263dd5336e37fb14631bd0599a7710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c706afc3c9c097a0d89aa624c1922a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw2d_8h.html#a65c706afc3c9c097a0d89aa624c1922a">fclaw2d_domain_init_meta</a> (<a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *domain, int mpirank)</td></tr>
+<tr class="memdesc:a65c706afc3c9c097a0d89aa624c1922a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a meta domain.  <a href="forestclaw2d_8h.html#a65c706afc3c9c097a0d89aa624c1922a">More...</a><br /></td></tr>
+<tr class="separator:a65c706afc3c9c097a0d89aa624c1922a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main ForestClaw structures and routines </p>
@@ -502,10 +509,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fo
 <tr><td class="fieldname"><a id="a548e65f98d107032d82b1234168e6251a31a398381417f166cb4009d775c28d8d"></a>FCLAW2D_PATCH_ON_BLOCK_FACE_2&#160;</td><td class="fielddoc"><p>Face 2 is on a block boundary. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a548e65f98d107032d82b1234168e6251a0fa378c254e9639d9b9f28dae0d7e60d"></a>FCLAW2D_PATCH_ON_BLOCK_FACE_3&#160;</td><td class="fielddoc"><p>Face 3 is on a block boundary. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a548e65f98d107032d82b1234168e6251ae0b84b181504847dabea57511a6a7347"></a>FCLAW2D_PATCH_ON_BLOCK_FACE_4_ONLY_FOR_3D&#160;</td><td class="fielddoc"><p>Face 4 is on a block boundary. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a548e65f98d107032d82b1234168e6251a28859f7f33fd450b112473d846f2c9db"></a>FCLAW2D_PATCH_ON_BLOCK_FACE_5_ONLY_FOR_3D&#160;</td><td class="fielddoc"><p>Face 5 is on a block boundary. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a548e65f98d107032d82b1234168e6251a7b07bde395f672d09598616ee1b49031"></a>FCLAW2D_PATCH_ON_BLOCK_BOUNDARY&#160;</td><td class="fielddoc"><p>Patch is on a block boundary. </p>
 </td></tr>
@@ -1161,6 +1164,58 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fo
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Only for indirect ghost patches, the size of the neighbor(s). For all others, we set this to <a class="el" href="forestclaw2d_8h.html#ad168236647aee6aac7e0fd77173a77d2a12d0015136e82f61e79b827b60386753">FCLAW2D_PATCH_BOUNDARY</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a65c706afc3c9c097a0d89aa624c1922a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c706afc3c9c097a0d89aa624c1922a">&#9670;&nbsp;</a></span>fclaw2d_domain_init_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw2d_domain_init_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mpirank</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a meta domain. </p>
+<p>Initializes <em>domain</em> in an artificial manner, where the entry mpirank is used to store arbitrary context information. The remaining entries are initialized to -1 or NULL. The resulting domain can be passed to an fclaw2d_interpolate_point_t in case the domain to interpolate on is not available locally (also see fclaw2d_overlap_exchange for an example). </p>
+
+</div>
+</div>
+<a id="a3c263dd5336e37fb14631bd0599a7710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c263dd5336e37fb14631bd0599a7710">&#9670;&nbsp;</a></span>fclaw2d_domain_is_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw2d_domain_is_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if <em>domain</em> is an artifical domain. </p>
+<p>This function can be used in fclaw2d_interpolate_point_t callbacks to distinguish domains that were created during a partition search (and only contain some meta information) from real domains in a local search. </p>
 
 </div>
 </div>
