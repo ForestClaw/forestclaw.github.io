@@ -80,6 +80,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a0e48568edddb5a85808ba4a0d4bb834d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__utils_8f.html#a0e48568edddb5a85808ba4a0d4bb834d">fclaw2d_clawpatch_build_transform</a> (transform_ptr, a, f)</td></tr>
 <tr class="memdesc:a0e48568edddb5a85808ba4a0d4bb834d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the tranformation from a coarse patch to it's half-sized neighbor's coordinate system.  <a href="fclaw2d__clawpatch__utils_8f.html#a0e48568edddb5a85808ba4a0d4bb834d">More...</a><br /></td></tr>
 <tr class="separator:a0e48568edddb5a85808ba4a0d4bb834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe511a5ffd8d83dc492c52a2a3a0dfc"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__utils_8f.html#a7fe511a5ffd8d83dc492c52a2a3a0dfc">fclaw2d_clawpatch_build_transform_same</a> (transform_ptr, a, f)</td></tr>
+<tr class="memdesc:a7fe511a5ffd8d83dc492c52a2a3a0dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the tranformation from a patch to it's same-sized neighbor's coordinate system.  <a href="fclaw2d__clawpatch__utils_8f.html#a7fe511a5ffd8d83dc492c52a2a3a0dfc">More...</a><br /></td></tr>
+<tr class="separator:a7fe511a5ffd8d83dc492c52a2a3a0dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61fe2c2d303f29cff1fff39704dd0454"><td class="memItemLeft" align="right" valign="top">logical function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__utils_8f.html#a61fe2c2d303f29cff1fff39704dd0454">fclaw2d_clawpatch_check_indices</a> (iff, jff, i2, j2)</td></tr>
 <tr class="memdesc:a61fe2c2d303f29cff1fff39704dd0454"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the index is in the range given  <a href="fclaw2d__clawpatch__utils_8f.html#a61fe2c2d303f29cff1fff39704dd0454">More...</a><br /></td></tr>
 <tr class="separator:a61fe2c2d303f29cff1fff39704dd0454"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +259,50 @@ Functions/Subroutines</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determines the tranformation from a coarse patch to it's half-sized neighbor's coordinate system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">the</td><td>pointer to the <a class="el" href="structfclaw2d__patch__transform__data.html" title="Transform data for a neighboring patch&#39;s coordinate system.">fclaw2d_patch_transform_data</a> struct </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td>the 2x2 tranform matrix for the i,j indexes of a patch </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">f</td><td>the transform vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fe511a5ffd8d83dc492c52a2a3a0dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe511a5ffd8d83dc492c52a2a3a0dfc">&#9670;&nbsp;</a></span>fclaw2d_clawpatch_build_transform_same()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine fclaw2d_clawpatch_build_transform_same </td>
+          <td>(</td>
+          <td class="paramtype">integer*8&#160;</td>
+          <td class="paramname"><em>transform_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(2,2)&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(2)&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines the tranformation from a patch to it's same-sized neighbor's coordinate system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">the</td><td>pointer to the <a class="el" href="structfclaw2d__patch__transform__data.html" title="Transform data for a neighboring patch&#39;s coordinate system.">fclaw2d_patch_transform_data</a> struct </td></tr>
