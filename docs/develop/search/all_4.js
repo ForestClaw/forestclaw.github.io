@@ -3,7 +3,7 @@ var searchData=
   ['data_5fsize_103',['data_size',['../structfclaw2d__domain__exchange.html#adfd900447b65573c4bfb13ada22e4231',1,'fclaw2d_domain_exchange::data_size()'],['../structfclaw3d__domain__exchange.html#a40eface3e002b6bb9b2af6b49a8dd0b1',1,'fclaw3d_domain_exchange::data_size()']]],
   ['data_5fstorm_5ftype_104',['data_storm_type',['../structdata__storm__module_1_1data__storm__type.html',1,'data_storm_module']]],
   ['deprecated_20list_105',['Deprecated List',['../deprecated.html',1,'']]],
-  ['destroy_5fuser_5fdata_106',['destroy_user_data',['../structfclaw2d__patch__vtable.html#a88bff6d68eb3b167a17b2ed870476945',1,'fclaw2d_patch_vtable']]],
+  ['destroy_5fuser_5fdata_106',['destroy_user_data',['../structfclaw2d__patch__vtable.html#a88bff6d68eb3b167a17b2ed870476945',1,'fclaw2d_patch_vtable::destroy_user_data()'],['../structfclaw3d__patch__vtable.html#a549ed28500c44ee6bfe0ba2076c54533',1,'fclaw3d_patch_vtable::destroy_user_data()']]],
   ['dictionary_107',['dictionary',['../dictionary_8h.html#a38dc8ef0215587613fb96525478b0a85',1,'dictionary.h']]],
   ['dictionary_2eh_108',['dictionary.h',['../dictionary_8h.html',1,'']]],
   ['dictionary_5fdel_109',['dictionary_del',['../dictionary_8h.html#a9d792f2544cf674a371663e2f32128fa',1,'dictionary.h']]],
