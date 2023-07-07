@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['box_1264',['Box',['../classBox.html',1,'']]]
+  ['_5fdictionary_5f_1298',['_dictionary_',['../struct__dictionary__.html',1,'']]]
 ];

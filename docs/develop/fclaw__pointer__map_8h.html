@@ -84,6 +84,9 @@ typedef struct fclaw_pointer_map&#160;</td><td class="memItemRight" valign="bott
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__pointer__map_8h.html#a09657b8ee93d609c75fb690200a8f4a8">fclaw_pointer_map_value_destroy_t</a>) (void *value)</td></tr>
 <tr class="memdesc:a09657b8ee93d609c75fb690200a8f4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that destroys stored value <br /></td></tr>
 <tr class="separator:a09657b8ee93d609c75fb690200a8f4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072e027bbc187d8d6ff3e89c77179c2e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__pointer__map_8h.html#a072e027bbc187d8d6ff3e89c77179c2e">fclaw_pointer_map_iterate_cb_t</a>) (const char *key, void *pointer, void *user)</td></tr>
+<tr class="memdesc:a072e027bbc187d8d6ff3e89c77179c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback for pointer map iterator  <a href="fclaw__pointer__map_8h.html#a072e027bbc187d8d6ff3e89c77179c2e">More...</a><br /></td></tr>
+<tr class="separator:a072e027bbc187d8d6ff3e89c77179c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -99,10 +102,41 @@ Functions</h2></td></tr>
 <tr class="memitem:a10b26768096552b7f8946a00ddc90183"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__pointer__map_8h.html#a10b26768096552b7f8946a00ddc90183">fclaw_pointer_map_get</a> (<a class="el" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *map, const char *key)</td></tr>
 <tr class="memdesc:a10b26768096552b7f8946a00ddc90183"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a value from the map  <a href="fclaw__pointer__map_8h.html#a10b26768096552b7f8946a00ddc90183">More...</a><br /></td></tr>
 <tr class="separator:a10b26768096552b7f8946a00ddc90183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36448e5ae2c0d77173915b2a27a23904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__pointer__map_8h.html#a36448e5ae2c0d77173915b2a27a23904">fclaw_pointer_map_iterate</a> (<a class="el" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *map, <a class="el" href="fclaw__pointer__map_8h.html#a072e027bbc187d8d6ff3e89c77179c2e">fclaw_pointer_map_iterate_cb_t</a> cb, void *user)</td></tr>
+<tr class="memdesc:a36448e5ae2c0d77173915b2a27a23904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all key-value pairs in the map.  <a href="fclaw__pointer__map_8h.html#a36448e5ae2c0d77173915b2a27a23904">More...</a><br /></td></tr>
+<tr class="separator:a36448e5ae2c0d77173915b2a27a23904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd26d4cb9a7e1e985a35e615a2fc8541"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__pointer__map_8h.html#abd26d4cb9a7e1e985a35e615a2fc8541">fclaw_pointer_map_size</a> (<a class="el" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *map)</td></tr>
+<tr class="memdesc:abd26d4cb9a7e1e985a35e615a2fc8541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of key-value pairs in the map.  <a href="fclaw__pointer__map_8h.html#abd26d4cb9a7e1e985a35e615a2fc8541">More...</a><br /></td></tr>
+<tr class="separator:abd26d4cb9a7e1e985a35e615a2fc8541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>c interface to c++ std::map&lt;std::string,void*&gt; </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a072e027bbc187d8d6ff3e89c77179c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072e027bbc187d8d6ff3e89c77179c2e">&#9670;&nbsp;</a></span>fclaw_pointer_map_iterate_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fclaw_pointer_map_iterate_cb_t) (const char *key, void *pointer, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback for pointer map iterator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key </td></tr>
+    <tr><td class="paramname">value</td><td>the value associated with the key </td></tr>
+    <tr><td class="paramname">user</td><td>the user pointer passed into iterator call </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ae0efeb5eee397cb939385987662f404a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0efeb5eee397cb939385987662f404a">&#9670;&nbsp;</a></span>fclaw_pointer_map_destroy()</h2>
 
@@ -219,6 +253,50 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a36448e5ae2c0d77173915b2a27a23904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36448e5ae2c0d77173915b2a27a23904">&#9670;&nbsp;</a></span>fclaw_pointer_map_iterate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_pointer_map_iterate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fclaw__pointer__map_8h.html#a072e027bbc187d8d6ff3e89c77179c2e">fclaw_pointer_map_iterate_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate over all key-value pairs in the map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>the map to iterate over </td></tr>
+    <tr><td class="paramname">cb</td><td>the callback called on eacy key-value pair </td></tr>
+    <tr><td class="paramname">user</td><td>user pointer passed to the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac2d579c51d5acf883349c7c80150833c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2d579c51d5acf883349c7c80150833c">&#9670;&nbsp;</a></span>fclaw_pointer_map_new()</h2>
 
@@ -236,6 +314,33 @@ Functions</h2></td></tr>
 
 <p>create a pointer map </p>
 <dl class="section return"><dt>Returns</dt><dd>fclaw_pointer_map_t* the new pointer map </dd></dl>
+
+</div>
+</div>
+<a id="abd26d4cb9a7e1e985a35e615a2fc8541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd26d4cb9a7e1e985a35e615a2fc8541">&#9670;&nbsp;</a></span>fclaw_pointer_map_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_pointer_map_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of key-value pairs in the map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>the map </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int the number of key-value pairs </dd></dl>
 
 </div>
 </div>

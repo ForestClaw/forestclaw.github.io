@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['data_5fstorm_5ftype_1268',['data_storm_type',['../structdata__storm__module_1_1data__storm__type.html',1,'data_storm_module']]],
-  ['drag_5ffunction_1269',['drag_function',['../interfacestorm__module_1_1drag__function.html',1,'storm_module']]]
+  ['cudaclaw5_5ffluxes_1300',['cudaclaw5_fluxes',['../structcudaclaw5__fluxes.html',1,'']]],
+  ['cudaclaw_5ffluxes_1301',['cudaclaw_fluxes',['../structcudaclaw__fluxes.html',1,'']]],
+  ['cudatracer_1302',['CudaTracer',['../classCudaTracer.html',1,'']]]
 ];

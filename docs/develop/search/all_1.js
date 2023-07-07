@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['after_5fregrid_2',['after_regrid',['../structfclaw2d__vtable.html#abbaa25385e549085c531401a7ed1762a',1,'fclaw2d_vtable']]],
-  ['amr_5fmodule_3',['amr_module',['../namespaceamr__module.html',1,'']]],
-  ['area_4',['area',['../structfclaw2d__clawpatch__registers.html#af8fbe0b449bd167bf86b3819f97d45fa',1,'fclaw2d_clawpatch_registers::area()'],['../structerror__info__t.html#aaae1f4f3d6091d4d9a6487da8ddc662b',1,'error_info_t::area()'],['../structfclaw3dx__clawpatch__registers.html#a7449f4fc754c40ea832c2156eaa84447',1,'fclaw3dx_clawpatch_registers::area()'],['../structfclaw3dx__clawpatch__error__info__t.html#a2c815a4756b355c59ff9093be9e00659',1,'fclaw3dx_clawpatch_error_info_t::area()'],['../structfclaw2d__metric__patch__t.html#a024c75e5017ab4292ea4bcc8a9157fa5',1,'fclaw2d_metric_patch_t::area()']]],
-  ['async_5fstate_5',['async_state',['../structfclaw2d__domain__exchange.html#abb16bc4ee05ba073f9ad98e4225c375e',1,'fclaw2d_domain_exchange::async_state()'],['../structfclaw3d__domain__exchange.html#aa37bb90eae20876f221357989953dbdd',1,'fclaw3d_domain_exchange::async_state()']]],
-  ['attributes_6',['attributes',['../structfclaw2d__domain.html#a2a90d9459414c80501c9f4b4eb7a3322',1,'fclaw2d_domain::attributes()'],['../structfclaw3d__domain.html#aef3f66391b3a4ddd7bc9b49b4c10b755',1,'fclaw3d_domain::attributes()']]],
-  ['aux_7',['aux',['../classfclaw2d__clawpatch__t.html#a50c05ae6657af8ac444980f2df353a73',1,'fclaw2d_clawpatch_t::aux()'],['../classfclaw3dx__clawpatch__t.html#a77de22f81f10069b23757aa0efb8c7fb',1,'fclaw3dx_clawpatch_t::aux()']]],
-  ['average_2ef_8',['average.f',['../average_8f.html',1,'']]],
-  ['average2coarse_9',['average2coarse',['../structfclaw2d__patch__vtable.html#a4a23e731f81becfc4b3abb463c1155e2',1,'fclaw2d_patch_vtable::average2coarse()'],['../fclaw2d__clawpatch__fort_8h.html#ac4bd0fc6c4b2def94f6e88152afcfbdb',1,'AVERAGE2COARSE():&#160;fclaw2d_clawpatch_fort.h'],['../fclaw2d__clawpatch__fort_8h.html#a436ed20f428f4a0e0c16ca08c6b91be3',1,'AVERAGE2COARSE(const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *igrid, const int *manifold):&#160;fclaw2d_clawpatch_fort.h']]],
-  ['average_5fblock_5fcorner_10',['average_block_corner',['../structfclaw2d__patch__vtable.html#ac592c68cf930b7d8a11f0e2c7ea1260e',1,'fclaw2d_patch_vtable']]],
-  ['average_5fcorner_11',['average_corner',['../structfclaw2d__patch__vtable.html#a08e8a1573d754382ce8258288677fade',1,'fclaw2d_patch_vtable']]],
-  ['average_5fface_12',['average_face',['../structfclaw2d__patch__vtable.html#a3f2cacb00b437376f354a19533d36211',1,'fclaw2d_patch_vtable']]],
-  ['average_20fine_20grids_20to_20a_20coarse_20grid_13',['Average fine grids to a coarse grid',['../group__Averaging.html',1,'']]],
-  ['ax_14',['ax',['../structfclaw__options.html#ae3ab87ea8924f5fe88068494d43d162c',1,'fclaw_options']]],
-  ['ay_15',['ay',['../structfclaw__options.html#ad3d1bf184921af6c3e7e1cf316921489',1,'fclaw_options']]],
-  ['a_20parallel_2c_20adaptive_20library_20for_20logically_20cartesian_2c_20mapped_2c_20multiblock_20domains_16',['A parallel, adaptive library for logically Cartesian, mapped, multiblock domains',['../index.html',1,'']]]
+  ['after_5fregrid_3',['after_regrid',['../structfclaw2d__vtable.html#abbaa25385e549085c531401a7ed1762a',1,'fclaw2d_vtable']]],
+  ['amr_5fmodule_4',['amr_module',['../namespaceamr__module.html',1,'']]],
+  ['area_5',['area',['../structfclaw2d__clawpatch__registers.html#af8fbe0b449bd167bf86b3819f97d45fa',1,'fclaw2d_clawpatch_registers::area()'],['../structerror__info__t.html#aaae1f4f3d6091d4d9a6487da8ddc662b',1,'error_info_t::area()'],['../structfclaw3dx__clawpatch__registers.html#a7449f4fc754c40ea832c2156eaa84447',1,'fclaw3dx_clawpatch_registers::area()'],['../structfclaw3dx__clawpatch__error__info__t.html#a2c815a4756b355c59ff9093be9e00659',1,'fclaw3dx_clawpatch_error_info_t::area()'],['../structfclaw2d__metric__patch__t.html#a024c75e5017ab4292ea4bcc8a9157fa5',1,'fclaw2d_metric_patch_t::area()']]],
+  ['async_5fstate_6',['async_state',['../structfclaw2d__domain__exchange.html#abb16bc4ee05ba073f9ad98e4225c375e',1,'fclaw2d_domain_exchange::async_state()'],['../structfclaw3d__domain__exchange.html#aa37bb90eae20876f221357989953dbdd',1,'fclaw3d_domain_exchange::async_state()']]],
+  ['attributes_7',['attributes',['../structfclaw2d__domain.html#a2a90d9459414c80501c9f4b4eb7a3322',1,'fclaw2d_domain::attributes()'],['../structfclaw3d__domain.html#aef3f66391b3a4ddd7bc9b49b4c10b755',1,'fclaw3d_domain::attributes()']]],
+  ['aux_8',['aux',['../classfclaw2d__clawpatch__t.html#a50c05ae6657af8ac444980f2df353a73',1,'fclaw2d_clawpatch_t::aux()'],['../classfclaw3dx__clawpatch__t.html#a77de22f81f10069b23757aa0efb8c7fb',1,'fclaw3dx_clawpatch_t::aux()']]],
+  ['average_2ef_9',['average.f',['../average_8f.html',1,'']]],
+  ['average2coarse_10',['average2coarse',['../structfclaw2d__patch__vtable.html#a4a23e731f81becfc4b3abb463c1155e2',1,'fclaw2d_patch_vtable::average2coarse()'],['../fclaw2d__clawpatch__fort_8h.html#ac4bd0fc6c4b2def94f6e88152afcfbdb',1,'AVERAGE2COARSE():&#160;fclaw2d_clawpatch_fort.h'],['../fclaw2d__clawpatch__fort_8h.html#a436ed20f428f4a0e0c16ca08c6b91be3',1,'AVERAGE2COARSE(const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *igrid, const int *manifold):&#160;fclaw2d_clawpatch_fort.h']]],
+  ['average_5fblock_5fcorner_11',['average_block_corner',['../structfclaw2d__patch__vtable.html#ac592c68cf930b7d8a11f0e2c7ea1260e',1,'fclaw2d_patch_vtable']]],
+  ['average_5fcorner_12',['average_corner',['../structfclaw2d__patch__vtable.html#a08e8a1573d754382ce8258288677fade',1,'fclaw2d_patch_vtable']]],
+  ['average_5fface_13',['average_face',['../structfclaw2d__patch__vtable.html#a3f2cacb00b437376f354a19533d36211',1,'fclaw2d_patch_vtable']]],
+  ['average_20fine_20grids_20to_20a_20coarse_20grid_14',['Average fine grids to a coarse grid',['../group__Averaging.html',1,'']]],
+  ['ax_15',['ax',['../structfclaw__options.html#ae3ab87ea8924f5fe88068494d43d162c',1,'fclaw_options']]],
+  ['ay_16',['ay',['../structfclaw__options.html#ad3d1bf184921af6c3e7e1cf316921489',1,'fclaw_options']]],
+  ['a_20parallel_2c_20adaptive_20library_20for_20logically_20cartesian_2c_20mapped_2c_20multiblock_20domains_17',['A parallel, adaptive library for logically Cartesian, mapped, multiblock domains',['../index.html',1,'']]]
 ];

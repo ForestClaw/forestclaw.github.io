@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['set_5fdata_5ffields_5fdef_1353',['set_data_fields_def',['../interfacestorm__module_1_1set__data__fields__def.html',1,'storm_module']]],
-  ['set_5fmodel_5ffields_5fdef_1354',['set_model_fields_def',['../interfacestorm__module_1_1set__model__fields__def.html',1,'storm_module']]]
+  ['region_5ftype_1387',['region_type',['../structregions__module_1_1region__type.html',1,'regions_module::region_type'],['../structregion__type.html',1,'region_type']]]
 ];
