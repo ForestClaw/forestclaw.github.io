@@ -153,6 +153,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fores
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#af12f618d0be4c1d4673814013a2afadf">fclaw3d_domain_num_faces</a> (const <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain)</td></tr>
 <tr class="memdesc:af12f618d0be4c1d4673814013a2afadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of faces of a cube: 4 in 2D, 6 in 3D. <br /></td></tr>
 <tr class="separator:af12f618d0be4c1d4673814013a2afadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59964264ebe7709dd6383512c45a4ff"><td class="memItemLeft" align="right" valign="top"><a id="af59964264ebe7709dd6383512c45a4ff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#af59964264ebe7709dd6383512c45a4ff">fclaw3d_domain_num_edges</a> (const <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain)</td></tr>
+<tr class="memdesc:af59964264ebe7709dd6383512c45a4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of edges of a cube: 12 in 3D. <br /></td></tr>
+<tr class="separator:af59964264ebe7709dd6383512c45a4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd84e237e9c375468a882345ff03ad6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#acd84e237e9c375468a882345ff03ad6a">fclaw3d_domain_num_corners</a> (const <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain)</td></tr>
 <tr class="memdesc:acd84e237e9c375468a882345ff03ad6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of corners of a cube: 4 in 2D, 8 in 3D.  <a href="forestclaw3d_8h.html#acd84e237e9c375468a882345ff03ad6a">More...</a><br /></td></tr>
 <tr class="separator:acd84e237e9c375468a882345ff03ad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +244,12 @@ typedef enum <a class="el" href="forestclaw3d_8h.html#ae60c1ef0c79a8f9373dd914c1
 <tr class="memitem:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a5ca37a35d7bb36f0162d089a8c2caa86">fclaw3d_patch_transform_face2</a> (<a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *ipatch, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *opatch, const int ftransform[], int mx, int my, int mz, int based, int i[], int j[], int k[])</td></tr>
 <tr class="memdesc:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a patch coordinate into a neighbor patch's coordinate system.  <a href="forestclaw3d_8h.html#a5ca37a35d7bb36f0162d089a8c2caa86">More...</a><br /></td></tr>
 <tr class="separator:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b7781a49ab880fe48e98602f05cc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a97b7781a49ab880fe48e98602f05cc6a">fclaw3d_patch_edge_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int blockno, int patchno, int edgeno, int *rproc, int *rblockno, int *rpatchno, int *redge, <a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> *neighbor_size)</td></tr>
+<tr class="memdesc:a97b7781a49ab880fe48e98602f05cc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine neighbor patch(es) and orientation across a given edge.  <a href="forestclaw3d_8h.html#a97b7781a49ab880fe48e98602f05cc6a">More...</a><br /></td></tr>
+<tr class="separator:a97b7781a49ab880fe48e98602f05cc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514f04206cc463fdcd5f0a2b98861271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a514f04206cc463fdcd5f0a2b98861271">fclaw3d_patch_edge_swap</a> (int *edgeno, int *redgeno)</td></tr>
+<tr class="memdesc:a514f04206cc463fdcd5f0a2b98861271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change perspective across an edge neighbor situation.  <a href="forestclaw3d_8h.html#a514f04206cc463fdcd5f0a2b98861271">More...</a><br /></td></tr>
+<tr class="separator:a514f04206cc463fdcd5f0a2b98861271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b5c6a52789aa179658ad03ee7f72c8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a8b5c6a52789aa179658ad03ee7f72c8d">fclaw3d_patch_corner_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int blockno, int patchno, int cornerno, int *rproc, int *rblockno, int *rpatchno, int *rcorner, <a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> *neighbor_size)</td></tr>
 <tr class="memdesc:a8b5c6a52789aa179658ad03ee7f72c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine neighbor patch(es) and orientation across a given corner.  <a href="forestclaw3d_8h.html#a8b5c6a52789aa179658ad03ee7f72c8d">More...</a><br /></td></tr>
 <tr class="separator:a8b5c6a52789aa179658ad03ee7f72c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1855,7 +1865,7 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine neighbor patch(es) and orientation across a given corner. </p>
-<p>The current version only supports one neighbor, i.e., no true multi-block. A query across a corner in the middle of a longer face returns the boundary. We only return corner neighbors that are not already face neighbors. Inter-tree corners are only returned if the number of meeting corners is exactly eight. Nine or more are currently not supported. This must ONLY be called for local patches. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The current version only supports one neighbor, i.e., no true multi-block. A query across a corner in the middle of a longer face returns the boundary. We only return corner neighbors that are not already face or edge neighbors. Inter-tree corners are only returned if the number of meeting corners is exactly eight. Nine or more are currently not supported. This must ONLY be called for local patches. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Valid domain structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>Number of the block within the domain. </td></tr>
@@ -1864,7 +1874,7 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rproc</td><td>Processor number of neighbor patch. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rblockno</td><td>Neighbor block number. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Neighbor patch number relative to the block. If the neighbor is off-processor, this is not a patch number but in [0, num_ghosts_patches[. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rcorner</td><td>Number of the corner from the other neigbor. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rcorner</td><td>Number of the corner from the other neighbor. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">neighbor_size</td><td>The relative patch size of the neighbor. </td></tr>
   </table>
   </dd>
@@ -1903,7 +1913,131 @@ Meta Domains</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cornerno</td><td>On input, valid corner number for a patch. On output, corner number seen from the corner neighbor patch. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">rcornerno</td><td>On input, valid corner number as returned by fclaw3d_patch_face_neighbors. On output, corner number seen from the corner neighbor patch. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rcornerno</td><td>On input, valid corner number as returned by fclaw3d_patch_corner_neighbors. On output, corner number seen from the corner neighbor patch. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97b7781a49ab880fe48e98602f05cc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b7781a49ab880fe48e98602f05cc6a">&#9670;&nbsp;</a></span>fclaw3d_patch_edge_neighbors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw3d_patch_edge_neighbors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edgeno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rproc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rblockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rpatchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>redge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> *&#160;</td>
+          <td class="paramname"><em>neighbor_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine neighbor patch(es) and orientation across a given edge. </p>
+<p>The current version only supports one neighbor, i.e., no true multi-block. A query across an edge in the middle of a longer face returns the boundary. We only return edge neighbors that are not already face neighbors. Inter-tree edges are only returned if the number of meeting edges is exactly four. Five or more are currently not supported. This must ONLY be called for local patches. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Valid domain structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>Number of the block within the domain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>Number of the patch within the block. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgeno</td><td>Number of the patch edge: 4 parallel to x axis, then 4 parallel to y axis, then 4 parallel to z. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rproc</td><td>Processor number of neighbor patch. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rblockno</td><td>Neighbor block number. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Neighbor patch number relative to the block. If the neighbor is off-processor, this is not a patch number but in [0, num_ghosts_patches[. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">redge</td><td>Number of the edge from the other neighbor. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbor_size</td><td>The relative patch size of the neighbor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if at least one edge neighbor exists that is not already a face neighbor. </dd></dl>
+
+</div>
+</div>
+<a id="a514f04206cc463fdcd5f0a2b98861271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514f04206cc463fdcd5f0a2b98861271">&#9670;&nbsp;</a></span>fclaw3d_patch_edge_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw3d_patch_edge_swap </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>edgeno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>redgeno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change perspective across an edge neighbor situation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">edgeno</td><td>On input, valid edge number for a patch. On output, edge number seen from the edge neighbor patch. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">redgeno</td><td>On input, valid edge number as returned by fclaw3d_patch_edge_neighbors. On output, edge number seen from the edge neighbor patch. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2622,8 +2756,8 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ftransform</td><td>It must have room for NINE (9) integers and be computed by <em>fclaw3d_patch_face_transformation</em>. If <em>ipatch</em> and <em>opatch</em> are in the same block, we require <em>ftransform</em>[8] |= 4. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mx</td><td>Number of cells along x direction of patch. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. This function assumes <em>mx</em> == <em>my</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mz</td><td>Number of cells along z direction of patch. This function assumes <em>mx</em> == <em>mz</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mz</td><td>Number of cells along z direction of patch. The number of cells must match according to the face transformation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">based</td><td>Indices are 0-based for corners and 1-based for cells. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">i</td><td>Integer coordinate along x-axis in <em>based</em> .. <em>mx</em>. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">j</td><td>Integer coordinate along y-axis in <em>based</em> .. <em>my</em>. </td></tr>
@@ -2715,8 +2849,8 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ftransform</td><td>It must have room for NINE (9) integers and be computed by <em>fclaw3d_patch_face_transformation</em>. If <em>ipatch</em> and <em>opatch</em> are in the same block, we require <em>ftransform</em>[8] |= 4. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mx</td><td>Number of cells along x direction of patch. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. This function assumes <em>mx</em> == <em>my</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mz</td><td>Number of cells along z direction of patch. This function assumes <em>mx</em> == <em>mz</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mz</td><td>Number of cells along z direction of patch. The number of cells must match according to the face transformation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">based</td><td>Indices are 0-based for corners and 1-based for cells. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">i</td><td>EIGHT (8) integer coordinates along x-axis in <em>based</em> .. <em>mx</em>. On input, only the first is used. On output, they are relative to the fine patch and stored in order of the children of the coarse patch. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">j</td><td>EIGHT (8) integer coordinates along y-axis in <em>based</em> .. <em>my</em>. On input, only the first is used. On output, they are relative to the fine patch and stored in order of the children of the coarse patch. </td></tr>
