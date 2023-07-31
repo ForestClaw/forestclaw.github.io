@@ -2404,14 +2404,14 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transform a patch coordinate into a neighbor patch's coordinate system. </p>
-<p>This function assumes that the two patches are of the SAME size. It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function assumes that the two patches are of the SAME size and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipatch</td><td>The patch that the input coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">icorner</td><td>Corner number of this patch to transform across. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">icorner</td><td>Corner number of this patch to transform across. This function assumes ocorner == icorner ^ 3, so ocorner is the opposite corner of icorner. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_block_boundary</td><td>Set to true for a block corner. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mx</td><td>Number of cells along x direction of patch. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. This function assumes <em>mx</em> == <em>my</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">based</td><td>Indices are 0-based for corners and 1-based for cells. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">i</td><td>Integer coordinate along x-axis in <em>based</em> .. <em>mx</em>. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">j</td><td>Integer coordinate along y-axis in <em>based</em> .. <em>my</em>. </td></tr>
@@ -2490,14 +2490,14 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transform a patch coordinate into a neighbor patch's coordinate system. </p>
-<p>This function assumes that the neighbor patch is smaller (HALF size). It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function assumes that the neighbor patch is smaller (HALF size) and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipatch</td><td>The patch that the input coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">icorner</td><td>Corner number of this patch to transform across. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">icorner</td><td>Corner number of this patch to transform across. This function assumes ocorner == icorner ^ 3, so ocorner is the opposite corner of icorner. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_block_boundary</td><td>Set to true for a block corner. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mx</td><td>Number of cells along x direction of patch. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. This function assumes <em>mx</em> == <em>my</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my</td><td>Number of cells along y direction of patch. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">based</td><td>Indices are 0-based for corners and 1-based for cells. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">i</td><td>FOUR (4) integer coordinates along x-axis in <em>based</em> .. <em>mx</em>. On input, only the first is used. On output, they are relative to the fine patch and stored in order of the children of the coarse patch. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">j</td><td>FOUR (4) integer coordinates along y-axis in <em>based</em> .. <em>my</em>. On input, only the first is used. On output, they are relative to the fine patch and stored in order of the children of the coarse patch. </td></tr>
