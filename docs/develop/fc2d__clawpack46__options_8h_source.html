@@ -133,43 +133,46 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> vtk_out;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> is_registered;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a> fc2d_clawpack46_postprocess (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> *</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                               clawopt);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a> fc2d_clawpack46_check (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> * clawopt);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_reset (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> * clawopt);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>*  fc2d_clawpack46_options_register (<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> * app,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                              <span class="keyword">const</span> <span class="keywordtype">char</span> *section,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                              <span class="keyword">const</span> <span class="keywordtype">char</span> *configfile);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_package_register(<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a>* app,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                      <a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* clawopt);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* fc2d_clawpack46_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, <a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* clawopt);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_output(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> is_unpacked;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a> fc2d_clawpack46_postprocess (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> *</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                               clawopt);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a> fc2d_clawpack46_check (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> * clawopt);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_reset (<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a> * clawopt);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>*  fc2d_clawpack46_options_register (<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> * app,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                              <span class="keyword">const</span> <span class="keywordtype">char</span> *section,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                              <span class="keyword">const</span> <span class="keywordtype">char</span> *configfile);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_package_register(<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a>* app,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                      <a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* clawopt);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* fc2d_clawpack46_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, <a class="code" href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options_t</a>* clawopt);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> fc2d_clawpack46_output(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">const</span> <a class="code" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a>* fc2d_clawpack46_options_get_packing_vtable();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructfc2d__clawpack46__options_html"><div class="ttname"><a href="structfc2d__clawpack46__options.html">fc2d_clawpack46_options</a></div><div class="ttdef"><b>Definition:</b> fc2d_clawpack46_options.h:42</div></div>
 <div class="ttc" id="afclaw__base_8h_html_acefeaedd4aae14e6a175ecc6c442dc15"><div class="ttname"><a href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a></div><div class="ttdeci">struct fclaw_app fclaw_app_t</div><div class="ttdoc">An application container whose use is optional.</div><div class="ttdef"><b>Definition:</b> fclaw_base.h:178</div></div>
 <div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
 <div class="ttc" id="afclaw__base_8h_html"><div class="ttname"><a href="fclaw__base_8h.html">fclaw_base.h</a></div></div>
 <div class="ttc" id="afclaw__base_8h_html_af82c7f714a783199d657b2bd10799c53"><div class="ttname"><a href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a></div><div class="ttdeci">enum fclaw_exit_type fclaw_exit_type_t</div><div class="ttdoc">This enumeration defines values to be returned from option checking.</div></div>
+<div class="ttc" id="astructfclaw__packing__vtable_html"><div class="ttname"><a href="structfclaw__packing__vtable.html">fclaw_packing_vtable</a></div><div class="ttdoc">vtable for packing functions</div><div class="ttdef"><b>Definition:</b> fclaw_packing.h:78</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
