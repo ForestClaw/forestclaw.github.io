@@ -2404,7 +2404,7 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transform a patch coordinate into a neighbor patch's coordinate system. </p>
-<p>This function assumes that the two patches are of the SAME size and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function assumes that the two patches are of the SAME size and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. It is ILLEGAL to call this function for patches from face-neighboring blocks. Use <a class="el" href="forestclaw2d_8h.html#ab3fd383aa98dc00a4534e6989f418f1d">fclaw2d_patch_transform_face</a> for such patches instead. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipatch</td><td>The patch that the input coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>
@@ -2490,7 +2490,7 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transform a patch coordinate into a neighbor patch's coordinate system. </p>
-<p>This function assumes that the neighbor patch is smaller (HALF size) and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function assumes that the neighbor patch is smaller (HALF size) and that the patches lie in coordinate systems with the same orientation. It is LEGAL to call this function for both local and ghost patches. It is ILLEGAL to call this function for patches from face-neighboring blocks. Use <a class="el" href="forestclaw2d_8h.html#a784d9e362ef21afad1c1c7d24496c844">fclaw2d_patch_transform_face2</a> for such patches instead. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipatch</td><td>The patch that the input coordinates are relative to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opatch</td><td>The patch that the output coordinates are relative to. </td></tr>

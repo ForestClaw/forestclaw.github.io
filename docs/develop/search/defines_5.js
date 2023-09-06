@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tag4coarsening_3023',['TAG4COARSENING',['../fclaw2d__clawpatch__fort_8h.html#aa11b1d733d6a70b91908609d6a6adfa7',1,'fclaw2d_clawpatch_fort.h']]],
-  ['tag4refinement_3024',['TAG4REFINEMENT',['../fclaw2d__clawpatch__fort_8h.html#a542d98bba99eaa94c68f2832d8fc6ab3',1,'fclaw2d_clawpatch_fort.h']]]
+  ['tag4coarsening_3027',['TAG4COARSENING',['../fclaw2d__clawpatch__fort_8h.html#aa11b1d733d6a70b91908609d6a6adfa7',1,'fclaw2d_clawpatch_fort.h']]],
+  ['tag4refinement_3028',['TAG4REFINEMENT',['../fclaw2d__clawpatch__fort_8h.html#a542d98bba99eaa94c68f2832d8fc6ab3',1,'fclaw2d_clawpatch_fort.h']]]
 ];
