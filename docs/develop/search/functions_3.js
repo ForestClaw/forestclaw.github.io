@@ -312,7 +312,7 @@ var searchData=
   ['fclaw3d_5fdomain_5findirect_5fbegin_1973',['fclaw3d_domain_indirect_begin',['../forestclaw3d_8h.html#a7f5ca0f5110f115c862217d684faa3e8',1,'forestclaw3d.h']]],
   ['fclaw3d_5fdomain_5findirect_5fdestroy_1974',['fclaw3d_domain_indirect_destroy',['../forestclaw3d_8h.html#a6359e691f86f0fb6e47a95f3550f39db',1,'forestclaw3d.h']]],
   ['fclaw3d_5fdomain_5findirect_5fend_1975',['fclaw3d_domain_indirect_end',['../forestclaw3d_8h.html#a3668820c5ce03b7949fe1133a82d8493',1,'forestclaw3d.h']]],
-  ['fclaw3d_5fdomain_5findirect_5fneighbors_1976',['fclaw3d_domain_indirect_neighbors',['../forestclaw3d_8h.html#a03d6484f6b257adfa70af2313e663b4e',1,'forestclaw3d.h']]],
+  ['fclaw3d_5fdomain_5findirect_5fneighbors_1976',['fclaw3d_domain_indirect_neighbors',['../forestclaw3d_8h.html#ad5c9ca386bbdcc02e3cf947fd6246ecd',1,'forestclaw3d.h']]],
   ['fclaw3d_5fdomain_5finit_5fmeta_1977',['fclaw3d_domain_init_meta',['../forestclaw3d_8h.html#acc5abb130e50d42b8cf6bf78e43da3a1',1,'forestclaw3d.h']]],
   ['fclaw3d_5fdomain_5fis_5fmeta_1978',['fclaw3d_domain_is_meta',['../forestclaw3d_8h.html#a4985d446cbdbe511abe9fe64b3ee37f3',1,'forestclaw3d.h']]],
   ['fclaw3d_5fdomain_5fiterate_5fadapted_1979',['fclaw3d_domain_iterate_adapted',['../forestclaw3d_8h.html#acc7c71d9ac7b47562f078c9a8434ff9d',1,'forestclaw3d.h']]],
