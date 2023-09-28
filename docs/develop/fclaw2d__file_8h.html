@@ -64,55 +64,91 @@ $(function() {
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fclaw2d_file.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="forestclaw2d_8h_source.html">forestclaw2d.h</a>&gt;</code><br />
-<code>#include &lt;p4est_io.h&gt;</code><br />
 </div>
 <p><a href="fclaw2d__file_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a64d7a175823b5e696bddca215a450479"><td class="memItemLeft" align="right" valign="top"><a id="a64d7a175823b5e696bddca215a450479"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FCLAW2D_FILE_USER_STRING_BYTES</b>&#160;&#160;&#160;P4EST_FILE_USER_STRING_BYTES</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a64d7a175823b5e696bddca215a450479">FCLAW2D_FILE_USER_STRING_BYTES</a>&#160;&#160;&#160;48</td></tr>
+<tr class="memdesc:a64d7a175823b5e696bddca215a450479"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of user string bytes <br /></td></tr>
 <tr class="separator:a64d7a175823b5e696bddca215a450479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69e39a0c904dab4550363c5aed48e77"><td class="memItemLeft" align="right" valign="top"><a id="af69e39a0c904dab4550363c5aed48e77"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FCLAW2D_FILE_MAX_BLOCK_SIZE</b>&#160;&#160;&#160;P4EST_FILE_MAX_BLOCK_SIZE</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#af69e39a0c904dab4550363c5aed48e77">FCLAW2D_FILE_MAX_BLOCK_SIZE</a>&#160;&#160;&#160;((1000L * 1000L * 1000L * 1000L * 10L) - 1L)</td></tr>
+<tr class="memdesc:af69e39a0c904dab4550363c5aed48e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximal data size of a block <br /></td></tr>
 <tr class="separator:af69e39a0c904dab4550363c5aed48e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48cd5532fceb89958f53ae54bde42c3a"><td class="memItemLeft" align="right" valign="top"><a id="a48cd5532fceb89958f53ae54bde42c3a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FCLAW2D_FILE_ERR_SUCCESS</b>&#160;&#160;&#160;P4EST_FILE_ERR_SUCCESS</td></tr>
-<tr class="separator:a48cd5532fceb89958f53ae54bde42c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8c338ed0b36d9310e1b5605225a359"><td class="memItemLeft" align="right" valign="top"><a id="a2f8c338ed0b36d9310e1b5605225a359"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FCLAW2D_FILE_ERR_FORMAT</b>&#160;&#160;&#160;P4EST_FILE_ERR_FORMAT</td></tr>
-<tr class="separator:a2f8c338ed0b36d9310e1b5605225a359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d5fcdd3483048c8df50899bab21637"><td class="memItemLeft" align="right" valign="top"><a id="aa3d5fcdd3483048c8df50899bab21637"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FCLAW2D_FILE_ERR_NOT_IMPLEMENTED</b>&#160;&#160;&#160;(P4EST_FILE_ERR_LASTCODE + 1)</td></tr>
-<tr class="separator:aa3d5fcdd3483048c8df50899bab21637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af992848a8aa6364033c1cf1dcff348"><td class="memItemLeft" align="right" valign="top"><a id="a3af992848a8aa6364033c1cf1dcff348"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a3af992848a8aa6364033c1cf1dcff348">FCLAW2D_FILE_MAX_FIELD_ENTRY_SIZE</a>&#160;&#160;&#160;((1000L * 1000L * 1000L * 1000L * 10L) - 1L)</td></tr>
+<tr class="memdesc:a3af992848a8aa6364033c1cf1dcff348"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximal data size per field entry <br /></td></tr>
+<tr class="separator:a3af992848a8aa6364033c1cf1dcff348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a26b9ff1378fea2db82558af1f6e234ac"><td class="memItemLeft" align="right" valign="top"><a id="a26b9ff1378fea2db82558af1f6e234ac"></a>
+typedef enum <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0">fclaw2d_file_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a26b9ff1378fea2db82558af1f6e234ac">fclaw2d_file_error_t</a></td></tr>
+<tr class="memdesc:a26b9ff1378fea2db82558af1f6e234ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values for fclaw2d_file functions. <br /></td></tr>
+<tr class="separator:a26b9ff1378fea2db82558af1f6e234ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f48e1ced75f130d6faf7ae545ead0f"><td class="memItemLeft" align="right" valign="top"><a id="a53f48e1ced75f130d6faf7ae545ead0f"></a>
 typedef struct fclaw2d_file_context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a></td></tr>
 <tr class="memdesc:a53f48e1ced75f130d6faf7ae545ead0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque context used for writing a fclaw2d data file. <br /></td></tr>
 <tr class="separator:a53f48e1ced75f130d6faf7ae545ead0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8d935b81e8da2d1ed8655c9cfb8234a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0">fclaw2d_file_error</a> { <br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a4e03f0d29d9dd9302b71ceec90e0b478">FCLAW2D_FILE_ERR_SUCCESS</a> = 0, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0acc85d86d4e5101884b5dd7c78a786092">FCLAW2D_FILE_ERR_FILE</a> = sc_MPI_ERR_LASTCODE, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a16a942ec63d3fa5744258123999abfdf">FCLAW2D_FILE_ERR_NOT_SAME</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a44573007efb45707aa15f2cdf19e52e6">FCLAW2D_FILE_ERR_AMODE</a>, 
+<br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a26262a1c36621b38562b95bc26d7adec">FCLAW2D_FILE_ERR_NO_SUCH_FILE</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0af4307aaed14290cd66f174198ca74222">FCLAW2D_FILE_ERR_FILE_EXIST</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a6cf58890d596ca80e27514c11619a3d2">FCLAW2D_FILE_ERR_BAD_FILE</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a22cd6f18bf2d2e0269c9e4c35a050028">FCLAW2D_FILE_ERR_ACCESS</a>, 
+<br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0adb31f6c9029df56a9e1ada875b221222">FCLAW2D_FILE_ERR_NO_SPACE</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a3c76af7644bacfb82f9ff792b5580a80">FCLAW2D_FILE_ERR_QUOTA</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a4820066ceb578de5d0f8ae11082156a2">FCLAW2D_FILE_ERR_READ_ONLY</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0af46d29d20bd1b96726207bd8f78298a8">FCLAW2D_FILE_ERR_IN_USE</a>, 
+<br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aabdc0d8d3eadfcd560a78c87b7536328">FCLAW2D_FILE_ERR_IO</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aff320870d44016c44d05e67871076d84">FCLAW2D_FILE_ERR_FORMAT</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a8eb5235407fc630a03bcb8bedff82cc3">FCLAW2D_FILE_ERR_SECTION_TYPE</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a44eff7616905b1d3daa2e8aa707135c0">FCLAW2D_FILE_ERR_CONN</a>, 
+<br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a1039d3a1856166233dff15882c6db7cb">FCLAW2D_FILE_ERR_P4EST</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a3ffc7b3f8bda8dc23f7f9837ef2cc72e">FCLAW2D_FILE_ERR_IN_DATA</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aa69316f889515c754e766c7e412981ed">FCLAW2D_FILE_ERR_COUNT</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aa3be5661c12ecf72cf85e9d790d0ad28">FCLAW2D_FILE_ERR_NOT_IMPLEMENTED</a>, 
+<br />
+&#160;&#160;<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aeb80375f350534fc024d7fcf9c5b6703">FCLAW2D_FILE_ERR_UNKNOWN</a>, 
+<a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0ac665afca133303752ae64cd7e671bbc1">FCLAW2D_FILE_ERR_LASTCODE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a8d935b81e8da2d1ed8655c9cfb8234a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error values for fclaw2d_file functions.  <a href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0">More...</a><br /></td></tr>
+<tr class="separator:a8d935b81e8da2d1ed8655c9cfb8234a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac3517dd2a9754ca06d4f2f63c4e95130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">fclaw2d_file_open_write</a> (const char *filename, const char *user_string, <a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *domain, int *errcode)</td></tr>
-<tr class="memdesc:ac3517dd2a9754ca06d4f2f63c4e95130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and open a file that is associated with the given domain structure.  <a href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">More...</a><br /></td></tr>
-<tr class="separator:ac3517dd2a9754ca06d4f2f63c4e95130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d64fd6c78ae8dc697b87c8ae05519d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">fclaw2d_file_open_write</a> (const char *filename, const char *user_string, int write_partition, <a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> *domain, int *errcode)</td></tr>
+<tr class="memdesc:a39d64fd6c78ae8dc697b87c8ae05519d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and open a file that is associated with the given domain structure.  <a href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">More...</a><br /></td></tr>
+<tr class="separator:a39d64fd6c78ae8dc697b87c8ae05519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d3b2d7daed4b2cf4cb220cb3264777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a91d3b2d7daed4b2cf4cb220cb3264777">fclaw2d_file_write_block</a> (<a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *fc, const char *user_string, size_t block_size, sc_array_t *block_data, int *errcode)</td></tr>
 <tr class="memdesc:a91d3b2d7daed4b2cf4cb220cb3264777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a serial data block to an opened parallel file.  <a href="fclaw2d__file_8h.html#a91d3b2d7daed4b2cf4cb220cb3264777">More...</a><br /></td></tr>
 <tr class="separator:a91d3b2d7daed4b2cf4cb220cb3264777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ef8c57c3906499a4f25403d2d3fb8bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a7ef8c57c3906499a4f25403d2d3fb8bb">fclaw2d_file_write_array</a> (<a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *fc, const char *user_string, size_t patch_size, sc_array_t *patch_data, int *errcode)</td></tr>
 <tr class="memdesc:a7ef8c57c3906499a4f25403d2d3fb8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write per-patch data to a parallel output file.  <a href="fclaw2d__file_8h.html#a7ef8c57c3906499a4f25403d2d3fb8bb">More...</a><br /></td></tr>
 <tr class="separator:a7ef8c57c3906499a4f25403d2d3fb8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a8484da73309213023a57d2a1c967e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a96a8484da73309213023a57d2a1c967e">fclaw2d_file_open_read</a> (sc_MPI_Comm mpicomm, const char *filename, char *user_string, <a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> **domain, int *errcode)</td></tr>
-<tr class="memdesc:a96a8484da73309213023a57d2a1c967e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for reading and read the stored domain.  <a href="fclaw2d__file_8h.html#a96a8484da73309213023a57d2a1c967e">More...</a><br /></td></tr>
-<tr class="separator:a96a8484da73309213023a57d2a1c967e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3d6ba3324f5ea7de97afbc867bc6cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#a9c3d6ba3324f5ea7de97afbc867bc6cb">fclaw2d_file_open_read</a> (const char *filename, char *user_string, sc_MPI_Comm mpicomm, int read_partition, <a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> **domain, int *errcode)</td></tr>
+<tr class="memdesc:a9c3d6ba3324f5ea7de97afbc867bc6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for reading and read the stored domain.  <a href="fclaw2d__file_8h.html#a9c3d6ba3324f5ea7de97afbc867bc6cb">More...</a><br /></td></tr>
+<tr class="separator:a9c3d6ba3324f5ea7de97afbc867bc6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa53676e67f849007f1935473b10fc3ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__file_8h.html#aa53676e67f849007f1935473b10fc3ba">fclaw2d_file_read_block</a> (<a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> *fc, char *user_string, size_t block_size, sc_array_t *block_data, int *errcode)</td></tr>
 <tr class="memdesc:aa53676e67f849007f1935473b10fc3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a serial data block from an opened file.  <a href="fclaw2d__file_8h.html#aa53676e67f849007f1935473b10fc3ba">More...</a><br /></td></tr>
 <tr class="separator:aa53676e67f849007f1935473b10fc3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +165,70 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Routines for parallel IO for <a class="el" href="forestclaw2d_8h.html#a3bd7903f195d89f02036f8fb56706b0d">fclaw2d_domain_t</a> and generic data.</p>
 <p>Principle: All files are associated with a single domain, i.e. one can write only one domain to one file. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8d935b81e8da2d1ed8655c9cfb8234a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d935b81e8da2d1ed8655c9cfb8234a0">&#9670;&nbsp;</a></span>fclaw2d_file_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0">fclaw2d_file_error</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error values for fclaw2d_file functions. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a4e03f0d29d9dd9302b71ceec90e0b478"></a>FCLAW2D_FILE_ERR_SUCCESS&#160;</td><td class="fielddoc"><p>file function completed with success </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0acc85d86d4e5101884b5dd7c78a786092"></a>FCLAW2D_FILE_ERR_FILE&#160;</td><td class="fielddoc"><p>invalid file handle </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a16a942ec63d3fa5744258123999abfdf"></a>FCLAW2D_FILE_ERR_NOT_SAME&#160;</td><td class="fielddoc"><p>collective arg not identical </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a44573007efb45707aa15f2cdf19e52e6"></a>FCLAW2D_FILE_ERR_AMODE&#160;</td><td class="fielddoc"><p>access mode error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a26262a1c36621b38562b95bc26d7adec"></a>FCLAW2D_FILE_ERR_NO_SUCH_FILE&#160;</td><td class="fielddoc"><p>file does not exist </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0af4307aaed14290cd66f174198ca74222"></a>FCLAW2D_FILE_ERR_FILE_EXIST&#160;</td><td class="fielddoc"><p>file exists already </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a6cf58890d596ca80e27514c11619a3d2"></a>FCLAW2D_FILE_ERR_BAD_FILE&#160;</td><td class="fielddoc"><p>invalid file name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a22cd6f18bf2d2e0269c9e4c35a050028"></a>FCLAW2D_FILE_ERR_ACCESS&#160;</td><td class="fielddoc"><p>permission denied </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0adb31f6c9029df56a9e1ada875b221222"></a>FCLAW2D_FILE_ERR_NO_SPACE&#160;</td><td class="fielddoc"><p>not enough space </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a3c76af7644bacfb82f9ff792b5580a80"></a>FCLAW2D_FILE_ERR_QUOTA&#160;</td><td class="fielddoc"><p>quota exceeded </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a4820066ceb578de5d0f8ae11082156a2"></a>FCLAW2D_FILE_ERR_READ_ONLY&#160;</td><td class="fielddoc"><p>read only file (system) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0af46d29d20bd1b96726207bd8f78298a8"></a>FCLAW2D_FILE_ERR_IN_USE&#160;</td><td class="fielddoc"><p>file currently open by other process </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0aabdc0d8d3eadfcd560a78c87b7536328"></a>FCLAW2D_FILE_ERR_IO&#160;</td><td class="fielddoc"><p>other I/O error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0aff320870d44016c44d05e67871076d84"></a>FCLAW2D_FILE_ERR_FORMAT&#160;</td><td class="fielddoc"><p>read file has a wrong format </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a8eb5235407fc630a03bcb8bedff82cc3"></a>FCLAW2D_FILE_ERR_SECTION_TYPE&#160;</td><td class="fielddoc"><p>a valid non-matching section type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a44eff7616905b1d3daa2e8aa707135c0"></a>FCLAW2D_FILE_ERR_CONN&#160;</td><td class="fielddoc"><p>invalid serialized connectivity data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a1039d3a1856166233dff15882c6db7cb"></a>FCLAW2D_FILE_ERR_P4EST&#160;</td><td class="fielddoc"><p>invalid p4est data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0a3ffc7b3f8bda8dc23f7f9837ef2cc72e"></a>FCLAW2D_FILE_ERR_IN_DATA&#160;</td><td class="fielddoc"><p>input data of file function is invalid </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0aa69316f889515c754e766c7e412981ed"></a>FCLAW2D_FILE_ERR_COUNT&#160;</td><td class="fielddoc"><p>read or write count error that was not classified as a format error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0aa3be5661c12ecf72cf85e9d790d0ad28"></a>FCLAW2D_FILE_ERR_NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>functionality is not implemented </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0aeb80375f350534fc024d7fcf9c5b6703"></a>FCLAW2D_FILE_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>unknown error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d935b81e8da2d1ed8655c9cfb8234a0ac665afca133303752ae64cd7e671bbc1"></a>FCLAW2D_FILE_ERR_LASTCODE&#160;</td><td class="fielddoc"><p>to define own error codes for a higher level application that is using fclaw2d_file functions </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a4c0a35f90e900a964d6c5ee1d454c5d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c0a35f90e900a964d6c5ee1d454c5d7">&#9670;&nbsp;</a></span>fclaw2d_file_close()</h2>
 
@@ -161,7 +260,7 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">fclaw2d_file_open_write</a> or <a class="el" href="fclaw2d__file_8h.html#a96a8484da73309213023a57d2a1c967e">fclaw2d_file_open_read</a>. Is freed. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">fclaw2d_file_open_write</a> or <a class="el" href="fclaw2d__file_8h.html#a9c3d6ba3324f5ea7de97afbc867bc6cb">fclaw2d_file_open_read</a>. Is freed. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
   </dd>
@@ -205,7 +304,7 @@ Functions</h2></td></tr>
 <p>Turn fclaw2d_file errcode into a string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">errcode</td><td>An errcode that is output by a fclaw_file function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">errcode</td><td>An errcode that is output by a fclaw2d_file function. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">string</td><td>At least sc_MPI_MAX_ERROR_STRING bytes. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">resultlen</td><td>Length of string on return. </td></tr>
   </table>
@@ -215,8 +314,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a96a8484da73309213023a57d2a1c967e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96a8484da73309213023a57d2a1c967e">&#9670;&nbsp;</a></span>fclaw2d_file_open_read()</h2>
+<a id="a9c3d6ba3324f5ea7de97afbc867bc6cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3d6ba3324f5ea7de97afbc867bc6cb">&#9670;&nbsp;</a></span>fclaw2d_file_open_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,12 +323,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a>* fclaw2d_file_open_read </td>
           <td>(</td>
-          <td class="paramtype">sc_MPI_Comm&#160;</td>
-          <td class="paramname"><em>mpicomm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
@@ -238,6 +331,18 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>user_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>mpicomm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>read_partition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -260,15 +365,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Open a file for reading and read the stored domain. </p>
-<p>The user string is broadcasted to all ranks after reading on rank 0. The file must exist and be at least of the size of the file header.</p>
-<p>This is a collective function. If the file has wrong metadata the function reports the error using /ref P4EST_LERRORF, collectively close the file and deallocate the file context. In this case the function returns NULL on all ranks. The wrong file format or a wrong file header causes P4EST_FILE_ERR_FORMAT as errcode.</p>
-<p>After calling this function the user can continue reading the opened file by calling <a class="el" href="fclaw2d__file_8h.html#aa53676e67f849007f1935473b10fc3ba">fclaw2d_file_read_block</a>, <a class="el" href="fclaw2d__file_8h.html#afdcbfcdfd0b39e5d1e409e5144a27211">fclaw2d_file_read_array</a> and functions in other files operating on <a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a>.</p>
+<p>The user string is broadcasted to all ranks after reading. The file must exist and be at least of the size of the file header.</p>
+<p>This is a collective function. If the file has wrong metadata the function reports the error using <a class="el" href="fclaw__base_8h.html#a13211276debd076812aec1fd1275d01a">fclaw_errorf</a>, collectively closes the file and deallocates the file context. In this case the function returns NULL on all ranks. The wrong file format or a wrong file header causes <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aff320870d44016c44d05e67871076d84">FCLAW2D_FILE_ERR_FORMAT</a> as errcode.</p>
+<p>After calling this function the user can continue reading the opened file by calling <a class="el" href="fclaw2d__file_8h.html#aa53676e67f849007f1935473b10fc3ba">fclaw2d_file_read_block</a>, <a class="el" href="fclaw2d__file_8h.html#afdcbfcdfd0b39e5d1e409e5144a27211">fclaw2d_file_read_array</a> and potentially other functions operating on <a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> that may be implemented on the top of the current fclaw2d_file routines.</p>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path to the base name file that is opened. This means that the user shall not pass the file extension since the extension ('f2d') is added by fclaw2d_file. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw2d__file_8h.html#a64d7a175823b5e696bddca215a450479">FCLAW2D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mpicomm</td><td>MPI communicator that is used to read the file and is used for potential other reading operations of MPI communicator dependent objects. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path to the file that is opened. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least FCLAW2D_FILE_USER_STRING_BYTES bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_partition</td><td>A Boolean to decide if the partition is read from file. If the partition is read, it is used for the parallel I/O operations and stored in the returned <b>domain</b>. If the MPI size and the partition size do not coincide a partition for the current MPI size is computed. For <b>read_partition</b> false a uniform partition with respect to the quadrant count is computed and used. The function call results in an error if there is no partition to read. Currently, this flag does not have any effect. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">domain</td><td>Newly allocated domain that is read from the file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
@@ -278,8 +384,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3517dd2a9754ca06d4f2f63c4e95130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3517dd2a9754ca06d4f2f63c4e95130">&#9670;&nbsp;</a></span>fclaw2d_file_open_write()</h2>
+<a id="a39d64fd6c78ae8dc697b87c8ae05519d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d64fd6c78ae8dc697b87c8ae05519d">&#9670;&nbsp;</a></span>fclaw2d_file_open_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,6 +401,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>user_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>write_partition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -318,12 +430,13 @@ Functions</h2></td></tr>
 
 <p>Create and open a file that is associated with the given domain structure. </p>
 <p>This is a collective function call that overwrites the file if it exists already. This function writes a header with metadata of the underlying p4est of the passed <b>domain</b> to the file. In addition, the passed <b>domain</b> is written to the file.</p>
-<p>The opened file can be used to write to the file using the functions <a class="el" href="fclaw2d__file_8h.html#a91d3b2d7daed4b2cf4cb220cb3264777">fclaw2d_file_write_block</a>, <a class="el" href="fclaw2d__file_8h.html#a7ef8c57c3906499a4f25403d2d3fb8bb">fclaw2d_file_write_array</a> and functions in other files operating on <a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a>.</p>
+<p>The opened file can be used to write to the file using the functions <a class="el" href="fclaw2d__file_8h.html#a91d3b2d7daed4b2cf4cb220cb3264777">fclaw2d_file_write_block</a>, <a class="el" href="fclaw2d__file_8h.html#a7ef8c57c3906499a4f25403d2d3fb8bb">fclaw2d_file_write_array</a> and potentially other functions operating on <a class="el" href="fclaw2d__file_8h.html#a53f48e1ced75f130d6faf7ae545ead0f">fclaw2d_file_context_t</a> that may be implemented on the top of the current fclaw2d_file routines.</p>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Path to parallel file that is to be created. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A user string that is written to the file header. Only FCLAW2D_FILE_USER_STRING_BYTES bytes without NUL-termination are written to the file. If the user gives less bytes the user_string in the file header is padded by spaces. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Path to parallel file base name that is to be created. This means that the user shall not pass the file extension since the file extension is specified by fclaw2d_file to '.f2d'. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A NUL-terminated user string that is written to the file header having FCLAW2D_FILE_USER_STRING_BYTES bytes including the NUL-termination. Shorter user strings are padded by spaces in the file header. Too long user strings result in an error with the error code <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a3ffc7b3f8bda8dc23f7f9837ef2cc72e">FCLAW2D_FILE_ERR_IN_DATA</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">write_partition</td><td>A Boolean to decide whether the partition is written to disk. The filename of the partition file is derived from the given filename. Currently, this flag does not have any effect. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>The underlying p4est is used for the metadata of the the created file and the <b>domain</b> is written to the file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
@@ -383,8 +496,8 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a96a8484da73309213023a57d2a1c967e">fclaw2d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least FCLAW2D_FILE_USER_STRING_BYTES bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a9c3d6ba3324f5ea7de97afbc867bc6cb">fclaw2d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw2d__file_8h.html#a64d7a175823b5e696bddca215a450479">FCLAW2D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patch_size</td><td>The number of bytes per patch. This number must coincide with <b>patch_data-&gt;elem_size</b>. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">patch_data</td><td>An array of the length number of local patches with the element size equal to sizeof (sc_array_t). This means each element of <b>patch_data</b> must be a sc_array. These sc_arrays must have an element size of <b>patch_size</b>. This memory layout enables the user to read by indirect addressing, i.e. to read into non-contigous patch data. The patch data is read according to the Morton order of the patches. <b>patch_size</b> must coincide with the section data size in the file. <b>patch_data</b> == NULL means that the data is skipped and the internal file pointer is incremented. In the case of skipping <b>patch_size</b> is still checked using the corresponding value read from the file. The data is read using the partition of patches given by the domain that is associated to <b>fc</b>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
@@ -441,15 +554,15 @@ Functions</h2></td></tr>
 
 <p>Read a serial data block from an opened file. </p>
 <p>This is a collective function.</p>
-<p>This function requires an opened file context. The data block and its metadata is read on rank 0.</p>
-<p>The passed <b>block_size</b> is compared to the block size stored in the file. If the values do not equal each other, the function reports details closes and deallocate the file context. The return value in this case is NULL. If the data block section header information is not matching the passed parameters the function sets FCLAW2D_FILE_ERR_FORMAT for errcode.</p>
+<p>This function requires an opened file context.</p>
+<p>The passed <b>block_size</b> is compared to the block size stored in the file. If the values do not equal each other, the function reports details, closes and deallocates the file context. The return value in this case is NULL. If the data block section header information is not matching the passed parameters the function sets <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aff320870d44016c44d05e67871076d84">FCLAW2D_FILE_ERR_FORMAT</a> for errcode.</p>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a96a8484da73309213023a57d2a1c967e">fclaw2d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least FCLAW2D_FILE_USER_STRING_BYTES bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a9c3d6ba3324f5ea7de97afbc867bc6cb">fclaw2d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw2d__file_8h.html#a64d7a175823b5e696bddca215a450479">FCLAW2D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The size of the header that is read. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">block_data</td><td><b>block_size</b> allocated bytes in an sc_array with one element and <b>block_size</b> as element size. This data will be filled with the block data from the file. If this is NULL it means that the current header block is skipped and the internal file pointer of the file context is set to the next data section. If the current data section is not a data block, the file is closed and the file context is deallocated. Furthermore, in this case the function returns NULL and sets errcode to FCLAW2D_FILE_ERR_FORMAT. In case of skipping the data block section <b>block_size</b> needs also to coincide with the data block size given in the file. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">block_data</td><td><b>block_size</b> allocated bytes in an sc_array with one element and <b>block_size</b> as element size. This data will be filled with the block data from the file. If this is NULL it means that the current header block is skipped and the internal file pointer of the file context is set to the next data section. If the current data section is not a data block, the file is closed and the file context is deallocated. Furthermore, in this case the function returns NULL and sets errcode to <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0aff320870d44016c44d05e67871076d84">FCLAW2D_FILE_ERR_FORMAT</a>. In case of skipping the data block section <b>block_size</b> needs also to coincide with the data block size given in the file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
   </dd>
@@ -503,15 +616,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write per-patch data to a parallel output file. </p>
-<p>This is a collective function. This function writes the per-patch data with respect the domain that was passed to the <a class="el" href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">fclaw2d_file_open_write</a> for opening the file.</p>
+<p>This is a collective function. This function writes the per-patch data with respect the domain that was passed to the <a class="el" href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">fclaw2d_file_open_write</a> for opening the file.</p>
 <p>The per-patch data is written in parallel according to the partition of the domain and the underlying p4est, respectively. The data size per patch must be fixed.</p>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">fclaw2d_file_open_write</a>. It keeps track of the data sets written one after another. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A user string that is written to the file. Only FCLAW2D_FILE_USER_STRING_BYTES bytes without NUL-termination are written to the file. If the user gives less bytes the user_string in the file header is padded by spaces. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">fclaw2d_file_open_write</a>. It keeps track of the data sets written one after another. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A NUL-terminated user string that is written to the section header having FCLAW2D_FILE_USER_STRING_BYTES bytes including the NUL-termination. Shorter user strings are padded by spaces in the section header. Too long user strings result in an error with the error code <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a3ffc7b3f8bda8dc23f7f9837ef2cc72e">FCLAW2D_FILE_ERR_IN_DATA</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patch_size</td><td>The number of bytes per patch. This number must coincide with <b>patch_data-&gt;elem_size</b>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">patch_data</td><td>An array of the length number of local patches with the element size equal to sizeof (sc_array_t). This means each element of <b>patch_data</b> must be a sc_array. These sc_arrays must have an element size of <b>patch_size</b> and store the actual patch data. This memory layout enables the user to write by indirect addressing, i.e. to write non-contigous patch data. The patch data is expected to be stored according to the Morton order of the patches. For <b>patch_size</b> == 0 the function writes an empty array. The section header and the padding is still written. In this case errcode is set to FCLAW2D_FILE_ERR_SUCCESS. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch_data</td><td>An array of the length number of local patches with the element size equal to sizeof (sc_array_t). This means each element of <b>patch_data</b> must be a sc_array. These sc_arrays must have an element size of <b>patch_size</b> and store the actual patch data. This memory layout enables the user to write by indirect addressing, i.e. to write non-contigous patch data. The patch data is expected to be stored according to the Morton order of the patches. For <b>patch_size</b> == 0 the function writes an empty array. The section header and the padding is still written. In this case the function passes successfully and <b>errcode</b> is set to <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a4e03f0d29d9dd9302b71ceec90e0b478">FCLAW2D_FILE_ERR_SUCCESS</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
   </dd>
@@ -566,13 +679,13 @@ Functions</h2></td></tr>
 
 <p>Write a serial data block to an opened parallel file. </p>
 <p>This is a collective function. This function writes a serial data block to the opened file.</p>
-<p>The block data and its metadata is written on rank 0. The number of block bytes must be less or equal FCLAW2D_FILE_MAX_BLOCK_SIZE.</p>
+<p>The number of block bytes must be less or equal <a class="el" href="fclaw2d__file_8h.html#af69e39a0c904dab4550363c5aed48e77">FCLAW2D_FILE_MAX_BLOCK_SIZE</a>.</p>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#ac3517dd2a9754ca06d4f2f63c4e95130">fclaw2d_file_open_write</a>. It keeps track of the data sets written one after another. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A user string that is written to the file. Only FCLAW2D_FILE_USER_STRING_BYTES bytes without NUL-termination are written to the file. If the user gives less bytes the user_string in the file header is padded by spaces. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The size of the block in bytes. May be equal to 0. In this case the section header and the padding is still written. This function returns the passed <b>fc</b> parameter and sets errcode to FCLAW2D_FILE_ERR_SUCCESS if it is called for <b>block_size</b> == 0. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw2d__file_8h.html#a39d64fd6c78ae8dc697b87c8ae05519d">fclaw2d_file_open_write</a>. It keeps track of the data sets written one after another. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A NUL-terminated user string that is written to the section header having FCLAW2D_FILE_USER_STRING_BYTES bytes including the NUL-termination. Shorter user strings are padded by spaces in the section header. Too long user strings result in an error with the error code <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a3ffc7b3f8bda8dc23f7f9837ef2cc72e">FCLAW2D_FILE_ERR_IN_DATA</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The size of the block in bytes. May be equal to 0. In this case the section header and the padding is still written. This function returns the passed <b>fc</b> parameter and sets errcode to <a class="el" href="fclaw2d__file_8h.html#a8d935b81e8da2d1ed8655c9cfb8234a0a4e03f0d29d9dd9302b71ceec90e0b478">FCLAW2D_FILE_ERR_SUCCESS</a> if it is called for <b>block_size</b> == 0. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block_data</td><td>A sc_array with one element and element size equal to <b>block_size</b>. The array points to the block data. The user is responsible for the validality of the block data. block_data can be NULL if <b>block_size</b> == 0. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw2d__file_8h.html#a9d92f8d8d5d9b39822dea4d55ef9cdbd">fclaw2d_file_error_string</a>. </td></tr>
   </table>
