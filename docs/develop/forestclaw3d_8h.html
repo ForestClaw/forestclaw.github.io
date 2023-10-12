@@ -338,9 +338,12 @@ Indirect Parallel Neighbors</h2></td></tr>
 <tr class="memitem:a3668820c5ce03b7949fe1133a82d8493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a3668820c5ce03b7949fe1133a82d8493">fclaw3d_domain_indirect_end</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *ind)</td></tr>
 <tr class="memdesc:a3668820c5ce03b7949fe1133a82d8493"><td class="mdescLeft">&#160;</td><td class="mdescRight">End sending messages to determine neighbors of ghost patches.  <a href="forestclaw3d_8h.html#a3668820c5ce03b7949fe1133a82d8493">More...</a><br /></td></tr>
 <tr class="separator:a3668820c5ce03b7949fe1133a82d8493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c9ca386bbdcc02e3cf947fd6246ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#ad5c9ca386bbdcc02e3cf947fd6246ecd">fclaw3d_domain_indirect_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *ind, int ghostno, int faceno, int rproc[4], int *rblockno, int rpatchno[4], int *rfaceno)</td></tr>
-<tr class="memdesc:ad5c9ca386bbdcc02e3cf947fd6246ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this analogously to fclaw3d_domain_face_neighbors.  <a href="forestclaw3d_8h.html#ad5c9ca386bbdcc02e3cf947fd6246ecd">More...</a><br /></td></tr>
-<tr class="separator:ad5c9ca386bbdcc02e3cf947fd6246ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53dcd09483539274459936a3491e605"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#af53dcd09483539274459936a3491e605">fclaw3d_domain_indirect_face_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *ind, int ghostno, int faceno, int rproc[4], int *rblockno, int rpatchno[4], int *rfaceno)</td></tr>
+<tr class="memdesc:af53dcd09483539274459936a3491e605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this analogously to <a class="el" href="forestclaw3d_8h.html#ad0627be8e5090b99c487354e4ae2e7eb">fclaw3d_patch_face_neighbors</a>.  <a href="forestclaw3d_8h.html#af53dcd09483539274459936a3491e605">More...</a><br /></td></tr>
+<tr class="separator:af53dcd09483539274459936a3491e605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78e3594db72e79d0e5d5a5ff624c5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#ad78e3594db72e79d0e5d5a5ff624c5bd">fclaw3d_domain_indirect_corner_neighbor</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *ind, int ghostno, int cornerno, int *rproc, int *rblockno, int *rpatchno, int *rcornerno)</td></tr>
+<tr class="memdesc:ad78e3594db72e79d0e5d5a5ff624c5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this analogously to <a class="el" href="forestclaw3d_8h.html#a8b5c6a52789aa179658ad03ee7f72c8d">fclaw3d_patch_corner_neighbors</a>.  <a href="forestclaw3d_8h.html#ad78e3594db72e79d0e5d5a5ff624c5bd">More...</a><br /></td></tr>
+<tr class="separator:ad78e3594db72e79d0e5d5a5ff624c5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6359e691f86f0fb6e47a95f3550f39db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a6359e691f86f0fb6e47a95f3550f39db">fclaw3d_domain_indirect_destroy</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *ind)</td></tr>
 <tr class="memdesc:a6359e691f86f0fb6e47a95f3550f39db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy all context data for indirect ghost neighbor patches.  <a href="forestclaw3d_8h.html#a6359e691f86f0fb6e47a95f3550f39db">More...</a><br /></td></tr>
 <tr class="separator:a6359e691f86f0fb6e47a95f3550f39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1035,6 +1038,86 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
+<a id="ad78e3594db72e79d0e5d5a5ff624c5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78e3594db72e79d0e5d5a5ff624c5bd">&#9670;&nbsp;</a></span>fclaw3d_domain_indirect_corner_neighbor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> fclaw3d_domain_indirect_corner_neighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a41426e838b0171f39085031ad8d843c8">fclaw3d_domain_indirect_t</a> *&#160;</td>
+          <td class="paramname"><em>ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ghostno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cornerno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rproc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rblockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rpatchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>rcornerno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this analogously to <a class="el" href="forestclaw3d_8h.html#a8b5c6a52789aa179658ad03ee7f72c8d">fclaw3d_patch_corner_neighbors</a>. </p>
+<p>Return an indirect corner neighbor patch: It is defined as a ghost patch that is corner neighbor to the calling ghost patch and belongs to a process that is neither the owner of that ghost patch nor our own process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Must be the same domain used in begin and end. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>Must have been initialized by <a class="el" href="forestclaw3d_8h.html#a3668820c5ce03b7949fe1133a82d8493">fclaw3d_domain_indirect_end</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ghostno</td><td>Number of the ghost patch whose neighbor we seek. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cornerno</td><td>Number of the ghost patch's corner to look across. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rproc</td><td>Processor number of neighbor patch. Exception: For non-indirect patches, set it to -1. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rblockno</td><td>The number of the neighbor block. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Only for indirect ghost patches, we store the number relative to our ghost patch array. For all other patches, this is -1. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rcornerno</td><td>The corner number of the neighbor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Only for indirect ghost patches, the size of the neighbor. For all others, we set this to <a class="el" href="forestclaw2d_8h.html#ad168236647aee6aac7e0fd77173a77d2a12d0015136e82f61e79b827b60386753">FCLAW2D_PATCH_BOUNDARY</a>. </dd></dl>
+
+</div>
+</div>
 <a id="a6359e691f86f0fb6e47a95f3550f39db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6359e691f86f0fb6e47a95f3550f39db">&#9670;&nbsp;</a></span>fclaw3d_domain_indirect_destroy()</h2>
 
@@ -1099,7 +1182,7 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>End sending messages to determine neighbors of ghost patches. </p>
-<p>This call must not be interleaved with any ghost_exchange calls. When this function returns, the necessary information is complete and <a class="el" href="forestclaw3d_8h.html#ad5c9ca386bbdcc02e3cf947fd6246ecd">fclaw3d_domain_indirect_neighbors</a> may be called any number of times. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This call must not be interleaved with any ghost_exchange calls. When this function returns, the necessary information is complete and fclaw3d_domain_indirect_face neighbors and <a class="el" href="forestclaw3d_8h.html#ad78e3594db72e79d0e5d5a5ff624c5bd">fclaw3d_domain_indirect_corner_neighbor</a> may be called any number of times. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Must be the same domain used in the begin call. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">ind</td><td>Must be returned by an earlier call to <a class="el" href="forestclaw3d_8h.html#a7f5ca0f5110f115c862217d684faa3e8">fclaw3d_domain_indirect_begin</a> and will be completed with parallel information. </td></tr>
@@ -1109,14 +1192,14 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5c9ca386bbdcc02e3cf947fd6246ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c9ca386bbdcc02e3cf947fd6246ecd">&#9670;&nbsp;</a></span>fclaw3d_domain_indirect_neighbors()</h2>
+<a id="af53dcd09483539274459936a3491e605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53dcd09483539274459936a3491e605">&#9670;&nbsp;</a></span>fclaw3d_domain_indirect_face_neighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> fclaw3d_domain_indirect_neighbors </td>
+          <td class="memname"><a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> fclaw3d_domain_indirect_face_neighbors </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
           <td class="paramname"><em>domain</em>, </td>
@@ -1171,7 +1254,7 @@ Meta Domains</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Call this analogously to fclaw3d_domain_face_neighbors. </p>
+<p>Call this analogously to <a class="el" href="forestclaw3d_8h.html#ad0627be8e5090b99c487354e4ae2e7eb">fclaw3d_patch_face_neighbors</a>. </p>
 <p>We only return an indirect ghost neighbor patch: This is defined as a ghost patch that is neighbor to the calling ghost patch and belongs to a processor that is neither the owner of that ghost patch nor our own processor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Must be the same domain used in begin and end. </td></tr>
@@ -1181,7 +1264,7 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rproc</td><td>Processor number of neighbor patches. Exception 1: If the neighbor is a bigger patch, rproc[1] contains the number of the small patch as one of four half faces, but only if the neighbor fits the above criteria. Exception 2: For non-indirect patches, set it to -1. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rblockno</td><td>The number of the neighbor block. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Only for indirect ghost patches, we store the number relative to our ghost patch array. For all other patches, this is -1. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">faceno</td><td>The face number and orientation of the neighbor(s). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rfaceno</td><td>The face number and orientation of the neighbor(s). </td></tr>
   </table>
   </dd>
 </dl>
