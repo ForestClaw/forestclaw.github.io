@@ -89,9 +89,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8a4a5535c7496e0bb7a8ad7bb1b369fe"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a8a4a5535c7496e0bb7a8ad7bb1b369fe">fclaw2d_output_frame_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, int iframe)</td></tr>
 <tr class="memdesc:a8a4a5535c7496e0bb7a8ad7bb1b369fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up common blocks in Fortran.  <a href="fclaw2d__vtable_8h.html#a8a4a5535c7496e0bb7a8ad7bb1b369fe">More...</a><br /></td></tr>
 <tr class="separator:a8a4a5535c7496e0bb7a8ad7bb1b369fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a368ebf312a244332e0219816acc55827"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a368ebf312a244332e0219816acc55827">fclaw2d_after_regrid_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td></tr>
-<tr class="memdesc:a368ebf312a244332e0219816acc55827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after each regridding.  <a href="fclaw2d__vtable_8h.html#a368ebf312a244332e0219816acc55827">More...</a><br /></td></tr>
-<tr class="separator:a368ebf312a244332e0219816acc55827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2578a486c539454f9e0388916b033034"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a2578a486c539454f9e0388916b033034">fclaw2d_after_regrid_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, int have_new_refinement)</td></tr>
+<tr class="memdesc:a2578a486c539454f9e0388916b033034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after each regridding.  <a href="fclaw2d__vtable_8h.html#a2578a486c539454f9e0388916b033034">More...</a><br /></td></tr>
+<tr class="separator:a2578a486c539454f9e0388916b033034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f8c4cc346e4f5bd536e179df67697e"><td class="memItemLeft" align="right" valign="top"><a id="a89f8c4cc346e4f5bd536e179df67697e"></a>
 typedef struct <a class="el" href="structfclaw2d__vtable.html">fclaw2d_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a89f8c4cc346e4f5bd536e179df67697e">fclaw2d_vtable_t</a></td></tr>
 <tr class="memdesc:a89f8c4cc346e4f5bd536e179df67697e"><td class="mdescLeft">&#160;</td><td class="mdescRight">vtable for general ForestClaw functions <br /></td></tr>
@@ -105,21 +105,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a0148244cd99ccdf2a3a97a772b364ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a0148244cd99ccdf2a3a97a772b364ffc">fclaw2d_vtable_initialize</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td></tr>
 <tr class="memdesc:a0148244cd99ccdf2a3a97a772b364ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize fclaw2d vtable.  <a href="fclaw2d__vtable_8h.html#a0148244cd99ccdf2a3a97a772b364ffc">More...</a><br /></td></tr>
 <tr class="separator:a0148244cd99ccdf2a3a97a772b364ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5488c7901849a93ae8801a93e0c65c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#af5488c7901849a93ae8801a93e0c65c9">fclaw2d_after_regrid</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td></tr>
-<tr class="memdesc:af5488c7901849a93ae8801a93e0c65c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after each regridding.  <a href="fclaw2d__vtable_8h.html#af5488c7901849a93ae8801a93e0c65c9">More...</a><br /></td></tr>
-<tr class="separator:af5488c7901849a93ae8801a93e0c65c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd5feb84b408ee47ed9cbac5fda9d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__vtable_8h.html#a4fd5feb84b408ee47ed9cbac5fda9d68">fclaw2d_after_regrid</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, int have_new_refinement)</td></tr>
+<tr class="memdesc:a4fd5feb84b408ee47ed9cbac5fda9d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after each regridding.  <a href="fclaw2d__vtable_8h.html#a4fd5feb84b408ee47ed9cbac5fda9d68">More...</a><br /></td></tr>
+<tr class="separator:a4fd5feb84b408ee47ed9cbac5fda9d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ForestClaw vtable. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a368ebf312a244332e0219816acc55827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a368ebf312a244332e0219816acc55827">&#9670;&nbsp;</a></span>fclaw2d_after_regrid_t</h2>
+<a id="a2578a486c539454f9e0388916b033034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2578a486c539454f9e0388916b033034">&#9670;&nbsp;</a></span>fclaw2d_after_regrid_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw2d_after_regrid_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td>
+          <td class="memname">typedef void(* fclaw2d_after_regrid_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, int have_new_refinement)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -128,6 +128,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">have_new_refinement</td><td>true if there is a new refinement </td></tr>
   </table>
   </dd>
 </dl>
@@ -180,8 +181,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af5488c7901849a93ae8801a93e0c65c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5488c7901849a93ae8801a93e0c65c9">&#9670;&nbsp;</a></span>fclaw2d_after_regrid()</h2>
+<a id="a4fd5feb84b408ee47ed9cbac5fda9d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd5feb84b408ee47ed9cbac5fda9d68">&#9670;&nbsp;</a></span>fclaw2d_after_regrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,8 +191,18 @@ Functions</h2></td></tr>
           <td class="memname">void fclaw2d_after_regrid </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
-          <td class="paramname"><em>glob</em></td><td>)</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>have_new_refinement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,6 +211,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">have_new_refinement</td><td>true if there is a new refinement </td></tr>
   </table>
   </dd>
 </dl>
