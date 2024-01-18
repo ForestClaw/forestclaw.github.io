@@ -83,9 +83,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6e1cc9c84ec54494ec18ca0b384f075a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a6e1cc9c84ec54494ec18ca0b384f075a">fclaw3dx_vtk_write_file</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, const char *basename, int mx, int my, int mz, int meqn, double vtkspace, int vtkwrite, <a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a9cd41312e526ec30a96b3144d0f527ab">fclaw3dx_vtk_patch_data_t</a> coordinate_cb, <a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a9cd41312e526ec30a96b3144d0f527ab">fclaw3dx_vtk_patch_data_t</a> value_cb)</td></tr>
-<tr class="memdesc:a6e1cc9c84ec54494ec18ca0b384f075a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a file in VTK format for the whole domain in parallel.  <a href="fclaw3dx__clawpatch__output__vtk_8h.html#a6e1cc9c84ec54494ec18ca0b384f075a">More...</a><br /></td></tr>
-<tr class="separator:a6e1cc9c84ec54494ec18ca0b384f075a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade24dfc38a2a73114bbc6512dea10c78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#ade24dfc38a2a73114bbc6512dea10c78">fclaw3dx_vtk_write_file</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, const char *basename, int mx, int my, int mz, int meqn, double vtkspace, int vtkwrite, <a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a9cd41312e526ec30a96b3144d0f527ab">fclaw3dx_vtk_patch_data_t</a> coordinate_cb, <a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a9cd41312e526ec30a96b3144d0f527ab">fclaw3dx_vtk_patch_data_t</a> value_cb, int patch_threshold)</td></tr>
+<tr class="memdesc:ade24dfc38a2a73114bbc6512dea10c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a file in VTK format for the whole domain in parallel.  <a href="fclaw3dx__clawpatch__output__vtk_8h.html#ade24dfc38a2a73114bbc6512dea10c78">More...</a><br /></td></tr>
+<tr class="separator:ade24dfc38a2a73114bbc6512dea10c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5700839d5fe103b1202f8f31feea657d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a5700839d5fe103b1202f8f31feea657d">fclaw3dx_clawpatch_output_vtk</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, int iframe)</td></tr>
 <tr class="memdesc:a5700839d5fe103b1202f8f31feea657d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output vtu file.  <a href="fclaw3dx__clawpatch__output__vtk_8h.html#a5700839d5fe103b1202f8f31feea657d">More...</a><br /></td></tr>
 <tr class="separator:a5700839d5fe103b1202f8f31feea657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +157,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e1cc9c84ec54494ec18ca0b384f075a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e1cc9c84ec54494ec18ca0b384f075a">&#9670;&nbsp;</a></span>fclaw3dx_vtk_write_file()</h2>
+<a id="ade24dfc38a2a73114bbc6512dea10c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade24dfc38a2a73114bbc6512dea10c78">&#9670;&nbsp;</a></span>fclaw3dx_vtk_write_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +221,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="fclaw3dx__clawpatch__output__vtk_8h.html#a9cd41312e526ec30a96b3144d0f527ab">fclaw3dx_vtk_patch_data_t</a>&#160;</td>
-          <td class="paramname"><em>value_cb</em>&#160;</td>
+          <td class="paramname"><em>value_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patch_threshold</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -242,6 +248,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vtkwrite</td><td>Mode of writing: (unused; uses 1 by default) 0 for MPI_File_write_all (faster), 1 for MPI_File_write (less memory usage). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coordniate_cb</td><td>the callback to write a patch's coordinate binary data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">value_cb</td><td>the callback to write a patch's value binary data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch_threshold</td><td>The maximal number of buffered patches. 0 means that an unlimited number of patches is buffered and flushed to disk at the end. </td></tr>
   </table>
   </dd>
 </dl>

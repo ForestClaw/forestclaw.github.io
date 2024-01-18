@@ -113,33 +113,34 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                          <span class="keywordtype">int</span> this_block_idx, <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                          <span class="keywordtype">char</span> *a);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#af465e3567bf624b599a28c7aee73949d">fclaw2d_vtk_write_file</a> (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> * glob, <span class="keyword">const</span> <span class="keywordtype">char</span> *basename,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <span class="keywordtype">int</span> mx, <span class="keywordtype">int</span> my,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;#<span class="keywordflow">if</span> FCLAW2D_PATCHDIM == 3</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        <span class="keywordtype">int</span> mz,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;#endif</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        <span class="keywordtype">int</span> meqn,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        <span class="keywordtype">double</span> vtkspace, <span class="keywordtype">int</span> vtkwrite,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#ac153da8da83c41490f788a7102493297">fclaw2d_vtk_patch_data_t</a> coordinate_cb,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#ac153da8da83c41490f788a7102493297">fclaw2d_vtk_patch_data_t</a> value_cb);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#abef90f303844ead5fb07650a5ee7c513">fclaw2d_clawpatch_output_vtk</a> (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, <span class="keywordtype">int</span> iframe);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{                               <span class="comment">/* need this because indent is dumb */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FCLAW2D_VTK_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#a3a6e38092e66290d6baaea94fdd9d4d0">fclaw2d_vtk_write_file</a> (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> * glob, <span class="keyword">const</span> <span class="keywordtype">char</span> *basename,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        <span class="keywordtype">int</span> mx, <span class="keywordtype">int</span> my,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;#<span class="keywordflow">if</span> FCLAW2D_PATCHDIM == 3</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        <span class="keywordtype">int</span> mz,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;#endif</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        <span class="keywordtype">int</span> meqn,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        <span class="keywordtype">double</span> vtkspace, <span class="keywordtype">int</span> vtkwrite,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#ac153da8da83c41490f788a7102493297">fclaw2d_vtk_patch_data_t</a> coordinate_cb,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                        <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#ac153da8da83c41490f788a7102493297">fclaw2d_vtk_patch_data_t</a> value_cb,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="keywordtype">int</span> patch_threshold);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fclaw2d__clawpatch__output__vtk_8h.html#abef90f303844ead5fb07650a5ee7c513">fclaw2d_clawpatch_output_vtk</a> (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, <span class="keywordtype">int</span> iframe);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{                               <span class="comment">/* need this because indent is dumb */</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FCLAW2D_VTK_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="afclaw2d__clawpatch__output__vtk_8h_html_abef90f303844ead5fb07650a5ee7c513"><div class="ttname"><a href="fclaw2d__clawpatch__output__vtk_8h.html#abef90f303844ead5fb07650a5ee7c513">fclaw2d_clawpatch_output_vtk</a></div><div class="ttdeci">void fclaw2d_clawpatch_output_vtk(struct fclaw2d_global *glob, int iframe)</div><div class="ttdoc">Output vtu file.</div></div>
 <div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
-<div class="ttc" id="afclaw2d__clawpatch__output__vtk_8h_html_af465e3567bf624b599a28c7aee73949d"><div class="ttname"><a href="fclaw2d__clawpatch__output__vtk_8h.html#af465e3567bf624b599a28c7aee73949d">fclaw2d_vtk_write_file</a></div><div class="ttdeci">int fclaw2d_vtk_write_file(struct fclaw2d_global *glob, const char *basename, int mx, int my, int meqn, double vtkspace, int vtkwrite, fclaw2d_vtk_patch_data_t coordinate_cb, fclaw2d_vtk_patch_data_t value_cb)</div><div class="ttdoc">Write a file in VTK format for the whole domain in parallel.</div></div>
 <div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__output__vtk_8h_html_a3a6e38092e66290d6baaea94fdd9d4d0"><div class="ttname"><a href="fclaw2d__clawpatch__output__vtk_8h.html#a3a6e38092e66290d6baaea94fdd9d4d0">fclaw2d_vtk_write_file</a></div><div class="ttdeci">int fclaw2d_vtk_write_file(struct fclaw2d_global *glob, const char *basename, int mx, int my, int meqn, double vtkspace, int vtkwrite, fclaw2d_vtk_patch_data_t coordinate_cb, fclaw2d_vtk_patch_data_t value_cb, int patch_threshold)</div><div class="ttdoc">Write a file in VTK format for the whole domain in parallel.</div></div>
 <div class="ttc" id="afclaw2d__clawpatch__output__vtk_8h_html_ac153da8da83c41490f788a7102493297"><div class="ttname"><a href="fclaw2d__clawpatch__output__vtk_8h.html#ac153da8da83c41490f788a7102493297">fclaw2d_vtk_patch_data_t</a></div><div class="ttdeci">void(* fclaw2d_vtk_patch_data_t)(struct fclaw2d_global *glob, struct fclaw2d_patch *this_patch, int this_block_idx, int this_patch_idx, char *a)</div><div class="ttdoc">Callback to access/compute patch data for visualization.</div><div class="ttdef"><b>Definition:</b> fclaw2d_clawpatch_output_vtk.h:58</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
