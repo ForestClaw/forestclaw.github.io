@@ -244,9 +244,9 @@ typedef enum <a class="el" href="forestclaw3d_8h.html#ae60c1ef0c79a8f9373dd914c1
 <tr class="memitem:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a5ca37a35d7bb36f0162d089a8c2caa86">fclaw3d_patch_transform_face2</a> (<a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *ipatch, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *opatch, const int ftransform[], int mx, int my, int mz, int based, int i[], int j[], int k[])</td></tr>
 <tr class="memdesc:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a patch coordinate into a neighbor patch's coordinate system.  <a href="forestclaw3d_8h.html#a5ca37a35d7bb36f0162d089a8c2caa86">More...</a><br /></td></tr>
 <tr class="separator:a5ca37a35d7bb36f0162d089a8c2caa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b7781a49ab880fe48e98602f05cc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a97b7781a49ab880fe48e98602f05cc6a">fclaw3d_patch_edge_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int blockno, int patchno, int edgeno, int *rproc, int *rblockno, int *rpatchno, int *redge, <a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> *neighbor_size)</td></tr>
-<tr class="memdesc:a97b7781a49ab880fe48e98602f05cc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine neighbor patch(es) and orientation across a given edge.  <a href="forestclaw3d_8h.html#a97b7781a49ab880fe48e98602f05cc6a">More...</a><br /></td></tr>
-<tr class="separator:a97b7781a49ab880fe48e98602f05cc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaba47caa94f508f4c166020500111c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#acaba47caa94f508f4c166020500111c2">fclaw3d_patch_edge_neighbors</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int blockno, int patchno, int edgeno, int rproc[2], int *rblockno, int rpatchno[2], int *redge, <a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> *neighbor_size)</td></tr>
+<tr class="memdesc:acaba47caa94f508f4c166020500111c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine neighbor patch(es) and orientation across a given edge.  <a href="forestclaw3d_8h.html#acaba47caa94f508f4c166020500111c2">More...</a><br /></td></tr>
+<tr class="separator:acaba47caa94f508f4c166020500111c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514f04206cc463fdcd5f0a2b98861271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw3d_8h.html#a514f04206cc463fdcd5f0a2b98861271">fclaw3d_patch_edge_swap</a> (int *edgeno, int *redgeno)</td></tr>
 <tr class="memdesc:a514f04206cc463fdcd5f0a2b98861271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change perspective across an edge neighbor situation.  <a href="forestclaw3d_8h.html#a514f04206cc463fdcd5f0a2b98861271">More...</a><br /></td></tr>
 <tr class="separator:a514f04206cc463fdcd5f0a2b98861271"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2009,8 +2009,8 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
-<a id="a97b7781a49ab880fe48e98602f05cc6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b7781a49ab880fe48e98602f05cc6a">&#9670;&nbsp;</a></span>fclaw3d_patch_edge_neighbors()</h2>
+<a id="acaba47caa94f508f4c166020500111c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaba47caa94f508f4c166020500111c2">&#9670;&nbsp;</a></span>fclaw3d_patch_edge_neighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2042,8 +2042,8 @@ Meta Domains</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>rproc</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rproc</em>[2], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2054,8 +2054,8 @@ Meta Domains</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>rpatchno</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rpatchno</em>[2], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2086,7 +2086,7 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">edgeno</td><td>Number of the patch edge: 4 parallel to x axis, then 4 parallel to y axis, then 4 parallel to z. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rproc</td><td>Processor number of neighbor patch. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">rblockno</td><td>Neighbor block number. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Neighbor patch number relative to the block. If the neighbor is off-processor, this is not a patch number but in [0, num_ghosts_patches[. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rpatchno</td><td>Neighbor patch number of up to 2 neighbors. ` The patch number is relative to its block. If the neighbor is off-processor, this is not a patch number but in [0, num_ghosts_patches[. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">redge</td><td>Number of the edge from the other neighbor. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">neighbor_size</td><td>The relative patch size of the neighbor. </td></tr>
   </table>

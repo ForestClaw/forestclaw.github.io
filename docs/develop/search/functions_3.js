@@ -376,7 +376,7 @@ var searchData=
   ['fclaw3d_5fpatch_5fcreate_5fuser_5fdata_2097',['fclaw3d_patch_create_user_data',['../fclaw3d__patch_8h.html#a8f2188292f3114a57f2e1fb2c0d92885',1,'fclaw3d_patch.h']]],
   ['fclaw3d_5fpatch_5fdata_5fdelete_2098',['fclaw3d_patch_data_delete',['../fclaw3d__patch_8h.html#a15aec7e839de460d2416acd9500557d9',1,'fclaw3d_patch.h']]],
   ['fclaw3d_5fpatch_5fdestroy_5fuser_5fdata_2099',['fclaw3d_patch_destroy_user_data',['../fclaw3d__patch_8h.html#a50544a7440ac2a2f0944d8e309e15438',1,'fclaw3d_patch.h']]],
-  ['fclaw3d_5fpatch_5fedge_5fneighbors_2100',['fclaw3d_patch_edge_neighbors',['../forestclaw3d_8h.html#a97b7781a49ab880fe48e98602f05cc6a',1,'forestclaw3d.h']]],
+  ['fclaw3d_5fpatch_5fedge_5fneighbors_2100',['fclaw3d_patch_edge_neighbors',['../forestclaw3d_8h.html#acaba47caa94f508f4c166020500111c2',1,'forestclaw3d.h']]],
   ['fclaw3d_5fpatch_5fedge_5fswap_2101',['fclaw3d_patch_edge_swap',['../forestclaw3d_8h.html#a514f04206cc463fdcd5f0a2b98861271',1,'forestclaw3d.h']]],
   ['fclaw3d_5fpatch_5fface_5fneighbors_2102',['fclaw3d_patch_face_neighbors',['../forestclaw3d_8h.html#ad0627be8e5090b99c487354e4ae2e7eb',1,'forestclaw3d.h']]],
   ['fclaw3d_5fpatch_5fface_5fswap_2103',['fclaw3d_patch_face_swap',['../forestclaw3d_8h.html#a55a76479f18d385727b330b29624d77e',1,'forestclaw3d.h']]],
