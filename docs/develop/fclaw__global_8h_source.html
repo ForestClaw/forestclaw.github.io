@@ -65,8 +65,8 @@ $(function() {
 <div class="title">fclaw_global.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="fclaw__global_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (c) 2012 Carsten Burstedde, Donna Calhoun</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (c) 2012-2023 Carsten Burstedde, Donna Calhoun, Scott Aiton</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">Redistribution and use in source and binary forms, with or without</span></div>
@@ -89,61 +89,194 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef FCLAW_GLOBAL_H</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define FCLAW_GLOBAL_H</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * Domain-independent header file should not include domain-specific headers.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * The corresponding source file include the 2d and 3d domain-specific headers.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fclaw__domain_8h.html">fclaw_domain.h</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structfclaw__global.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="structfclaw__domain.html">fclaw_domain_t</a> *domain;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef FCLAW_GLOBAL_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define FCLAW_GLOBAL_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="forestclaw_8h.html">forestclaw.h</a>&gt;</span>  <span class="comment">/* Needed to declare callbacks (below) */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;fclaw_map.h&gt;</span>   <span class="comment">/* Needed to store the map context */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;fclaw_timer.h&gt;</span>   <span class="comment">/* Needed to create statically allocated array of timers */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fclaw__pointer__map_8h.html">fclaw_pointer_map.h</a>&gt;</span>  <span class="comment">/* Needed to store vtables and options */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}                               <span class="comment">/* need this because indent is dumb */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/* lots of dimension-independent stuff */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="structfclaw__global.html">fclaw_global_t</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">fclaw_patch_callback_t</a>)</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">   56</a></span>&#160;    (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * global, <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> * patch,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno, <span class="keywordtype">void</span> *user);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="fclaw__global_8h.html#ad5038852947bf913830e95a47019129d">fclaw_family_callback_t</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="fclaw__global_8h.html#ad5038852947bf913830e95a47019129d">   70</a></span>&#160;    (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * global, <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> * family[],</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno, <span class="keywordtype">void</span> *user);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structfclaw__global__iterate.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfclaw__global__iterate.html">fclaw_global_iterate</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">fclaw_patch_callback_t</a> gpcb;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="fclaw__global_8h.html#ad5038852947bf913830e95a47019129d">fclaw_family_callback_t</a> gfcb;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> *user;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="structfclaw__global__iterate.html">fclaw_global_iterate_t</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fclaw__global_8h.html#a0cdf51d766bf1b40102a6ac0c246e3ea">fclaw_global_iterate_patches</a> (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                   <a class="code" href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">fclaw_patch_callback_t</a> gpcb, <span class="keywordtype">void</span> *user);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fclaw__global_8h.html#acfcfee5a0b734b5488c9a997b903d9e9">fclaw_global_iterate_level</a> (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, <span class="keywordtype">int</span> level,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                 <a class="code" href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">fclaw_patch_callback_t</a> gpcb, <span class="keywordtype">void</span> *user);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fclaw__global_8h.html#a623894e20b313327244f03724fbed16b">fclaw_global_iterate_families</a> (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                    <a class="code" href="fclaw__global_8h.html#ad5038852947bf913830e95a47019129d">fclaw_family_callback_t</a> gfcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/* these are dimension-specific functions */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> fclaw_iterate_patch_cb</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  (<a class="code" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *patch,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> fclaw_iterate_family_cb</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  (<a class="code" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *patch,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/* much of the following will move into fclaw_global.h */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a> <a class="code" href="structfclaw__global.html">fclaw_global_t</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfclaw__global__iterate.html">fclaw_global_iterate</a> <a class="code" href="structfclaw__global__iterate.html">fclaw_global_iterate_t</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structfclaw__global.html">   58</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> count_amr_advance;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> count_ghost_exchange;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> count_amr_regrid;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> count_amr_new_domain;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> count_single_step;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> count_elliptic_grids;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> count_multiproc_corner;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> count_grids_per_proc;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> count_grids_remote_boundary;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> count_grids_local_boundary;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="structfclaw__timer__t.html">fclaw_timer_t</a> timers[FCLAW_TIMER_COUNT];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/* Time at start of each subcycled time step */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> curr_time;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> curr_dt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    sc_MPI_Comm mpicomm;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structfclaw__global.html#a75a1cd57a389bd14133333d7f4d6e413">   77</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structfclaw__global.html#a75a1cd57a389bd14133333d7f4d6e413">mpisize</a>;              </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structfclaw__global.html#a968383d15b0ea2374c9c02447bd9ebbb">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structfclaw__global.html#a968383d15b0ea2374c9c02447bd9ebbb">mpirank</a>;              </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structfclaw__global.html#a1b273d01211fce6b4f4b086a910c47a3">   81</a></span>&#160;    <span class="keyword">struct </span>fclaw_package_container *<a class="code" href="structfclaw__global.html#a1b273d01211fce6b4f4b086a910c47a3">pkg_container</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structfclaw__global.html#a124e5e13703451a0d032b9dd20bf91a1">   83</a></span>&#160;    <a class="code" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *<a class="code" href="structfclaw__global.html#a124e5e13703451a0d032b9dd20bf91a1">vtables</a>;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structfclaw__global.html#a5ee6835cec08de222dc2ccca96d5eba2">   84</a></span>&#160;    <a class="code" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *<a class="code" href="structfclaw__global.html#a5ee6835cec08de222dc2ccca96d5eba2">options</a>;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structfclaw__global.html#ad4987cc3534d8f7a67df7cf366c5b3b7">   86</a></span>&#160;    <a class="code" href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a> *<a class="code" href="structfclaw__global.html#ad4987cc3534d8f7a67df7cf366c5b3b7">attributes</a>; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">struct </span><a class="code" href="structfclaw__map__context.html">fclaw_map_context</a>* cont;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">struct </span><a class="code" href="structfclaw__domain.html">fclaw_domain</a> *domain;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FCLAW_GLOBAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structfclaw__global__iterate.html">   94</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global__iterate.html">fclaw_global_iterate</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span>* user;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/* Use forward references here, since this file gets included everywhere */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/* CB: is there a way not to need the forward references?</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">       Depending on fclaw2d_domain, _map, package seems entirely acceptable.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">       For those, including the respective headers might not be so bad.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">       About the diagnostics accumulator see remark above. */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__domain.html">fclaw_domain</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__map__context.html">fclaw_map_context</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">struct </span>fclaw_package_container;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__diagnostics__accumulator.html">fclaw_diagnostics_accumulator</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* fclaw_global_new (<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> * app);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* fclaw_global_new_comm (sc_MPI_Comm mpicomm,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                           <span class="keywordtype">int</span> mpisize, <span class="keywordtype">int</span> mpirank);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> fclaw_global_destroy (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> fclaw_global_store_domain (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                  <span class="keyword">struct</span> <a class="code" href="structfclaw__domain.html">fclaw_domain</a>* domain);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> fclaw_map_store (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                      <span class="keyword">struct</span> <a class="code" href="structfclaw__map__context.html">fclaw_map_context</a> * map);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__map__context.html">fclaw_map_context</a>* fclaw_map_get(<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">size_t</span> fclaw_global_pack(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, <span class="keywordtype">char</span>* buffer);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">size_t</span> fclaw_global_packsize(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">size_t</span> fclaw_global_unpack(<span class="keywordtype">char</span>* buffer, <a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_level (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, <span class="keywordtype">int</span> level,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                   <a class="code" href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a> pcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_patches (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                     <a class="code" href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a> pcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_families (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                      <a class="code" href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a> pcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_adapted (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                     <span class="keyword">struct</span> <a class="code" href="structfclaw__domain.html">fclaw_domain</a>* new_domain,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                     <a class="code" href="forestclaw_8h.html#a991b431aaac14be623074fbf1f42b89c">fclaw_match_callback_t</a> mcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_level_mthread (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, <span class="keywordtype">int</span> level,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                           <a class="code" href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a> pcb, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">void</span> fclaw_global_iterate_partitioned (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                         <span class="keyword">struct</span> <a class="code" href="structfclaw__domain.html">fclaw_domain</a> * new_domain,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                         <a class="code" href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a> tcb,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                         <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> fclaw_global_options_store (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob, <span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">void</span>* options);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span>* fclaw_global_get_options (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob, <span class="keyword">const</span> <span class="keywordtype">char</span>* key);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keywordtype">void</span> </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;fclaw_global_attribute_store (<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">char</span> * key, </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                              <span class="keywordtype">void</span>* attribute,</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">char</span> * packing_vtable_key, </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                              <a class="code" href="fclaw__pointer__map_8h.html#a09657b8ee93d609c75fb690200a8f4a8">fclaw_pointer_map_value_destroy_t</a> destroy);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keywordtype">void</span> * </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;fclaw_global_get_attribute (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob, <span class="keyword">const</span> <span class="keywordtype">char</span>* key);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">void</span> </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;fclaw_global_vtable_store(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">char</span> * key, </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                          <span class="keywordtype">void</span> * vtable,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                          <a class="code" href="fclaw__pointer__map_8h.html#a09657b8ee93d609c75fb690200a8f4a8">fclaw_pointer_map_value_destroy_t</a> destroy);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keywordtype">void</span> * </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;fclaw_global_get_vtable(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> * glob, <span class="keyword">const</span> <span class="keywordtype">char</span> * key);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordtype">void</span> fclaw_global_set_static (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">void</span> fclaw_global_clear_static (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* fclaw_global_get_static_global (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">void</span> fclaw_set_global_context(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keywordtype">void</span> fclaw_clear_global_context(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{                               <span class="comment">/* need this because indent is dumb */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FCLAW2D_GLOBAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructfclaw__patch_html"><div class="ttname"><a href="structfclaw__patch.html">fclaw_patch</a></div><div class="ttdef"><b>Definition:</b> fclaw_patch.h:49</div></div>
-<div class="ttc" id="astructfclaw__domain_html"><div class="ttname"><a href="structfclaw__domain.html">fclaw_domain</a></div><div class="ttdef"><b>Definition:</b> fclaw_domain.h:47</div></div>
-<div class="ttc" id="afclaw__global_8h_html_a0cdf51d766bf1b40102a6ac0c246e3ea"><div class="ttname"><a href="fclaw__global_8h.html#a0cdf51d766bf1b40102a6ac0c246e3ea">fclaw_global_iterate_patches</a></div><div class="ttdeci">void fclaw_global_iterate_patches(fclaw_global_t *glob, fclaw_patch_callback_t gpcb, void *user)</div><div class="ttdoc">Iterate through all local patches one at a time.</div></div>
-<div class="ttc" id="afclaw__global_8h_html_acfcfee5a0b734b5488c9a997b903d9e9"><div class="ttname"><a href="fclaw__global_8h.html#acfcfee5a0b734b5488c9a997b903d9e9">fclaw_global_iterate_level</a></div><div class="ttdeci">void fclaw_global_iterate_level(fclaw_global_t *glob, int level, fclaw_patch_callback_t gpcb, void *user)</div><div class="ttdoc">Iterate through all local patches on given level.</div></div>
-<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:39</div></div>
-<div class="ttc" id="afclaw__global_8h_html_ad5038852947bf913830e95a47019129d"><div class="ttname"><a href="fclaw__global_8h.html#ad5038852947bf913830e95a47019129d">fclaw_family_callback_t</a></div><div class="ttdeci">void(* fclaw_family_callback_t)(fclaw_global_t *global, fclaw_patch_t *family[], int blockno, int patchno, void *user)</div><div class="ttdoc">Dimension-independent callback prototype for family iterators.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:70</div></div>
-<div class="ttc" id="astructfclaw__global__iterate_html"><div class="ttname"><a href="structfclaw__global__iterate.html">fclaw_global_iterate</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:73</div></div>
-<div class="ttc" id="afclaw__global_8h_html_af404e8aaef7a17cdd963d47649894b7c"><div class="ttname"><a href="fclaw__global_8h.html#af404e8aaef7a17cdd963d47649894b7c">fclaw_patch_callback_t</a></div><div class="ttdeci">void(* fclaw_patch_callback_t)(fclaw_global_t *global, fclaw_patch_t *patch, int blockno, int patchno, void *user)</div><div class="ttdoc">Dimension-independent callback prototype for patch iterators.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:56</div></div>
-<div class="ttc" id="afclaw__global_8h_html_a623894e20b313327244f03724fbed16b"><div class="ttname"><a href="fclaw__global_8h.html#a623894e20b313327244f03724fbed16b">fclaw_global_iterate_families</a></div><div class="ttdeci">void fclaw_global_iterate_families(fclaw_global_t *glob, fclaw_family_callback_t gfcb, void *user)</div><div class="ttdoc">Iterate through families of patches.</div></div>
-<div class="ttc" id="afclaw__domain_8h_html"><div class="ttname"><a href="fclaw__domain_8h.html">fclaw_domain.h</a></div></div>
+<div class="ttc" id="astructfclaw__global_html_a124e5e13703451a0d032b9dd20bf91a1"><div class="ttname"><a href="structfclaw__global.html#a124e5e13703451a0d032b9dd20bf91a1">fclaw_global::vtables</a></div><div class="ttdeci">fclaw_pointer_map_t * vtables</div><div class="ttdoc">Vtables.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:83</div></div>
+<div class="ttc" id="afclaw__pointer__map_8h_html"><div class="ttname"><a href="fclaw__pointer__map_8h.html">fclaw_pointer_map.h</a></div><div class="ttdoc">c interface to c++ std::map&lt;std::string,void*&gt;</div></div>
+<div class="ttc" id="astructfclaw__patch_html"><div class="ttname"><a href="structfclaw__patch.html">fclaw_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:70</div></div>
+<div class="ttc" id="aforestclaw_8h_html_a5d52aeaa386109279c4369ba79fd06c1"><div class="ttname"><a href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a></div><div class="ttdeci">void(* fclaw_patch_callback_t)(fclaw_domain_t *domain, fclaw_patch_t *patch, int blockno, int patchno, void *user)</div><div class="ttdoc">Callback prototype for the patch iterators.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:269</div></div>
+<div class="ttc" id="afclaw__pointer__map_8h_html_aaba4d1e03dd3afcd38b5603f0f69c3ae"><div class="ttname"><a href="fclaw__pointer__map_8h.html#aaba4d1e03dd3afcd38b5603f0f69c3ae">fclaw_pointer_map_t</a></div><div class="ttdeci">struct fclaw_pointer_map fclaw_pointer_map_t</div><div class="ttdoc">Pointer map structure.</div><div class="ttdef"><b>Definition:</b> fclaw_pointer_map.h:46</div></div>
+<div class="ttc" id="astructfclaw__global_html_ad4987cc3534d8f7a67df7cf366c5b3b7"><div class="ttname"><a href="structfclaw__global.html#ad4987cc3534d8f7a67df7cf366c5b3b7">fclaw_global::attributes</a></div><div class="ttdeci">fclaw_pointer_map_t * attributes</div><div class="ttdoc">attributes</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:86</div></div>
+<div class="ttc" id="astructfclaw__domain_html"><div class="ttname"><a href="structfclaw__domain.html">fclaw_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:124</div></div>
+<div class="ttc" id="aforestclaw_8h_html_a2fbb9d505b211d03a2d7afb75686e0c2"><div class="ttname"><a href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a></div><div class="ttdeci">void(* fclaw_transfer_callback_t)(fclaw_domain_t *old_domain, fclaw_patch_t *old_patch, fclaw_domain_t *new_domain, fclaw_patch_t *new_patch, int blockno, int old_patchno, int new_patchno, void *user)</div><div class="ttdoc">Callback to iterate through the partitions.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:984</div></div>
+<div class="ttc" id="afclaw__base_8h_html_acefeaedd4aae14e6a175ecc6c442dc15"><div class="ttname"><a href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a></div><div class="ttdeci">struct fclaw_app fclaw_app_t</div><div class="ttdoc">An application container whose use is optional.</div><div class="ttdef"><b>Definition:</b> fclaw_base.h:178</div></div>
+<div class="ttc" id="astructfclaw__timer__t_html"><div class="ttname"><a href="structfclaw__timer__t.html">fclaw_timer_t</a></div><div class="ttdef"><b>Definition:</b> fclaw_timer.h:119</div></div>
+<div class="ttc" id="astructfclaw__global_html_a75a1cd57a389bd14133333d7f4d6e413"><div class="ttname"><a href="structfclaw__global.html#a75a1cd57a389bd14133333d7f4d6e413">fclaw_global::mpisize</a></div><div class="ttdeci">int mpisize</div><div class="ttdoc">Size of communicator.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:77</div></div>
+<div class="ttc" id="afclaw__pointer__map_8h_html_a09657b8ee93d609c75fb690200a8f4a8"><div class="ttname"><a href="fclaw__pointer__map_8h.html#a09657b8ee93d609c75fb690200a8f4a8">fclaw_pointer_map_value_destroy_t</a></div><div class="ttdeci">void(* fclaw_pointer_map_value_destroy_t)(void *value)</div><div class="ttdoc">function that destroys stored value</div><div class="ttdef"><b>Definition:</b> fclaw_pointer_map.h:51</div></div>
+<div class="ttc" id="astructfclaw__global_html_a5ee6835cec08de222dc2ccca96d5eba2"><div class="ttname"><a href="structfclaw__global.html#a5ee6835cec08de222dc2ccca96d5eba2">fclaw_global::options</a></div><div class="ttdeci">fclaw_pointer_map_t * options</div><div class="ttdoc">options</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:84</div></div>
+<div class="ttc" id="astructfclaw__global_html_a968383d15b0ea2374c9c02447bd9ebbb"><div class="ttname"><a href="structfclaw__global.html#a968383d15b0ea2374c9c02447bd9ebbb">fclaw_global::mpirank</a></div><div class="ttdeci">int mpirank</div><div class="ttdoc">Rank of this process in mpicomm.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:78</div></div>
+<div class="ttc" id="aforestclaw_8h_html"><div class="ttname"><a href="forestclaw_8h.html">forestclaw.h</a></div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
+<div class="ttc" id="astructfclaw__domain_html_a18990693e09dad2752b64027e5d47203"><div class="ttname"><a href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">fclaw_domain::user</a></div><div class="ttdeci">void * user</div><div class="ttdoc">user data pointer</div><div class="ttdef"><b>Definition:</b> forestclaw.h:166</div></div>
+<div class="ttc" id="astructfclaw__diagnostics__accumulator_html"><div class="ttname"><a href="structfclaw__diagnostics__accumulator.html">fclaw_diagnostics_accumulator</a></div><div class="ttdef"><b>Definition:</b> fclaw_diagnostics.h:41</div></div>
+<div class="ttc" id="astructfclaw__global__iterate_html"><div class="ttname"><a href="structfclaw__global__iterate.html">fclaw_global_iterate</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:94</div></div>
+<div class="ttc" id="aforestclaw_8h_html_a991b431aaac14be623074fbf1f42b89c"><div class="ttname"><a href="forestclaw_8h.html#a991b431aaac14be623074fbf1f42b89c">fclaw_match_callback_t</a></div><div class="ttdeci">void(* fclaw_match_callback_t)(fclaw_domain_t *old_domain, fclaw_patch_t *old_patch, fclaw_domain_t *new_domain, fclaw_patch_t *new_patch, fclaw_patch_relation_t newsize, int blockno, int old_patchno, int new_patchno, void *user)</div><div class="ttdoc">Callback prototype used in fclaw_domain_iterate_adapted.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:914</div></div>
+<div class="ttc" id="astructfclaw__map__context_html"><div class="ttname"><a href="structfclaw__map__context.html">fclaw_map_context</a></div><div class="ttdoc">Mapping context that is interpreted by its query and c2m members.</div><div class="ttdef"><b>Definition:</b> fclaw_map.h:106</div></div>
+<div class="ttc" id="astructfclaw__global_html_a1b273d01211fce6b4f4b086a910c47a3"><div class="ttname"><a href="structfclaw__global.html#a1b273d01211fce6b4f4b086a910c47a3">fclaw_global::pkg_container</a></div><div class="ttdeci">struct fclaw_package_container * pkg_container</div><div class="ttdoc">Solver packages for internal use.</div><div class="ttdef"><b>Definition:</b> fclaw_global.h:81</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

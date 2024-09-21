@@ -62,226 +62,30 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fclaw_domain.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="fclaw__patch_8h_source.html">fclaw_patch.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="forestclaw_8h_source.html">forestclaw.h</a>&gt;</code><br />
 </div>
 <p><a href="fclaw__domain_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain__user.html">fclaw_domain_user</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html">fclaw_domain</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain__iterate.html">fclaw_domain_iterate</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a2539414bb08c6791f1dace5ccf7d9230"><td class="memItemLeft" align="right" valign="top"><a id="a2539414bb08c6791f1dace5ccf7d9230"></a>
-typedef struct <a class="el" href="structfclaw__domain__user.html">fclaw_domain_user</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_user_t</b></td></tr>
-<tr class="separator:a2539414bb08c6791f1dace5ccf7d9230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345fbab290457176694917260185b95a"><td class="memItemLeft" align="right" valign="top"><a id="a345fbab290457176694917260185b95a"></a>
-typedef struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_t</b></td></tr>
-<tr class="separator:a345fbab290457176694917260185b95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbb17598212d9e4fc8750b3457dff25"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a>) (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="el" href="structfclaw__patch.html">fclaw_patch_t</a> *patch, int blockno, int patchno, void *user)</td></tr>
-<tr class="memdesc:a2dbb17598212d9e4fc8750b3457dff25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension-independent callback prototype for the patch iterators.  <a href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">More...</a><br /></td></tr>
-<tr class="separator:a2dbb17598212d9e4fc8750b3457dff25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7ca4a5deb73ef4380d98fb1867a804"><td class="memItemLeft" align="right" valign="top"><a id="a3d7ca4a5deb73ef4380d98fb1867a804"></a>
-typedef struct <a class="el" href="structfclaw__domain__iterate.html">fclaw_domain_iterate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_iterate_t</b></td></tr>
-<tr class="separator:a3d7ca4a5deb73ef4380d98fb1867a804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a31298cbd7ea88c6e8783ecc7c29c54e9"><td class="memItemLeft" align="right" valign="top"><a id="a31298cbd7ea88c6e8783ecc7c29c54e9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_is_valid</b> (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain)</td></tr>
-<tr class="separator:a31298cbd7ea88c6e8783ecc7c29c54e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b67a2c15ed0670995844d0a3fa102c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__domain_8h.html#a37b67a2c15ed0670995844d0a3fa102c">fclaw_domain_destroy</a> (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a> dele, void *user)</td></tr>
-<tr class="memdesc:a37b67a2c15ed0670995844d0a3fa102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct a dimension-specific domain and its patch data.  <a href="fclaw__domain_8h.html#a37b67a2c15ed0670995844d0a3fa102c">More...</a><br /></td></tr>
-<tr class="separator:a37b67a2c15ed0670995844d0a3fa102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a412e31a5f6aa810e110a88d18a714c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__domain_8h.html#a412e31a5f6aa810e110a88d18a714c8d">fclaw_domain_iterate_patches</a> (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a> iter, void *user)</td></tr>
-<tr class="memdesc:a412e31a5f6aa810e110a88d18a714c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all local patches.  <a href="fclaw__domain_8h.html#a412e31a5f6aa810e110a88d18a714c8d">More...</a><br /></td></tr>
-<tr class="separator:a412e31a5f6aa810e110a88d18a714c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aac407c61553a580fdb75ca746dcc16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__domain_8h.html#a2aac407c61553a580fdb75ca746dcc16">fclaw_domain_iterate_level</a> (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, int level, <a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a> iter, void *user)</td></tr>
-<tr class="memdesc:a2aac407c61553a580fdb75ca746dcc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all local patches on a given level.  <a href="fclaw__domain_8h.html#a2aac407c61553a580fdb75ca746dcc16">More...</a><br /></td></tr>
-<tr class="separator:a2aac407c61553a580fdb75ca746dcc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2596e364d4793d44dc012eaf4445d7d2"><td class="memItemLeft" align="right" valign="top"><a id="a2596e364d4793d44dc012eaf4445d7d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_setup</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *new_domain)</td></tr>
+<tr class="separator:a2596e364d4793d44dc012eaf4445d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a4ba91ad4a665a2a64915fa48340a2"><td class="memItemLeft" align="right" valign="top"><a id="aa4a4ba91ad4a665a2a64915fa48340a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_reset</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
+<tr class="separator:aa4a4ba91ad4a665a2a64915fa48340a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857bc5f44380c4fb18b134993041b352"><td class="memItemLeft" align="right" valign="top"><a id="a857bc5f44380c4fb18b134993041b352"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_domain_iterate_level_mthread</b> (struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *domain, int level, <a class="el" href="forestclaw_8h.html#a5d52aeaa386109279c4369ba79fd06c1">fclaw_patch_callback_t</a> pcb, void *user)</td></tr>
+<tr class="separator:a857bc5f44380c4fb18b134993041b352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Dimension-independent wrapper of a forestclaw domain. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a2dbb17598212d9e4fc8750b3457dff25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dbb17598212d9e4fc8750b3457dff25">&#9670;&nbsp;</a></span>fclaw_domain_callback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* fclaw_domain_callback_t) (<a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *domain, <a class="el" href="structfclaw__patch.html">fclaw_patch_t</a> *patch, int blockno, int patchno, void *user)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dimension-independent callback prototype for the patch iterators. </p>
-<p>We iterate over local patches only. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Dimension-independent domain structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">patch</td><td>The local patch currently processed by the iterator. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>Block number of processed patch. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>Patch number within block of processed patch. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Data that was passed into the iterator functions. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a37b67a2c15ed0670995844d0a3fa102c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b67a2c15ed0670995844d0a3fa102c">&#9670;&nbsp;</a></span>fclaw_domain_destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_domain_destroy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a>&#160;</td>
-          <td class="paramname"><em>dele</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destruct a dimension-specific domain and its patch data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>Initialized, valid domain structure. On output, the pointer is invalidated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dele</td><td>This callback is pointed to an existing <a class="el" href="structfclaw__patch.html">fclaw_patch</a> whose data it is supposed to delete. This includes deleting the patch user pointer, which the callback can do using the third parameter to this function, <em>user</em>. Just do not delete the patch itself! </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Pointer passed through to <em>init</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2aac407c61553a580fdb75ca746dcc16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aac407c61553a580fdb75ca746dcc16">&#9670;&nbsp;</a></span>fclaw_domain_iterate_level()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_domain_iterate_level </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a>&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Iterate over all local patches on a given level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Dimension-independent domain structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Level to iterate. Ignore patches of other levels. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iter</td><td>Function called for each patch of matching level. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Data is passed to the <em>iter</em> callback. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a412e31a5f6aa810e110a88d18a714c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a412e31a5f6aa810e110a88d18a714c8d">&#9670;&nbsp;</a></span>fclaw_domain_iterate_patches()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_domain_iterate_patches </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structfclaw__domain.html">fclaw_domain_t</a> *&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="fclaw__domain_8h.html#a2dbb17598212d9e4fc8750b3457dff25">fclaw_domain_callback_t</a>&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Iterate over all local patches. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>Dimension-independent domain structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iter</td><td>Function called for each patch of matching level. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Data is passed to the <em>iter</em> callback. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Domain structures and routines </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

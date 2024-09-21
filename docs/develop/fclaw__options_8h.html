@@ -89,9 +89,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a81a87e0149ac0daed5705e7286ef7e8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfclaw__options.html">fclaw_options_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__options_8h.html#a81a87e0149ac0daed5705e7286ef7e8d">fclaw_options_register</a> (<a class="el" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> *a, const char *section, const char *configfile)</td></tr>
 <tr class="memdesc:a81a87e0149ac0daed5705e7286ef7e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register options in SC.  <a href="fclaw__options_8h.html#a81a87e0149ac0daed5705e7286ef7e8d">More...</a><br /></td></tr>
 <tr class="separator:a81a87e0149ac0daed5705e7286ef7e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b5cb1014a60f448e1be3fca29de1bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__options_8h.html#a38b5cb1014a60f448e1be3fca29de1bf">fclaw_options_get_packing_vtable</a> ()</td></tr>
-<tr class="memdesc:a38b5cb1014a60f448e1be3fca29de1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the packing vtable for the options.  <a href="fclaw__options_8h.html#a38b5cb1014a60f448e1be3fca29de1bf">More...</a><br /></td></tr>
-<tr class="separator:a38b5cb1014a60f448e1be3fca29de1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5f1ddeb553fef96a11182191863b97"><td class="memItemLeft" align="right" valign="top"><a id="a5e5f1ddeb553fef96a11182191863b97"></a>
 <a class="el" href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_postprocess</b> (<a class="el" href="structfclaw__options.html">fclaw_options_t</a> *fclaw_opt)</td></tr>
 <tr class="separator:a5e5f1ddeb553fef96a11182191863b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +116,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_convert
 <tr class="memitem:a21f1dad3f2e0510fc7f0ead13c06d49d"><td class="memItemLeft" align="right" valign="top"><a id="a21f1dad3f2e0510fc7f0ead13c06d49d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_destroy_array</b> (void *array)</td></tr>
 <tr class="separator:a21f1dad3f2e0510fc7f0ead13c06d49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509d9b5cbd97ec5b0b6b5a4b4a9b7d4c"><td class="memItemLeft" align="right" valign="top"><a id="a509d9b5cbd97ec5b0b6b5a4b4a9b7d4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_store</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__options.html">fclaw_options</a> *fclaw_opt)</td></tr>
+<tr class="separator:a509d9b5cbd97ec5b0b6b5a4b4a9b7d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aa3fc1f62ec731f9a17fee7c18a5bf"><td class="memItemLeft" align="right" valign="top"><a id="a48aa3fc1f62ec731f9a17fee7c18a5bf"></a>
+<a class="el" href="structfclaw__options.html">fclaw_options_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_get_options</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
+<tr class="separator:a48aa3fc1f62ec731f9a17fee7c18a5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Routines for handling general ForestClaw input options. </p>
@@ -243,26 +246,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_destroy
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a38b5cb1014a60f448e1be3fca29de1bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b5cb1014a60f448e1be3fca29de1bf">&#9670;&nbsp;</a></span>fclaw_options_get_packing_vtable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a>* fclaw_options_get_packing_vtable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the packing vtable for the options. </p>
-<dl class="section return"><dt>Returns</dt><dd>const fclaw_packing_vtable_t* the vtable </dd></dl>
 
 </div>
 </div>

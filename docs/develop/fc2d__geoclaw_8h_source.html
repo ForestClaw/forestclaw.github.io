@@ -111,25 +111,25 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable</a> <a class="code" href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable_t</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* Forward declarations */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__patch.html">fclaw2d_patch</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__patch.html">fclaw_patch</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span>geoclaw_gauge;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_run(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_run(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* ------------------------------------- Access functions ---------------------------------- */</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_module_setup(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_module_setup(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_output(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_output(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* ------------------------------------- Virtual table ----------------------------------- */</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_solver_initialize(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> fc2d_geoclaw_solver_initialize(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable_t</a>* fc2d_geoclaw_vt(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable_t</a>* fc2d_geoclaw_vt(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structfc2d__geoclaw__vtable.html">   80</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable</a></div>
@@ -158,11 +158,11 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FC2D_CLAWPACH5_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
-<div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
-<div class="ttc" id="astructfclaw2d__patch__transform__data_html"><div class="ttname"><a href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a></div><div class="ttdoc">Transform data for a neighboring patch's coordinate system.</div><div class="ttdef"><b>Definition:</b> fclaw2d_patch.h:108</div></div>
+<div class="ttc" id="astructfclaw__patch_html"><div class="ttname"><a href="structfclaw__patch.html">fclaw_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:70</div></div>
 <div class="ttc" id="afclaw__base_8h_html"><div class="ttname"><a href="fclaw__base_8h.html">fclaw_base.h</a></div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
 <div class="ttc" id="astructfc2d__geoclaw__vtable_html"><div class="ttname"><a href="structfc2d__geoclaw__vtable.html">fc2d_geoclaw_vtable</a></div><div class="ttdef"><b>Definition:</b> fc2d_geoclaw.h:80</div></div>
+<div class="ttc" id="astructfclaw__patch__transform__data_html"><div class="ttname"><a href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a></div><div class="ttdoc">Transform data for a neighboring patch's coordinate system.</div><div class="ttdef"><b>Definition:</b> fclaw_patch.h:115</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

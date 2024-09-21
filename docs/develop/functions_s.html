@@ -65,35 +65,37 @@ $(function() {
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>save_aux
-: <a class="el" href="structfclaw2d__clawpatch__options.html#a8c9eeefc4194a53cd240130f8e98c16e">fclaw2d_clawpatch_options</a>
-, <a class="el" href="structfclaw3dx__clawpatch__options.html#a446f1cbb66ef57eac8605f31576fb8ba">fclaw3dx_clawpatch_options</a>
+: <a class="el" href="structfclaw__clawpatch__options.html#a88eee5239e480668fa7db23d3cba7af9">fclaw_clawpatch_options</a>
 </li>
 <li>save_step
-: <a class="el" href="structfclaw2d__patch__vtable.html#a40bc78fde536431dd0130a268524fab6">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#ac79381e8ad6d22ab1b7268568b77fcc1">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a047256e82a562c7d4e50cd6d0afe5857">fclaw_patch_vtable</a>
 </li>
 <li>set_gauge_data
 : <a class="el" href="structfclaw__gauges__vtable.html#a53575d9e5fdc2f9de82b53132e0b3dfe">fclaw_gauges_vtable</a>
 </li>
 <li>set_user_data
-: <a class="el" href="structfclaw2d__clawpatch__vtable.html#ad5b5dcd0f40c752ee17125ad17df2559">fclaw2d_clawpatch_vtable</a>
-, <a class="el" href="structfclaw3dx__clawpatch__vtable.html#af52b0b2074ad48c7f2e4a3ebe941a05a">fclaw3dx_clawpatch_vtable</a>
+: <a class="el" href="structfclaw__clawpatch__vtable.html#a20036de9ef3334f9139fe5934657a1e7">fclaw_clawpatch_vtable</a>
 </li>
 <li>setup
-: <a class="el" href="structfclaw2d__patch__vtable.html#aff3bf97a5b99f8d6e9ddc175bd8f7f5d">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#a934427c16e4cb6d933b6dd1b46ef9580">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a09dc8100839bdc1682adcd39e601a77b">fclaw_patch_vtable</a>
 </li>
 <li>setup_timeinterp
-: <a class="el" href="structfclaw2d__patch__vtable.html#aab0046acdd3f0ddf0c9dc03640079d25">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#a7c8270ea7ac60f87e8dbdcb588f79943">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a0c71a62e8b2512ac0bca246115413df3">fclaw_patch_vtable</a>
 </li>
 <li>single_step_update
-: <a class="el" href="structfclaw2d__patch__vtable.html#a2529c6084b74577b162242df35b84097">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#af3f4c2d5fa7f9329ec42ca1161dc7b6e">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a867b07e5703a18bc94c59913fa8b3698">fclaw_patch_vtable</a>
 </li>
 <li>size
 : <a class="el" href="struct__dictionary__.html#a2d90a3894737abd3270d8b9aefaac5ef">_dictionary_</a>
 , <a class="el" href="structfclaw__packing__vtable.html#a5e111c086b3e9c642c87dc68469ccfab">fclaw_packing_vtable</a>
+</li>
+<li>skip_local
+: <a class="el" href="structfclaw2d__domain__persist.html#a5c96a07e33d79c38c37bf98e1bc88f3e">fclaw2d_domain_persist</a>
+, <a class="el" href="structfclaw3d__domain__persist.html#abe4aaed0d1310c774c366414f580271a">fclaw3d_domain_persist</a>
+</li>
+<li>skip_refined
+: <a class="el" href="structfclaw2d__domain__persist.html#a758ae95d17caa48d05f8c356208a251b">fclaw2d_domain_persist</a>
+, <a class="el" href="structfclaw3d__domain__persist.html#acb7dc6208896e80d5ff140d589aa0e98">fclaw3d_domain_persist</a>
 </li>
 <li>smooth_level
 : <a class="el" href="structfclaw2d__domain__persist.html#a3e130b801ec43814abdd8964faedb118">fclaw2d_domain_persist</a>
@@ -104,8 +106,15 @@ $(function() {
 , <a class="el" href="structfclaw3d__domain__persist.html#a2427acb09222532e8f0366f1835f5352">fclaw3d_domain_persist</a>
 </li>
 <li>solver_data
-: <a class="el" href="classfclaw2d__clawpatch__t.html#aff21f2125a74b71936781d20f07aebb8">fclaw2d_clawpatch_t</a>
-, <a class="el" href="classfclaw3dx__clawpatch__t.html#a7a4b3bbe93d755f33aa3977df8fd00bc">fclaw3dx_clawpatch_t</a>
+: <a class="el" href="structfclaw__clawpatch__t.html#a112f6366eef3f2553567c3dca3720538">fclaw_clawpatch_t</a>
+</li>
+<li>src_data
+: <a class="el" href="structfclaw2d__domain__partition.html#a17969f2817a93c86796bd55ea9748ac6">fclaw2d_domain_partition</a>
+, <a class="el" href="structfclaw3d__domain__partition.html#ab0a4942df8b19de7c0a15af7b1d6071a">fclaw3d_domain_partition</a>
+</li>
+<li>src_sizes
+: <a class="el" href="structfclaw2d__domain__partition.html#ac0e97d323961b5d2eb4f945f81ea351a">fclaw2d_domain_partition</a>
+, <a class="el" href="structfclaw3d__domain__partition.html#a476444b7349e323c771c54bc93ae85d3">fclaw3d_domain_partition</a>
 </li>
 <li>subcycle
 : <a class="el" href="structfclaw__options.html#ab4dc74782b6e656919c345a82e812b78">fclaw_options</a>

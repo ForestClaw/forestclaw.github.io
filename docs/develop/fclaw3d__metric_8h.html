@@ -76,7 +76,7 @@ $(function() {
 
 <p>Patch subroutines for patch-related metric terms.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="fclaw2d__patch_8h_source.html">fclaw2d_patch.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="fclaw__patch_8h_source.html">fclaw_patch.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="fclaw3d__metric__default__fort_8h_source.html">fclaw3d_metric_default_fort.h</a>&quot;</code><br />
 </div>
 <p><a href="fclaw3d__metric_8h_source.html">Go to the source code of this file.</a></p>
@@ -93,79 +93,79 @@ Typedefs</h2></td></tr>
 typedef struct <a class="el" href="structfclaw3d__metric__vtable.html">fclaw3d_metric_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a856220f0d12a94cd6c5031e5af799347">fclaw3d_metric_vtable_t</a></td></tr>
 <tr class="memdesc:a856220f0d12a94cd6c5031e5af799347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="structfclaw3d__metric__vtable.html" title="vtable for metric terms">fclaw3d_metric_vtable</a>. <br /></td></tr>
 <tr class="separator:a856220f0d12a94cd6c5031e5af799347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683b918bc4d58a184df1a52dbe6235b9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a683b918bc4d58a184df1a52dbe6235b9">fclaw3d_metric_compute_mesh_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a683b918bc4d58a184df1a52dbe6235b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the cell center and node coordinates for a patch.  <a href="fclaw3d__metric_8h.html#a683b918bc4d58a184df1a52dbe6235b9">More...</a><br /></td></tr>
-<tr class="separator:a683b918bc4d58a184df1a52dbe6235b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe6507aeeea0bbe7e6d32ec439f95ec"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aefe6507aeeea0bbe7e6d32ec439f95ec">fclaw3d_metric_compute_volume_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:aefe6507aeeea0bbe7e6d32ec439f95ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the area for each cell.  <a href="fclaw3d__metric_8h.html#aefe6507aeeea0bbe7e6d32ec439f95ec">More...</a><br /></td></tr>
-<tr class="separator:aefe6507aeeea0bbe7e6d32ec439f95ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a529235506298ee23fa84c05dfd22e2df"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a529235506298ee23fa84c05dfd22e2df">fclaw3d_metric_compute_volume_ghost_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a529235506298ee23fa84c05dfd22e2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the volume for each ghost cell.  <a href="fclaw3d__metric_8h.html#a529235506298ee23fa84c05dfd22e2df">More...</a><br /></td></tr>
-<tr class="separator:a529235506298ee23fa84c05dfd22e2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9421808729dc21e41f5090ce86e54b34"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a9421808729dc21e41f5090ce86e54b34">fclaw3d_metric_compute_basis_t</a>) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a9421808729dc21e41f5090ce86e54b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the rotation matrix.  <a href="fclaw3d__metric_8h.html#a9421808729dc21e41f5090ce86e54b34">More...</a><br /></td></tr>
-<tr class="separator:a9421808729dc21e41f5090ce86e54b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab49d347a33dc2e5293f792e5ceeb839"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aab49d347a33dc2e5293f792e5ceeb839">fclaw3d_metric_compute_mesh_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:aab49d347a33dc2e5293f792e5ceeb839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the cell center and node coordinates for a patch.  <a href="fclaw3d__metric_8h.html#aab49d347a33dc2e5293f792e5ceeb839">More...</a><br /></td></tr>
+<tr class="separator:aab49d347a33dc2e5293f792e5ceeb839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1b760e9255bdaa2d1160ca5088109a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#afb1b760e9255bdaa2d1160ca5088109a">fclaw3d_metric_compute_volume_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:afb1b760e9255bdaa2d1160ca5088109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the area for each cell.  <a href="fclaw3d__metric_8h.html#afb1b760e9255bdaa2d1160ca5088109a">More...</a><br /></td></tr>
+<tr class="separator:afb1b760e9255bdaa2d1160ca5088109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af420997c4b13e1cfaeab71dae5f87f2f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#af420997c4b13e1cfaeab71dae5f87f2f">fclaw3d_metric_compute_volume_ghost_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:af420997c4b13e1cfaeab71dae5f87f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the volume for each ghost cell.  <a href="fclaw3d__metric_8h.html#af420997c4b13e1cfaeab71dae5f87f2f">More...</a><br /></td></tr>
+<tr class="separator:af420997c4b13e1cfaeab71dae5f87f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c7ce27522ba85a9a25d8b4935225ae"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a01c7ce27522ba85a9a25d8b4935225ae">fclaw3d_metric_compute_basis_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:a01c7ce27522ba85a9a25d8b4935225ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the rotation matrix.  <a href="fclaw3d__metric_8h.html#a01c7ce27522ba85a9a25d8b4935225ae">More...</a><br /></td></tr>
+<tr class="separator:a01c7ce27522ba85a9a25d8b4935225ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a28b341c87b3fe807a758ae143091ab82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a28b341c87b3fe807a758ae143091ab82">fclaw3d_metric_patch_define</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int mx, int my, int mz, int mbc, double dx, double dy, double dz, double xlower, double ylower, double zlower, double xupper, double yupper, double zupper, int blockno, int patchno, <a class="el" href="fclaw2d__patch_8h.html#af7c928a849e010ea9eda857119c98ae8">fclaw2d_build_mode_t</a> build_mode)</td></tr>
-<tr class="memdesc:a28b341c87b3fe807a758ae143091ab82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the grid data for a patch and initialized storage.  <a href="fclaw3d__metric_8h.html#a28b341c87b3fe807a758ae143091ab82">More...</a><br /></td></tr>
-<tr class="separator:a28b341c87b3fe807a758ae143091ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633b470836c6c440a05eec3ce77a0acb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a633b470836c6c440a05eec3ce77a0acb">fclaw3d_metric_patch_build</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a633b470836c6c440a05eec3ce77a0acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mesh and tensor arrays.  <a href="fclaw3d__metric_8h.html#a633b470836c6c440a05eec3ce77a0acb">More...</a><br /></td></tr>
-<tr class="separator:a633b470836c6c440a05eec3ce77a0acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8ddf9a18a1485674b5c2a7622bd6c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a6c8ddf9a18a1485674b5c2a7622bd6c7">fclaw3d_metric_patch_build_from_fine</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *fine_patches, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *coarse_coarse, int blockno, int coarse_patchno, int fine0_patchno)</td></tr>
-<tr class="memdesc:a6c8ddf9a18a1485674b5c2a7622bd6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average the area for coarse patch ghost cells from the fine patches.  <a href="fclaw3d__metric_8h.html#a6c8ddf9a18a1485674b5c2a7622bd6c7">More...</a><br /></td></tr>
-<tr class="separator:a6c8ddf9a18a1485674b5c2a7622bd6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8605bade59e12738cbb67acea849c517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a8605bade59e12738cbb67acea849c517">fclaw3d_metric_patch_compute_volume</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a8605bade59e12738cbb67acea849c517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the area array.  <a href="fclaw3d__metric_8h.html#a8605bade59e12738cbb67acea849c517">More...</a><br /></td></tr>
-<tr class="separator:a8605bade59e12738cbb67acea849c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175b280c5a2fa667115b6ea46529960f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a175b280c5a2fa667115b6ea46529960f">fclaw3d_metric_patch_grid_data</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int *mx, int *my, int *mz, int *mbc, double *xlower, double *ylower, double *zlower, double *dx, double *dy, double *dz)</td></tr>
-<tr class="memdesc:a175b280c5a2fa667115b6ea46529960f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the grid related data for a patch.  <a href="fclaw3d__metric_8h.html#a175b280c5a2fa667115b6ea46529960f">More...</a><br /></td></tr>
-<tr class="separator:a175b280c5a2fa667115b6ea46529960f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e467a3bdc489188d686e2aa5909af54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a5e467a3bdc489188d686e2aa5909af54">fclaw3d_metric_patch_scalar</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, double **volume, double **faceareas)</td></tr>
-<tr class="memdesc:a5e467a3bdc489188d686e2aa5909af54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scalar metrics of a patch.  <a href="fclaw3d__metric_8h.html#a5e467a3bdc489188d686e2aa5909af54">More...</a><br /></td></tr>
-<tr class="separator:a5e467a3bdc489188d686e2aa5909af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abccd424e6787644d876e7a8f339afe37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#abccd424e6787644d876e7a8f339afe37">fclaw3d_metric_patch_basis</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, double **xrot, double **yrot, double **zrot)</td></tr>
-<tr class="memdesc:abccd424e6787644d876e7a8f339afe37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rotation metrics of a patch.  <a href="fclaw3d__metric_8h.html#abccd424e6787644d876e7a8f339afe37">More...</a><br /></td></tr>
-<tr class="separator:abccd424e6787644d876e7a8f339afe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b6d9583cc661a4fdce2c89ced0fea80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a7b6d9583cc661a4fdce2c89ced0fea80">fclaw3d_metric_patch_mesh_data</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, double **xp, double **yp, double **zp, double **xd, double **yd, double **zd, double **volume, double **faceareas)</td></tr>
-<tr class="memdesc:a7b6d9583cc661a4fdce2c89ced0fea80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mesh metrics of a patch.  <a href="fclaw3d__metric_8h.html#a7b6d9583cc661a4fdce2c89ced0fea80">More...</a><br /></td></tr>
-<tr class="separator:a7b6d9583cc661a4fdce2c89ced0fea80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b0d3a9c384292b709f6d28738206df"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a47b0d3a9c384292b709f6d28738206df">fclaw3d_metric_patch_get_volume</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch)</td></tr>
-<tr class="memdesc:a47b0d3a9c384292b709f6d28738206df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the area for each cell of the patch.  <a href="fclaw3d__metric_8h.html#a47b0d3a9c384292b709f6d28738206df">More...</a><br /></td></tr>
-<tr class="separator:a47b0d3a9c384292b709f6d28738206df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0074eba7303251c68e9cf2fe9930cc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a0074eba7303251c68e9cf2fe9930cc33">fclaw3d_metric_compute_volume_default</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="separator:a0074eba7303251c68e9cf2fe9930cc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17d4ed5da54dde002082a9551b8eb14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aa17d4ed5da54dde002082a9551b8eb14">fclaw3d_metric_compute_volume_ghost_default</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="separator:aa17d4ed5da54dde002082a9551b8eb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86882c3bf066dfe36b79f8da8acb1e07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a86882c3bf066dfe36b79f8da8acb1e07">fclaw3d_metric_compute_mesh_default</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="memdesc:a86882c3bf066dfe36b79f8da8acb1e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the cell center and node coordinates for a patch.  <a href="fclaw3d__metric_8h.html#a86882c3bf066dfe36b79f8da8acb1e07">More...</a><br /></td></tr>
-<tr class="separator:a86882c3bf066dfe36b79f8da8acb1e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abbd0560033ef7ad1b87c804b13f736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a9abbd0560033ef7ad1b87c804b13f736">fclaw3d_metric_compute_basis_default</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td></tr>
-<tr class="separator:a9abbd0560033ef7ad1b87c804b13f736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd3807541c9753c17f06b18044aebc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__metric_8h.html#a856220f0d12a94cd6c5031e5af799347">fclaw3d_metric_vtable_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a9dd3807541c9753c17f06b18044aebc6">fclaw3d_metric_vt</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td></tr>
-<tr class="memdesc:a9dd3807541c9753c17f06b18044aebc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global vtable variable.  <a href="fclaw3d__metric_8h.html#a9dd3807541c9753c17f06b18044aebc6">More...</a><br /></td></tr>
-<tr class="separator:a9dd3807541c9753c17f06b18044aebc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e8fbed621708ac9133f3ee7893e629"><td class="memItemLeft" align="right" valign="top"><a id="a77e8fbed621708ac9133f3ee7893e629"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a77e8fbed621708ac9133f3ee7893e629">fclaw3d_metric_vtable_initialize</a> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob)</td></tr>
-<tr class="memdesc:a77e8fbed621708ac9133f3ee7893e629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a global vtable variable. <br /></td></tr>
-<tr class="separator:a77e8fbed621708ac9133f3ee7893e629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b45240b75dc2340005f180127a43b08"><td class="memItemLeft" align="right" valign="top"><a id="a9b45240b75dc2340005f180127a43b08"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_nodes_size</b> (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch)</td></tr>
-<tr class="separator:a9b45240b75dc2340005f180127a43b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fb357a171def6e25de35a9483e8dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a16fb357a171def6e25de35a9483e8dac">fclaw3d_metric_patch_define</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int mx, int my, int mz, int mbc, double dx, double dy, double dz, double xlower, double ylower, double zlower, double xupper, double yupper, double zupper, int blockno, int patchno, <a class="el" href="fclaw__patch_8h.html#a994e49a066df64207eb9179c24b63ab6">fclaw_build_mode_t</a> build_mode)</td></tr>
+<tr class="memdesc:a16fb357a171def6e25de35a9483e8dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the grid data for a patch and initialized storage.  <a href="fclaw3d__metric_8h.html#a16fb357a171def6e25de35a9483e8dac">More...</a><br /></td></tr>
+<tr class="separator:a16fb357a171def6e25de35a9483e8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770636e2829c8d20396cd637966e30a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a770636e2829c8d20396cd637966e30a2">fclaw3d_metric_patch_build</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:a770636e2829c8d20396cd637966e30a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mesh and tensor arrays.  <a href="fclaw3d__metric_8h.html#a770636e2829c8d20396cd637966e30a2">More...</a><br /></td></tr>
+<tr class="separator:a770636e2829c8d20396cd637966e30a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4260611f661caecffb5bb30401c98123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a4260611f661caecffb5bb30401c98123">fclaw3d_metric_patch_build_from_fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_coarse, int blockno, int coarse_patchno, int fine0_patchno)</td></tr>
+<tr class="memdesc:a4260611f661caecffb5bb30401c98123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average the area for coarse patch ghost cells from the fine patches.  <a href="fclaw3d__metric_8h.html#a4260611f661caecffb5bb30401c98123">More...</a><br /></td></tr>
+<tr class="separator:a4260611f661caecffb5bb30401c98123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c84c87dcf2ce8aade27216ecef0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a8b7c84c87dcf2ce8aade27216ecef0b4">fclaw3d_metric_patch_compute_volume</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:a8b7c84c87dcf2ce8aade27216ecef0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the area array.  <a href="fclaw3d__metric_8h.html#a8b7c84c87dcf2ce8aade27216ecef0b4">More...</a><br /></td></tr>
+<tr class="separator:a8b7c84c87dcf2ce8aade27216ecef0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247a959d8dfaa2e898a0872409014bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a247a959d8dfaa2e898a0872409014bcd">fclaw3d_metric_patch_grid_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int *mx, int *my, int *mz, int *mbc, double *xlower, double *ylower, double *zlower, double *dx, double *dy, double *dz)</td></tr>
+<tr class="memdesc:a247a959d8dfaa2e898a0872409014bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the grid related data for a patch.  <a href="fclaw3d__metric_8h.html#a247a959d8dfaa2e898a0872409014bcd">More...</a><br /></td></tr>
+<tr class="separator:a247a959d8dfaa2e898a0872409014bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b1f1da0f56c28dca8da49073471738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a13b1f1da0f56c28dca8da49073471738">fclaw3d_metric_patch_scalar</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, double **volume, double **faceareas)</td></tr>
+<tr class="memdesc:a13b1f1da0f56c28dca8da49073471738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scalar metrics of a patch.  <a href="fclaw3d__metric_8h.html#a13b1f1da0f56c28dca8da49073471738">More...</a><br /></td></tr>
+<tr class="separator:a13b1f1da0f56c28dca8da49073471738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fa52cc9bd6d8c7c21af481aa45c8bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a68fa52cc9bd6d8c7c21af481aa45c8bf">fclaw3d_metric_patch_basis</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, double **xrot, double **yrot, double **zrot)</td></tr>
+<tr class="memdesc:a68fa52cc9bd6d8c7c21af481aa45c8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rotation metrics of a patch.  <a href="fclaw3d__metric_8h.html#a68fa52cc9bd6d8c7c21af481aa45c8bf">More...</a><br /></td></tr>
+<tr class="separator:a68fa52cc9bd6d8c7c21af481aa45c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa870bcfcdea661f19d559daa5e200e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aa870bcfcdea661f19d559daa5e200e6e">fclaw3d_metric_patch_mesh_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, double **xp, double **yp, double **zp, double **xd, double **yd, double **zd, double **volume, double **faceareas)</td></tr>
+<tr class="memdesc:aa870bcfcdea661f19d559daa5e200e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mesh metrics of a patch.  <a href="fclaw3d__metric_8h.html#aa870bcfcdea661f19d559daa5e200e6e">More...</a><br /></td></tr>
+<tr class="separator:aa870bcfcdea661f19d559daa5e200e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5b9e868b3c31763d7801bc1725ebba"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a5c5b9e868b3c31763d7801bc1725ebba">fclaw3d_metric_patch_get_volume</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="memdesc:a5c5b9e868b3c31763d7801bc1725ebba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the area for each cell of the patch.  <a href="fclaw3d__metric_8h.html#a5c5b9e868b3c31763d7801bc1725ebba">More...</a><br /></td></tr>
+<tr class="separator:a5c5b9e868b3c31763d7801bc1725ebba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62361862af805a8b50b568fb048d177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#af62361862af805a8b50b568fb048d177">fclaw3d_metric_compute_volume_default</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="separator:af62361862af805a8b50b568fb048d177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456fa13f8b010e418a5edcdd4b88a496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a456fa13f8b010e418a5edcdd4b88a496">fclaw3d_metric_compute_volume_ghost_default</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="separator:a456fa13f8b010e418a5edcdd4b88a496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea39dc02d2c924b127d7ea74dab8f4af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aea39dc02d2c924b127d7ea74dab8f4af">fclaw3d_metric_compute_mesh_default</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="memdesc:aea39dc02d2c924b127d7ea74dab8f4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the cell center and node coordinates for a patch.  <a href="fclaw3d__metric_8h.html#aea39dc02d2c924b127d7ea74dab8f4af">More...</a><br /></td></tr>
+<tr class="separator:aea39dc02d2c924b127d7ea74dab8f4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5930484130649438958487f5eaa0d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#aa5930484130649438958487f5eaa0d16">fclaw3d_metric_compute_basis_default</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td></tr>
+<tr class="separator:aa5930484130649438958487f5eaa0d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25518d8505e59c7be36c31b557dcb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__metric_8h.html#a856220f0d12a94cd6c5031e5af799347">fclaw3d_metric_vtable_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#ae25518d8505e59c7be36c31b557dcb01">fclaw3d_metric_vt</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
+<tr class="memdesc:ae25518d8505e59c7be36c31b557dcb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global vtable variable.  <a href="fclaw3d__metric_8h.html#ae25518d8505e59c7be36c31b557dcb01">More...</a><br /></td></tr>
+<tr class="separator:ae25518d8505e59c7be36c31b557dcb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843dc50de4c2d923fd43cbe686cc2236"><td class="memItemLeft" align="right" valign="top"><a id="a843dc50de4c2d923fd43cbe686cc2236"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__metric_8h.html#a843dc50de4c2d923fd43cbe686cc2236">fclaw3d_metric_vtable_initialize</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
+<tr class="memdesc:a843dc50de4c2d923fd43cbe686cc2236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a global vtable variable. <br /></td></tr>
+<tr class="separator:a843dc50de4c2d923fd43cbe686cc2236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72451a654412bf350415d535b89ceaa0"><td class="memItemLeft" align="right" valign="top"><a id="a72451a654412bf350415d535b89ceaa0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_nodes_size</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="separator:a72451a654412bf350415d535b89ceaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Patch subroutines for patch-related metric terms. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9421808729dc21e41f5090ce86e54b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9421808729dc21e41f5090ce86e54b34">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_basis_t</h2>
+<a id="a01c7ce27522ba85a9a25d8b4935225ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c7ce27522ba85a9a25d8b4935225ae">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_basis_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw3d_metric_compute_basis_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td>
+          <td class="memname">typedef void(* fclaw3d_metric_compute_basis_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,14 +183,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a683b918bc4d58a184df1a52dbe6235b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a683b918bc4d58a184df1a52dbe6235b9">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_mesh_t</h2>
+<a id="aab49d347a33dc2e5293f792e5ceeb839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab49d347a33dc2e5293f792e5ceeb839">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_mesh_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw3d_metric_compute_mesh_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td>
+          <td class="memname">typedef void(* fclaw3d_metric_compute_mesh_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,14 +208,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a529235506298ee23fa84c05dfd22e2df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a529235506298ee23fa84c05dfd22e2df">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_ghost_t</h2>
+<a id="af420997c4b13e1cfaeab71dae5f87f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af420997c4b13e1cfaeab71dae5f87f2f">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_ghost_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw3d_metric_compute_volume_ghost_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td>
+          <td class="memname">typedef void(* fclaw3d_metric_compute_volume_ghost_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -233,14 +233,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="aefe6507aeeea0bbe7e6d32ec439f95ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe6507aeeea0bbe7e6d32ec439f95ec">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_t</h2>
+<a id="afb1b760e9255bdaa2d1160ca5088109a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1b760e9255bdaa2d1160ca5088109a">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw3d_metric_compute_volume_t) (struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch, int blockno, int patchno)</td>
+          <td class="memname">typedef void(* fclaw3d_metric_compute_volume_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -259,8 +259,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9abbd0560033ef7ad1b87c804b13f736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9abbd0560033ef7ad1b87c804b13f736">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_basis_default()</h2>
+<a id="aa5930484130649438958487f5eaa0d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5930484130649438958487f5eaa0d16">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_basis_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,13 +268,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_compute_basis_default </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -302,8 +302,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a86882c3bf066dfe36b79f8da8acb1e07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86882c3bf066dfe36b79f8da8acb1e07">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_mesh_default()</h2>
+<a id="aea39dc02d2c924b127d7ea74dab8f4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea39dc02d2c924b127d7ea74dab8f4af">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_mesh_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,13 +311,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_compute_mesh_default </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -354,8 +354,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a0074eba7303251c68e9cf2fe9930cc33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0074eba7303251c68e9cf2fe9930cc33">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_default()</h2>
+<a id="af62361862af805a8b50b568fb048d177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62361862af805a8b50b568fb048d177">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,13 +363,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_compute_volume_default </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -397,8 +397,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="aa17d4ed5da54dde002082a9551b8eb14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa17d4ed5da54dde002082a9551b8eb14">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_ghost_default()</h2>
+<a id="a456fa13f8b010e418a5edcdd4b88a496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456fa13f8b010e418a5edcdd4b88a496">&#9670;&nbsp;</a></span>fclaw3d_metric_compute_volume_ghost_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,13 +406,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_compute_volume_ghost_default </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -440,8 +440,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="abccd424e6787644d876e7a8f339afe37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abccd424e6787644d876e7a8f339afe37">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_basis()</h2>
+<a id="a68fa52cc9bd6d8c7c21af481aa45c8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fa52cc9bd6d8c7c21af481aa45c8bf">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_basis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,13 +449,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_basis </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -496,8 +496,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a633b470836c6c440a05eec3ce77a0acb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633b470836c6c440a05eec3ce77a0acb">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_build()</h2>
+<a id="a770636e2829c8d20396cd637966e30a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770636e2829c8d20396cd637966e30a2">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_build()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,13 +505,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_build </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -547,8 +547,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a6c8ddf9a18a1485674b5c2a7622bd6c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c8ddf9a18a1485674b5c2a7622bd6c7">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_build_from_fine()</h2>
+<a id="a4260611f661caecffb5bb30401c98123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4260611f661caecffb5bb30401c98123">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_build_from_fine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,19 +556,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_build_from_fine </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>fine_patches</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>coarse_coarse</em>, </td>
         </tr>
         <tr>
@@ -612,8 +612,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a8605bade59e12738cbb67acea849c517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8605bade59e12738cbb67acea849c517">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_compute_volume()</h2>
+<a id="a8b7c84c87dcf2ce8aade27216ecef0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7c84c87dcf2ce8aade27216ecef0b4">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_compute_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,13 +621,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_compute_volume </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -663,8 +663,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a28b341c87b3fe807a758ae143091ab82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28b341c87b3fe807a758ae143091ab82">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_define()</h2>
+<a id="a16fb357a171def6e25de35a9483e8dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fb357a171def6e25de35a9483e8dac">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_define()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,13 +672,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_define </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -774,7 +774,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="fclaw2d__patch_8h.html#af7c928a849e010ea9eda857119c98ae8">fclaw2d_build_mode_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="fclaw__patch_8h.html#a994e49a066df64207eb9179c24b63ab6">fclaw_build_mode_t</a>&#160;</td>
           <td class="paramname"><em>build_mode</em>&#160;</td>
         </tr>
         <tr>
@@ -804,8 +804,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a47b0d3a9c384292b709f6d28738206df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47b0d3a9c384292b709f6d28738206df">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_get_volume()</h2>
+<a id="a5c5b9e868b3c31763d7801bc1725ebba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5b9e868b3c31763d7801bc1725ebba">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_get_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -813,13 +813,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">double* fclaw3d_metric_patch_get_volume </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>&#160;</td>
         </tr>
         <tr>
@@ -842,8 +842,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a175b280c5a2fa667115b6ea46529960f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175b280c5a2fa667115b6ea46529960f">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_grid_data()</h2>
+<a id="a247a959d8dfaa2e898a0872409014bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247a959d8dfaa2e898a0872409014bcd">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_grid_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -851,13 +851,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_grid_data </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -943,8 +943,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a7b6d9583cc661a4fdce2c89ced0fea80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b6d9583cc661a4fdce2c89ced0fea80">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_mesh_data()</h2>
+<a id="aa870bcfcdea661f19d559daa5e200e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa870bcfcdea661f19d559daa5e200e6e">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_mesh_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -952,13 +952,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_mesh_data </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -1031,8 +1031,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a5e467a3bdc489188d686e2aa5909af54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e467a3bdc489188d686e2aa5909af54">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_scalar()</h2>
+<a id="a13b1f1da0f56c28dca8da49073471738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b1f1da0f56c28dca8da49073471738">&#9670;&nbsp;</a></span>fclaw3d_metric_patch_scalar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,13 +1040,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname">void fclaw3d_metric_patch_scalar </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
           <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
@@ -1082,8 +1082,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
 
 </div>
 </div>
-<a id="a9dd3807541c9753c17f06b18044aebc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd3807541c9753c17f06b18044aebc6">&#9670;&nbsp;</a></span>fclaw3d_metric_vt()</h2>
+<a id="ae25518d8505e59c7be36c31b557dcb01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25518d8505e59c7be36c31b557dcb01">&#9670;&nbsp;</a></span>fclaw3d_metric_vt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1091,7 +1091,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw3d_metric_patch_n
         <tr>
           <td class="memname"><a class="el" href="fclaw3d__metric_8h.html#a856220f0d12a94cd6c5031e5af799347">fclaw3d_metric_vtable_t</a>* fclaw3d_metric_vt </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__global.html">fclaw2d_global</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em></td><td>)</td>
           <td></td>
         </tr>

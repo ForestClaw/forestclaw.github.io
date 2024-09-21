@@ -67,25 +67,64 @@ $(function() {
 <div class="title">fclaw_patch Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The metadata structure for a forest leaf, which is a forestclaw patch.  
+ <a href="structfclaw__patch.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="forestclaw_8h_source.html">forestclaw.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac284f62b795798ff4a72d9865b22a409"><td class="memItemLeft" ><a id="ac284f62b795798ff4a72d9865b22a409"></a>
-union {</td></tr>
-<tr class="memitem:abcd17b9c1786fd88ca212127bf1302c3"><td class="memItemLeft" >
-&#160;&#160;&#160;struct <a class="el" href="structfclaw2d__patch__data.html">fclaw2d_patch_data</a> *&#160;&#160;&#160;<b>pd2</b></td></tr>
-<tr class="separator:abcd17b9c1786fd88ca212127bf1302c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2b6f1db1d389a561ed60fe592f7fe7"><td class="memItemLeft" >
-&#160;&#160;&#160;struct <a class="el" href="structfclaw3d__patch__data.html">fclaw3d_patch_data</a> *&#160;&#160;&#160;<b>pd3</b></td></tr>
-<tr class="separator:a5b2b6f1db1d389a561ed60fe592f7fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac284f62b795798ff4a72d9865b22a409"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>pd</b></td></tr>
-<tr class="separator:ac284f62b795798ff4a72d9865b22a409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f0f1f0f2867e7dd573025fea987a7c"><td class="memItemLeft" align="right" valign="top"><a id="a14f0f1f0f2867e7dd573025fea987a7c"></a>
-<a class="el" href="structfclaw__patch__user.html">fclaw_patch_user_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pu</b></td></tr>
-<tr class="separator:a14f0f1f0f2867e7dd573025fea987a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42bcec5cad8358e451b7eb50be13f45"><td class="memItemLeft" align="right" valign="top"><a id="ae42bcec5cad8358e451b7eb50be13f45"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#ae42bcec5cad8358e451b7eb50be13f45">refine_dim</a></td></tr>
+<tr class="memdesc:ae42bcec5cad8358e451b7eb50be13f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimension <br /></td></tr>
+<tr class="separator:ae42bcec5cad8358e451b7eb50be13f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480b4eddb134b669c21cf1eba93b75eb"><td class="memItemLeft" align="right" valign="top"><a id="a480b4eddb134b669c21cf1eba93b75eb"></a>
+struct <a class="el" href="structfclaw2d__patch.html">fclaw2d_patch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a480b4eddb134b669c21cf1eba93b75eb">d2</a></td></tr>
+<tr class="memdesc:a480b4eddb134b669c21cf1eba93b75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D patch <br /></td></tr>
+<tr class="separator:a480b4eddb134b669c21cf1eba93b75eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2afc4886a97968ccbef1843b7a02eb"><td class="memItemLeft" align="right" valign="top"><a id="a9b2afc4886a97968ccbef1843b7a02eb"></a>
+struct <a class="el" href="structfclaw3d__patch.html">fclaw3d_patch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a9b2afc4886a97968ccbef1843b7a02eb">d3</a></td></tr>
+<tr class="memdesc:a9b2afc4886a97968ccbef1843b7a02eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D patch <br /></td></tr>
+<tr class="separator:a9b2afc4886a97968ccbef1843b7a02eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e2b43b17e5c9eab926d657cffad7ef"><td class="memItemLeft" align="right" valign="top"><a id="a79e2b43b17e5c9eab926d657cffad7ef"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a79e2b43b17e5c9eab926d657cffad7ef">level</a></td></tr>
+<tr class="memdesc:a79e2b43b17e5c9eab926d657cffad7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 is root, increases if refined <br /></td></tr>
+<tr class="separator:a79e2b43b17e5c9eab926d657cffad7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c02c7f8dd9c9940f72180137bfacfc"><td class="memItemLeft" align="right" valign="top"><a id="ad0c02c7f8dd9c9940f72180137bfacfc"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#ad0c02c7f8dd9c9940f72180137bfacfc">user</a></td></tr>
+<tr class="memdesc:ad0c02c7f8dd9c9940f72180137bfacfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">User Pointer. <br /></td></tr>
+<tr class="separator:ad0c02c7f8dd9c9940f72180137bfacfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7ee10f0ef37d133599ff8276b6c757"><td class="memItemLeft" align="right" valign="top"><a id="aed7ee10f0ef37d133599ff8276b6c757"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#aed7ee10f0ef37d133599ff8276b6c757">xlower</a></td></tr>
+<tr class="memdesc:aed7ee10f0ef37d133599ff8276b6c757"><td class="mdescLeft">&#160;</td><td class="mdescRight">left/right coordinate <br /></td></tr>
+<tr class="separator:aed7ee10f0ef37d133599ff8276b6c757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acead1bce648f0c03324dd8b4b8fb1894"><td class="memItemLeft" align="right" valign="top"><a id="acead1bce648f0c03324dd8b4b8fb1894"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#acead1bce648f0c03324dd8b4b8fb1894">xupper</a></td></tr>
+<tr class="memdesc:acead1bce648f0c03324dd8b4b8fb1894"><td class="mdescLeft">&#160;</td><td class="mdescRight">left/right coordinate <br /></td></tr>
+<tr class="separator:acead1bce648f0c03324dd8b4b8fb1894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bee35ff4cd8c71e86d90570155f103"><td class="memItemLeft" align="right" valign="top"><a id="a33bee35ff4cd8c71e86d90570155f103"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a33bee35ff4cd8c71e86d90570155f103">ylower</a></td></tr>
+<tr class="memdesc:a33bee35ff4cd8c71e86d90570155f103"><td class="mdescLeft">&#160;</td><td class="mdescRight">front/back coordinate <br /></td></tr>
+<tr class="separator:a33bee35ff4cd8c71e86d90570155f103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af793f928c8b0db59970becaf464e4a68"><td class="memItemLeft" align="right" valign="top"><a id="af793f928c8b0db59970becaf464e4a68"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#af793f928c8b0db59970becaf464e4a68">yupper</a></td></tr>
+<tr class="memdesc:af793f928c8b0db59970becaf464e4a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">front/back coordinate <br /></td></tr>
+<tr class="separator:af793f928c8b0db59970becaf464e4a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95dc52e5b62be75bfdeff4131c18fafe"><td class="memItemLeft" align="right" valign="top"><a id="a95dc52e5b62be75bfdeff4131c18fafe"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a95dc52e5b62be75bfdeff4131c18fafe">zlower</a></td></tr>
+<tr class="memdesc:a95dc52e5b62be75bfdeff4131c18fafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">bottom/top coordinate. For 2D refinement, these are always set to 0,1 respectively. <br /></td></tr>
+<tr class="separator:a95dc52e5b62be75bfdeff4131c18fafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1725db91c0937ce40c9d9eb195fbcba5"><td class="memItemLeft" align="right" valign="top"><a id="a1725db91c0937ce40c9d9eb195fbcba5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__patch.html#a1725db91c0937ce40c9d9eb195fbcba5">zupper</a></td></tr>
+<tr class="memdesc:a1725db91c0937ce40c9d9eb195fbcba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">bottom/top coordinate. For 2D refinement, these are always set to 0,1 respectively. <br /></td></tr>
+<tr class="separator:a1725db91c0937ce40c9d9eb195fbcba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="fclaw__patch_8h_source.html">fclaw_patch.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The metadata structure for a forest leaf, which is a forestclaw patch. </p>
+<p>The patch may be either a process-local patch or a ghost patch. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="forestclaw_8h_source.html">forestclaw.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

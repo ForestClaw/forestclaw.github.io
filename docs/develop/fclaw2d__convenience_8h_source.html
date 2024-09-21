@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> *fclaw2d_domain_adapt (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> *fclaw2d_domain_partition (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> *<a class="code" href="structfclaw2d__domain__partition.html">fclaw2d_domain_partition</a> (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                            <span class="keywordtype">int</span> weight_exponent);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">void</span> fclaw2d_domain_partition_unchanged (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
@@ -164,24 +164,24 @@ $(function() {
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">typedef</span> int (*fclaw2d_integrate_ray_t) (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                        <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> * patch,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                        <span class="keywordtype">int</span> <a class="code" href="structfclaw2d__patch.html#a1ee4bc5669214bb64522ac4a1662c6a7">blockno</a>, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                        <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                        <span class="keywordtype">void</span> *ray, <span class="keywordtype">double</span> *integral,</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                        <span class="keywordtype">void</span> *<a class="code" href="structfclaw2d__patch.html#a9d952afdbb8dee421723700c643eba7e">user</a>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                        <span class="keywordtype">void</span> *user);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keywordtype">void</span> fclaw2d_domain_integrate_rays (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                    fclaw2d_integrate_ray_t intersect,</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                    sc_array_t * rays,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                    sc_array_t * integrals, <span class="keywordtype">void</span> *<a class="code" href="structfclaw2d__patch.html#a9d952afdbb8dee421723700c643eba7e">user</a>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                    sc_array_t * integrals, <span class="keywordtype">void</span> *user);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">typedef</span> int (*fclaw2d_interpolate_point_t) (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                            <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> * patch,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                            <span class="keywordtype">int</span> <a class="code" href="structfclaw2d__patch.html#a1ee4bc5669214bb64522ac4a1662c6a7">blockno</a>, <span class="keywordtype">int</span> patchno,</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                            <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *<a class="code" href="structfclaw2d__patch.html#a9d952afdbb8dee421723700c643eba7e">user</a>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                            <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                            <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *user);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keywordtype">void</span> fclaw2d_overlap_exchange (<a class="code" href="structfclaw2d__domain.html">fclaw2d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                               sc_array_t * query_points,</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                               fclaw2d_interpolate_point_t interpolate,</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                               <span class="keywordtype">void</span> *<a class="code" href="structfclaw2d__patch.html#a9d952afdbb8dee421723700c643eba7e">user</a>);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                               <span class="keywordtype">void</span> *user);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#if 0</span></div>
@@ -193,10 +193,9 @@ $(function() {
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FCLAW2D_CONVENIENCE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aforestclaw2d_8h_html"><div class="ttname"><a href="forestclaw2d_8h.html">forestclaw2d.h</a></div></div>
-<div class="ttc" id="astructfclaw2d__domain_html"><div class="ttname"><a href="structfclaw2d__domain.html">fclaw2d_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:171</div></div>
-<div class="ttc" id="astructfclaw2d__patch_html_a9d952afdbb8dee421723700c643eba7e"><div class="ttname"><a href="structfclaw2d__patch.html#a9d952afdbb8dee421723700c643eba7e">fclaw2d_patch::user</a></div><div class="ttdeci">void * user</div><div class="ttdoc">User Pointer.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:116</div></div>
+<div class="ttc" id="astructfclaw2d__domain_html"><div class="ttname"><a href="structfclaw2d__domain.html">fclaw2d_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:189</div></div>
 <div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
-<div class="ttc" id="astructfclaw2d__patch_html_a1ee4bc5669214bb64522ac4a1662c6a7"><div class="ttname"><a href="structfclaw2d__patch.html#a1ee4bc5669214bb64522ac4a1662c6a7">fclaw2d_patch::blockno</a></div><div class="ttdeci">int blockno</div><div class="ttdoc">off-proc: this patch's block number</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:113</div></div>
+<div class="ttc" id="astructfclaw2d__domain__partition_html"><div class="ttname"><a href="structfclaw2d__domain__partition.html">fclaw2d_domain_partition</a></div><div class="ttdoc">Data structure for storing allocated data for partition transfer.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:839</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

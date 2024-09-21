@@ -67,52 +67,165 @@ $(function() {
 <div class="title">fclaw_domain Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The domain structure is a collection of blocks.  
+ <a href="structfclaw__domain.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="forestclaw_8h_source.html">forestclaw.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afaf7e9266c94666d8d6ad4ab319f2666"><td class="memItemLeft" align="right" valign="top"><a id="afaf7e9266c94666d8d6ad4ab319f2666"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>dim</b></td></tr>
-<tr class="separator:afaf7e9266c94666d8d6ad4ab319f2666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9aff12aa7320dce2f0abfe978674a0"><td class="memItemLeft" ><a id="afd9aff12aa7320dce2f0abfe978674a0"></a>
-union {</td></tr>
-<tr class="memitem:aed6d8922f5af1edb25e4f72a56ef37da"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ad89d19fa9e59af7bfc40a1bc0577280f"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<b>dmagic2</b></td></tr>
-<tr class="separator:ad89d19fa9e59af7bfc40a1bc0577280f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ddb80d0363f397cafe228587eb29996"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structfclaw2d__domain.html">fclaw2d_domain</a> *&#160;&#160;&#160;<b>domain2</b></td></tr>
-<tr class="separator:a3ddb80d0363f397cafe228587eb29996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41947c40263e6f045dbcf1712d2f01e1"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structfclaw2d__domain__exchange.html">fclaw2d_domain_exchange</a> *&#160;&#160;&#160;<b>exchange2</b></td></tr>
-<tr class="separator:a41947c40263e6f045dbcf1712d2f01e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed816f45eb237bf3c8c58a12ad2e0276"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct fclaw2d_domain_indirect *&#160;&#160;&#160;<b>indirect2</b></td></tr>
-<tr class="separator:aed816f45eb237bf3c8c58a12ad2e0276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6d8922f5af1edb25e4f72a56ef37da"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>d2</b></td></tr>
-<tr class="separator:aed6d8922f5af1edb25e4f72a56ef37da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6767d31037add84e0d8c726fe18a4d3f"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a2f30ccf5adbff85dd6f53e7f155b9196"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<b>dmagic3</b></td></tr>
-<tr class="separator:a2f30ccf5adbff85dd6f53e7f155b9196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35986e48fa55785d2c938175ee547635"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structfclaw3d__domain.html">fclaw3d_domain</a> *&#160;&#160;&#160;<b>domain3</b></td></tr>
-<tr class="separator:a35986e48fa55785d2c938175ee547635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6767d31037add84e0d8c726fe18a4d3f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>d3</b></td></tr>
-<tr class="separator:a6767d31037add84e0d8c726fe18a4d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9aff12aa7320dce2f0abfe978674a0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>d</b></td></tr>
-<tr class="separator:afd9aff12aa7320dce2f0abfe978674a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae42567a5ef7022196b6eb58dd5b99c7c"><td class="memItemLeft" align="right" valign="top"><a id="ae42567a5ef7022196b6eb58dd5b99c7c"></a>
-sc_mstamp_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ae42567a5ef7022196b6eb58dd5b99c7c">pstamp</a></td></tr>
-<tr class="memdesc:ae42567a5ef7022196b6eb58dd5b99c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal: quickly allocate same-size patches <br /></td></tr>
-<tr class="separator:ae42567a5ef7022196b6eb58dd5b99c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3f87b0ea7217a1f99b379acdbb3689"><td class="memItemLeft" align="right" valign="top"><a id="add3f87b0ea7217a1f99b379acdbb3689"></a>
-<a class="el" href="structfclaw__domain__user.html">fclaw_domain_user_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>du</b></td></tr>
-<tr class="separator:add3f87b0ea7217a1f99b379acdbb3689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d4b7132049f9c9a7a45efd79c1013a"><td class="memItemLeft" align="right" valign="top"><a id="ab0d4b7132049f9c9a7a45efd79c1013a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ab0d4b7132049f9c9a7a45efd79c1013a">refine_dim</a></td></tr>
+<tr class="memdesc:ab0d4b7132049f9c9a7a45efd79c1013a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimension <br /></td></tr>
+<tr class="separator:ab0d4b7132049f9c9a7a45efd79c1013a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62536c55e6124e8d590047838a425f68"><td class="memItemLeft" align="right" valign="top"><a id="a62536c55e6124e8d590047838a425f68"></a>
+struct <a class="el" href="structfclaw2d__domain.html">fclaw2d_domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a62536c55e6124e8d590047838a425f68">d2</a></td></tr>
+<tr class="memdesc:a62536c55e6124e8d590047838a425f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D domain <br /></td></tr>
+<tr class="separator:a62536c55e6124e8d590047838a425f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fa840303ac0bb74bef17b44be740c0"><td class="memItemLeft" align="right" valign="top"><a id="ad7fa840303ac0bb74bef17b44be740c0"></a>
+struct <a class="el" href="structfclaw3d__domain.html">fclaw3d_domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ad7fa840303ac0bb74bef17b44be740c0">d3</a></td></tr>
+<tr class="memdesc:ad7fa840303ac0bb74bef17b44be740c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D domain <br /></td></tr>
+<tr class="separator:ad7fa840303ac0bb74bef17b44be740c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7bb2ac68d8066d36b38ff70702076de"><td class="memItemLeft" align="right" valign="top"><a id="aa7bb2ac68d8066d36b38ff70702076de"></a>
+sc_MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#aa7bb2ac68d8066d36b38ff70702076de">mpicomm</a></td></tr>
+<tr class="memdesc:aa7bb2ac68d8066d36b38ff70702076de"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI communicator. <br /></td></tr>
+<tr class="separator:aa7bb2ac68d8066d36b38ff70702076de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a5326d79f4b7c2c25341475cbb1ddb"><td class="memItemLeft" align="right" valign="top"><a id="ad2a5326d79f4b7c2c25341475cbb1ddb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ad2a5326d79f4b7c2c25341475cbb1ddb">mpisize</a></td></tr>
+<tr class="memdesc:ad2a5326d79f4b7c2c25341475cbb1ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI size. <br /></td></tr>
+<tr class="separator:ad2a5326d79f4b7c2c25341475cbb1ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad1c09af9b7c2ac12bfff3b29f9042f"><td class="memItemLeft" align="right" valign="top"><a id="a4ad1c09af9b7c2ac12bfff3b29f9042f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a4ad1c09af9b7c2ac12bfff3b29f9042f">mpirank</a></td></tr>
+<tr class="memdesc:a4ad1c09af9b7c2ac12bfff3b29f9042f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI rank. <br /></td></tr>
+<tr class="separator:a4ad1c09af9b7c2ac12bfff3b29f9042f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23e3e042aa11b4919f4866e0c0c326f"><td class="memItemLeft" align="right" valign="top"><a id="ac23e3e042aa11b4919f4866e0c0c326f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ac23e3e042aa11b4919f4866e0c0c326f">local_num_patches</a></td></tr>
+<tr class="memdesc:ac23e3e042aa11b4919f4866e0c0c326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum of patches over all blocks on this proc <br /></td></tr>
+<tr class="separator:ac23e3e042aa11b4919f4866e0c0c326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1701c285a928754a4aaeaea6bca8f3"><td class="memItemLeft" align="right" valign="top"><a id="a4f1701c285a928754a4aaeaea6bca8f3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a4f1701c285a928754a4aaeaea6bca8f3">local_max_patches</a></td></tr>
+<tr class="memdesc:a4f1701c285a928754a4aaeaea6bca8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum over all procs of local_num_patches <br /></td></tr>
+<tr class="separator:a4f1701c285a928754a4aaeaea6bca8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e147a686b883b7b655404fd2b36cc39"><td class="memItemLeft" align="right" valign="top"><a id="a1e147a686b883b7b655404fd2b36cc39"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a1e147a686b883b7b655404fd2b36cc39">global_num_patches</a></td></tr>
+<tr class="memdesc:a1e147a686b883b7b655404fd2b36cc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum of local_num_patches over all procs <br /></td></tr>
+<tr class="separator:a1e147a686b883b7b655404fd2b36cc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab264f8a3a8d3ccdc197523358729767c"><td class="memItemLeft" align="right" valign="top"><a id="ab264f8a3a8d3ccdc197523358729767c"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#ab264f8a3a8d3ccdc197523358729767c">global_num_patches_before</a></td></tr>
+<tr class="memdesc:ab264f8a3a8d3ccdc197523358729767c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of patches on lower procs. <br /></td></tr>
+<tr class="separator:ab264f8a3a8d3ccdc197523358729767c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035059f493267c66506631604db07aa5"><td class="memItemLeft" align="right" valign="top"><a id="a035059f493267c66506631604db07aa5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a035059f493267c66506631604db07aa5">global_minlevel</a></td></tr>
+<tr class="memdesc:a035059f493267c66506631604db07aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">global min level <br /></td></tr>
+<tr class="separator:a035059f493267c66506631604db07aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb67665407c08cbc3fa69a5b3fc24e3d"><td class="memItemLeft" align="right" valign="top"><a id="afb67665407c08cbc3fa69a5b3fc24e3d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#afb67665407c08cbc3fa69a5b3fc24e3d">global_maxlevel</a></td></tr>
+<tr class="memdesc:afb67665407c08cbc3fa69a5b3fc24e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">global max level <br /></td></tr>
+<tr class="separator:afb67665407c08cbc3fa69a5b3fc24e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4746450ed2b701fd50047550bacdde7d"><td class="memItemLeft" align="right" valign="top"><a id="a4746450ed2b701fd50047550bacdde7d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a4746450ed2b701fd50047550bacdde7d">num_blocks</a></td></tr>
+<tr class="memdesc:a4746450ed2b701fd50047550bacdde7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of blocks. <br /></td></tr>
+<tr class="separator:a4746450ed2b701fd50047550bacdde7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e3987d911f208d6f50da673ad77f88"><td class="memItemLeft" align="right" valign="top"><a id="a07e3987d911f208d6f50da673ad77f88"></a>
+<a class="el" href="forestclaw_8h.html#afd510bfa3e3ef1eaec1f956b91599a09">fclaw_block_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a07e3987d911f208d6f50da673ad77f88">blocks</a></td></tr>
+<tr class="memdesc:a07e3987d911f208d6f50da673ad77f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocated storage <br /></td></tr>
+<tr class="separator:a07e3987d911f208d6f50da673ad77f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07bdad53ddd7a1bbed8d0010a9a72b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#af07bdad53ddd7a1bbed8d0010a9a72b7">num_exchange_patches</a></td></tr>
+<tr class="memdesc:af07bdad53ddd7a1bbed8d0010a9a72b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number my patches relevant to other procs.  <a href="structfclaw__domain.html#af07bdad53ddd7a1bbed8d0010a9a72b7">More...</a><br /></td></tr>
+<tr class="separator:af07bdad53ddd7a1bbed8d0010a9a72b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8feae5d0bc6c6847f049242c825af09f"><td class="memItemLeft" align="right" valign="top"><a id="a8feae5d0bc6c6847f049242c825af09f"></a>
+<a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a8feae5d0bc6c6847f049242c825af09f">exchange_patches</a></td></tr>
+<tr class="memdesc:a8feae5d0bc6c6847f049242c825af09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">explicitly store exchange patches <br /></td></tr>
+<tr class="separator:a8feae5d0bc6c6847f049242c825af09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f8476c6f74f767e38dc8b23f4bdd3a"><td class="memItemLeft" align="right" valign="top"><a id="af2f8476c6f74f767e38dc8b23f4bdd3a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#af2f8476c6f74f767e38dc8b23f4bdd3a">num_ghost_patches</a></td></tr>
+<tr class="memdesc:af2f8476c6f74f767e38dc8b23f4bdd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of off-proc patches relevant to this proc <br /></td></tr>
+<tr class="separator:af2f8476c6f74f767e38dc8b23f4bdd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2fe0e555c472c2cad5cb91be2fb5d9"><td class="memItemLeft" align="right" valign="top"><a id="a6e2fe0e555c472c2cad5cb91be2fb5d9"></a>
+<a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a6e2fe0e555c472c2cad5cb91be2fb5d9">ghost_patches</a></td></tr>
+<tr class="memdesc:a6e2fe0e555c472c2cad5cb91be2fb5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of off-proc patches <br /></td></tr>
+<tr class="separator:a6e2fe0e555c472c2cad5cb91be2fb5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08825402df9825e53b271b4b07502186"><td class="memItemLeft" align="right" valign="top"><a id="a08825402df9825e53b271b4b07502186"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count_set_patch</b></td></tr>
+<tr class="separator:a08825402df9825e53b271b4b07502186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da769b145fb6ac1ffd75792be77aaca"><td class="memItemLeft" align="right" valign="top"><a id="a4da769b145fb6ac1ffd75792be77aaca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count_delete_patch</b></td></tr>
+<tr class="separator:a4da769b145fb6ac1ffd75792be77aaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6a3981c42772f0291adcfbf00d07a9"><td class="memItemLeft" align="right" valign="top"><a id="a5b6a3981c42772f0291adcfbf00d07a9"></a>
+<a class="el" href="forestclaw_8h.html#a844d4ceebb80fc2343f8c81f5524a551">fclaw_domain_exchange_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>exchange</b></td></tr>
+<tr class="separator:a5b6a3981c42772f0291adcfbf00d07a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57a121f59af449d66dfbf4d873ed72a"><td class="memItemLeft" align="right" valign="top"><a id="ab57a121f59af449d66dfbf4d873ed72a"></a>
+<a class="el" href="forestclaw_8h.html#a2afd3cc4bc6789889635b65316b8a445">fclaw_domain_indirect_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>indirect</b></td></tr>
+<tr class="separator:ab57a121f59af449d66dfbf4d873ed72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18990693e09dad2752b64027e5d47203"><td class="memItemLeft" align="right" valign="top"><a id="a18990693e09dad2752b64027e5d47203"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a></td></tr>
+<tr class="memdesc:a18990693e09dad2752b64027e5d47203"><td class="mdescLeft">&#160;</td><td class="mdescRight">user data pointer <br /></td></tr>
+<tr class="separator:a18990693e09dad2752b64027e5d47203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272df7aee3d844c9e182fcfad02ef852"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a272df7aee3d844c9e182fcfad02ef852">local_minlevel</a></td></tr>
+<tr class="memdesc:a272df7aee3d844c9e182fcfad02ef852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local to proc.  <a href="structfclaw__domain.html#a272df7aee3d844c9e182fcfad02ef852">More...</a><br /></td></tr>
+<tr class="separator:a272df7aee3d844c9e182fcfad02ef852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d27bc8dd7af6b11d6184604ccae5f85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__domain.html#a0d27bc8dd7af6b11d6184604ccae5f85">local_maxlevel</a></td></tr>
+<tr class="memdesc:a0d27bc8dd7af6b11d6184604ccae5f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local to proc.  <a href="structfclaw__domain.html#a0d27bc8dd7af6b11d6184604ccae5f85">More...</a><br /></td></tr>
+<tr class="separator:a0d27bc8dd7af6b11d6184604ccae5f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The domain structure is a collection of blocks. </p>
+<p>The domain structure gives a processor local view of the grid hierarchy. Unless explicitly noted otherwise, all variables are processor local, i.e., they are generally different on each processor. Variables that are synchronized and shared between processors are denoted <em>global</em>. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a0d27bc8dd7af6b11d6184604ccae5f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d27bc8dd7af6b11d6184604ccae5f85">&#9670;&nbsp;</a></span>local_maxlevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_domain::local_maxlevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local to proc. </p>
+<p>If this proc doesn't store any patches at all, we set local_maxlevel &lt; 0 &lt;= local_minlevel. </p>
+
+</div>
+</div>
+<a id="a272df7aee3d844c9e182fcfad02ef852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272df7aee3d844c9e182fcfad02ef852">&#9670;&nbsp;</a></span>local_minlevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_domain::local_minlevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local to proc. </p>
+<p>If this proc doesn't store any patches at all, we set local_maxlevel &lt; 0 &lt;= local_minlevel. </p>
+
+</div>
+</div>
+<a id="af07bdad53ddd7a1bbed8d0010a9a72b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af07bdad53ddd7a1bbed8d0010a9a72b7">&#9670;&nbsp;</a></span>num_exchange_patches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_domain::num_exchange_patches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number my patches relevant to other procs. </p>
+<p>Identified by this expression to be true: (patch-&gt;flags &amp; FCLAW2D_PATCH_ON_PARALLEL_BOUNDARY) </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="fclaw__domain_8h_source.html">fclaw_domain.h</a></li>
+<li><a class="el" href="forestclaw_8h_source.html">forestclaw.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

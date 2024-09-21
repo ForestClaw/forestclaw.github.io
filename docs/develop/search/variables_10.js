@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['real_5fpatch_2583',['real_patch',['../structfclaw2d__patch__data.html#a5a1a522b5d76ddccd5160cbfd5028bd3',1,'fclaw2d_patch_data::real_patch()'],['../structfclaw3d__patch__data.html#ae5e840399ad1b391100e5ebf5e44f2b3',1,'fclaw3d_patch_data::real_patch()']]],
-  ['refinement_5fcriteria_2584',['refinement_criteria',['../structfclaw2d__clawpatch__options.html#afdc1f4d15745232d4d84c00f3b947701',1,'fclaw2d_clawpatch_options::refinement_criteria()'],['../structfclaw3dx__clawpatch__options.html#ad4c65834965cb287c8756c90303aa235',1,'fclaw3dx_clawpatch_options::refinement_criteria()']]],
-  ['registers_2585',['registers',['../classfclaw2d__clawpatch__t.html#a9f17b291a08bac701f7b90f1b70628aa',1,'fclaw2d_clawpatch_t::registers()'],['../classfclaw3dx__clawpatch__t.html#a6684071c0da2f2b10874a5fae3875df7',1,'fclaw3dx_clawpatch_t::registers()']]],
-  ['regression_5fcheck_2586',['regression_check',['../structfclaw__options.html#adab6c1f8c2d58df02db308cf1f9321f1',1,'fclaw_options']]],
-  ['remote_5fghost_5fbuild_2587',['remote_ghost_build',['../structfclaw2d__patch__vtable.html#a9deb8184e5a809c4a652e738e26ecfdb',1,'fclaw2d_patch_vtable::remote_ghost_build()'],['../structfclaw3d__patch__vtable.html#a964bbe20ab8e2e504dffabd79cd2f1bd',1,'fclaw3d_patch_vtable::remote_ghost_build()']]],
-  ['remote_5fghost_5fdelete_2588',['remote_ghost_delete',['../structfclaw2d__patch__vtable.html#ac71d5dc459f550f2994f9b1c9225acfe',1,'fclaw2d_patch_vtable::remote_ghost_delete()'],['../structfclaw3d__patch__vtable.html#a34a6ce42415f003a39f55cfb2c601845',1,'fclaw3d_patch_vtable::remote_ghost_delete()']]],
-  ['remote_5fghost_5fsetup_2589',['remote_ghost_setup',['../structfclaw2d__patch__vtable.html#a2a0b2c90239448fdb07ea47af0ad8c56',1,'fclaw2d_patch_vtable::remote_ghost_setup()'],['../structfclaw3d__patch__vtable.html#a543222ee9160353b318b785d20e8f5ec',1,'fclaw3d_patch_vtable::remote_ghost_setup()']]],
-  ['remote_5fghost_5funpack_2590',['remote_ghost_unpack',['../structfclaw2d__patch__vtable.html#acd002be15dcbcf4b47d61d59cd1f1dd7',1,'fclaw2d_patch_vtable::remote_ghost_unpack()'],['../structfclaw3d__patch__vtable.html#ab50dce5ed6bc72e744fbf8943ef343e5',1,'fclaw3d_patch_vtable::remote_ghost_unpack()']]],
-  ['restore_5fstep_2591',['restore_step',['../structfclaw2d__patch__vtable.html#a5305b2988c3027c03de7929e6811852c',1,'fclaw2d_patch_vtable::restore_step()'],['../structfclaw3d__patch__vtable.html#a2f18268d7d6262152ec4d9d80346a843',1,'fclaw3d_patch_vtable::restore_step()']]],
-  ['rhs_2592',['rhs',['../structfclaw2d__patch__vtable.html#a872277dd4848768387dc14d2950df9a4',1,'fclaw2d_patch_vtable::rhs()'],['../structfclaw3d__patch__vtable.html#afddf6d3e5bee42632668af1f7a8253b7',1,'fclaw3d_patch_vtable::rhs()'],['../classfclaw2d__clawpatch__t.html#a1e54a9d83b8d74ae3800909b7c18512e',1,'fclaw2d_clawpatch_t::rhs()'],['../classfclaw3dx__clawpatch__t.html#af2a2fec463d4ab0d25bff559bca68579',1,'fclaw3dx_clawpatch_t::rhs()']]],
-  ['rhs_5ffields_2593',['rhs_fields',['../structfclaw2d__clawpatch__options.html#afead7cd9224dcea5444ef425d1d5feab',1,'fclaw2d_clawpatch_options::rhs_fields()'],['../structfclaw3dx__clawpatch__options.html#aac9a03c42e8dc08b0baec8454dd09dba',1,'fclaw3dx_clawpatch_options::rhs_fields()']]],
-  ['run_5fdirectory_2594',['run_directory',['../structfclaw__options.html#ad8e2d434a081e8ed398780db5034dc3a',1,'fclaw_options']]]
+  ['real_5fpatch_2685',['real_patch',['../structfclaw__patch__data.html#a04bec88bd7c88565d73663f96576f468',1,'fclaw_patch_data']]],
+  ['refine_5fdim_2686',['refine_dim',['../structfclaw__patch.html#ae42bcec5cad8358e451b7eb50be13f45',1,'fclaw_patch::refine_dim()'],['../structfclaw__block.html#aaa43011fc8f95cc43fbc3ae0ef284693',1,'fclaw_block::refine_dim()'],['../structfclaw__domain.html#ab0d4b7132049f9c9a7a45efd79c1013a',1,'fclaw_domain::refine_dim()'],['../structfclaw__domain__exchange.html#a67a0cd589ee072819cfaa3790be390da',1,'fclaw_domain_exchange::refine_dim()']]],
+  ['refinement_5fcriteria_2687',['refinement_criteria',['../structfclaw__clawpatch__options.html#a09c2982b18594af806c757e95df7ff03',1,'fclaw_clawpatch_options']]],
+  ['registers_2688',['registers',['../structfclaw__clawpatch__2d__t.html#a8ba91ab9274151df1f476c7332f7bea2',1,'fclaw_clawpatch_2d_t::registers()'],['../structfclaw__clawpatch__3d__t.html#ac767b547dd6699bc1cd465f6eb86fc64',1,'fclaw_clawpatch_3d_t::registers()']]],
+  ['regression_5fcheck_2689',['regression_check',['../structfclaw__options.html#adab6c1f8c2d58df02db308cf1f9321f1',1,'fclaw_options']]],
+  ['remote_5fghost_5fbuild_2690',['remote_ghost_build',['../structfclaw__patch__vtable.html#a52eca1eea69565fb4deb7728ff7781a2',1,'fclaw_patch_vtable']]],
+  ['remote_5fghost_5fdelete_2691',['remote_ghost_delete',['../structfclaw__patch__vtable.html#a0305f6882941455aff1c6ceca6945497',1,'fclaw_patch_vtable']]],
+  ['remote_5fghost_5fsetup_2692',['remote_ghost_setup',['../structfclaw__patch__vtable.html#a7cb5c36d6dd19e214953fb72f7f78ddc',1,'fclaw_patch_vtable']]],
+  ['remote_5fghost_5funpack_2693',['remote_ghost_unpack',['../structfclaw__patch__vtable.html#a6dec4394ae50c70bf09a1a16238e66c2',1,'fclaw_patch_vtable']]],
+  ['restart_5ffile_2694',['restart_file',['../structfclaw__options.html#a86ceded60608b055139bfb438cbf2ebc',1,'fclaw_options']]],
+  ['restore_5fstep_2695',['restore_step',['../structfclaw__patch__vtable.html#a4dca3563f56ff4b6f3b2f0df091b1284',1,'fclaw_patch_vtable']]],
+  ['rhs_2696',['rhs',['../structfclaw__patch__vtable.html#a3e8c97ea1363b2a2350f9a58edde086a',1,'fclaw_patch_vtable::rhs()'],['../structfclaw__clawpatch__t.html#a40cfa0fa6feb5e1ee69aae730f8dff34',1,'fclaw_clawpatch_t::rhs()']]],
+  ['rhs_5ffields_2697',['rhs_fields',['../structfclaw__clawpatch__options.html#a6ad50ace06ea9ab676e41d82bf318f6a',1,'fclaw_clawpatch_options']]],
+  ['run_5fdirectory_2698',['run_directory',['../structfclaw__options.html#ad8e2d434a081e8ed398780db5034dc3a',1,'fclaw_options']]]
 ];

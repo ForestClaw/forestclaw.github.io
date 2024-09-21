@@ -128,6 +128,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94dad2e6aa11aaa3be10f8eb925fed045c90">FCLAW3D_FILE_ERR_DIM</a>, 
 <br />
 &#160;&#160;<a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94da08714ce46c232b3e926a536473a44668">FCLAW3D_FILE_ERR_UNKNOWN</a>, 
+<a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94daf7ba6964a9ac1a3eaadd0607242d7398">FCLAW3D_FILE_ERR_PART</a>, 
 <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94da9fa5db7d40199616fe45b76b2ecf49ed">FCLAW3D_FILE_ERR_NOT_IMPLEMENTED</a>, 
 <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94da3909b77d9da34060360f73c5f365a494">FCLAW3D_FILE_ERR_LASTCODE</a>
 <br />
@@ -140,15 +141,21 @@ Functions</h2></td></tr>
 <tr class="memitem:aa25b7e04a422ea1657cfcc35a7f8eb1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#aa25b7e04a422ea1657cfcc35a7f8eb1e">fclaw3d_file_open_write</a> (const char *filename, const char *user_string, <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int *errcode)</td></tr>
 <tr class="memdesc:aa25b7e04a422ea1657cfcc35a7f8eb1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and open a file that is associated with the given domain structure.  <a href="fclaw3d__file_8h.html#aa25b7e04a422ea1657cfcc35a7f8eb1e">More...</a><br /></td></tr>
 <tr class="separator:aa25b7e04a422ea1657cfcc35a7f8eb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac692e36f9fc54c8321065f5cd870c748"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#ac692e36f9fc54c8321065f5cd870c748">fclaw3d_file_write_partition</a> (const char *filename, const char *user_string, <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, int *errcode)</td></tr>
+<tr class="memdesc:ac692e36f9fc54c8321065f5cd870c748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the partition of a domain to a partition file.  <a href="fclaw3d__file_8h.html#ac692e36f9fc54c8321065f5cd870c748">More...</a><br /></td></tr>
+<tr class="separator:ac692e36f9fc54c8321065f5cd870c748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3931b56d202077ff6cbe9485d91e0f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#ad3931b56d202077ff6cbe9485d91e0f5">fclaw3d_file_write_block</a> (<a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *fc, const char *user_string, size_t block_size, sc_array_t *block_data, int *errcode)</td></tr>
 <tr class="memdesc:ad3931b56d202077ff6cbe9485d91e0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a serial data block to an opened parallel file.  <a href="fclaw3d__file_8h.html#ad3931b56d202077ff6cbe9485d91e0f5">More...</a><br /></td></tr>
 <tr class="separator:ad3931b56d202077ff6cbe9485d91e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb92e4aa4bb46965527852efe1275046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#acb92e4aa4bb46965527852efe1275046">fclaw3d_file_write_array</a> (<a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *fc, const char *user_string, size_t patch_size, sc_array_t *patch_data, int *errcode)</td></tr>
 <tr class="memdesc:acb92e4aa4bb46965527852efe1275046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write per-patch data to a parallel output file.  <a href="fclaw3d__file_8h.html#acb92e4aa4bb46965527852efe1275046">More...</a><br /></td></tr>
 <tr class="separator:acb92e4aa4bb46965527852efe1275046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a140d35321c9616f7afb9261177b98a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#a140d35321c9616f7afb9261177b98a13">fclaw3d_file_open_read</a> (const char *filename, char *user_string, sc_MPI_Comm mpicomm, const char *par_filename, <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> **domain, int *errcode)</td></tr>
-<tr class="memdesc:a140d35321c9616f7afb9261177b98a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for reading and read the stored domain.  <a href="fclaw3d__file_8h.html#a140d35321c9616f7afb9261177b98a13">More...</a><br /></td></tr>
-<tr class="separator:a140d35321c9616f7afb9261177b98a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa375ac2749f014e1b7c2d2076150a6a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#aa375ac2749f014e1b7c2d2076150a6a0">fclaw3d_file_read_partition</a> (const char *filename, char *user_string, sc_MPI_Comm mpicomm, sc_array_t *partition, int *errcode)</td></tr>
+<tr class="memdesc:aa375ac2749f014e1b7c2d2076150a6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a partition array from file.  <a href="fclaw3d__file_8h.html#aa375ac2749f014e1b7c2d2076150a6a0">More...</a><br /></td></tr>
+<tr class="separator:aa375ac2749f014e1b7c2d2076150a6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b28311f8f9589766f86ec968d18dfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a> (const char *filename, char *user_string, sc_MPI_Comm mpicomm, sc_array_t *partition, <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> **domain, int *errcode)</td></tr>
+<tr class="memdesc:ae0b28311f8f9589766f86ec968d18dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file for reading and read the stored domain.  <a href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">More...</a><br /></td></tr>
+<tr class="separator:ae0b28311f8f9589766f86ec968d18dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06071afb5c0e453b7178760614380e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__file_8h.html#ad06071afb5c0e453b7178760614380e9">fclaw3d_file_read_block</a> (<a class="el" href="fclaw3d__file_8h.html#aa69f3cd2c8b0833fee418d709fb76330">fclaw3d_file_context_t</a> *fc, char *user_string, size_t block_size, sc_array_t *block_data, int *errcode)</td></tr>
 <tr class="memdesc:ad06071afb5c0e453b7178760614380e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a serial data block from an opened file.  <a href="fclaw3d__file_8h.html#ad06071afb5c0e453b7178760614380e9">More...</a><br /></td></tr>
 <tr class="separator:ad06071afb5c0e453b7178760614380e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +248,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ab734982ffe88a9a501761f1a6a70e94da08714ce46c232b3e926a536473a44668"></a>FCLAW3D_FILE_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>unknown error </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ab734982ffe88a9a501761f1a6a70e94daf7ba6964a9ac1a3eaadd0607242d7398"></a>FCLAW3D_FILE_ERR_PART&#160;</td><td class="fielddoc"><p>invalid partition data </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ab734982ffe88a9a501761f1a6a70e94da9fa5db7d40199616fe45b76b2ecf49ed"></a>FCLAW3D_FILE_ERR_NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>functionality is not implemented </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab734982ffe88a9a501761f1a6a70e94da3909b77d9da34060360f73c5f365a494"></a>FCLAW3D_FILE_ERR_LASTCODE&#160;</td><td class="fielddoc"><p>to define own error codes for a higher level application that is using fclaw3d_file functions </p>
@@ -281,7 +290,7 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#aa25b7e04a422ea1657cfcc35a7f8eb1e">fclaw3d_file_open_write</a> or <a class="el" href="fclaw3d__file_8h.html#a140d35321c9616f7afb9261177b98a13">fclaw3d_file_open_read</a>. Is freed. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#aa25b7e04a422ea1657cfcc35a7f8eb1e">fclaw3d_file_open_write</a> or <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a>. Is freed. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw3d__file_8h.html#a99d4c510918556b591e53c93b79eb1dc">fclaw3d_file_error_string</a>. </td></tr>
   </table>
   </dd>
@@ -335,8 +344,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a140d35321c9616f7afb9261177b98a13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a140d35321c9616f7afb9261177b98a13">&#9670;&nbsp;</a></span>fclaw3d_file_open_read()</h2>
+<a id="ae0b28311f8f9589766f86ec968d18dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b28311f8f9589766f86ec968d18dfd">&#9670;&nbsp;</a></span>fclaw3d_file_open_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,8 +371,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>par_filename</em>, </td>
+          <td class="paramtype">sc_array_t *&#160;</td>
+          <td class="paramname"><em>partition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -392,10 +401,10 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path to the base name file that is opened. This means that the user shall not pass the file extension since the extension ('f3d') is added by fclaw3d_file. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path to the file that is opened. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw3d__file_8h.html#a1897d355d21fbcc9bc8b4feebc4ceda5">FCLAW3D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mpicomm</td><td>MPI communicator that is used to read the file and is used for potential other reading operations of MPI communicator dependent objects. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">par_filename</td><td>The path to the base name file that is used to load the parititon. If <b>par_filename</b> is NULL, a uniform parititon with respect to the patch count is computed and used. If the partition is read, it is used for the parallel I/O operations and stored in the returned <b>domain</b>. If the MPI size and the partition size do not coincide a partition for the current MPI size is computed. The function call results in an error if there is no partition to read. Currently, this parameter does not have any effect. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partition</td><td>A sc_array of the size of number of MPI ranks + 1 with sizeof (p4est_gloidx_t) as element size or NULL. The sc_array must contain a valid partition, i.e. the first element is 0, the array is non-decreasing and the last array entry equals the number of global patches of the domain in the file pointed to by <b>filename</b>. If any of these conditions is violated, the function returns NULL and set <b>errcode</b> to <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94daf7ba6964a9ac1a3eaadd0607242d7398">FCLAW3D_FILE_ERR_PART</a>. The user can pass NULL for using the uniform partition with respect to the quadrant count. In both cases the respective partition, either read or computed, is used for the parallel I/O operations and stored in the returned <b>domain</b>. The user can use <a class="el" href="fclaw3d__file_8h.html#aa375ac2749f014e1b7c2d2076150a6a0">fclaw3d_file_read_partition</a> to read a partition array from file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">domain</td><td>Newly allocated domain that is read from the file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw3d__file_8h.html#a99d4c510918556b591e53c93b79eb1dc">fclaw3d_file_error_string</a>. </td></tr>
   </table>
@@ -449,7 +458,7 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Path to parallel file base name that is to be created. This means that the user shall not pass the file extension since the file extension is specified by fclaw3d_file to '.f3d'. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Path to parallel file that is to be created. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A NUL-terminated user string that is written to the file header having FCLAW3D_FILE_USER_STRING_BYTES bytes including the NUL-termination. Shorter user strings are padded by spaces in the file header. Too long user strings result in an error with the error code <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94dac4b0ca549f5a7d4661cbb7abfe21d42f">FCLAW3D_FILE_ERR_IN_DATA</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>The underlying p8est is used for the metadata of the the created file and the <b>domain</b> is written to the file. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw3d__file_8h.html#a99d4c510918556b591e53c93b79eb1dc">fclaw3d_file_error_string</a>. </td></tr>
@@ -510,7 +519,7 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#a140d35321c9616f7afb9261177b98a13">fclaw3d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw3d__file_8h.html#a1897d355d21fbcc9bc8b4feebc4ceda5">FCLAW3D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patch_size</td><td>The number of bytes per patch. This number must coincide with <b>patch_data-&gt;elem_size</b>. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">patch_data</td><td>An array of the length number of local patches with the element size equal to sizeof (sc_array_t). This means each element of <b>patch_data</b> must be a sc_array. These sc_arrays must have an element size of <b>patch_size</b>. This memory layout enables the user to read by indirect addressing, i.e. to read into non-contigous patch data. The patch data is read according to the Morton order of the patches. <b>patch_size</b> must coincide with the section data size in the file. <b>patch_data</b> == NULL means that the data is skipped and the internal file pointer is incremented. In the case of skipping <b>patch_size</b> is still checked using the corresponding value read from the file. The data is read using the partition of patches given by the domain that is associated to <b>fc</b>. </td></tr>
@@ -573,7 +582,7 @@ Functions</h2></td></tr>
 <p>This function does not abort on MPI I/O errors but returns NULL. Without MPI I/O the function may abort on file system dependent errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#a140d35321c9616f7afb9261177b98a13">fclaw3d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fc</td><td>Context previously created by <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a>. It keeps track of the data sets read one after another. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw3d__file_8h.html#a1897d355d21fbcc9bc8b4feebc4ceda5">FCLAW3D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The size of the header that is read. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">block_data</td><td><b>block_size</b> allocated bytes in an sc_array with one element and <b>block_size</b> as element size. This data will be filled with the block data from the file. If this is NULL it means that the current header block is skipped and the internal file pointer of the file context is set to the next data section. If the current data section is not a data block, the file is closed and the file context is deallocated. Furthermore, in this case the function returns NULL and sets errcode to <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94da3e8aad9c29f08aa76f39c86863da1e98">FCLAW3D_FILE_ERR_FORMAT</a>. In case of skipping the data block section <b>block_size</b> needs also to coincide with the data block size given in the file. </td></tr>
@@ -582,6 +591,69 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a pointer to input context or NULL in case of errors that does not abort the program. In case of error the file is tried to close and <b>fc</b> is freed. </dd></dl>
+
+</div>
+</div>
+<a id="aa375ac2749f014e1b7c2d2076150a6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa375ac2749f014e1b7c2d2076150a6a0">&#9670;&nbsp;</a></span>fclaw3d_file_read_partition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw3d_file_read_partition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>user_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>mpicomm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_array_t *&#160;</td>
+          <td class="paramname"><em>partition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>errcode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a partition array from file. </p>
+<p>This function reads the partition array, i.e. the global first patch array from a partition file that was written using <a class="el" href="fclaw3d__file_8h.html#ac692e36f9fc54c8321065f5cd870c748">fclaw3d_file_write_partition</a>. The read partition can be passed to <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a>.</p>
+<p>This function guarantees that on successful output the read partition is valid in the sense that the partition array has 0 as first entry and is non-decreasing.</p>
+<p>The function and all its parameters are collective.</p>
+<p>This function does not abort on MPI I/O errors but returns -1. Without MPI I/O the function may abort on file system dependent errors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path to the partition file. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_string</td><td>At least <a class="el" href="fclaw3d__file_8h.html#a1897d355d21fbcc9bc8b4feebc4ceda5">FCLAW3D_FILE_USER_STRING_BYTES</a> bytes. The user string is written to the passed array including padding spaces and a trailing NUL-termination. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mpicomm</td><td>The MPI communicator is required to synchronize the <b>errcode</b> and the output array <b>partition</b>. It is important to notice that <b>partition</b> is only available on MPI ranks that are part of the passed <b>mpicomm</b>. Therefore, <b>mpicomm</b> should coincide with the mpicomm parameter of <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a> to ensure that the partition parameter of <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a> is collectivly available. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">partition</td><td>A sc_array with element size equals to sizeof (p4est_gloidx_t). On successful output the array is filled with the read partition. In case of an error, the function does not guarantee that <b>partition</b> stays untouched but it is guaranteed that the user is not required to call sc_array_reset on <b>partition</b>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw3d__file_8h.html#a99d4c510918556b591e53c93b79eb1dc">fclaw3d_file_error_string</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for a successful read of the partition file. -1 in case of an error. </dd></dl>
 
 </div>
 </div>
@@ -706,6 +778,60 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a pointer to input context or NULL in case of errors that does not abort the program. In case of error the file is tried to close and <b>fc</b> is freed. </dd></dl>
+
+</div>
+</div>
+<a id="ac692e36f9fc54c8321065f5cd870c748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac692e36f9fc54c8321065f5cd870c748">&#9670;&nbsp;</a></span>fclaw3d_file_write_partition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw3d_file_write_partition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>errcode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the partition of a domain to a partition file. </p>
+<p>This function writes the partition of the passed <b>domain</b> to a partition file. The user can read the partition to an array using <a class="el" href="fclaw3d__file_8h.html#aa375ac2749f014e1b7c2d2076150a6a0">fclaw3d_file_read_partition</a> and then pass the read array to <a class="el" href="fclaw3d__file_8h.html#ae0b28311f8f9589766f86ec968d18dfd">fclaw3d_file_open_read</a> to use the read partition.</p>
+<p>The function and all its parameters are collective.</p>
+<p>This function does not abort on MPI I/O errors but returns -1. Without MPI I/O the function may abort on file system dependent errors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Path to partition file that is to be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_string</td><td>A NUL-terminated user string that is written to the partition file header having <a class="el" href="fclaw3d__file_8h.html#a1897d355d21fbcc9bc8b4feebc4ceda5">FCLAW3D_FILE_USER_STRING_BYTES</a> bytes including the NUL-termination. Shorter user strings are padded by spaces in the file header. Too long user strings result in an error with the error code <a class="el" href="fclaw3d__file_8h.html#ab734982ffe88a9a501761f1a6a70e94dac4b0ca549f5a7d4661cbb7abfe21d42f">FCLAW3D_FILE_ERR_IN_DATA</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">errcode</td><td>An errcode that can be interpreted by <a class="el" href="fclaw3d__file_8h.html#a99d4c510918556b591e53c93b79eb1dc">fclaw3d_file_error_string</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for a successful write of the partition file. -1 in case of an error. </dd></dl>
 
 </div>
 </div>

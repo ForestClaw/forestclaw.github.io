@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options</a> <a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structfc2d__cudaclaw__options.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options</a></div>
@@ -151,11 +151,11 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_package_register(<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a>* app,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                      <a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>* clawopt);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>* fc2d_cudaclaw_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>* fc2d_cudaclaw_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, <a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>* clawopt);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a>* glob, <a class="code" href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options_t</a>* clawopt);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_output(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_output(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">int</span> cudaclaw_check_parameters(<span class="keywordtype">int</span> mwaves);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> cudaclaw_set_method_parameters(<span class="keywordtype">int</span> order[], <span class="keywordtype">int</span> mthlim[], <span class="keywordtype">int</span> mwaves, <span class="keywordtype">int</span> use_fwaves);</div>
@@ -173,9 +173,9 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructfc2d__cudaclaw__options_html"><div class="ttname"><a href="structfc2d__cudaclaw__options.html">fc2d_cudaclaw_options</a></div><div class="ttdef"><b>Definition:</b> fc2d_cudaclaw_options.h:42</div></div>
 <div class="ttc" id="afclaw__base_8h_html_acefeaedd4aae14e6a175ecc6c442dc15"><div class="ttname"><a href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a></div><div class="ttdeci">struct fclaw_app fclaw_app_t</div><div class="ttdoc">An application container whose use is optional.</div><div class="ttdef"><b>Definition:</b> fclaw_base.h:178</div></div>
-<div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
 <div class="ttc" id="afclaw__base_8h_html"><div class="ttname"><a href="fclaw__base_8h.html">fclaw_base.h</a></div></div>
 <div class="ttc" id="afclaw__base_8h_html_af82c7f714a783199d657b2bd10799c53"><div class="ttname"><a href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a></div><div class="ttdeci">enum fclaw_exit_type fclaw_exit_type_t</div><div class="ttdoc">This enumeration defines values to be returned from option checking.</div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

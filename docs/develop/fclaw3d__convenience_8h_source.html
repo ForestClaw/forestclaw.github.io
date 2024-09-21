@@ -106,10 +106,10 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_p8est (p8est_t *p8est);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_unitcube (sc_MPI_Comm mpicomm,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_unitcube (sc_MPI_Comm <a class="code" href="structfclaw__domain.html#aa7bb2ac68d8066d36b38ff70702076de">mpicomm</a>,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                               <span class="keywordtype">int</span> initial_level);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_brick (sc_MPI_Comm mpicomm,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_brick (sc_MPI_Comm <a class="code" href="structfclaw__domain.html#aa7bb2ac68d8066d36b38ff70702076de">mpicomm</a>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                            <span class="keywordtype">int</span> blocks_in_x, <span class="keywordtype">int</span> blocks_in_y,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                            <span class="keywordtype">int</span> blocks_in_z,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                            <span class="keywordtype">int</span> periodic_in_x,</div>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                            <span class="keywordtype">int</span> periodic_in_z,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                            <span class="keywordtype">int</span> initial_level);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_conn (sc_MPI_Comm mpicomm,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_new_conn (sc_MPI_Comm <a class="code" href="structfclaw__domain.html#aa7bb2ac68d8066d36b38ff70702076de">mpicomm</a>,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                           <span class="keywordtype">int</span> initial_level,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                           p8est_connectivity_t * conn);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_adapt (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *fclaw3d_domain_partition (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> *<a class="code" href="structfclaw3d__domain__partition.html">fclaw3d_domain_partition</a> (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                            <span class="keywordtype">int</span> weight_exponent);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> fclaw3d_domain_partition_unchanged (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
@@ -156,23 +156,23 @@ $(function() {
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                        <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                        <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                        <span class="keywordtype">void</span> *ray, <span class="keywordtype">double</span> *integral,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                        <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                        <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">void</span> fclaw3d_domain_integrate_rays (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                    fclaw3d_integrate_ray_t intersect,</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                    sc_array_t * rays,</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                    sc_array_t * integrals,</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                    <span class="keywordtype">void</span> * user);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                    <span class="keywordtype">void</span> * <a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">typedef</span> int (*fclaw3d_interpolate_point_t) (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                            <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                            <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                            <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                            <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keywordtype">void</span> fclaw3d_overlap_exchange (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                               sc_array_t * query_points,</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                               fclaw3d_interpolate_point_t interpolate,</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                               <span class="keywordtype">void</span> *user);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                               <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#if 0</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{                               <span class="comment">/* need this because indent is dumb */</span></div>
@@ -182,9 +182,12 @@ $(function() {
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FCLAW3D_CONVENIENCE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructfclaw__domain_html_aa7bb2ac68d8066d36b38ff70702076de"><div class="ttname"><a href="structfclaw__domain.html#aa7bb2ac68d8066d36b38ff70702076de">fclaw_domain::mpicomm</a></div><div class="ttdeci">sc_MPI_Comm mpicomm</div><div class="ttdoc">MPI communicator.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:130</div></div>
 <div class="ttc" id="astructfclaw3d__patch_html"><div class="ttname"><a href="structfclaw3d__patch.html">fclaw3d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:94</div></div>
-<div class="ttc" id="astructfclaw3d__domain_html"><div class="ttname"><a href="structfclaw3d__domain.html">fclaw3d_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:174</div></div>
+<div class="ttc" id="astructfclaw3d__domain_html"><div class="ttname"><a href="structfclaw3d__domain.html">fclaw3d_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:192</div></div>
+<div class="ttc" id="astructfclaw3d__domain__partition_html"><div class="ttname"><a href="structfclaw3d__domain__partition.html">fclaw3d_domain_partition</a></div><div class="ttdoc">Data structure for storing allocated data for partition transfer.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:962</div></div>
 <div class="ttc" id="aforestclaw3d_8h_html"><div class="ttname"><a href="forestclaw3d_8h.html">forestclaw3d.h</a></div></div>
+<div class="ttc" id="astructfclaw__domain_html_a18990693e09dad2752b64027e5d47203"><div class="ttname"><a href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">fclaw_domain::user</a></div><div class="ttdeci">void * user</div><div class="ttdoc">user data pointer</div><div class="ttdef"><b>Definition:</b> forestclaw.h:166</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

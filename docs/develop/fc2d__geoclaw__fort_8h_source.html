@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* Needed to get syntax highlighting to work */</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>;  <span class="comment">/* Should be replaced by long int?  */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>;  <span class="comment">/* Should be replaced by long int?  */</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/* --------------------------------------- Typedefs ----------------------------------- */</span></div>
@@ -428,7 +428,7 @@ $(function() {
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">int</span>* my, <span class="keyword">const</span> <span class="keywordtype">int</span>* mbc, </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">int</span>* meqn, <span class="keywordtype">double</span> qthis[], <span class="keywordtype">double</span> qneighbor[], </div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">int</span>* a_idir,</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                 <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_cptr);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                 <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_cptr);</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#define FC2D_GEOCLAW_FORT_AVERAGE_FACE \</span></div>
@@ -448,7 +448,7 @@ $(function() {
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span>* idir, </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span>* iface_coarse,</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span>* igrid, </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                    <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_data);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                    <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_data);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#define FC2D_GEOCLAW_FORT_INTERPOLATE_FACE \</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">                               FCLAW_F77_FUNC(fc2d_geoclaw_fort_interpolate_face, \</span></div>
@@ -464,7 +464,7 @@ $(function() {
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span>* idir, </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span>* iside,</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span>* igrid,</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                        <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_cptr);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                        <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_cptr);</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#define FC2D_GEOCLAW_FORT_COPY_CORNER \</span></div>
@@ -476,7 +476,7 @@ $(function() {
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span>* meqn, </div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                   <span class="keywordtype">double</span> this_q[], <span class="keywordtype">double</span> neighbor_q[],</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span>* a_corner,</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                   <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_cptr);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                   <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_cptr);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#define FC2D_GEOCLAW_FORT_AVERAGE_CORNER \</span></div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">                            FCLAW_F77_FUNC(fc2d_geoclaw_fort_average_corner, \</span></div>
@@ -490,7 +490,7 @@ $(function() {
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                      <span class="keywordtype">double</span> auxcoarse[], <span class="keywordtype">double</span> auxfine[],</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">int</span>* mcapa,</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">int</span>* corner, </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                      <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_cptr);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                      <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_cptr);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    </div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#define FC2D_GEOCLAW_FORT_INTERPOLATE_CORNER \</span></div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">                              FCLAW_F77_FUNC(fc2d_geoclaw_fort_interpolate_corner, \</span></div>
@@ -504,7 +504,7 @@ $(function() {
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                                          <span class="keyword">const</span> <span class="keywordtype">int</span>* maux, </div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                          <span class="keywordtype">double</span> aux_coarse[], <span class="keywordtype">double</span> aux_fine[], </div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                          <span class="keyword">const</span> <span class="keywordtype">int</span>* corner,</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                          <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a>** transform_cptr);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                          <span class="keyword">struct</span> <a class="code" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a>** transform_cptr);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
@@ -633,8 +633,8 @@ $(function() {
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructfclaw2d__patch__transform__data_html"><div class="ttname"><a href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a></div><div class="ttdoc">Transform data for a neighboring patch's coordinate system.</div><div class="ttdef"><b>Definition:</b> fclaw2d_patch.h:108</div></div>
 <div class="ttc" id="afclaw__base_8h_html"><div class="ttname"><a href="fclaw__base_8h.html">fclaw_base.h</a></div></div>
+<div class="ttc" id="astructfclaw__patch__transform__data_html"><div class="ttname"><a href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a></div><div class="ttdoc">Transform data for a neighboring patch's coordinate system.</div><div class="ttdef"><b>Definition:</b> fclaw_patch.h:115</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

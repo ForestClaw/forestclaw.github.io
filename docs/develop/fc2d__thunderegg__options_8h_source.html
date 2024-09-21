@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options</a> <a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options_t</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -180,12 +180,12 @@ $(function() {
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> fc2d_thunderegg_package_register(<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a>* app,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                     <a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options_t</a>* mg_opt);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options_t</a>* fc2d_thunderegg_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options_t</a>* fc2d_thunderegg_get_options(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> fc2d_thunderegg_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob, </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> fc2d_thunderegg_options_store (<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a>* glob, </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                   <a class="code" href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options_t</a>* mg_opt);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> fc2d_thunderegg_output(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> fc2d_thunderegg_output(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob, <span class="keywordtype">int</span> iframe);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
@@ -198,10 +198,10 @@ $(function() {
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="afclaw__base_8h_html_acefeaedd4aae14e6a175ecc6c442dc15"><div class="ttname"><a href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a></div><div class="ttdeci">struct fclaw_app fclaw_app_t</div><div class="ttdoc">An application container whose use is optional.</div><div class="ttdef"><b>Definition:</b> fclaw_base.h:178</div></div>
-<div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
 <div class="ttc" id="astructfc2d__thunderegg__options_html"><div class="ttname"><a href="structfc2d__thunderegg__options.html">fc2d_thunderegg_options</a></div><div class="ttdef"><b>Definition:</b> fc2d_thunderegg_options.h:60</div></div>
 <div class="ttc" id="afclaw__base_8h_html"><div class="ttname"><a href="fclaw__base_8h.html">fclaw_base.h</a></div></div>
 <div class="ttc" id="afclaw__base_8h_html_af82c7f714a783199d657b2bd10799c53"><div class="ttname"><a href="fclaw__base_8h.html#af82c7f714a783199d657b2bd10799c53">fclaw_exit_type_t</a></div><div class="ttdeci">enum fclaw_exit_type fclaw_exit_type_t</div><div class="ttdoc">This enumeration defines values to be returned from option checking.</div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -98,9 +98,9 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define FC3D_CLAWPACK5_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;fclaw_clawpatch3.h&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fclaw2d__vtable_8h.html">fclaw2d_vtable.h</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fclaw__vtable_8h.html">fclaw_vtable.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;fclaw_package.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;fclaw2d_global.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;fclaw_global.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;fc3d_clawpack5_options.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#if 0</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_set_vtable(<span class="keyword">const</span> <a class="code" href="structfc3d__clawpack5__vtable.html">fc3d_clawpack5_vtable_t</a> vt);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_set_vtable_defaults(<a class="code" href="structfclaw2d__vtable.html">fclaw2d_vtable_t</a> *fclaw_vt,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_set_vtable_defaults(fclaw2d_vtable_t *<a class="code" href="fclaw__vtable_8h.html#aa289d1deb8fc0541e80addf48efbc59d">fclaw_vt</a>,</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                        <a class="code" href="structfc3d__clawpack5__vtable.html">fc3d_clawpack5_vtable_t</a>* vt);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
@@ -458,56 +458,56 @@ $(function() {
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">/* -------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">   New routines</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">   ------------------------------------------------------------------------- */</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_aux_data(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                              <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_aux_data(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                              <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                              <span class="keywordtype">double</span> **aux, <span class="keywordtype">int</span>* maux);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">// void fc3d_clawpack5_register (fclaw_app_t* app, const char *configfile, fclaw2d_global_t* glob);</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_set_options (<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a>* glob, <a class="code" href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options_t</a>* clawopt);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_set_options (<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob, <a class="code" href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options_t</a>* clawopt);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_package_register(<a class="code" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a>* app,</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                      <a class="code" href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options_t</a>* clawopt);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_output_header_ascii(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a>* glob,</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordtype">void</span> fc3d_clawpack5_output_header_ascii(<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob,</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                        <span class="keywordtype">int</span> iframe);</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<a class="code" href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options_t</a>* fc3d_clawpack5_get_options(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<a class="code" href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options_t</a>* fc3d_clawpack5_get_options(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob);</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">/* -------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">   Routines that won&#39;t change</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">   ------------------------------------------------------------------------- */</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    fc3d_clawpack5_setprob(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a>* glob);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    fc3d_clawpack5_setprob(<a class="code" href="structfclaw__global.html">fclaw_global_t</a>* glob);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    fc3d_clawpack5_setaux(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                           <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    fc3d_clawpack5_setaux(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                           <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                           <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                           <span class="keywordtype">int</span> this_patch_idx);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    fc3d_clawpack5_set_capacity(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                 <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    fc3d_clawpack5_set_capacity(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                 <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                 <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                 <span class="keywordtype">int</span> this_patch_idx);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    fc3d_clawpack5_qinit(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                          <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    fc3d_clawpack5_qinit(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                          <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                          <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                          <span class="keywordtype">int</span> this_patch_idx);</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    fc3d_clawpack5_b4step2(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                            <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    fc3d_clawpack5_b4step2(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                            <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                            <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                            <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                            <span class="keywordtype">double</span> t,</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                            <span class="keywordtype">double</span> dt);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    fc3d_clawpack5_bc2(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    fc3d_clawpack5_bc2(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                        <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                        <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                        <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                        <span class="keywordtype">double</span> t,</div>
@@ -516,8 +516,8 @@ $(function() {
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                        fclaw_bool time_interp);</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    fc3d_clawpack5_src2(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    fc3d_clawpack5_src2(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                         <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                         <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                         <span class="keywordtype">double</span> t,</div>
@@ -526,8 +526,8 @@ $(function() {
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">/* A single step method that advances the solution a single step on a single grid</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment">   using a time step dt determined by the subcycle manager */</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="keywordtype">double</span> fc3d_clawpack5_step2(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                            <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="keywordtype">double</span> fc3d_clawpack5_step2(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                            <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                            <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                            <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                            <span class="keywordtype">double</span> t,</div>
@@ -535,15 +535,15 @@ $(function() {
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">/* Use this ro return only the right hand side of the clawpack algorithm */</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="keywordtype">double</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    fc3d_clawpack5_step2_rhs(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                              <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    fc3d_clawpack5_step2_rhs(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                              <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                              <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                              <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                              <span class="keywordtype">double</span> t,</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                              <span class="keywordtype">double</span> *rhs);</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keywordtype">double</span> fc3d_clawpack5_update(<a class="code" href="structfclaw2d__global.html">fclaw2d_global_t</a> *glob,</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                             <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch_t</a> *this_patch,</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keywordtype">double</span> fc3d_clawpack5_update(<a class="code" href="structfclaw__global.html">fclaw_global_t</a> *glob,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                             <a class="code" href="structfclaw__patch.html">fclaw_patch_t</a> *this_patch,</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                             <span class="keywordtype">int</span> this_block_idx,</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                             <span class="keywordtype">int</span> this_patch_idx,</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                             <span class="keywordtype">double</span> t,</div>
@@ -560,12 +560,12 @@ $(function() {
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !FC3D_CLAWPACH5_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructfc3d__clawpack5__options_html"><div class="ttname"><a href="structfc3d__clawpack5__options.html">fc3d_clawpack5_options</a></div><div class="ttdef"><b>Definition:</b> fc3d_clawpack5_options.h:42</div></div>
-<div class="ttc" id="astructfclaw2d__vtable_html"><div class="ttname"><a href="structfclaw2d__vtable.html">fclaw2d_vtable</a></div><div class="ttdoc">vtable for general ForestClaw functions</div><div class="ttdef"><b>Definition:</b> fclaw2d_vtable.h:73</div></div>
-<div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
+<div class="ttc" id="astructfclaw__patch_html"><div class="ttname"><a href="structfclaw__patch.html">fclaw_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:70</div></div>
+<div class="ttc" id="afclaw__vtable_8h_html"><div class="ttname"><a href="fclaw__vtable_8h.html">fclaw_vtable.h</a></div><div class="ttdoc">ForestClaw vtable.</div></div>
 <div class="ttc" id="afclaw__base_8h_html_acefeaedd4aae14e6a175ecc6c442dc15"><div class="ttname"><a href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a></div><div class="ttdeci">struct fclaw_app fclaw_app_t</div><div class="ttdoc">An application container whose use is optional.</div><div class="ttdef"><b>Definition:</b> fclaw_base.h:178</div></div>
-<div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
-<div class="ttc" id="afclaw2d__vtable_8h_html"><div class="ttname"><a href="fclaw2d__vtable_8h.html">fclaw2d_vtable.h</a></div><div class="ttdoc">ForestClaw vtable.</div></div>
+<div class="ttc" id="afclaw__vtable_8h_html_aa289d1deb8fc0541e80addf48efbc59d"><div class="ttname"><a href="fclaw__vtable_8h.html#aa289d1deb8fc0541e80addf48efbc59d">fclaw_vt</a></div><div class="ttdeci">fclaw_vtable_t * fclaw_vt(struct fclaw_global *glob)</div><div class="ttdoc">get the fclaw2d vtable</div></div>
 <div class="ttc" id="astructfc3d__clawpack5__vtable_html"><div class="ttname"><a href="structfc3d__clawpack5__vtable.html">fc3d_clawpack5_vtable</a></div><div class="ttdef"><b>Definition:</b> fc3d_clawpack5.h:116</div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

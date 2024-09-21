@@ -161,24 +161,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a59ac3748bcff4baad381ae07d46a2caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a59ac3748bcff4baad381ae07d46a2caa">FCLAW2D_CLAWPATCH5_FORT_AVERAGE2COARSE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *igrid, const int *manifold)</td></tr>
 <tr class="memdesc:a59ac3748bcff4baad381ae07d46a2caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates from a coarse patch to a fine patche.  <a href="fclaw2d__clawpatch5__fort_8h.html#a59ac3748bcff4baad381ae07d46a2caa">More...</a><br /></td></tr>
 <tr class="separator:a59ac3748bcff4baad381ae07d46a2caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d622a796af97ba90fa36d61f7260016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a5d622a796af97ba90fa36d61f7260016">FCLAW2D_CLAWPATCH5_FORT_COPY_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qthis[], double qneighbor[], const int *a_idir, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:a5d622a796af97ba90fa36d61f7260016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies ghost data from a face-neighboring grid on the same level.  <a href="fclaw2d__clawpatch5__fort_8h.html#a5d622a796af97ba90fa36d61f7260016">More...</a><br /></td></tr>
-<tr class="separator:a5d622a796af97ba90fa36d61f7260016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6255a6fd0ebb127a90c0cfa82c1caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#aef6255a6fd0ebb127a90c0cfa82c1caf">FCLAW2D_CLAWPATCH5_FORT_AVERAGE_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *idir, const int *iside, const int *num_neighbors, const int *refratio, const int *igrid, const int *manifold, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:aef6255a6fd0ebb127a90c0cfa82c1caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages values from a face-neighboring fine grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#aef6255a6fd0ebb127a90c0cfa82c1caf">More...</a><br /></td></tr>
-<tr class="separator:aef6255a6fd0ebb127a90c0cfa82c1caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e23c6fd7c5b590abf14ac6e8624db53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a5e23c6fd7c5b590abf14ac6e8624db53">FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], const int *idir, const int *iside, const int *num_neighbors, const int *refratio, const int *igrid, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:a5e23c6fd7c5b590abf14ac6e8624db53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates values from a face-neighboring coarse grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#a5e23c6fd7c5b590abf14ac6e8624db53">More...</a><br /></td></tr>
-<tr class="separator:a5e23c6fd7c5b590abf14ac6e8624db53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63685155fb9f9b00f23044e754e12002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a63685155fb9f9b00f23044e754e12002">FCLAW2D_CLAWPATCH5_FORT_COPY_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double this_q[], double neighbor_q[], const int *a_corner, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:a63685155fb9f9b00f23044e754e12002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies ghost data from a corner-neighboring grid on the same level.  <a href="fclaw2d__clawpatch5__fort_8h.html#a63685155fb9f9b00f23044e754e12002">More...</a><br /></td></tr>
-<tr class="separator:a63685155fb9f9b00f23044e754e12002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a584e6295de10dc077da7e67763b78deb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a584e6295de10dc077da7e67763b78deb">FCLAW2D_CLAWPATCH5_FORT_AVERAGE_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, const int *a_refratio, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *manifold, const int *a_corner, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:a584e6295de10dc077da7e67763b78deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages values from a corner neighboring fine grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#a584e6295de10dc077da7e67763b78deb">More...</a><br /></td></tr>
-<tr class="separator:a584e6295de10dc077da7e67763b78deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b1e283e68f13e9ec120509e15d0621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a85b1e283e68f13e9ec120509e15d0621">FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, const int *a_refratio, double this_q[], double neighbor_q[], const int *a_corner, struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **transform_cptr)</td></tr>
-<tr class="memdesc:a85b1e283e68f13e9ec120509e15d0621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates values form a corner-neighboring coarse grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#a85b1e283e68f13e9ec120509e15d0621">More...</a><br /></td></tr>
-<tr class="separator:a85b1e283e68f13e9ec120509e15d0621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903a8be8edf09916855498c1fe6dd9f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a903a8be8edf09916855498c1fe6dd9f2">FCLAW2D_CLAWPATCH5_FORT_COPY_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qthis[], double qneighbor[], const int *a_idir, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:a903a8be8edf09916855498c1fe6dd9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies ghost data from a face-neighboring grid on the same level.  <a href="fclaw2d__clawpatch5__fort_8h.html#a903a8be8edf09916855498c1fe6dd9f2">More...</a><br /></td></tr>
+<tr class="separator:a903a8be8edf09916855498c1fe6dd9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95ff8ff558d607a1646979d8ce017f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#ad95ff8ff558d607a1646979d8ce017f2">FCLAW2D_CLAWPATCH5_FORT_AVERAGE_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *idir, const int *iside, const int *num_neighbors, const int *refratio, const int *igrid, const int *manifold, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:ad95ff8ff558d607a1646979d8ce017f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages values from a face-neighboring fine grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#ad95ff8ff558d607a1646979d8ce017f2">More...</a><br /></td></tr>
+<tr class="separator:ad95ff8ff558d607a1646979d8ce017f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e03db5fa4b181ff6897ca98229bc4c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a0e03db5fa4b181ff6897ca98229bc4c9">FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_FACE</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double qcoarse[], double qfine[], const int *idir, const int *iside, const int *num_neighbors, const int *refratio, const int *igrid, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:a0e03db5fa4b181ff6897ca98229bc4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates values from a face-neighboring coarse grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#a0e03db5fa4b181ff6897ca98229bc4c9">More...</a><br /></td></tr>
+<tr class="separator:a0e03db5fa4b181ff6897ca98229bc4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8945940ee0d4badd7b404ac83054e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a1a8945940ee0d4badd7b404ac83054e1">FCLAW2D_CLAWPATCH5_FORT_COPY_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, double this_q[], double neighbor_q[], const int *a_corner, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:a1a8945940ee0d4badd7b404ac83054e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies ghost data from a corner-neighboring grid on the same level.  <a href="fclaw2d__clawpatch5__fort_8h.html#a1a8945940ee0d4badd7b404ac83054e1">More...</a><br /></td></tr>
+<tr class="separator:a1a8945940ee0d4badd7b404ac83054e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8cd8bdf7f5d87aeafe33c386acd564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a6f8cd8bdf7f5d87aeafe33c386acd564">FCLAW2D_CLAWPATCH5_FORT_AVERAGE_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, const int *a_refratio, double qcoarse[], double qfine[], double areacoarse[], double areafine[], const int *manifold, const int *a_corner, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:a6f8cd8bdf7f5d87aeafe33c386acd564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages values from a corner neighboring fine grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#a6f8cd8bdf7f5d87aeafe33c386acd564">More...</a><br /></td></tr>
+<tr class="separator:a6f8cd8bdf7f5d87aeafe33c386acd564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb2f0327b94622c2c5a35efb92aa91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#adbb2f0327b94622c2c5a35efb92aa91e">FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_CORNER</a> (const int *mx, const int *my, const int *mbc, const int *meqn, const int *a_refratio, double this_q[], double neighbor_q[], const int *a_corner, struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **transform_cptr)</td></tr>
+<tr class="memdesc:adbb2f0327b94622c2c5a35efb92aa91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates values form a corner-neighboring coarse grid.  <a href="fclaw2d__clawpatch5__fort_8h.html#adbb2f0327b94622c2c5a35efb92aa91e">More...</a><br /></td></tr>
+<tr class="separator:adbb2f0327b94622c2c5a35efb92aa91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a05badaa1fe04ed6997c9c6a5109ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch5__fort_8h.html#a63a05badaa1fe04ed6997c9c6a5109ef">FCLAW2D_PILLOW5_COPY_BLOCK_CORNER</a> (int *mx, int *my, int *mbc, int *meqn, double qthis[], double qneighbor[], int *icorner, int *iblock)</td></tr>
 <tr class="memdesc:a63a05badaa1fe04ed6997c9c6a5109ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the boundary condition at block corners.  <a href="fclaw2d__clawpatch5__fort_8h.html#a63a05badaa1fe04ed6997c9c6a5109ef">More...</a><br /></td></tr>
 <tr class="separator:a63a05badaa1fe04ed6997c9c6a5109ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -948,8 +948,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a584e6295de10dc077da7e67763b78deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a584e6295de10dc077da7e67763b78deb">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_AVERAGE_CORNER()</h2>
+<a id="a6f8cd8bdf7f5d87aeafe33c386acd564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8cd8bdf7f5d87aeafe33c386acd564">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_AVERAGE_CORNER()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1023,7 +1023,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>
@@ -1054,8 +1054,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aef6255a6fd0ebb127a90c0cfa82c1caf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6255a6fd0ebb127a90c0cfa82c1caf">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_AVERAGE_FACE()</h2>
+<a id="ad95ff8ff558d607a1646979d8ce017f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95ff8ff558d607a1646979d8ce017f2">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_AVERAGE_FACE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1147,7 +1147,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>
@@ -1431,8 +1431,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a63685155fb9f9b00f23044e754e12002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63685155fb9f9b00f23044e754e12002">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_COPY_CORNER()</h2>
+<a id="a1a8945940ee0d4badd7b404ac83054e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a8945940ee0d4badd7b404ac83054e1">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_COPY_CORNER()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1482,7 +1482,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>
@@ -1510,8 +1510,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d622a796af97ba90fa36d61f7260016"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d622a796af97ba90fa36d61f7260016">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_COPY_FACE()</h2>
+<a id="a903a8be8edf09916855498c1fe6dd9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903a8be8edf09916855498c1fe6dd9f2">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_COPY_FACE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1561,7 +1561,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>
@@ -1748,8 +1748,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a85b1e283e68f13e9ec120509e15d0621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b1e283e68f13e9ec120509e15d0621">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_CORNER()</h2>
+<a id="adbb2f0327b94622c2c5a35efb92aa91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb2f0327b94622c2c5a35efb92aa91e">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_CORNER()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1805,7 +1805,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>
@@ -1834,8 +1834,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e23c6fd7c5b590abf14ac6e8624db53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e23c6fd7c5b590abf14ac6e8624db53">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_FACE()</h2>
+<a id="a0e03db5fa4b181ff6897ca98229bc4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e03db5fa4b181ff6897ca98229bc4c9">&#9670;&nbsp;</a></span>FCLAW2D_CLAWPATCH5_FORT_INTERPOLATE_FACE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1909,7 +1909,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw2d__patch__transform__data.html">fclaw2d_patch_transform_data</a> **&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch__transform__data.html">fclaw_patch_transform_data</a> **&#160;</td>
           <td class="paramname"><em>transform_cptr</em>&#160;</td>
         </tr>
         <tr>

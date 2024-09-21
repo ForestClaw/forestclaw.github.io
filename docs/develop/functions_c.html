@@ -66,11 +66,21 @@ $(function() {
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>c_kahan
 : <a class="el" href="structerror__info__t.html#a47a4ec17f32e59e832c24ea351206065">error_info_t</a>
-, <a class="el" href="structfclaw3dx__clawpatch__error__info__t.html#ae6dba844ccba243db442fad996590730">fclaw3dx_clawpatch_error_info_t</a>
 </li>
 <li>cb_output_ascii
-: <a class="el" href="structfclaw2d__clawpatch__vtable.html#a6c45245bb358c8abb6c6928d29d58304">fclaw2d_clawpatch_vtable</a>
-, <a class="el" href="structfclaw3dx__clawpatch__vtable.html#abbebc67f01b1ceb479569f8e7097cc34">fclaw3dx_clawpatch_vtable</a>
+: <a class="el" href="structfclaw__clawpatch__vtable.html#addd5c9c6b91aa56675278f63703f31f3">fclaw_clawpatch_vtable</a>
+</li>
+<li>checkpoint_get_pointer
+: <a class="el" href="structfclaw__patch__vtable.html#a16a22653b77cd37636e05e941f3af543">fclaw_patch_vtable</a>
+</li>
+<li>checkpoint_names
+: <a class="el" href="structfclaw__patch__vtable.html#a63dbdec1d14a27e17f76b61a2cf58563">fclaw_patch_vtable</a>
+</li>
+<li>checkpoint_num_pointers
+: <a class="el" href="structfclaw__patch__vtable.html#a7126b973fc1a5414b451800c9da1b4d3">fclaw_patch_vtable</a>
+</li>
+<li>checkpoint_pointer_sizes
+: <a class="el" href="structfclaw__patch__vtable.html#a7232b2d8e99a0c12ac530f5610d5b6c4">fclaw_patch_vtable</a>
 </li>
 <li>compute_area
 : <a class="el" href="structfclaw2d__metric__vtable.html#a787664bd6b6d7c44323be066fbf108e7">fclaw2d_metric_vtable</a>
@@ -83,8 +93,7 @@ $(function() {
 , <a class="el" href="structfclaw3d__metric__vtable.html#a0fcc904a3745a87994600f2ac9104e77">fclaw3d_metric_vtable</a>
 </li>
 <li>compute_error
-: <a class="el" href="structfclaw2d__clawpatch__vtable.html#a85aae36d2fa12ebb1b62ec47c1f56495">fclaw2d_clawpatch_vtable</a>
-, <a class="el" href="structfclaw3dx__clawpatch__vtable.html#a2cd522e26bf1c56ad6ed86b20e3d77fd">fclaw3dx_clawpatch_vtable</a>
+: <a class="el" href="structfclaw__clawpatch__vtable.html#a6e4d7a8841f45668924b5c8b777db816">fclaw_clawpatch_vtable</a>
 </li>
 <li>compute_mesh
 : <a class="el" href="structfclaw2d__metric__vtable.html#a8c29ad6ee06c68989d4b6e0a4e893874">fclaw2d_metric_vtable</a>
@@ -97,35 +106,34 @@ $(function() {
 : <a class="el" href="structfclaw3d__metric__vtable.html#ad286ccd5099f1135d9342a50750bbee0">fclaw3d_metric_vtable</a>
 </li>
 <li>conservation_check
-: <a class="el" href="structfclaw2d__clawpatch__vtable.html#aaa81a97e1f681c454a79793fb9fe21fb">fclaw2d_clawpatch_vtable</a>
-, <a class="el" href="structfclaw3dx__clawpatch__vtable.html#ae45618df7b1276c764b1dd200add3842">fclaw3dx_clawpatch_vtable</a>
+: <a class="el" href="structfclaw__clawpatch__vtable.html#af3564c5871442c9e4ae9c07fc28d9064">fclaw_clawpatch_vtable</a>
+</li>
+<li>considered_for_refinement
+: <a class="el" href="structfclaw__patch__data.html#af6c609d926d9f6377fbb3f28b89c388b">fclaw_patch_data</a>
 </li>
 <li>copy_block_corner
-: <a class="el" href="structfclaw2d__patch__vtable.html#a4c3d79fc71eca2fb6d95f927007e044b">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#ac688b81bdbc37f9f7813eb318bbd2256">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a8a1f62c3d2281dc2075a6a2d5d28aa9e">fclaw_patch_vtable</a>
 </li>
 <li>copy_corner
-: <a class="el" href="structfclaw2d__patch__vtable.html#a479ee4c4f497636724bcb5f121dc9252">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#ab043e88868d14ce2c23d673c4c98e3d0">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#ae608da9908b9fd8ffd8e4e5d1adb2837">fclaw_patch_vtable</a>
+</li>
+<li>copy_edge
+: <a class="el" href="structfclaw__patch__vtable.html#aca0adfa6c0fadce6fef7e87878679899">fclaw_patch_vtable</a>
 </li>
 <li>copy_face
-: <a class="el" href="structfclaw2d__patch__vtable.html#a4dc17a8fa926f7db945de42ddd68c1f0">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#a4502a348e5b6ded5882d03f98d661692">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#a70fef7549c798c35bfee2693ad9da29a">fclaw_patch_vtable</a>
 </li>
 <li>corner_neighbors
-: <a class="el" href="structfclaw2d__patch__data.html#aaf43a330049cfe976c53416b3e6ac385">fclaw2d_patch_data</a>
-, <a class="el" href="structfclaw3d__patch__data.html#a44af38d557270394501b7370030304bd">fclaw3d_patch_data</a>
+: <a class="el" href="structfclaw__patch__data.html#a5ec99207e6fa7aed6d74d4a849b291bb">fclaw_patch_data</a>
 </li>
 <li>corners
-: <a class="el" href="structfclaw2d__patch__data.html#a278e32be4ecd153fdcdcb60d17d4ed51">fclaw2d_patch_data</a>
-, <a class="el" href="structfclaw3d__patch__data.html#ae3896371e1c1ed95a7f05c87b052029d">fclaw3d_patch_data</a>
+: <a class="el" href="structfclaw__patch__data.html#abea958f5c50171cf80cdaa7e8b16204a">fclaw_patch_data</a>
 </li>
 <li>create_gauge_files
 : <a class="el" href="structfclaw__gauges__vtable.html#a2e052f779c5a669f28ea1928e84f735f">fclaw_gauges_vtable</a>
 </li>
 <li>create_user_data
-: <a class="el" href="structfclaw2d__patch__vtable.html#a1d2737de0e6f19cc11d439baf5128f5b">fclaw2d_patch_vtable</a>
-, <a class="el" href="structfclaw3d__patch__vtable.html#aef369efccc9463c60481507b76e69782">fclaw3d_patch_vtable</a>
+: <a class="el" href="structfclaw__patch__vtable.html#aaed07b30792e438c4d7c5059fdcb68d8">fclaw_patch_vtable</a>
 </li>
 <li>curvature
 : <a class="el" href="structfclaw2d__metric__patch__t.html#ab378ff58c10eb889a6da8ced213214f3">fclaw2d_metric_patch_t</a>

@@ -113,8 +113,8 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define FC2D_CUDACLAW_MWAVES  10           </span><span class="comment">/* Used to set shared memory (checked) */</span><span class="preprocessor"> </span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw2d__patch.html">fclaw2d_patch</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__global.html">fclaw_global</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span><a class="code" href="structfclaw__patch.html">fclaw_patch</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span><a class="code" href="structcudaclaw__fluxes.html">cudaclaw_fluxes</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
@@ -146,19 +146,19 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/* ------------------------------------- Function headers ------------------------------*/</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> cudaclaw_allocate_fluxes(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> cudaclaw_allocate_fluxes(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              <span class="keyword">struct</span> <a class="code" href="structfclaw__patch.html">fclaw_patch</a> *patch);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> cudaclaw_deallocate_fluxes(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch</a> *patch);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> cudaclaw_deallocate_fluxes(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                <span class="keyword">struct</span> <a class="code" href="structfclaw__patch.html">fclaw_patch</a> *patch);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">double</span> cudaclaw_step2_batch(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">double</span> cudaclaw_step2_batch(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a>* glob,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                            <span class="keyword">struct</span> <a class="code" href="structcudaclaw__fluxes.html">cudaclaw_fluxes</a>* fluxes_array,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                            <span class="keywordtype">int</span> patch_buffer_len, <span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> cudaclaw_store_buffer(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a>* glob,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                           <span class="keyword">struct</span> <a class="code" href="structfclaw2d__patch.html">fclaw2d_patch</a> *this_patch,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> cudaclaw_store_buffer(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a>* glob,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                           <span class="keyword">struct</span> <a class="code" href="structfclaw__patch.html">fclaw_patch</a> *this_patch,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                           <span class="keywordtype">int</span> this_atch_idx,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                           <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> iter, </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                           <span class="keyword">struct</span> <a class="code" href="structcudaclaw__fluxes.html">cudaclaw_fluxes</a>* flux_array);</div>
@@ -171,11 +171,11 @@ $(function() {
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/* --------------------------- Function headers (used outside) -------------------------*/</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_allocate_buffers(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);  <span class="comment">/* Done once */</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_allocate_buffers(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);  <span class="comment">/* Done once */</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_deallocate_buffers(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_deallocate_buffers(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_initialize_GPUs(<span class="keyword">struct</span> <a class="code" href="structfclaw2d__global.html">fclaw2d_global</a> *glob);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> fc2d_cudaclaw_initialize_GPUs(<span class="keyword">struct</span> <a class="code" href="structfclaw__global.html">fclaw_global</a> *glob);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span>  cudaclaw_get_method_parameters(<span class="keywordtype">int</span>** order, <span class="keywordtype">int</span>** mthlim);</div>
@@ -190,9 +190,9 @@ $(function() {
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
-<div class="ttc" id="astructfclaw2d__global_html"><div class="ttname"><a href="structfclaw2d__global.html">fclaw2d_global</a></div><div class="ttdef"><b>Definition:</b> fclaw2d_global.h:57</div></div>
+<div class="ttc" id="astructfclaw__patch_html"><div class="ttname"><a href="structfclaw__patch.html">fclaw_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:70</div></div>
 <div class="ttc" id="astructcudaclaw__fluxes_html"><div class="ttname"><a href="structcudaclaw__fluxes.html">cudaclaw_fluxes</a></div><div class="ttdef"><b>Definition:</b> cudaclaw_allocate.h:18</div></div>
+<div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

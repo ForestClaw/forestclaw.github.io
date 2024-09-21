@@ -135,6 +135,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>smooth_level</b></td><
 <tr class="memitem:a1c0d6bf856a8ce513561915b563230b9"><td class="memItemLeft" align="right" valign="top"><a id="a1c0d6bf856a8ce513561915b563230b9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>refine_threshold</b></td></tr>
 <tr class="separator:a1c0d6bf856a8ce513561915b563230b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5362d8de6291eb5f87d5b8bbaa1e51c"><td class="memItemLeft" align="right" valign="top"><a id="ad5362d8de6291eb5f87d5b8bbaa1e51c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#ad5362d8de6291eb5f87d5b8bbaa1e51c">partition_for_coarsening</a></td></tr>
+<tr class="memdesc:ad5362d8de6291eb5f87d5b8bbaa1e51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if domain will be partitioned for coarsening. <br /></td></tr>
+<tr class="separator:ad5362d8de6291eb5f87d5b8bbaa1e51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e5793803cd3a1261b98230bd5d2043"><td class="memItemLeft" align="right" valign="top"><a id="a12e5793803cd3a1261b98230bd5d2043"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>time_sync</b></td></tr>
 <tr class="separator:a12e5793803cd3a1261b98230bd5d2043"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,12 +160,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mi</b></td></tr>
 <tr class="memitem:a99e39020ab8a4b0cc6b862410e266786"><td class="memItemLeft" align="right" valign="top"><a id="a99e39020ab8a4b0cc6b862410e266786"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>mj</b></td></tr>
 <tr class="separator:a99e39020ab8a4b0cc6b862410e266786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe36d87482cac5dad4d7066249a996b"><td class="memItemLeft" align="right" valign="top"><a id="a9fe36d87482cac5dad4d7066249a996b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mk</b></td></tr>
+<tr class="separator:a9fe36d87482cac5dad4d7066249a996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c35720df9441f30bbd0bab9a2a39ee"><td class="memItemLeft" align="right" valign="top"><a id="ac0c35720df9441f30bbd0bab9a2a39ee"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>periodic_x</b></td></tr>
 <tr class="separator:ac0c35720df9441f30bbd0bab9a2a39ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2fd8097bdd5e88d77d85d83f9a8f4cc"><td class="memItemLeft" align="right" valign="top"><a id="ad2fd8097bdd5e88d77d85d83f9a8f4cc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>periodic_y</b></td></tr>
 <tr class="separator:ad2fd8097bdd5e88d77d85d83f9a8f4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35dbb5cb2d88f324225376bfa5a1216e"><td class="memItemLeft" align="right" valign="top"><a id="a35dbb5cb2d88f324225376bfa5a1216e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>periodic_z</b></td></tr>
+<tr class="separator:a35dbb5cb2d88f324225376bfa5a1216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c305ac25cae7f5c801052c3db71a5f"><td class="memItemLeft" align="right" valign="top"><a id="ac8c305ac25cae7f5c801052c3db71a5f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>flux_correction</b></td></tr>
 <tr class="separator:ac8c305ac25cae7f5c801052c3db71a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,10 +231,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memdesc:a645035e96702b07e3f51d9a7fce21518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for the single block, unmapped case. <br /></td></tr>
 <tr class="separator:a645035e96702b07e3f51d9a7fce21518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f39b27a41bec6f8a466e2fa55bdc75"><td class="memItemLeft" align="right" valign="top"><a id="ad7f39b27a41bec6f8a466e2fa55bdc75"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>az</b></td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#ad7f39b27a41bec6f8a466e2fa55bdc75">az</a></td></tr>
+<tr class="memdesc:ad7f39b27a41bec6f8a466e2fa55bdc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for the single block, unmapped case. <br /></td></tr>
 <tr class="separator:ad7f39b27a41bec6f8a466e2fa55bdc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80de171d86b0cef3b00f064204c8082d"><td class="memItemLeft" align="right" valign="top"><a id="a80de171d86b0cef3b00f064204c8082d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>bz</b></td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#a80de171d86b0cef3b00f064204c8082d">bz</a></td></tr>
+<tr class="memdesc:a80de171d86b0cef3b00f064204c8082d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only for the single block, unmapped case. <br /></td></tr>
 <tr class="separator:a80de171d86b0cef3b00f064204c8082d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a48e6e5db024e04cc75f836936c13e0"><td class="memItemLeft" align="right" valign="top"><a id="a1a48e6e5db024e04cc75f836936c13e0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>run_user_diagnostics</b></td></tr>
@@ -266,6 +278,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="memitem:af71368df7e95c7ca64d736ee6898498a"><td class="memItemLeft" align="right" valign="top"><a id="af71368df7e95c7ca64d736ee6898498a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
 <tr class="separator:af71368df7e95c7ca64d736ee6898498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f3fe1f3a2297dc242687f8dc4159b2"><td class="memItemLeft" align="right" valign="top"><a id="ac9f3fe1f3a2297dc242687f8dc4159b2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>checkpoint</b></td></tr>
+<tr class="separator:ac9f3fe1f3a2297dc242687f8dc4159b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbdba3c563a90d36a0fa20301625c8f"><td class="memItemLeft" align="right" valign="top"><a id="a6fbdba3c563a90d36a0fa20301625c8f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>restart</b></td></tr>
+<tr class="separator:a6fbdba3c563a90d36a0fa20301625c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ceded60608b055139bfb438cbf2ebc"><td class="memItemLeft" align="right" valign="top"><a id="a86ceded60608b055139bfb438cbf2ebc"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#a86ceded60608b055139bfb438cbf2ebc">restart_file</a></td></tr>
+<tr class="memdesc:a86ceded60608b055139bfb438cbf2ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename of restart file <br /></td></tr>
+<tr class="separator:a86ceded60608b055139bfb438cbf2ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac372193641731df11de68c708eb3d45b"><td class="memItemLeft" align="right" valign="top"><a id="ac372193641731df11de68c708eb3d45b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#ac372193641731df11de68c708eb3d45b">partition_file</a></td></tr>
+<tr class="memdesc:ac372193641731df11de68c708eb3d45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename of partition file <br /></td></tr>
+<tr class="separator:ac372193641731df11de68c708eb3d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad91e9e81cea3ab608d6bbb7c31b2b10a"><td class="memItemLeft" align="right" valign="top"><a id="ad91e9e81cea3ab608d6bbb7c31b2b10a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>tikz_out</b></td></tr>
 <tr class="separator:ad91e9e81cea3ab608d6bbb7c31b2b10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +338,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#adab6c1f8c2d58df02db308cf1f9321f1">regression_check</a></td></tr>
 <tr class="memdesc:adab6c1f8c2d58df02db308cf1f9321f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">filename of regression check values <br /></td></tr>
 <tr class="separator:adab6c1f8c2d58df02db308cf1f9321f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdaeb98be12224ba65df8de13754a16"><td class="memItemLeft" align="right" valign="top"><a id="a4cdaeb98be12224ba65df8de13754a16"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw__options.html#a4cdaeb98be12224ba65df8de13754a16">max_refinement_ratio</a></td></tr>
+<tr class="memdesc:a4cdaeb98be12224ba65df8de13754a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum refinment ratio before partitioning and continuing refinement. <br /></td></tr>
+<tr class="separator:a4cdaeb98be12224ba65df8de13754a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a2ccf483cb486dd36f211178bcb36a835"></a>

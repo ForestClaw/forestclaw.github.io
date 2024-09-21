@@ -166,9 +166,6 @@ typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 typedef struct <a class="el" href="structfclaw__app__options__vtable.html">fclaw_app_options_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a0b73041b827482b61260b98c486f7ca9">fclaw_app_options_vtable_t</a></td></tr>
 <tr class="memdesc:a0b73041b827482b61260b98c486f7ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extended table of virtual functions for package-wise option parsing. <br /></td></tr>
 <tr class="separator:a0b73041b827482b61260b98c486f7ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac798b04b5caf8834afced914cd5cac88"><td class="memItemLeft" align="right" valign="top"><a id="ac798b04b5caf8834afced914cd5cac88"></a>
-typedef struct <a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_packing_vtable_t</b></td></tr>
-<tr class="separator:ac798b04b5caf8834afced914cd5cac88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -229,9 +226,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af4b380b1ccc299aa53b163de62d170bf"><td class="memItemLeft" align="right" valign="top">void void void void void void void void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#af4b380b1ccc299aa53b163de62d170bf">fclaw_debugf</a> (const char *fmt,...) __attribute__((format(printf</td></tr>
 <tr class="memdesc:af4b380b1ccc299aa53b163de62d170bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a processor-local message with priority FCLAW_VERBOSITY_DEBUG.  <a href="fclaw__base_8h.html#af4b380b1ccc299aa53b163de62d170bf">More...</a><br /></td></tr>
 <tr class="separator:af4b380b1ccc299aa53b163de62d170bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d143069a16c3c627b139ffe2bfade15"><td class="memItemLeft" align="right" valign="top">void void void void void void void void void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a2d143069a16c3c627b139ffe2bfade15">fclaw_init</a> (sc_log_handler_t log_handler, int log_threshold)</td></tr>
-<tr class="memdesc:a2d143069a16c3c627b139ffe2bfade15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register ForestClaw with libsc and print version and variable information.  <a href="fclaw__base_8h.html#a2d143069a16c3c627b139ffe2bfade15">More...</a><br /></td></tr>
-<tr class="separator:a2d143069a16c3c627b139ffe2bfade15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41e64133f8ef54b55ced523777bfb66"><td class="memItemLeft" align="right" valign="top">void void void void void void void void void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#aa41e64133f8ef54b55ced523777bfb66">fclaw_abortf</a> (const char *fmt,...) __attribute__((noreturn))</td></tr>
+<tr class="memdesc:aa41e64133f8ef54b55ced523777bfb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a an error mesage and abort the program.  <a href="fclaw__base_8h.html#aa41e64133f8ef54b55ced523777bfb66">More...</a><br /></td></tr>
+<tr class="separator:aa41e64133f8ef54b55ced523777bfb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8981214834afbaabc20bef0e10a919c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a8981214834afbaabc20bef0e10a919c8">fclaw_init</a> (sc_log_handler_t log_handler, int log_threshold)</td></tr>
+<tr class="memdesc:a8981214834afbaabc20bef0e10a919c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register ForestClaw with libsc and print version and variable information.  <a href="fclaw__base_8h.html#a8981214834afbaabc20bef0e10a919c8">More...</a><br /></td></tr>
+<tr class="separator:a8981214834afbaabc20bef0e10a919c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e999b56dbd9b39866997635a6da020b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a3e999b56dbd9b39866997635a6da020b">fclaw_app_new</a> (int *argc, char ***argv, void *user)</td></tr>
 <tr class="memdesc:a3e999b56dbd9b39866997635a6da020b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the (optional) init functions for sc, p4est, and ForestClaw.  <a href="fclaw__base_8h.html#a3e999b56dbd9b39866997635a6da020b">More...</a><br /></td></tr>
 <tr class="separator:a3e999b56dbd9b39866997635a6da020b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,12 +256,6 @@ Functions</h2></td></tr>
 <tr class="memitem:af2aff88f0423516f4474be963597ef25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#af2aff88f0423516f4474be963597ef25">fclaw_app_options_register</a> (<a class="el" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> *a, const char *section, const char *configfile, const <a class="el" href="fclaw__base_8h.html#a0b73041b827482b61260b98c486f7ca9">fclaw_app_options_vtable_t</a> *vt, void *package)</td></tr>
 <tr class="memdesc:af2aff88f0423516f4474be963597ef25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an options package with an application.  <a href="fclaw__base_8h.html#af2aff88f0423516f4474be963597ef25">More...</a><br /></td></tr>
 <tr class="separator:af2aff88f0423516f4474be963597ef25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283145364df2d333bf0edb52f57ec430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a283145364df2d333bf0edb52f57ec430">fclaw_app_register_options_packing_vtable</a> (const char *name, <a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a> *vtable)</td></tr>
-<tr class="memdesc:a283145364df2d333bf0edb52f57ec430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a vtable used for packing an options structure.  <a href="fclaw__base_8h.html#a283145364df2d333bf0edb52f57ec430">More...</a><br /></td></tr>
-<tr class="separator:a283145364df2d333bf0edb52f57ec430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f8afc8548ab3c23496a5a37f53cfd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#a75f8afc8548ab3c23496a5a37f53cfd8">fclaw_app_get_options_packing_vtable</a> (const char *name)</td></tr>
-<tr class="memdesc:a75f8afc8548ab3c23496a5a37f53cfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an options packing vtable.  <a href="fclaw__base_8h.html#a75f8afc8548ab3c23496a5a37f53cfd8">More...</a><br /></td></tr>
-<tr class="separator:a75f8afc8548ab3c23496a5a37f53cfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8a76f1f9f632010c4af61cab47fd604"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__base_8h.html#af8a76f1f9f632010c4af61cab47fd604">fclaw_app_options_core_registered</a> (<a class="el" href="fclaw__base_8h.html#acefeaedd4aae14e6a175ecc6c442dc15">fclaw_app_t</a> *a)</td></tr>
 <tr class="memdesc:af8a76f1f9f632010c4af61cab47fd604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if core options have been registered for this app.  <a href="fclaw__base_8h.html#af8a76f1f9f632010c4af61cab47fd604">More...</a><br /></td></tr>
 <tr class="separator:af8a76f1f9f632010c4af61cab47fd604"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -641,6 +635,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa41e64133f8ef54b55ced523777bfb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41e64133f8ef54b55ced523777bfb66">&#9670;&nbsp;</a></span>fclaw_abortf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void void void void void void void void void fclaw_abortf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a an error mesage and abort the program. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>A printf-style format string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a78abb710fcfebda9d52acf0795283bd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78abb710fcfebda9d52acf0795283bd9">&#9670;&nbsp;</a></span>fclaw_app_destroy()</h2>
 
@@ -801,34 +831,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a pointer to the options structure. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>TODO: We shall provide an interface that will not need this function. </dd></dl>
-
-</div>
-</div>
-<a id="a75f8afc8548ab3c23496a5a37f53cfd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f8afc8548ab3c23496a5a37f53cfd8">&#9670;&nbsp;</a></span>fclaw_app_get_options_packing_vtable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a>* fclaw_app_get_options_packing_vtable </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get an options packing vtable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>the name, this should be the same name used for storing options in the glob </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>fclaw_packing_vtable_t* the vtable </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>TODO: We shall provide an interface that will not need this function. </dd></dl>
 
 </div>
 </div>
@@ -1159,43 +1162,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>This pointer is returned unchanged. </dd></dl>
-
-</div>
-</div>
-<a id="a283145364df2d333bf0edb52f57ec430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a283145364df2d333bf0edb52f57ec430">&#9670;&nbsp;</a></span>fclaw_app_register_options_packing_vtable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_app_register_options_packing_vtable </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structfclaw__packing__vtable.html">fclaw_packing_vtable_t</a> *&#160;</td>
-          <td class="paramname"><em>vtable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register a vtable used for packing an options structure. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>the name, this should be the same name used for storing options in the glob </td></tr>
-    <tr><td class="paramname">vtable</td><td>the vtable </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1591,14 +1557,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d143069a16c3c627b139ffe2bfade15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d143069a16c3c627b139ffe2bfade15">&#9670;&nbsp;</a></span>fclaw_init()</h2>
+<a id="a8981214834afbaabc20bef0e10a919c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8981214834afbaabc20bef0e10a919c8">&#9670;&nbsp;</a></span>fclaw_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void void void void void void void void void fclaw_init </td>
+          <td class="memname">void fclaw_init </td>
           <td>(</td>
           <td class="paramtype">sc_log_handler_t&#160;</td>
           <td class="paramname"><em>log_handler</em>, </td>
