@@ -18,7 +18,7 @@ var searchData=
   ['dictionary_5fnew_133',['dictionary_new',['../dictionary_8h.html#a9f584d70e3559fe6fe5f62a112bc7b17',1,'dictionary.h']]],
   ['dictionary_5fset_134',['dictionary_set',['../dictionary_8h.html#aab65a95ad09062716b24a129d8529b76',1,'dictionary.h']]],
   ['dictionary_5funset_135',['dictionary_unset',['../dictionary_8h.html#a27f0752948d52ccd2568dae22f5db2bc',1,'dictionary.h']]],
-  ['dim_136',['dim',['../structfclaw__gauge.html#ad3964bd7272af365805aac1486cf1817',1,'fclaw_gauge']]],
+  ['dim_136',['dim',['../structfclaw__gauge.html#ad3964bd7272af365805aac1486cf1817',1,'fclaw_gauge::dim()'],['../structfclaw__region.html#ac13f89e5f3428ecc6cb0f4c1f35ddbd7',1,'fclaw_region::dim()']]],
   ['domain_5finit_137',['domain_init',['../structfclaw__tag4f__user.html#ad3fea46138373e915b393c15a2cf03a2',1,'fclaw_tag4f_user']]],
   ['domflags2_138',['domflags2',['../namespaceclawpack5__amr__module.html#ae47963fa161f240636837190f7d04632',1,'clawpack5_amr_module::domflags2()'],['../namespaceamr__module.html#aa068ae119e2a5dfbf1722c61bc2c4c28',1,'amr_module::domflags2()']]],
   ['domflags_5fbase_139',['domflags_base',['../namespaceclawpack5__amr__module.html#a3b1f9edcaebe2f7d7c43e5b8d429930a',1,'clawpack5_amr_module::domflags_base()'],['../namespaceamr__module.html#a2a2051f18026c5c9aafde1393299bd4f',1,'amr_module::domflags_base()']]],

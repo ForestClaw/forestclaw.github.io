@@ -202,6 +202,9 @@ Regridding Functions</h2></td></tr>
 <tr class="memitem:a45b9c419b0e3c6b0a8d930814a720e51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a45b9c419b0e3c6b0a8d930814a720e51">fclaw_patch_tag4coarsening</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int blockno, int patchno, int initflag)</td></tr>
 <tr class="memdesc:a45b9c419b0e3c6b0a8d930814a720e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag a patch for coarsening.  <a href="fclaw__patch_8h.html#a45b9c419b0e3c6b0a8d930814a720e51">More...</a><br /></td></tr>
 <tr class="separator:a45b9c419b0e3c6b0a8d930814a720e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3888b7eaf44135da88d9ced57ba7993"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#aa3888b7eaf44135da88d9ced57ba7993">fclaw_patch_intersects_region</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *r, double t, int refine_flag)</td></tr>
+<tr class="memdesc:aa3888b7eaf44135da88d9ced57ba7993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a patch is in a region.  <a href="fclaw__patch_8h.html#aa3888b7eaf44135da88d9ced57ba7993">More...</a><br /></td></tr>
+<tr class="separator:aa3888b7eaf44135da88d9ced57ba7993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac36a67230b8d8f841ea9c1631e9d6386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#ac36a67230b8d8f841ea9c1631e9d6386">fclaw_patch_interpolate2fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int this_blockno, int coarse_patchno, int fine0_patchno)</td></tr>
 <tr class="memdesc:ac36a67230b8d8f841ea9c1631e9d6386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#ac36a67230b8d8f841ea9c1631e9d6386">More...</a><br /></td></tr>
 <tr class="separator:ac36a67230b8d8f841ea9c1631e9d6386"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,6 +367,9 @@ Regridding Functions (typedefs)</h2></td></tr>
 <tr class="memitem:a5ccb00dab6a27a472e9f1f56d134ccd5"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a5ccb00dab6a27a472e9f1f56d134ccd5">fclaw_patch_tag4coarsening_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *this_patch, int this_blockno, int this_patchno, int initflag)</td></tr>
 <tr class="memdesc:a5ccb00dab6a27a472e9f1f56d134ccd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags a patch for coarsening.  <a href="fclaw__patch_8h.html#a5ccb00dab6a27a472e9f1f56d134ccd5">More...</a><br /></td></tr>
 <tr class="separator:a5ccb00dab6a27a472e9f1f56d134ccd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d292d77b21923b8c7701957036f786"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#aa4d292d77b21923b8c7701957036f786">fclaw_patch_intersects_region_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *r, double t, int refine_flag)</td></tr>
+<tr class="memdesc:aa4d292d77b21923b8c7701957036f786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a patch is in a region.  <a href="fclaw__patch_8h.html#aa4d292d77b21923b8c7701957036f786">More...</a><br /></td></tr>
+<tr class="separator:aa4d292d77b21923b8c7701957036f786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8458ac20fccb400897ad96186539e2ae"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a8458ac20fccb400897ad96186539e2ae">fclaw_patch_interpolate2fine_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int blockno, int coarse_patchno, int fine_patchno)</td></tr>
 <tr class="memdesc:a8458ac20fccb400897ad96186539e2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#a8458ac20fccb400897ad96186539e2ae">More...</a><br /></td></tr>
 <tr class="separator:a8458ac20fccb400897ad96186539e2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1125,6 +1131,35 @@ Misc Functions (mostly internal)</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa4d292d77b21923b8c7701957036f786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d292d77b21923b8c7701957036f786">&#9670;&nbsp;</a></span>fclaw_patch_intersects_region_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* fclaw_patch_intersects_region_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *r, double t, int refine_flag)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test whether a patch is in a region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch</td><td>the patch context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>the patch number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>region struct </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>current time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refine_flag</td><td>(1=refinement; 0=coarsening) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if patch if patch intersects region </dd></dl>
 
 </div>
 </div>
@@ -3612,6 +3647,79 @@ Misc Functions (mostly internal)</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa3888b7eaf44135da88d9ced57ba7993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3888b7eaf44135da88d9ced57ba7993">&#9670;&nbsp;</a></span>fclaw_patch_intersects_region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_patch_intersects_region </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refine_flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test whether a patch is in a region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch</td><td>the patch context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>the patch number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>region struct </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>current time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refine_flag</td><td>(1=refinement; 0=coarsening) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if patch if patch intersects region </dd></dl>
 
 </div>
 </div>
