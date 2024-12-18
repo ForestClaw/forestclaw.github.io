@@ -112,18 +112,26 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a994e49a066df64207eb9179c24b63ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The build mode.  <a href="fclaw__patch_8h.html#a994e49a066df64207eb9179c24b63ab6">More...</a><br /></td></tr>
 <tr class="separator:a994e49a066df64207eb9179c24b63ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cb3161444fa60a45d415a19de37128"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128">fclaw_patch_data_flags_t</a> { <a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128a016063b402c95d0898e9e0dd8cb31df6">FCLAW_PATCH_DATA_CONSIDERED_FOR_REFINEMENT</a> = 0x1, 
+<a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128acb7d3db4480d487cb6768b1b2b8d4e3e">FCLAW_PATCH_DATA_HAS_COARSE_DATA</a> = 0x2, 
+<a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128afa144cc88c6a2ab3c5860696d9952585">FCLAW_PATCH_DATA_UNPACKING</a> = 0x4
+ }</td></tr>
+<tr class="separator:a11cb3161444fa60a45d415a19de37128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Creating/Deleting Patches</h2></td></tr>
-<tr class="memitem:adf97e7d846db95195d5bd0c246d8fdda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#adf97e7d846db95195d5bd0c246d8fdda">fclaw_patch_data_delete</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
-<tr class="memdesc:adf97e7d846db95195d5bd0c246d8fdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate the user data pointer for a patch.  <a href="fclaw__patch_8h.html#adf97e7d846db95195d5bd0c246d8fdda">More...</a><br /></td></tr>
-<tr class="separator:adf97e7d846db95195d5bd0c246d8fdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f152a05fa78b88d50ab863a1e8217d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a1f152a05fa78b88d50ab863a1e8217d2">fclaw_patch_build</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *this_patch, int blockno, int patchno, void *user)</td></tr>
-<tr class="memdesc:a1f152a05fa78b88d50ab863a1e8217d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new patch object.  <a href="fclaw__patch_8h.html#a1f152a05fa78b88d50ab863a1e8217d2">More...</a><br /></td></tr>
-<tr class="separator:a1f152a05fa78b88d50ab863a1e8217d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40876e51b827e912dee7bc9936586edb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a40876e51b827e912dee7bc9936586edb">fclaw_patch_build_from_fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, int blockno, int coarse_patchno, int fine0_patchno, <a class="el" href="fclaw__patch_8h.html#a994e49a066df64207eb9179c24b63ab6">fclaw_build_mode_t</a> build_mode)</td></tr>
-<tr class="memdesc:a40876e51b827e912dee7bc9936586edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new patch object from a set of fine patches.  <a href="fclaw__patch_8h.html#a40876e51b827e912dee7bc9936586edb">More...</a><br /></td></tr>
-<tr class="separator:a40876e51b827e912dee7bc9936586edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f46ea29b46451b5545820934a815cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#ae9f46ea29b46451b5545820934a815cc">fclaw_patch_data_delete</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *domain, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="memdesc:ae9f46ea29b46451b5545820934a815cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate the user data pointer for a patch.  <a href="fclaw__patch_8h.html#ae9f46ea29b46451b5545820934a815cc">More...</a><br /></td></tr>
+<tr class="separator:ae9f46ea29b46451b5545820934a815cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2835ce4b029efc34e0cda422fe6131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a4f2835ce4b029efc34e0cda422fe6131">fclaw_patch_build</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *domain, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *this_patch, int blockno, int patchno, void *user)</td></tr>
+<tr class="memdesc:a4f2835ce4b029efc34e0cda422fe6131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new patch object.  <a href="fclaw__patch_8h.html#a4f2835ce4b029efc34e0cda422fe6131">More...</a><br /></td></tr>
+<tr class="separator:a4f2835ce4b029efc34e0cda422fe6131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed4975a6a388333221cf8a3fa5f41b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a7ed4975a6a388333221cf8a3fa5f41b1">fclaw_patch_build_from_fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *domain, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, int blockno, int coarse_patchno, int fine0_patchno, <a class="el" href="fclaw__patch_8h.html#a994e49a066df64207eb9179c24b63ab6">fclaw_build_mode_t</a> build_mode)</td></tr>
+<tr class="memdesc:a7ed4975a6a388333221cf8a3fa5f41b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new patch object from a set of fine patches.  <a href="fclaw__patch_8h.html#a7ed4975a6a388333221cf8a3fa5f41b1">More...</a><br /></td></tr>
+<tr class="separator:a7ed4975a6a388333221cf8a3fa5f41b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fc4d2fdf934fd67905d4ddfa4ba67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a24fc4d2fdf934fd67905d4ddfa4ba67c">fclaw_patch_shallow_copy</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *src_domain, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *src_patch, struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *dst_domain, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *dst_patch, int blockno, int old_patchno, int new_patchno)</td></tr>
+<tr class="memdesc:a24fc4d2fdf934fd67905d4ddfa4ba67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a shallow copy of a patch.  <a href="fclaw__patch_8h.html#a24fc4d2fdf934fd67905d4ddfa4ba67c">More...</a><br /></td></tr>
+<tr class="separator:a24fc4d2fdf934fd67905d4ddfa4ba67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Solver Specific Functions</h2></td></tr>
@@ -205,9 +213,9 @@ Regridding Functions</h2></td></tr>
 <tr class="memitem:aa3888b7eaf44135da88d9ced57ba7993"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#aa3888b7eaf44135da88d9ced57ba7993">fclaw_patch_intersects_region</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *r, double t, int refine_flag)</td></tr>
 <tr class="memdesc:aa3888b7eaf44135da88d9ced57ba7993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a patch is in a region.  <a href="fclaw__patch_8h.html#aa3888b7eaf44135da88d9ced57ba7993">More...</a><br /></td></tr>
 <tr class="separator:aa3888b7eaf44135da88d9ced57ba7993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36a67230b8d8f841ea9c1631e9d6386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#ac36a67230b8d8f841ea9c1631e9d6386">fclaw_patch_interpolate2fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int this_blockno, int coarse_patchno, int fine0_patchno)</td></tr>
-<tr class="memdesc:ac36a67230b8d8f841ea9c1631e9d6386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#ac36a67230b8d8f841ea9c1631e9d6386">More...</a><br /></td></tr>
-<tr class="separator:ac36a67230b8d8f841ea9c1631e9d6386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06eaa229d987e597561ddfbafe616212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a06eaa229d987e597561ddfbafe616212">fclaw_patch_interpolate2fine</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patch, int this_blockno, int coarse_patchno, int fine_patchno, int igrid)</td></tr>
+<tr class="memdesc:a06eaa229d987e597561ddfbafe616212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#a06eaa229d987e597561ddfbafe616212">More...</a><br /></td></tr>
+<tr class="separator:a06eaa229d987e597561ddfbafe616212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd2e235dd05f002b2345da219e1e47d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#afd2e235dd05f002b2345da219e1e47d3">fclaw_patch_average2coarse</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, int blockno, int fine0_patchno, int coarse_patchno)</td></tr>
 <tr class="memdesc:afd2e235dd05f002b2345da219e1e47d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages from a set of fine patches to a coarse patch.  <a href="fclaw__patch_8h.html#afd2e235dd05f002b2345da219e1e47d3">More...</a><br /></td></tr>
 <tr class="separator:afd2e235dd05f002b2345da219e1e47d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,9 +378,9 @@ Regridding Functions (typedefs)</h2></td></tr>
 <tr class="memitem:aa4d292d77b21923b8c7701957036f786"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#aa4d292d77b21923b8c7701957036f786">fclaw_patch_intersects_region_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, struct <a class="el" href="structfclaw__region.html">fclaw_region</a> *r, double t, int refine_flag)</td></tr>
 <tr class="memdesc:aa4d292d77b21923b8c7701957036f786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a patch is in a region.  <a href="fclaw__patch_8h.html#aa4d292d77b21923b8c7701957036f786">More...</a><br /></td></tr>
 <tr class="separator:aa4d292d77b21923b8c7701957036f786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8458ac20fccb400897ad96186539e2ae"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a8458ac20fccb400897ad96186539e2ae">fclaw_patch_interpolate2fine_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int blockno, int coarse_patchno, int fine_patchno)</td></tr>
-<tr class="memdesc:a8458ac20fccb400897ad96186539e2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#a8458ac20fccb400897ad96186539e2ae">More...</a><br /></td></tr>
-<tr class="separator:a8458ac20fccb400897ad96186539e2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15c6f3a8e2509f9bd2302a9dfb58e08"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#aa15c6f3a8e2509f9bd2302a9dfb58e08">fclaw_patch_interpolate2fine_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patch, int blockno, int coarse_patchno, int fine_patchno, int igrid)</td></tr>
+<tr class="memdesc:aa15c6f3a8e2509f9bd2302a9dfb58e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates a set of patches from a coarse patch.  <a href="fclaw__patch_8h.html#aa15c6f3a8e2509f9bd2302a9dfb58e08">More...</a><br /></td></tr>
+<tr class="separator:aa15c6f3a8e2509f9bd2302a9dfb58e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbca9bc16b39abd78d653bdb52273eb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a8fbca9bc16b39abd78d653bdb52273eb">fclaw_patch_average2coarse_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, int blockno, int fine_patchno, int coarse_patchno)</td></tr>
 <tr class="memdesc:a8fbca9bc16b39abd78d653bdb52273eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Averages from a set of fine patches to a coarse patch.  <a href="fclaw__patch_8h.html#a8fbca9bc16b39abd78d653bdb52273eb">More...</a><br /></td></tr>
 <tr class="separator:a8fbca9bc16b39abd78d653bdb52273eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,6 +548,9 @@ Misc Functions (mostly internal)</h2></td></tr>
 <tr class="memitem:a20aedaac07a0ef9109d18032db9046e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a20aedaac07a0ef9109d18032db9046e1">fclaw_patch_set_block_corner_count</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *this_patch, int icorner, int block_corner_count)</td></tr>
 <tr class="memdesc:a20aedaac07a0ef9109d18032db9046e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the block corner count for a corner.  <a href="fclaw__patch_8h.html#a20aedaac07a0ef9109d18032db9046e1">More...</a><br /></td></tr>
 <tr class="separator:a20aedaac07a0ef9109d18032db9046e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Patch Flags</h2></td></tr>
 <tr class="memitem:ac8b0897b53fd8d21acada438e1bec923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#ac8b0897b53fd8d21acada438e1bec923">fclaw_patch_considered_for_refinement_set</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
 <tr class="memdesc:ac8b0897b53fd8d21acada438e1bec923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that this patch has been considered for refinement.  <a href="fclaw__patch_8h.html#ac8b0897b53fd8d21acada438e1bec923">More...</a><br /></td></tr>
 <tr class="separator:ac8b0897b53fd8d21acada438e1bec923"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -555,6 +566,15 @@ Misc Functions (mostly internal)</h2></td></tr>
 <tr class="memitem:a12324a3a1d9c55b0d735bfe9cf8b1022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a12324a3a1d9c55b0d735bfe9cf8b1022">fclaw_patch_clear_all_considered_for_refinement</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
 <tr class="memdesc:a12324a3a1d9c55b0d735bfe9cf8b1022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the considered for refinement flag for all patches.  <a href="fclaw__patch_8h.html#a12324a3a1d9c55b0d735bfe9cf8b1022">More...</a><br /></td></tr>
 <tr class="separator:a12324a3a1d9c55b0d735bfe9cf8b1022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d488a39f0544c63c5fc38b9965dd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a07d488a39f0544c63c5fc38b9965dd8b">fclaw_patch_has_coarse_data_set</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="memdesc:a07d488a39f0544c63c5fc38b9965dd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that this patch has coarse data.  <a href="fclaw__patch_8h.html#a07d488a39f0544c63c5fc38b9965dd8b">More...</a><br /></td></tr>
+<tr class="separator:a07d488a39f0544c63c5fc38b9965dd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5d2fbebcaa43bf98e06292aee63088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#acb5d2fbebcaa43bf98e06292aee63088">fclaw_patch_has_coarse_data_clear</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="memdesc:acb5d2fbebcaa43bf98e06292aee63088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the flag that this patch has coarse data.  <a href="fclaw__patch_8h.html#acb5d2fbebcaa43bf98e06292aee63088">More...</a><br /></td></tr>
+<tr class="separator:acb5d2fbebcaa43bf98e06292aee63088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184356fb1e70e5fa87f9d00cc9e473b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__patch_8h.html#a184356fb1e70e5fa87f9d00cc9e473b5">fclaw_patch_has_coarse_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch)</td></tr>
+<tr class="memdesc:a184356fb1e70e5fa87f9d00cc9e473b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a patch has coarse data.  <a href="fclaw__patch_8h.html#a184356fb1e70e5fa87f9d00cc9e473b5">More...</a><br /></td></tr>
+<tr class="separator:a184356fb1e70e5fa87f9d00cc9e473b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Patch related functions and typedefs. </p>
@@ -1018,14 +1038,14 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
-<a id="a8458ac20fccb400897ad96186539e2ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8458ac20fccb400897ad96186539e2ae">&#9670;&nbsp;</a></span>fclaw_patch_interpolate2fine_t</h2>
+<a id="aa15c6f3a8e2509f9bd2302a9dfb58e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15c6f3a8e2509f9bd2302a9dfb58e08">&#9670;&nbsp;</a></span>fclaw_patch_interpolate2fine_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_patch_interpolate2fine_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patches, int blockno, int coarse_patchno, int fine_patchno)</td>
+          <td class="memname">typedef void(* fclaw_patch_interpolate2fine_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *coarse_patch, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *fine_patch, int blockno, int coarse_patchno, int fine_patchno, int igrid)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1038,7 +1058,8 @@ Misc Functions (mostly internal)</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">fine_patches</td><td>the fine patch contexts </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coarse_patchno</td><td>the patch number of the coarse patch </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fine_patchno</td><td>the patch number of the first fine patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fine_patchno</td><td>the patch number of the fine patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">igrid</td><td>the index of the fine patch in the child array </td></tr>
   </table>
   </dd>
 </dl>
@@ -1728,6 +1749,28 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
+<a id="a11cb3161444fa60a45d415a19de37128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11cb3161444fa60a45d415a19de37128">&#9670;&nbsp;</a></span>fclaw_patch_data_flags_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128">fclaw_patch_data_flags_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a11cb3161444fa60a45d415a19de37128a016063b402c95d0898e9e0dd8cb31df6"></a>FCLAW_PATCH_DATA_CONSIDERED_FOR_REFINEMENT&#160;</td><td class="fielddoc"><p>Patch considered for refinement. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a11cb3161444fa60a45d415a19de37128acb7d3db4480d487cb6768b1b2b8d4e3e"></a>FCLAW_PATCH_DATA_HAS_COARSE_DATA&#160;</td><td class="fielddoc"><p>Patch has coarse data and it's family needs to be refined. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a11cb3161444fa60a45d415a19de37128afa144cc88c6a2ab3c5860696d9952585"></a>FCLAW_PATCH_DATA_UNPACKING&#160;</td><td class="fielddoc"><p>Patch is currently being unpacked during partitioning. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a88234442d0abf27774535200eeda79ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88234442d0abf27774535200eeda79ed">&#9670;&nbsp;</a></span>fclaw_patch_all_considered_for_refinement()</h2>
@@ -2104,8 +2147,8 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f152a05fa78b88d50ab863a1e8217d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f152a05fa78b88d50ab863a1e8217d2">&#9670;&nbsp;</a></span>fclaw_patch_build()</h2>
+<a id="a4f2835ce4b029efc34e0cda422fe6131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2835ce4b029efc34e0cda422fe6131">&#9670;&nbsp;</a></span>fclaw_patch_build()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2115,6 +2158,12 @@ Misc Functions (mostly internal)</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2152,6 +2201,7 @@ Misc Functions (mostly internal)</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>the domain </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">this_patch</td><td>the patch context </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>the patch number </td></tr>
@@ -2162,8 +2212,8 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
-<a id="a40876e51b827e912dee7bc9936586edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40876e51b827e912dee7bc9936586edb">&#9670;&nbsp;</a></span>fclaw_patch_build_from_fine()</h2>
+<a id="a7ed4975a6a388333221cf8a3fa5f41b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed4975a6a388333221cf8a3fa5f41b1">&#9670;&nbsp;</a></span>fclaw_patch_build_from_fine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2173,6 +2223,12 @@ Misc Functions (mostly internal)</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2222,6 +2278,7 @@ Misc Functions (mostly internal)</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>the domain </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fine_patches</td><td>the fine patch contexts </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">coarse_patches</td><td>the coarse patch context </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
@@ -2801,8 +2858,8 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
-<a id="adf97e7d846db95195d5bd0c246d8fdda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf97e7d846db95195d5bd0c246d8fdda">&#9670;&nbsp;</a></span>fclaw_patch_data_delete()</h2>
+<a id="ae9f46ea29b46451b5545820934a815cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f46ea29b46451b5545820934a815cc">&#9670;&nbsp;</a></span>fclaw_patch_data_delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2812,6 +2869,12 @@ Misc Functions (mostly internal)</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2831,6 +2894,7 @@ Misc Functions (mostly internal)</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>the domain </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">patch</td><td>the patch context, user data pointer is set to NULL on return </td></tr>
   </table>
   </dd>
@@ -3262,6 +3326,118 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
+<a id="a184356fb1e70e5fa87f9d00cc9e473b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184356fb1e70e5fa87f9d00cc9e473b5">&#9670;&nbsp;</a></span>fclaw_patch_has_coarse_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fclaw_patch_has_coarse_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if a patch has coarse data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">patch</td><td>the patch context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int true if a patch has coarse data </dd></dl>
+
+</div>
+</div>
+<a id="acb5d2fbebcaa43bf98e06292aee63088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5d2fbebcaa43bf98e06292aee63088">&#9670;&nbsp;</a></span>fclaw_patch_has_coarse_data_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_patch_has_coarse_data_clear </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the flag that this patch has coarse data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">patch</td><td>the patch context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07d488a39f0544c63c5fc38b9965dd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d488a39f0544c63c5fc38b9965dd8b">&#9670;&nbsp;</a></span>fclaw_patch_has_coarse_data_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_patch_has_coarse_data_set </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set that this patch has coarse data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">patch</td><td>the patch context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac128651bccfdae4e6325e2ec1bc51f62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac128651bccfdae4e6325e2ec1bc51f62">&#9670;&nbsp;</a></span>fclaw_patch_has_finegrid_neighbors()</h2>
 
@@ -3340,8 +3516,8 @@ Misc Functions (mostly internal)</h2></td></tr>
 
 </div>
 </div>
-<a id="ac36a67230b8d8f841ea9c1631e9d6386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac36a67230b8d8f841ea9c1631e9d6386">&#9670;&nbsp;</a></span>fclaw_patch_interpolate2fine()</h2>
+<a id="a06eaa229d987e597561ddfbafe616212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eaa229d987e597561ddfbafe616212">&#9670;&nbsp;</a></span>fclaw_patch_interpolate2fine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3362,7 +3538,7 @@ Misc Functions (mostly internal)</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
-          <td class="paramname"><em>fine_patches</em>, </td>
+          <td class="paramname"><em>fine_patch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3380,7 +3556,13 @@ Misc Functions (mostly internal)</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fine0_patchno</em>&#160;</td>
+          <td class="paramname"><em>fine_patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>igrid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3398,7 +3580,8 @@ Misc Functions (mostly internal)</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">fine_patches</td><td>the fine patch contexts </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coarse_patchno</td><td>the patch number of the coarse patch </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fine0_patchno</td><td>the patch number of the first fine patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fine_patchno</td><td>the patch number of the fine patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">igrid</td><td>the index of the fine patch in the child array </td></tr>
   </table>
   </dd>
 </dl>
@@ -4835,6 +5018,85 @@ Misc Functions (mostly internal)</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">this_patch</td><td>the patch context </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>the alpha value, with 0 being the last time step and 1 being the current time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24fc4d2fdf934fd67905d4ddfa4ba67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24fc4d2fdf934fd67905d4ddfa4ba67c">&#9670;&nbsp;</a></span>fclaw_patch_shallow_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_patch_shallow_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *&#160;</td>
+          <td class="paramname"><em>src_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>src_patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__domain.html">fclaw_domain</a> *&#160;</td>
+          <td class="paramname"><em>dst_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
+          <td class="paramname"><em>dst_patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>old_patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_patchno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a shallow copy of a patch. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src_domain</td><td>the source domain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src_patch</td><td>the source patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst_domain</td><td>the destination domain </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dst_patch</td><td>the destination patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src_patchno</td><td>the source patch number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dst_patchno</td><td>the destination patch number </td></tr>
   </table>
   </dd>
 </dl>

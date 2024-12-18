@@ -89,6 +89,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a1fec040df5300eb5df5ff6da1ca0f78d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__wrap_8h.html#a1fec040df5300eb5df5ff6da1ca0f78d">fclaw3d_match_wrap_cb</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *old_domain, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *old_patch_3d, <a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *new_domain, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *new_patch_3d, <a class="el" href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a> newsize, int blockno, int old_patchno, int new_patchno, void *user)</td></tr>
 <tr class="memdesc:a1fec040df5300eb5df5ff6da1ca0f78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a match callback for 2d domains.  <a href="fclaw3d__wrap_8h.html#a1fec040df5300eb5df5ff6da1ca0f78d">More...</a><br /></td></tr>
 <tr class="separator:a1fec040df5300eb5df5ff6da1ca0f78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add529f4b3d20b736a0b55ce887100153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__wrap_8h.html#add529f4b3d20b736a0b55ce887100153">fclaw3d_pack_wrap_cb</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *patch, int blockno, int patchno, void *pack_data_here, void *user)</td></tr>
+<tr class="memdesc:add529f4b3d20b736a0b55ce887100153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a partition pack callback for 3d domains.  <a href="fclaw3d__wrap_8h.html#add529f4b3d20b736a0b55ce887100153">More...</a><br /></td></tr>
+<tr class="separator:add529f4b3d20b736a0b55ce887100153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb1bc54ab3661b6466465f5033ac0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__wrap_8h.html#afeb1bc54ab3661b6466465f5033ac0ce">fclaw3d_unpack_wrap_cb</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *patch, int blockno, int patchno, void *unpack_data_from_here, void *user)</td></tr>
+<tr class="memdesc:afeb1bc54ab3661b6466465f5033ac0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a partition unpack callback for 3d domains.  <a href="fclaw3d__wrap_8h.html#afeb1bc54ab3661b6466465f5033ac0ce">More...</a><br /></td></tr>
+<tr class="separator:afeb1bc54ab3661b6466465f5033ac0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8917b3a8412af5b5b9b1299e07cd886a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw3d__wrap_8h.html#a8917b3a8412af5b5b9b1299e07cd886a">fclaw3d_intersect_wrap_cb</a> (<a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *domain, <a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *patch, int blockno, int patchno, void *ray, double *integral, void *user)</td></tr>
 <tr class="memdesc:a8917b3a8412af5b5b9b1299e07cd886a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a intersect callback for 2d domains.  <a href="fclaw3d__wrap_8h.html#a8917b3a8412af5b5b9b1299e07cd886a">More...</a><br /></td></tr>
 <tr class="separator:a8917b3a8412af5b5b9b1299e07cd886a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +324,61 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="add529f4b3d20b736a0b55ce887100153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add529f4b3d20b736a0b55ce887100153">&#9670;&nbsp;</a></span>fclaw3d_pack_wrap_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw3d_pack_wrap_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pack_data_here</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wraps a partition pack callback for 3d domains. </p>
+<p>This is used by passing this callback to a function that takes a <a class="el" href="forestclaw3d_8h.html#aff437d82757f432e63a8cf1a2adceba3">fclaw3d_pack_callback_t</a>. The user pointer should be a pointer to a <a class="el" href="fclaw__wrap_8h.html#a1254f87b94ed20381d0cce0cf13a24dc">fclaw_pack_wrap_user_t</a>. </p>
+
+</div>
+</div>
 <a id="afcd682ff7330b942bf23d459baef6351"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcd682ff7330b942bf23d459baef6351">&#9670;&nbsp;</a></span>fclaw3d_patch_wrap_cb()</h2>
 
@@ -431,6 +492,61 @@ Functions</h2></td></tr>
 
 <p>Wraps a transfer callback for 2d domains. </p>
 <p>This is used by passing this callback to a function that takes a <a class="el" href="forestclaw2d_8h.html#a576ef5c1ec7aa08d9ea8876ab074828b">fclaw2d_transfer_callback_t</a>. The user pointer should be a pointer to a <a class="el" href="fclaw__wrap_8h.html#ad91080df721ccc1b4dde1caae1ccd7b1">fclaw_transfer_wrap_user_t</a>. </p>
+
+</div>
+</div>
+<a id="afeb1bc54ab3661b6466465f5033ac0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb1bc54ab3661b6466465f5033ac0ce">&#9670;&nbsp;</a></span>fclaw3d_unpack_wrap_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw3d_unpack_wrap_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a8be2b4fb91b07a1a8e7c475dc0ab232d">fclaw3d_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw3d_8h.html#a54bdb11fada7424f3958509ad1ded30e">fclaw3d_patch_t</a> *&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patchno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>unpack_data_from_here</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wraps a partition unpack callback for 3d domains. </p>
+<p>This is used by passing this callback to a function that takes a <a class="el" href="forestclaw3d_8h.html#aa195ef697c6f019d8858250e2843f8b2">fclaw3d_unpack_callback_t</a>. The user pointer should be a pointer to a <a class="el" href="fclaw__wrap_8h.html#ae7c758c69cf8a67f70da2c5f79161107">fclaw_unpack_wrap_user_t</a>. </p>
 
 </div>
 </div>

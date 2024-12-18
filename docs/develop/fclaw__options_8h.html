@@ -64,6 +64,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fclaw_options.h File Reference</div>  </div>
@@ -83,6 +84,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abbce8994baff41714199cda8a27efaf2"><td class="memItemLeft" align="right" valign="top"><a id="abbce8994baff41714199cda8a27efaf2"></a>
 typedef struct <a class="el" href="structfclaw__options.html">fclaw_options</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_t</b></td></tr>
 <tr class="separator:abbce8994baff41714199cda8a27efaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aafd0b1ac4a1971b6929a92dc424bad39"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39">fclaw_parition_mode</a> { <a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39a43bad8263a8c73fdd95366015c95f893">FCLAW_PARTITION_MODE_LEGACY</a>, 
+<a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39a9c4997f988fd78c75d13e7d6703cdde0">FCLAW_PARTITION_MODE_PACK_ALL</a>, 
+<a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39acd74918b9be25e6f5d86901a215b3f3f">FCLAW_PARTITION_MODE_SKIP_LOCAL</a>, 
+<a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39a9b9f9afb600e8c0b020853a916ae5a63">FCLAW_PARTITION_MODE_REFINE_AFTER</a>
+ }</td></tr>
+<tr class="memdesc:aafd0b1ac4a1971b6929a92dc424bad39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for partition mode.  <a href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39">More...</a><br /></td></tr>
+<tr class="separator:aafd0b1ac4a1971b6929a92dc424bad39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,7 +136,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_options_store</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Routines for handling general ForestClaw input options. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aafd0b1ac4a1971b6929a92dc424bad39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd0b1ac4a1971b6929a92dc424bad39">&#9670;&nbsp;</a></span>fclaw_parition_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39">fclaw_parition_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum for partition mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aafd0b1ac4a1971b6929a92dc424bad39a43bad8263a8c73fdd95366015c95f893"></a>FCLAW_PARTITION_MODE_LEGACY&#160;</td><td class="fielddoc"><p>Use legacy paritioning interface. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafd0b1ac4a1971b6929a92dc424bad39a9c4997f988fd78c75d13e7d6703cdde0"></a>FCLAW_PARTITION_MODE_PACK_ALL&#160;</td><td class="fielddoc"><p>Pack/unpack all patches. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafd0b1ac4a1971b6929a92dc424bad39acd74918b9be25e6f5d86901a215b3f3f"></a>FCLAW_PARTITION_MODE_SKIP_LOCAL&#160;</td><td class="fielddoc"><p>Skip packing of local patches. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafd0b1ac4a1971b6929a92dc424bad39a9b9f9afb600e8c0b020853a916ae5a63"></a>FCLAW_PARTITION_MODE_REFINE_AFTER&#160;</td><td class="fielddoc"><p>Skip packing of local patches and refine after partitioning. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="affd79ec8b11ecf80383f6b9eec8e1333"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd79ec8b11ecf80383f6b9eec8e1333">&#9670;&nbsp;</a></span>fclaw_options_add_int_array()</h2>
 

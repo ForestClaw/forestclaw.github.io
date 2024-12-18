@@ -287,6 +287,16 @@ Parititon</h2></td></tr>
 <tr class="memitem:a2fbb9d505b211d03a2d7afb75686e0c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a>) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *old_domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *old_patch, <a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *new_domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *new_patch, int blockno, int old_patchno, int new_patchno, void *user)</td></tr>
 <tr class="memdesc:a2fbb9d505b211d03a2d7afb75686e0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to iterate through the partitions.  <a href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">More...</a><br /></td></tr>
 <tr class="separator:a2fbb9d505b211d03a2d7afb75686e0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd767f9c6deb51f898af5ac081569b89"><td class="memItemLeft" align="right" valign="top"><a id="abd767f9c6deb51f898af5ac081569b89"></a>
+typedef struct fclaw_domain_partition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a></td></tr>
+<tr class="memdesc:abd767f9c6deb51f898af5ac081569b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure for storing allocated data for partition transfer. <br /></td></tr>
+<tr class="separator:abd767f9c6deb51f898af5ac081569b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c3fcff85dda749149751f89f814113"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">fclaw_pack_callback_t</a>) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *patch, int blockno, int patchno, void *pack_data_here, void *user)</td></tr>
+<tr class="memdesc:a99c3fcff85dda749149751f89f814113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to pack patch data after partitioning.  <a href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">More...</a><br /></td></tr>
+<tr class="separator:a99c3fcff85dda749149751f89f814113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c2396044c7f5e931c1ebd38d59338e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a50c2396044c7f5e931c1ebd38d59338e">fclaw_unpack_callback_t</a>) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *patch, int blockno, int patchno, void *unpack_data_from_here, void *user)</td></tr>
+<tr class="memdesc:a50c2396044c7f5e931c1ebd38d59338e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to unpack patch data after partitioning.  <a href="forestclaw_8h.html#a50c2396044c7f5e931c1ebd38d59338e">More...</a><br /></td></tr>
+<tr class="separator:a50c2396044c7f5e931c1ebd38d59338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0e3b200277e883a7c2c450fe9349aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a3b0e3b200277e883a7c2c450fe9349aa">fclaw_domain_allocate_before_partition</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, size_t data_size, void ***patch_data)</td></tr>
 <tr class="memdesc:a3b0e3b200277e883a7c2c450fe9349aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate data buffer for parallel transfer of all patches.  <a href="forestclaw_8h.html#a3b0e3b200277e883a7c2c450fe9349aa">More...</a><br /></td></tr>
 <tr class="separator:a3b0e3b200277e883a7c2c450fe9349aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +306,18 @@ Parititon</h2></td></tr>
 <tr class="memitem:a75ed4537e9b239a20ccd637ec6a21704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a75ed4537e9b239a20ccd637ec6a21704">fclaw_domain_iterate_partitioned</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *old_domain, <a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *new_domain, <a class="el" href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a> tcb, void *user)</td></tr>
 <tr class="memdesc:a75ed4537e9b239a20ccd637ec6a21704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over the previous and partitioned domain simultaneously.  <a href="forestclaw_8h.html#a75ed4537e9b239a20ccd637ec6a21704">More...</a><br /></td></tr>
 <tr class="separator:a75ed4537e9b239a20ccd637ec6a21704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab075f813f0a9f9a0566b45762e0c1ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#aab075f813f0a9f9a0566b45762e0c1ad">fclaw_domain_iterate_pack</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, size_t data_size, <a class="el" href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">fclaw_pack_callback_t</a> patch_pack, void *user)</td></tr>
+<tr class="memdesc:aab075f813f0a9f9a0566b45762e0c1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start asynchronous transfer of patch data after partition.  <a href="forestclaw_8h.html#aab075f813f0a9f9a0566b45762e0c1ad">More...</a><br /></td></tr>
+<tr class="separator:aab075f813f0a9f9a0566b45762e0c1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa796692fe660f1325a37902761bcfe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#aaa796692fe660f1325a37902761bcfe9">fclaw_domain_iterate_transfer</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *old_domain, <a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *new_domain, <a class="el" href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a> patch_transfer, void *user)</td></tr>
+<tr class="memdesc:aaa796692fe660f1325a37902761bcfe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data of patches still local after partition.  <a href="forestclaw_8h.html#aaa796692fe660f1325a37902761bcfe9">More...</a><br /></td></tr>
+<tr class="separator:aaa796692fe660f1325a37902761bcfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ee157658fe1e021901cbfd65ff7e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> *p, <a class="el" href="forestclaw_8h.html#a50c2396044c7f5e931c1ebd38d59338e">fclaw_unpack_callback_t</a> patch_unpack, void *user)</td></tr>
+<tr class="memdesc:a01ee157658fe1e021901cbfd65ff7e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete asynchronous transfer of patch data after partition.  <a href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">More...</a><br /></td></tr>
+<tr class="separator:a01ee157658fe1e021901cbfd65ff7e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b309e4469ff0ec420f50a52c0eb2541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a7b309e4469ff0ec420f50a52c0eb2541">fclaw_domain_partition_free</a> (<a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> *p)</td></tr>
+<tr class="memdesc:a7b309e4469ff0ec420f50a52c0eb2541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free buffers used in transfering patch data during partition.  <a href="forestclaw_8h.html#a7b309e4469ff0ec420f50a52c0eb2541">More...</a><br /></td></tr>
+<tr class="separator:a7b309e4469ff0ec420f50a52c0eb2541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13c2e9dd426be168cc1e6f34d48149d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#aa13c2e9dd426be168cc1e6f34d48149d">fclaw_domain_free_after_partition</a> (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, void ***patch_data)</td></tr>
 <tr class="memdesc:aa13c2e9dd426be168cc1e6f34d48149d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free buffers that were used in transfering data during partition.  <a href="forestclaw_8h.html#aa13c2e9dd426be168cc1e6f34d48149d">More...</a><br /></td></tr>
 <tr class="separator:aa13c2e9dd426be168cc1e6f34d48149d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,6 +417,33 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
+<a id="a99c3fcff85dda749149751f89f814113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c3fcff85dda749149751f89f814113">&#9670;&nbsp;</a></span>fclaw_pack_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fclaw_pack_callback_t) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *patch, int blockno, int patchno, void *pack_data_here, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback to pack patch data after partitioning. </p>
+<p>The function <a class="el" href="forestclaw_8h.html#aab075f813f0a9f9a0566b45762e0c1ad">fclaw_domain_iterate_pack</a> traverses every local patch in the old partition. If that patch has to be packed for the new partition, it invokes this callback. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>Domain before partition. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">patch</td><td>Patch from the domain. Its user data should be packed into <b>pack_data_here</b>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>Number of the current block. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>Number of the patch. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pack_data_here</td><td>Address of storage space for the patch's user data. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Pointer passed to <a class="el" href="forestclaw_8h.html#aab075f813f0a9f9a0566b45762e0c1ad">fclaw_domain_iterate_pack</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5d52aeaa386109279c4369ba79fd06c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d52aeaa386109279c4369ba79fd06c1">&#9670;&nbsp;</a></span>fclaw_patch_callback_t</h2>
 
@@ -444,6 +493,33 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">old_patchno</td><td>Number of the patch that stayed local wrt. the old domain and partition. Minus one otherwise. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_patchno</td><td>Number of the iterated patch wrt. the new domain and partition. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Pointer passed to <a class="el" href="forestclaw_8h.html#a75ed4537e9b239a20ccd637ec6a21704">fclaw_domain_iterate_partitioned</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50c2396044c7f5e931c1ebd38d59338e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c2396044c7f5e931c1ebd38d59338e">&#9670;&nbsp;</a></span>fclaw_unpack_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fclaw_unpack_callback_t) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *patch, int blockno, int patchno, void *unpack_data_from_here, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback to unpack patch data after partitioning. </p>
+<p>The function <a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a> traverses every local patch, that was not local before partitioning and invokes this callback. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>Domain after partition. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">patch</td><td>Patch from the domain. Its user data should be unpacked from <b>unpack_data_from_here</b>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>Number of the current block. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>Number of the patch. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unpack_data_from_here</td><td>Address of storage space that contains the packed user data of the patch. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">user</td><td>Pointer passed to <a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1169,6 +1245,58 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
+<a id="aab075f813f0a9f9a0566b45762e0c1ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab075f813f0a9f9a0566b45762e0c1ad">&#9670;&nbsp;</a></span>fclaw_domain_iterate_pack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a>* fclaw_domain_iterate_pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">fclaw_pack_callback_t</a>&#160;</td>
+          <td class="paramname"><em>patch_pack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start asynchronous transfer of patch data after partition. </p>
+<p>This function iterates over the local patches of old partition and determines patches that have to be packed by use of <b>patch_pack</b> based on the options skip_local, skip_refined and partition_for_coarsening (see <a class="el" href="forestclaw_8h.html#ab2869a24c73fedc55c388bf0f17c7a56">fclaw_domain_set_partitioning</a>). Then, the patches are packed and sent. This function must be followed by a call to <a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>The domain before partitioning. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_size</td><td>The number of bytes of user data that has to be packed and send per patch. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch_pack</td><td>Callback function to pack patch user data into a provided storage address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>This pointer is passed to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Allocated and initialized structure containing internal information for patch data transfer. </dd></dl>
+
+</div>
+</div>
 <a id="a75ed4537e9b239a20ccd637ec6a21704"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75ed4537e9b239a20ccd637ec6a21704">&#9670;&nbsp;</a></span>fclaw_domain_iterate_partitioned()</h2>
 
@@ -1264,6 +1392,109 @@ Meta Domains</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa796692fe660f1325a37902761bcfe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa796692fe660f1325a37902761bcfe9">&#9670;&nbsp;</a></span>fclaw_domain_iterate_transfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_domain_iterate_transfer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>old_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>new_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">fclaw_transfer_callback_t</a>&#160;</td>
+          <td class="paramname"><em>patch_transfer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transfer data of patches still local after partition. </p>
+<p>This function iterates over all pairs of local patches in the domain before and after partitioning and invokes the transfer of their user-data via <b>patch_transfer</b>. It may be called before, between or after <a class="el" href="forestclaw_8h.html#aab075f813f0a9f9a0566b45762e0c1ad">fclaw_domain_iterate_pack</a> and <a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a>. It is recommended to call it between packing and unpacking, to overlap communication with computation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">old_domain</td><td>The domain before partitioning. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">new_domain</td><td>The domain after partitioning. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch_transfer</td><td>Callback function to transfer user data between local old and new patch, e.g. by a copy or reassignment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>This pointer is passed to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01ee157658fe1e021901cbfd65ff7e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ee157658fe1e021901cbfd65ff7e6e">&#9670;&nbsp;</a></span>fclaw_domain_iterate_unpack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_domain_iterate_unpack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#a50c2396044c7f5e931c1ebd38d59338e">fclaw_unpack_callback_t</a>&#160;</td>
+          <td class="paramname"><em>patch_unpack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete asynchronous transfer of patch data after partition. </p>
+<p>This function iterates over all local patches of the new partition and determines patches that have to be unpacked by use of <b>patch_unpack</b> based on the options skip_local, skip_refined and partition_for_coarsening (see <a class="el" href="forestclaw_8h.html#ab2869a24c73fedc55c388bf0f17c7a56">fclaw_domain_set_partitioning</a>). It must be preceded by a call to <a class="el" href="forestclaw_8h.html#a01ee157658fe1e021901cbfd65ff7e6e">fclaw_domain_iterate_unpack</a> and provided with the corresponding <a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> <b>p</b>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>The domain after partitioning. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>Structure containing internal information for the patch data transfer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patch_pack</td><td>Callback function to unpack patch user data from a provided storage address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>This pointer is passed to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Allocated and initialized structure containing internal information for patch data transfer. </dd></dl>
+
+</div>
+</div>
 <a id="ae6748a266f8586985d8962cd22f70eac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6748a266f8586985d8962cd22f70eac">&#9670;&nbsp;</a></span>fclaw_domain_num_corners()</h2>
 
@@ -1345,6 +1576,32 @@ Meta Domains</h2></td></tr>
 
 <p>Return the number of siblings a node has in a domain. </p>
 <p>4 in 2d, 8 in 3d. </p>
+
+</div>
+</div>
+<a id="a7b309e4469ff0ec420f50a52c0eb2541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b309e4469ff0ec420f50a52c0eb2541">&#9670;&nbsp;</a></span>fclaw_domain_partition_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_domain_partition_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free buffers used in transfering patch data during partition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Structure containing internal information for patch data transfer. Will be deallocated during this function call. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

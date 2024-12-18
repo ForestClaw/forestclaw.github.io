@@ -128,38 +128,55 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                      <span class="keywordtype">int</span> old_patchno, <span class="keywordtype">int</span> new_patchno,</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                      <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">int</span> </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#a8917b3a8412af5b5b9b1299e07cd886a">fclaw3d_intersect_wrap_cb</a> (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                           <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                           <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                           <span class="keywordtype">void</span> *ray, <span class="keywordtype">double</span> *integral,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                           <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#add529f4b3d20b736a0b55ce887100153">fclaw3d_pack_wrap_cb</a>(<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                     <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                     <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                     <span class="keywordtype">void</span> *pack_data_here,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                     <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#a52a6b2c47c5ecd54038e7aded50e9f5f">fclaw3d_interpolate_point_wrap_cb</a> (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                   <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                   <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                   <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">int</span> </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#ab0017810a08b3d008aac37fd7c492a18">fclaw3d_file_error_wrap</a>(<span class="keywordtype">int</span> errcode);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#afeb1bc54ab3661b6466465f5033ac0ce">fclaw3d_unpack_wrap_cb</a>(<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                       <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                       <span class="keywordtype">void</span> *unpack_data_from_here,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                       <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">int</span> </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#a8917b3a8412af5b5b9b1299e07cd886a">fclaw3d_intersect_wrap_cb</a> (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                           <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                           <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                           <span class="keywordtype">void</span> *ray, <span class="keywordtype">double</span> *integral,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                           <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#a52a6b2c47c5ecd54038e7aded50e9f5f">fclaw3d_interpolate_point_wrap_cb</a> (<a class="code" href="structfclaw3d__domain.html">fclaw3d_domain_t</a> * domain,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                   <a class="code" href="structfclaw3d__patch.html">fclaw3d_patch_t</a> * patch,</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                   <span class="keywordtype">int</span> blockno, <span class="keywordtype">int</span> patchno,</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                   <span class="keywordtype">void</span> *point, <span class="keywordtype">void</span> *<a class="code" href="structfclaw__domain.html#a18990693e09dad2752b64027e5d47203">user</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">int</span> </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<a class="code" href="fclaw3d__wrap_8h.html#ab0017810a08b3d008aac37fd7c492a18">fclaw3d_file_error_wrap</a>(<span class="keywordtype">int</span> errcode);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="afclaw3d__wrap_8h_html_ab0017810a08b3d008aac37fd7c492a18"><div class="ttname"><a href="fclaw3d__wrap_8h.html#ab0017810a08b3d008aac37fd7c492a18">fclaw3d_file_error_wrap</a></div><div class="ttdeci">int fclaw3d_file_error_wrap(int errcode)</div><div class="ttdoc">Wrap get dimension independent domain from a 3d error code.</div></div>
+<div class="ttc" id="afclaw3d__wrap_8h_html_afeb1bc54ab3661b6466465f5033ac0ce"><div class="ttname"><a href="fclaw3d__wrap_8h.html#afeb1bc54ab3661b6466465f5033ac0ce">fclaw3d_unpack_wrap_cb</a></div><div class="ttdeci">void fclaw3d_unpack_wrap_cb(fclaw3d_domain_t *domain, fclaw3d_patch_t *patch, int blockno, int patchno, void *unpack_data_from_here, void *user)</div><div class="ttdoc">Wraps a partition unpack callback for 3d domains.</div></div>
 <div class="ttc" id="astructfclaw__domain_html"><div class="ttname"><a href="structfclaw__domain.html">fclaw_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:124</div></div>
 <div class="ttc" id="astructfclaw3d__patch_html"><div class="ttname"><a href="structfclaw3d__patch.html">fclaw3d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:94</div></div>
 <div class="ttc" id="astructfclaw3d__domain_html"><div class="ttname"><a href="structfclaw3d__domain.html">fclaw3d_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw3d.h:192</div></div>
 <div class="ttc" id="afclaw3d__wrap_8h_html_a8917b3a8412af5b5b9b1299e07cd886a"><div class="ttname"><a href="fclaw3d__wrap_8h.html#a8917b3a8412af5b5b9b1299e07cd886a">fclaw3d_intersect_wrap_cb</a></div><div class="ttdeci">int fclaw3d_intersect_wrap_cb(fclaw3d_domain_t *domain, fclaw3d_patch_t *patch, int blockno, int patchno, void *ray, double *integral, void *user)</div><div class="ttdoc">Wraps a intersect callback for 2d domains.</div></div>
 <div class="ttc" id="afclaw3d__wrap_8h_html_afcd682ff7330b942bf23d459baef6351"><div class="ttname"><a href="fclaw3d__wrap_8h.html#afcd682ff7330b942bf23d459baef6351">fclaw3d_patch_wrap_cb</a></div><div class="ttdeci">void fclaw3d_patch_wrap_cb(fclaw3d_domain_t *domain, fclaw3d_patch_t *patch, int blockno, int patchno, void *user)</div><div class="ttdoc">Wraps a patch callback for 2d domains.</div></div>
 <div class="ttc" id="aforestclaw3d_8h_html_a7e71ccdedcccb2178a72b97359628162"><div class="ttname"><a href="forestclaw3d_8h.html#a7e71ccdedcccb2178a72b97359628162">fclaw3d_patch_relation_t</a></div><div class="ttdeci">enum fclaw3d_face_neighbor fclaw3d_patch_relation_t</div><div class="ttdoc">The type of face neighbor.</div></div>
+<div class="ttc" id="afclaw3d__wrap_8h_html_add529f4b3d20b736a0b55ce887100153"><div class="ttname"><a href="fclaw3d__wrap_8h.html#add529f4b3d20b736a0b55ce887100153">fclaw3d_pack_wrap_cb</a></div><div class="ttdeci">void fclaw3d_pack_wrap_cb(fclaw3d_domain_t *domain, fclaw3d_patch_t *patch, int blockno, int patchno, void *pack_data_here, void *user)</div><div class="ttdoc">Wraps a partition pack callback for 3d domains.</div></div>
 <div class="ttc" id="afclaw__wrap_8h_html"><div class="ttname"><a href="fclaw__wrap_8h.html">fclaw_wrap.h</a></div><div class="ttdoc">Types needed for underlying wrapped types Most users will not need to include the file,...</div></div>
 <div class="ttc" id="aforestclaw3d_8h_html"><div class="ttname"><a href="forestclaw3d_8h.html">forestclaw3d.h</a></div></div>
 <div class="ttc" id="afclaw3d__wrap_8h_html_a1fec040df5300eb5df5ff6da1ca0f78d"><div class="ttname"><a href="fclaw3d__wrap_8h.html#a1fec040df5300eb5df5ff6da1ca0f78d">fclaw3d_match_wrap_cb</a></div><div class="ttdeci">void fclaw3d_match_wrap_cb(fclaw3d_domain_t *old_domain, fclaw3d_patch_t *old_patch_3d, fclaw3d_domain_t *new_domain, fclaw3d_patch_t *new_patch_3d, fclaw3d_patch_relation_t newsize, int blockno, int old_patchno, int new_patchno, void *user)</div><div class="ttdoc">Wraps a match callback for 2d domains.</div></div>

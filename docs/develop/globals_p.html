@@ -67,6 +67,9 @@ $(function() {
 <li>fclaw2d_pack_callback_t
 : <a class="el" href="forestclaw2d_8h.html#a62b40214e7b8949fe050b9e4e4b95023">forestclaw2d.h</a>
 </li>
+<li>fclaw2d_pack_wrap_cb()
+: <a class="el" href="fclaw2d__wrap_8h.html#af8f261a6c7a5641d22a037bbce73d48b">fclaw2d_wrap.h</a>
+</li>
 <li>fclaw2d_patch_block_face_flags
 : <a class="el" href="forestclaw2d_8h.html#aed9a7c45d9587dc1b225321fd88dd028">forestclaw2d.h</a>
 </li>
@@ -166,6 +169,9 @@ $(function() {
 <li>fclaw3d_pack_callback_t
 : <a class="el" href="forestclaw3d_8h.html#aff437d82757f432e63a8cf1a2adceba3">forestclaw3d.h</a>
 </li>
+<li>fclaw3d_pack_wrap_cb()
+: <a class="el" href="fclaw3d__wrap_8h.html#add529f4b3d20b736a0b55ce887100153">fclaw3d_wrap.h</a>
+</li>
 <li>fclaw3d_patch_block_face_flags
 : <a class="el" href="forestclaw3d_8h.html#aa94068d8eb1c3f6046e8ad80271d4fed">forestclaw3d.h</a>
 </li>
@@ -256,6 +262,15 @@ $(function() {
 <li>fclaw3d_patch_wrap_cb()
 : <a class="el" href="fclaw3d__wrap_8h.html#afcd682ff7330b942bf23d459baef6351">fclaw3d_wrap.h</a>
 </li>
+<li>fclaw_pack_callback_t
+: <a class="el" href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">forestclaw.h</a>
+</li>
+<li>fclaw_pack_wrap_user_t
+: <a class="el" href="fclaw__wrap_8h.html#a1254f87b94ed20381d0cce0cf13a24dc">fclaw_wrap.h</a>
+</li>
+<li>fclaw_parition_mode
+: <a class="el" href="fclaw__options_8h.html#aafd0b1ac4a1971b6929a92dc424bad39">fclaw_options.h</a>
+</li>
 <li>fclaw_patch_2d_transform_corner()
 : <a class="el" href="forestclaw_8h.html#a5bcefcd4d7fad3c9eb4609786484e113">forestclaw.h</a>
 </li>
@@ -320,10 +335,10 @@ $(function() {
 : <a class="el" href="forestclaw_8h.html#a799d3ba1ec94b9984173b10318b9721a">forestclaw.h</a>
 </li>
 <li>fclaw_patch_build()
-: <a class="el" href="fclaw__patch_8h.html#a1f152a05fa78b88d50ab863a1e8217d2">fclaw_patch.h</a>
+: <a class="el" href="fclaw__patch_8h.html#a4f2835ce4b029efc34e0cda422fe6131">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_build_from_fine()
-: <a class="el" href="fclaw__patch_8h.html#a40876e51b827e912dee7bc9936586edb">fclaw_patch.h</a>
+: <a class="el" href="fclaw__patch_8h.html#a7ed4975a6a388333221cf8a3fa5f41b1">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_build_from_fine_t
 : <a class="el" href="fclaw__patch_8h.html#a19d973eccbece9da3a7cb0e2abd8e7dd">fclaw_patch.h</a>
@@ -395,7 +410,10 @@ $(function() {
 : <a class="el" href="fclaw__patch_8h.html#a9643da73e0404b9e8b86efe3f778a59b">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_data_delete()
-: <a class="el" href="fclaw__patch_8h.html#adf97e7d846db95195d5bd0c246d8fdda">fclaw_patch.h</a>
+: <a class="el" href="fclaw__patch_8h.html#ae9f46ea29b46451b5545820934a815cc">fclaw_patch.h</a>
+</li>
+<li>fclaw_patch_data_flags_t
+: <a class="el" href="fclaw__patch_8h.html#a11cb3161444fa60a45d415a19de37128">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_data_t
 : <a class="el" href="fclaw__patch_8h.html#a03aac5d88e407102df5683beaa2dc26e">fclaw_patch.h</a>
@@ -469,6 +487,15 @@ $(function() {
 <li>fclaw_patch_ghost_packsize_t
 : <a class="el" href="fclaw__patch_8h.html#a66ac5d38c721554a40d2edadacd151df">fclaw_patch.h</a>
 </li>
+<li>fclaw_patch_has_coarse_data()
+: <a class="el" href="fclaw__patch_8h.html#a184356fb1e70e5fa87f9d00cc9e473b5">fclaw_patch.h</a>
+</li>
+<li>fclaw_patch_has_coarse_data_clear()
+: <a class="el" href="fclaw__patch_8h.html#acb5d2fbebcaa43bf98e06292aee63088">fclaw_patch.h</a>
+</li>
+<li>fclaw_patch_has_coarse_data_set()
+: <a class="el" href="fclaw__patch_8h.html#a07d488a39f0544c63c5fc38b9965dd8b">fclaw_patch.h</a>
+</li>
 <li>fclaw_patch_has_finegrid_neighbors()
 : <a class="el" href="fclaw__patch_8h.html#ac128651bccfdae4e6325e2ec1bc51f62">fclaw_patch.h</a>
 </li>
@@ -479,10 +506,10 @@ $(function() {
 : <a class="el" href="fclaw__patch_8h.html#ac52e05ab6905e026edf8cb40d7dcbc6d">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_interpolate2fine()
-: <a class="el" href="fclaw__patch_8h.html#ac36a67230b8d8f841ea9c1631e9d6386">fclaw_patch.h</a>
+: <a class="el" href="fclaw__patch_8h.html#a06eaa229d987e597561ddfbafe616212">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_interpolate2fine_t
-: <a class="el" href="fclaw__patch_8h.html#a8458ac20fccb400897ad96186539e2ae">fclaw_patch.h</a>
+: <a class="el" href="fclaw__patch_8h.html#aa15c6f3a8e2509f9bd2302a9dfb58e08">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_interpolate_corner()
 : <a class="el" href="fclaw__patch_8h.html#ac0654a62f041b8e16c4d779a10c555c4">fclaw_patch.h</a>
@@ -657,6 +684,9 @@ $(function() {
 </li>
 <li>fclaw_patch_setup_timeinterp_t
 : <a class="el" href="fclaw__patch_8h.html#a4611a09b212a81f898f25128f961e865">fclaw_patch.h</a>
+</li>
+<li>fclaw_patch_shallow_copy()
+: <a class="el" href="fclaw__patch_8h.html#a24fc4d2fdf934fd67905d4ddfa4ba67c">fclaw_patch.h</a>
 </li>
 <li>fclaw_patch_single_step_update()
 : <a class="el" href="fclaw__patch_8h.html#a22da2ad503963661f0408f73f4ae6c1b">fclaw_patch.h</a>
