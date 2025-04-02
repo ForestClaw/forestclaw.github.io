@@ -87,7 +87,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="memdesc:abe4aaed0d1310c774c366414f580271a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean: If true the patch data of patches that stay local is not packed during partitioning. <br /></td></tr>
 <tr class="separator:abe4aaed0d1310c774c366414f580271a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7dc6208896e80d5ff140d589aa0e98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfclaw3d__domain__persist.html#acb7dc6208896e80d5ff140d589aa0e98">skip_refined</a></td></tr>
-<tr class="memdesc:acb7dc6208896e80d5ff140d589aa0e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean: If true, the patch data of patches that were refined during the most recent call to fclaw3d_domain_adapt is only packed for the patches with child id 0 in <a class="el" href="forestclaw3d_8h.html#a34e259cb510fdde40fe6a3feeec5db17">fclaw3d_domain_iterate_pack</a>.  <a href="structfclaw3d__domain__persist.html#acb7dc6208896e80d5ff140d589aa0e98">More...</a><br /></td></tr>
+<tr class="memdesc:acb7dc6208896e80d5ff140d589aa0e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean: If true, the patch data of patches that were refined during the most recent call to <a class="el" href="fclaw3d__convenience_8h.html#a03f16896f3027939de6a04dc4d0f712b">fclaw3d_domain_adapt</a> is only packed for the patches with child id 0 in <a class="el" href="forestclaw3d_8h.html#a34e259cb510fdde40fe6a3feeec5db17">fclaw3d_domain_iterate_pack</a>.  <a href="structfclaw3d__domain__persist.html#acb7dc6208896e80d5ff140d589aa0e98">More...</a><br /></td></tr>
 <tr class="separator:acb7dc6208896e80d5ff140d589aa0e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -105,8 +105,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
       </table>
 </div><div class="memdoc">
 
-<p>Boolean: If true, the patch data of patches that were refined during the most recent call to fclaw3d_domain_adapt is only packed for the patches with child id 0 in <a class="el" href="forestclaw3d_8h.html#a34e259cb510fdde40fe6a3feeec5db17">fclaw3d_domain_iterate_pack</a>. </p>
-<p>The unpack callback in <a class="el" href="forestclaw3d_8h.html#ac58f613c4402012cb39a39c52a36efe1">fclaw3d_domain_iterate_unpack</a> will be invoked for all children of a recently refined patch. The provided data will be the data packed by the patch with child id 0. For this partitioning method to work as desired skip_refined has to be set before the most recent call to fclaw3d_domain_adapt. </p>
+<p>Boolean: If true, the patch data of patches that were refined during the most recent call to <a class="el" href="fclaw3d__convenience_8h.html#a03f16896f3027939de6a04dc4d0f712b">fclaw3d_domain_adapt</a> is only packed for the patches with child id 0 in <a class="el" href="forestclaw3d_8h.html#a34e259cb510fdde40fe6a3feeec5db17">fclaw3d_domain_iterate_pack</a>. </p>
+<p>The unpack callback in <a class="el" href="forestclaw3d_8h.html#ac58f613c4402012cb39a39c52a36efe1">fclaw3d_domain_iterate_unpack</a> will be invoked for all children of a recently refined patch. The provided data will be the data packed by the patch with child id 0. For this partitioning method to work as desired skip_refined has to be set before the most recent call to <a class="el" href="fclaw3d__convenience_8h.html#a03f16896f3027939de6a04dc4d0f712b">fclaw3d_domain_adapt</a>. </p>
 
 </div>
 </div>

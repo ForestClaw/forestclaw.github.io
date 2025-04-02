@@ -288,7 +288,7 @@ Parititon</h2></td></tr>
 <tr class="memdesc:a2fbb9d505b211d03a2d7afb75686e0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to iterate through the partitions.  <a href="forestclaw_8h.html#a2fbb9d505b211d03a2d7afb75686e0c2">More...</a><br /></td></tr>
 <tr class="separator:a2fbb9d505b211d03a2d7afb75686e0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd767f9c6deb51f898af5ac081569b89"><td class="memItemLeft" align="right" valign="top"><a id="abd767f9c6deb51f898af5ac081569b89"></a>
-typedef struct fclaw_domain_partition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a></td></tr>
+typedef struct <a class="el" href="fclaw__convenience_8h.html#a2e524edcf488172b791e9e1ef42c8035">fclaw_domain_partition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#abd767f9c6deb51f898af5ac081569b89">fclaw_domain_partition_t</a></td></tr>
 <tr class="memdesc:abd767f9c6deb51f898af5ac081569b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure for storing allocated data for partition transfer. <br /></td></tr>
 <tr class="separator:abd767f9c6deb51f898af5ac081569b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c3fcff85dda749149751f89f814113"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forestclaw_8h.html#a99c3fcff85dda749149751f89f814113">fclaw_pack_callback_t</a>) (<a class="el" href="forestclaw_8h.html#a345fbab290457176694917260185b95a">fclaw_domain_t</a> *domain, <a class="el" href="forestclaw_8h.html#ab11426617a538045942e453095717e18">fclaw_patch_t</a> *patch, int blockno, int patchno, void *pack_data_here, void *user)</td></tr>
@@ -1095,7 +1095,7 @@ Meta Domains</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return true if <em>domain</em> is an artifical domain. </p>
-<p>This function can be used in fclaw_interpolate_point_t callbacks to distinguish domains that were created during a partition search (and only contain some meta information) from real domains in a local search. </p>
+<p>This function can be used in <a class="el" href="fclaw__convenience_8h.html#a17656b16b92d877dbaf9ec5f269643a1">fclaw_interpolate_point_t</a> callbacks to distinguish domains that were created during a partition search (and only contain some meta information) from real domains in a local search. </p>
 
 </div>
 </div>
@@ -1738,7 +1738,7 @@ Meta Domains</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">domain</td><td>This domain's partitioning strategy is set. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">partition_for_coarsening</td><td>Boolean: If true, all future partitions of the domain allow one level of coarsening. Suggested default: 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">skip_local</td><td>Boolean: If true, the patch data of patches that stay local are not packed during partitioning. Suggested default: 1. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">skip_refined</td><td>Boolean: If true, the patch data of patches that were refined during the most recent call to fclaw_domain_adapt is only packed for the patches with child id 0 in fclaw_domain_iterate_pack. The unpack callback in fclaw_domain_iterate_unpack will be invoked for all children of a recently refined patch. The provided data will be the data packed by the patch with child id 0. For this partitioning method to work as desired, skip_refined has to be set <b>before</b> the most recent call to fclaw_domain_adapt . Suggested default: 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip_refined</td><td>Boolean: If true, the patch data of patches that were refined during the most recent call to <a class="el" href="fclaw__convenience_8h.html#a4b595aecf1b01ce3d02453bc1cfbde9c">fclaw_domain_adapt</a> is only packed for the patches with child id 0 in fclaw_domain_iterate_pack. The unpack callback in fclaw_domain_iterate_unpack will be invoked for all children of a recently refined patch. The provided data will be the data packed by the patch with child id 0. For this partitioning method to work as desired, skip_refined has to be set <b>before</b> the most recent call to <a class="el" href="fclaw__convenience_8h.html#a4b595aecf1b01ce3d02453bc1cfbde9c">fclaw_domain_adapt</a> . Suggested default: 0. </td></tr>
   </table>
   </dd>
 </dl>

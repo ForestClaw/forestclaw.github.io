@@ -93,7 +93,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef FCLAW_RAYS_H</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define FCLAW_RAYS_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;fclaw_convenience.h&gt;</span>  <span class="comment">/* Needed for def. of fclaw2d_integrate_t */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fclaw__convenience_8h.html">fclaw_convenience.h</a>&gt;</span>  <span class="comment">/* Needed for def. of fclaw2d_integrate_t */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
@@ -165,7 +165,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    fclaw_ray_allocate_and_define_t   allocate_and_define;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    fclaw_ray_deallocate_t            deallocate;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    fclaw_integrate_ray_t             integrate;   <span class="comment">/* Function that does the integration */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="fclaw__convenience_8h.html#a60c45355e1acd9e4333b8f06b301b471">fclaw_integrate_ray_t</a>             integrate;   <span class="comment">/* Function that does the integration */</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#if 0</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    fclaw2d_ray_create_files_t  create_ray_files;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    fclaw2d_ray_update_t        update_ray;</div>
@@ -208,6 +208,7 @@ $(function() {
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructfclaw__ray__vtable_html"><div class="ttname"><a href="structfclaw__ray__vtable.html">fclaw_ray_vtable</a></div><div class="ttdef"><b>Definition:</b> fclaw_rays.h:97</div></div>
+<div class="ttc" id="afclaw__convenience_8h_html_a60c45355e1acd9e4333b8f06b301b471"><div class="ttname"><a href="fclaw__convenience_8h.html#a60c45355e1acd9e4333b8f06b301b471">fclaw_integrate_ray_t</a></div><div class="ttdeci">int(* fclaw_integrate_ray_t)(fclaw_domain_t *domain, fclaw_patch_t *patch, int blockno, int patchno, void *ray, double *integral, void *user)</div><div class="ttdoc">Callback function to compute the integral of a &quot;ray&quot; within a patch.</div><div class="ttdef"><b>Definition:</b> fclaw_convenience.h:266</div></div>
 <div class="ttc" id="astructfclaw2d__block_html"><div class="ttname"><a href="structfclaw2d__block.html">fclaw2d_block</a></div><div class="ttdoc">Data Structure for a block.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:122</div></div>
 <div class="ttc" id="astructfclaw__domain_html"><div class="ttname"><a href="structfclaw__domain.html">fclaw_domain</a></div><div class="ttdoc">The domain structure is a collection of blocks.</div><div class="ttdef"><b>Definition:</b> forestclaw.h:124</div></div>
 <div class="ttc" id="astructfclaw2d__patch_html"><div class="ttname"><a href="structfclaw2d__patch.html">fclaw2d_patch</a></div><div class="ttdoc">The metadata structure for a forest leaf, which is a forestclaw patch.</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:97</div></div>
@@ -216,6 +217,7 @@ $(function() {
 <div class="ttc" id="astructfclaw__ray_html_afd445269688c4d3725bf93d5d163c8ca"><div class="ttname"><a href="structfclaw__ray.html#afd445269688c4d3725bf93d5d163c8ca">fclaw_ray::integral</a></div><div class="ttdeci">double integral</div><div class="ttdoc">scalar integral value lives here</div><div class="ttdef"><b>Definition:</b> fclaw_rays.h:54</div></div>
 <div class="ttc" id="astructfclaw2d__patch_html_a1ee4bc5669214bb64522ac4a1662c6a7"><div class="ttname"><a href="structfclaw2d__patch.html#a1ee4bc5669214bb64522ac4a1662c6a7">fclaw2d_patch::blockno</a></div><div class="ttdeci">int blockno</div><div class="ttdoc">off-proc: this patch's block number</div><div class="ttdef"><b>Definition:</b> forestclaw2d.h:113</div></div>
 <div class="ttc" id="astructfclaw__global_html"><div class="ttname"><a href="structfclaw__global.html">fclaw_global</a></div><div class="ttdef"><b>Definition:</b> fclaw_global.h:58</div></div>
+<div class="ttc" id="afclaw__convenience_8h_html"><div class="ttname"><a href="fclaw__convenience_8h.html">fclaw_convenience.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
