@@ -88,6 +88,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2cffdfc83bf4c3bd8d9274dd289e72de" id="r_a2cffdfc83bf4c3bd8d9274dd289e72de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__filesystem_8h.html#a2cffdfc83bf4c3bd8d9274dd289e72de">fclaw_cd</a> (const char *dir)</td></tr>
 <tr class="memdesc:a2cffdfc83bf4c3bd8d9274dd289e72de"><td class="mdescLeft">&#160;</td><td class="mdescRight">change the current working directory  <br /></td></tr>
 <tr class="separator:a2cffdfc83bf4c3bd8d9274dd289e72de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7957c0f00d4377163118ba3bf9e0018" id="r_ab7957c0f00d4377163118ba3bf9e0018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__filesystem_8h.html#ab7957c0f00d4377163118ba3bf9e0018">fclaw_remove</a> (const char *file)</td></tr>
+<tr class="memdesc:ab7957c0f00d4377163118ba3bf9e0018"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a file  <br /></td></tr>
+<tr class="separator:ab7957c0f00d4377163118ba3bf9e0018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>functions for filesystem operations </p>
@@ -135,6 +138,27 @@ Functions</h2></td></tr>
 
 <p>Get the current working directory. </p>
 <dl class="section return"><dt>Returns</dt><dd>char* the current working directory, the user is responsible for deallocating </dd></dl>
+
+</div>
+</div>
+<a id="ab7957c0f00d4377163118ba3bf9e0018" name="ab7957c0f00d4377163118ba3bf9e0018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7957c0f00d4377163118ba3bf9e0018">&#9670;&#160;</a></span>fclaw_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_remove </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove a file </p>
+<p>If the file does not exist, this function does nothing. </p>
 
 </div>
 </div>
