@@ -119,7 +119,6 @@ Functions</h2></td></tr>
 <li>The context object shoulde be retrieved at the beginning of a function with fclaw_context_get.</li>
 <li>The values should be retrieved with fclaw_context_get_int or fclaw_context_get_double.<ul>
 <li>These should be called in the same manner every time the resumable function is called.</li>
-<li>If these arent called in the same manner, the program will abort.</li>
 </ul>
 </li>
 <li>The values should be saved with fclaw_context_save right before exit points in the function.<ul>
@@ -201,7 +200,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a double value from the context object. </p>
-<p>This function retrieves an integer value from the context object. If the value does not exist in the context, the current value remains unchanged. The only case where this function modifies the value is if the context object already existed in the global context and this is the first call after <a class="el" href="fclaw__context_8h.html#a2f23720b82ba927fdc3956ecab67bedb" title="Get the context object from glob.">fclaw_context_get()</a>. If the context is not new and the value does not exist, an error message is printed and the program aborts.</p>
+<p>This function retrieves an integer value from the context object. If the value does not exist in the context, the current value remains unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>the context object </td></tr>
@@ -246,7 +245,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get an integer value from the context object. </p>
-<p>This function retrieves an integer value from the context object. If the value does not exist in the context, the current value remains unchanged. The only case where this function modifies the value is if the context object already existed in the global context and this is the first call after <a class="el" href="fclaw__context_8h.html#a2f23720b82ba927fdc3956ecab67bedb" title="Get the context object from glob.">fclaw_context_get()</a>. If the context is not new and the value does not exist, an error message is printed and the program aborts.</p>
+<p>This function retrieves an integer value from the context object. If the value does not exist in the context, the current value remains unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>the context object </td></tr>
@@ -277,7 +276,7 @@ Functions</h2></td></tr>
 <p>Save values to the context object. </p>
 <p>Should be called right before exit points in a function.</p>
 <p>This will get the values from the pointers provided in the get functions.</p>
-<p>If the context is not new, and all values have not been retrieved (ie fclaw_context_get_int or fclaw_context_get_double), this function will abort with an error message.</p>
+<p>For values that were not retrieved between save calls, the old existing value will be kept.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>the context object to save to </td></tr>
