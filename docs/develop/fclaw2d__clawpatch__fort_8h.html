@@ -236,6 +236,12 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 <tr class="memitem:ae3604bebbec4639c48b05c3746a6507f" id="r_ae3604bebbec4639c48b05c3746a6507f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__fort_8h.html#ae3604bebbec4639c48b05c3746a6507f">clawpatch_fort_norm_t</a>) (const int *blockno, const int *mx, const int *my, const int *mbc, const int *meqn, const double *dx, const double *dy, double area[], double error[], double error_norm[])</td></tr>
 <tr class="memdesc:ae3604bebbec4639c48b05c3746a6507f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the error norms for a patch.  <br /></td></tr>
 <tr class="separator:ae3604bebbec4639c48b05c3746a6507f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ae907be8c37b57e296555ce4f7c72e" id="r_ad2ae907be8c37b57e296555ce4f7c72e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__fort_8h.html#ad2ae907be8c37b57e296555ce4f7c72e">clawpatch_fort_gauges_update_t</a>) (const int *num, const int *mx, const int *my, const int *mbc, const int *meqn, const double *xlower, const double *ylower, const double *dx, const double *dy, double q[], const int *maux, double aux[], const double *xc, double *yc, double qvar[], double avar[])</td></tr>
+<tr class="memdesc:ad2ae907be8c37b57e296555ce4f7c72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates values at gauges.  <br /></td></tr>
+<tr class="separator:ad2ae907be8c37b57e296555ce4f7c72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345e48e426cbf9bc0300ef19a24dc50b" id="r_a345e48e426cbf9bc0300ef19a24dc50b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw2d__clawpatch__fort_8h.html#a345e48e426cbf9bc0300ef19a24dc50b">clawpatch_fort_gauges_move_local_t</a>) (const int *num, const int *mx, const int *my, const int *mbc, const int *meqn, const double *xlower, const double *ylower, const double *dx, const double *dy, double q[], const int *maux, double aux[], const double *xc, const double *yc, const double *t, const double *dt, double *xc_new, double *yc_new)</td></tr>
+<tr class="memdesc:a345e48e426cbf9bc0300ef19a24dc50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move gauge positions.  <br /></td></tr>
+<tr class="separator:a345e48e426cbf9bc0300ef19a24dc50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Typedefs for clawpatch fortran functions. </p>
@@ -255,7 +261,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(<a class="code hl_function" href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#a3f98233340261f66dc563f50df4bacc0">fclaw2d_clawpatch_difference_exceeds_th</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#a2e3c0692071299d0478bf5f5c4ed4643">FCLAW2D_CLAWPATCH_DIFFERENCE_EXCEEDS_TH</a>)</div>
 <div class="ttc" id="afclaw2d__clawpatch__difference__exceeds__th_8f90_html_a3f98233340261f66dc563f50df4bacc0"><div class="ttname"><a href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#a3f98233340261f66dc563f50df4bacc0">fclaw2d_clawpatch_difference_exceeds_th</a></div><div class="ttdeci">integer function fclaw2d_clawpatch_difference_exceeds_th(blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</div><div class="ttdoc">Check if the difference exceeds the threshold.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_difference_exceeds_th.f90:23</div></div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a2e3c0692071299d0478bf5f5c4ed4643"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a2e3c0692071299d0478bf5f5c4ed4643">FCLAW2D_CLAWPATCH_DIFFERENCE_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_DIFFERENCE_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_difference_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:552</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a2e3c0692071299d0478bf5f5c4ed4643"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a2e3c0692071299d0478bf5f5c4ed4643">FCLAW2D_CLAWPATCH_DIFFERENCE_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_DIFFERENCE_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_difference_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:619</div></div>
 </div><!-- fragment -->
 <p>C declaration of <a class="el" href="fclaw2d__clawpatch__difference__exceeds__th_8f90.html#a3f98233340261f66dc563f50df4bacc0" title="Check if the difference exceeds the threshold.">fclaw2d_clawpatch_difference_exceeds_th()</a> subroutine. </p>
 
@@ -274,7 +280,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(fclaw2d_clawpatch_exceeds_threshold, \</div>
 <div class="line">                                  <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#ad825f993d2d9e44d41518a5c017ec1bb">FCLAW2D_CLAWPATCH_EXCEEDS_THRESHOLD</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ad825f993d2d9e44d41518a5c017ec1bb"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ad825f993d2d9e44d41518a5c017ec1bb">FCLAW2D_CLAWPATCH_EXCEEDS_THRESHOLD</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_EXCEEDS_THRESHOLD</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_exceeds_threshold() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:491</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ad825f993d2d9e44d41518a5c017ec1bb"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ad825f993d2d9e44d41518a5c017ec1bb">FCLAW2D_CLAWPATCH_EXCEEDS_THRESHOLD</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_EXCEEDS_THRESHOLD</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_exceeds_threshold() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:558</div></div>
 </div><!-- fragment -->
 <p>C declaration of fclaw2d_clawpatch_exceeds_threshold() subroutine. </p>
 
@@ -293,7 +299,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(fclaw2d_clawpatch_get_refinement_criteria, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#a8d916500fe20a4694daafc83f016bc6c">FCLAW2D_CLAWPATCH_GET_REFINEMENT_CRITERIA</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a8d916500fe20a4694daafc83f016bc6c"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a8d916500fe20a4694daafc83f016bc6c">FCLAW2D_CLAWPATCH_GET_REFINEMENT_CRITERIA</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_GET_REFINEMENT_CRITERIA</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_get_refinement_critera() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:460</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a8d916500fe20a4694daafc83f016bc6c"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a8d916500fe20a4694daafc83f016bc6c">FCLAW2D_CLAWPATCH_GET_REFINEMENT_CRITERIA</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_GET_REFINEMENT_CRITERIA</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_get_refinement_critera() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:527</div></div>
 </div><!-- fragment -->
 <p>C declaration of fclaw2d_clawpatch_get_refinement_critera() subroutine. </p>
 
@@ -312,7 +318,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(<a class="code hl_function" href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#a6be6378a21239b5f39b55537c9f5423f">fclaw2d_clawpatch_gradient_exceeds_th</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#a651d0174291db3ba6333396999cba55d">FCLAW2D_CLAWPATCH_GRADIENT_EXCEEDS_TH</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a651d0174291db3ba6333396999cba55d"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a651d0174291db3ba6333396999cba55d">FCLAW2D_CLAWPATCH_GRADIENT_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_GRADIENT_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_gradient_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:597</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a651d0174291db3ba6333396999cba55d"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a651d0174291db3ba6333396999cba55d">FCLAW2D_CLAWPATCH_GRADIENT_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_GRADIENT_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_gradient_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:664</div></div>
 <div class="ttc" id="afclaw2d__clawpatch__gradient__exceeds__th_8f90_html_a6be6378a21239b5f39b55537c9f5423f"><div class="ttname"><a href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#a6be6378a21239b5f39b55537c9f5423f">fclaw2d_clawpatch_gradient_exceeds_th</a></div><div class="ttdeci">integer function fclaw2d_clawpatch_gradient_exceeds_th(blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</div><div class="ttdoc">Check if the gradient exceeds the threshold.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_gradient_exceeds_th.f90:23</div></div>
 </div><!-- fragment -->
 <p>C declaration of <a class="el" href="fclaw2d__clawpatch__gradient__exceeds__th_8f90.html#a6be6378a21239b5f39b55537c9f5423f" title="Check if the gradient exceeds the threshold.">fclaw2d_clawpatch_gradient_exceeds_th()</a> subroutine. </p>
@@ -332,7 +338,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(<a class="code hl_function" href="fclaw2d__clawpatch__minmax__exceeds__th_8f90.html#ac06b94ab40721c03043345005d1fa57f">fclaw2d_clawpatch_minmax_exceeds_th</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#ad41d5995725ea8003f069b4280ef8dd1">FCLAW2D_CLAWPATCH_MINMAX_EXCEEDS_TH</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ad41d5995725ea8003f069b4280ef8dd1"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ad41d5995725ea8003f069b4280ef8dd1">FCLAW2D_CLAWPATCH_MINMAX_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_MINMAX_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_minmax_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:575</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ad41d5995725ea8003f069b4280ef8dd1"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ad41d5995725ea8003f069b4280ef8dd1">FCLAW2D_CLAWPATCH_MINMAX_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_MINMAX_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_minmax_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:642</div></div>
 <div class="ttc" id="afclaw2d__clawpatch__minmax__exceeds__th_8f90_html_ac06b94ab40721c03043345005d1fa57f"><div class="ttname"><a href="fclaw2d__clawpatch__minmax__exceeds__th_8f90.html#ac06b94ab40721c03043345005d1fa57f">fclaw2d_clawpatch_minmax_exceeds_th</a></div><div class="ttdeci">integer function fclaw2d_clawpatch_minmax_exceeds_th(blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</div><div class="ttdoc">Check if the difference between min and max exceeds the threshold.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_minmax_exceeds_th.f90:24</div></div>
 </div><!-- fragment -->
 <p>C declaration of <a class="el" href="fclaw2d__clawpatch__minmax__exceeds__th_8f90.html#ac06b94ab40721c03043345005d1fa57f" title="Check if the difference between min and max exceeds the threshold.">fclaw2d_clawpatch_minmax_exceeds_th()</a> subroutine. </p>
@@ -352,7 +358,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(fclaw2d_clawpatch_tag_criteria, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#a05713c1dbcf9265258a1a1ae220edd91">FCLAW2D_CLAWPATCH_TAG_CRITERIA</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a05713c1dbcf9265258a1a1ae220edd91"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a05713c1dbcf9265258a1a1ae220edd91">FCLAW2D_CLAWPATCH_TAG_CRITERIA</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_TAG_CRITERIA</div><div class="ttdoc">Tagging criteria routine used internally by clawpatch tagging routines.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:470</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a05713c1dbcf9265258a1a1ae220edd91"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a05713c1dbcf9265258a1a1ae220edd91">FCLAW2D_CLAWPATCH_TAG_CRITERIA</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_TAG_CRITERIA</div><div class="ttdoc">Tagging criteria routine used internally by clawpatch tagging routines.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:537</div></div>
 </div><!-- fragment -->
 <p>Tagging criteria routine used internally by clawpatch tagging routines. </p>
 
@@ -371,7 +377,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(<a class="code hl_function" href="fclaw2d__clawpatch__value__exceeds__th_8f90.html#a0d9c1dedee356e4539e3b4920c9dc0d3">fclaw2d_clawpatch_value_exceeds_th</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#a023b5437592677ccaf311889492209ac">FCLAW2D_CLAWPATCH_VALUE_EXCEEDS_TH</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a023b5437592677ccaf311889492209ac"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a023b5437592677ccaf311889492209ac">FCLAW2D_CLAWPATCH_VALUE_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_VALUE_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_value_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:529</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_a023b5437592677ccaf311889492209ac"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#a023b5437592677ccaf311889492209ac">FCLAW2D_CLAWPATCH_VALUE_EXCEEDS_TH</a></div><div class="ttdeci">#define FCLAW2D_CLAWPATCH_VALUE_EXCEEDS_TH</div><div class="ttdoc">C declaration of fclaw2d_clawpatch_value_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:596</div></div>
 <div class="ttc" id="afclaw2d__clawpatch__value__exceeds__th_8f90_html_a0d9c1dedee356e4539e3b4920c9dc0d3"><div class="ttname"><a href="fclaw2d__clawpatch__value__exceeds__th_8f90.html#a0d9c1dedee356e4539e3b4920c9dc0d3">fclaw2d_clawpatch_value_exceeds_th</a></div><div class="ttdeci">integer function fclaw2d_clawpatch_value_exceeds_th(blockno, meqn, qval, qmin, qmax, quad, dx, dy, xc, yc, ivar_threshold, threshold, init_flag, is_ghost)</div><div class="ttdoc">Check if the value of exceeds the threshold.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_value_exceeds_th.f90:23</div></div>
 </div><!-- fragment -->
 <p>C declaration of <a class="el" href="fclaw2d__clawpatch__value__exceeds__th_8f90.html#a0d9c1dedee356e4539e3b4920c9dc0d3" title="Check if the value of exceeds the threshold.">fclaw2d_clawpatch_value_exceeds_th()</a> subroutine. </p>
@@ -391,7 +397,7 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                  FCLAW_F77_FUNC(user_exceeds_th, \</div>
 <div class="line">                                 <a class="code hl_define" href="fclaw2d__clawpatch__fort_8h.html#ab410bf78cb8007ddf8245ba1be4536f3">USER_EXCEEDS_TH</a>)</div>
-<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ab410bf78cb8007ddf8245ba1be4536f3"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ab410bf78cb8007ddf8245ba1be4536f3">USER_EXCEEDS_TH</a></div><div class="ttdeci">#define USER_EXCEEDS_TH</div><div class="ttdoc">C declaration of user_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:620</div></div>
+<div class="ttc" id="afclaw2d__clawpatch__fort_8h_html_ab410bf78cb8007ddf8245ba1be4536f3"><div class="ttname"><a href="fclaw2d__clawpatch__fort_8h.html#ab410bf78cb8007ddf8245ba1be4536f3">USER_EXCEEDS_TH</a></div><div class="ttdeci">#define USER_EXCEEDS_TH</div><div class="ttdoc">C declaration of user_exceeds_th() subroutine.</div><div class="ttdef"><b>Definition</b> fclaw2d_clawpatch_fort.h:687</div></div>
 </div><!-- fragment -->
 <p>C declaration of user_exceeds_th() subroutine. </p>
 
@@ -629,6 +635,70 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>clawpatch_fo
     <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>the computed solution </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>the error for each meqn in each cell </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">soln</td><td>the exact solution </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a345e48e426cbf9bc0300ef19a24dc50b" name="a345e48e426cbf9bc0300ef19a24dc50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345e48e426cbf9bc0300ef19a24dc50b">&#9670;&#160;</a></span>clawpatch_fort_gauges_move_local_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* clawpatch_fort_gauges_move_local_t) (const int *num, const int *mx, const int *my, const int *mbc, const int *meqn, const double *xlower, const double *ylower, const double *dx, const double *dy, double q[], const int *maux, double aux[], const double *xc, const double *yc, const double *t, const double *dt, double *xc_new, double *yc_new)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move gauge positions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>the gauge number (or id) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mx,my</td><td>the number cells in the x and y directions, excluding ghost </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mbc</td><td>the number of ghost cells </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meqn</td><td>the number of equations </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xlower,ylower</td><td>Lower corner of patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dx,dy</td><td>spacing of cells in the x and y directions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>Solution on patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maux</td><td>Number of aux variables </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aux</td><td>Auxilliary array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xc,yc</td><td>Current location of gauge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xc_new,yc_new</td><td>New location of gauge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2ae907be8c37b57e296555ce4f7c72e" name="ad2ae907be8c37b57e296555ce4f7c72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ae907be8c37b57e296555ce4f7c72e">&#9670;&#160;</a></span>clawpatch_fort_gauges_update_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* clawpatch_fort_gauges_update_t) (const int *num, const int *mx, const int *my, const int *mbc, const int *meqn, const double *xlower, const double *ylower, const double *dx, const double *dy, double q[], const int *maux, double aux[], const double *xc, double *yc, double qvar[], double avar[])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates values at gauges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>the gauge number (or id) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mx,my</td><td>the number cells in the x and y directions, excluding ghost </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mbc</td><td>the number of ghost cells </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meqn</td><td>the number of equations </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xlower,ylower</td><td>Lower corner of patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dx,dy</td><td>spacing of cells in the x and y directions </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>Solution on patch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maux</td><td>Number of aux variables </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aux</td><td>Auxilliary array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xc,yc</td><td>Location of gauge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qvar,avar</td><td>Vectors of interpolated solution and aux array at gauge point. </td></tr>
   </table>
   </dd>
 </dl>

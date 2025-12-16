@@ -1,7 +1,7 @@
 var searchData=
 [
   ['last_5ftime_0',['last_time',['../structfclaw__gauge.html#aaaf07f6b5ec65d56e75e6b6a2fa90559',1,'fclaw_gauge']]],
-  ['level_1',['level',['../structfclaw__patch.html#a79e2b43b17e5c9eab926d657cffad7ef',1,'fclaw_patch::level'],['../structfclaw2d__patch.html#a35d6f2858333508c2e2e7a9828422ae3',1,'fclaw2d_patch::level'],['../structfclaw3d__patch.html#a71fabec1ef71c77cd4e4dcf377f5edcb',1,'fclaw3d_patch::level']]],
+  ['level_1',['level',['../structfclaw__gauge.html#aa171a609dc2d626d8b93059674f668a7',1,'fclaw_gauge::level'],['../structfclaw__patch.html#a79e2b43b17e5c9eab926d657cffad7ef',1,'fclaw_patch::level'],['../structfclaw2d__patch.html#a35d6f2858333508c2e2e7a9828422ae3',1,'fclaw2d_patch::level'],['../structfclaw3d__patch.html#a71fabec1ef71c77cd4e4dcf377f5edcb',1,'fclaw3d_patch::level']]],
   ['levelptr_2',['levelptr',['../namespaceamr__module.html#a7dd9d260fa07a57dc5e9f130aea2fdca',1,'amr_module::levelptr'],['../namespaceclawpack5__amr__module.html#a419f8fd17ccf2f098b6779c29872fc21',1,'clawpack5_amr_module::levelptr']]],
   ['local_5ferror_3',['local_error',['../structerror__info__t.html#aaec0e51367ab1955ec37efdd341c122b',1,'error_info_t']]],
   ['local_5fghost_5falloc_4',['local_ghost_alloc',['../structfclaw__patch__vtable.html#aed3a5ffd3ed5a1b83cf56bc014219307',1,'fclaw_patch_vtable']]],

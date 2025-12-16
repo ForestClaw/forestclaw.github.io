@@ -97,21 +97,27 @@ Typedefs</h2></td></tr>
 typedef struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_gauge_t</b></td></tr>
 <tr class="memdesc:a712f34d82443f39d4ade8cba69c39454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauge structure. <br /></td></tr>
 <tr class="separator:a712f34d82443f39d4ade8cba69c39454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b2fe5160a325235529bba8943fcc21" id="r_a61b2fe5160a325235529bba8943fcc21"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a61b2fe5160a325235529bba8943fcc21">fclaw_gauge_set_data_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **gauges, int *num, int *dim)</td></tr>
-<tr class="memdesc:a61b2fe5160a325235529bba8943fcc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the data for each gauge.  <br /></td></tr>
-<tr class="separator:a61b2fe5160a325235529bba8943fcc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcab02aea8afcb67f77a01330c5dd60b" id="r_adcab02aea8afcb67f77a01330c5dd60b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#adcab02aea8afcb67f77a01330c5dd60b">fclaw_gauge_create_files_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauges, int num_gauges)</td></tr>
-<tr class="memdesc:adcab02aea8afcb67f77a01330c5dd60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates files for each gauge.  <br /></td></tr>
-<tr class="separator:adcab02aea8afcb67f77a01330c5dd60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4be14a17eec7ec54134a54311756bc9" id="r_af4be14a17eec7ec54134a54311756bc9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#af4be14a17eec7ec54134a54311756bc9">fclaw_gauge_normalize_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, int blockno, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double *xc, double *yc, double *zc)</td></tr>
-<tr class="memdesc:af4be14a17eec7ec54134a54311756bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps gauge to normalized coordinates in a global [0,1]x[0,1] domain.  <br /></td></tr>
-<tr class="separator:af4be14a17eec7ec54134a54311756bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2bb9c32863430939d5f58c2c6bcfd4e" id="r_af2bb9c32863430939d5f58c2c6bcfd4e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#af2bb9c32863430939d5f58c2c6bcfd4e">fclaw_gauge_update_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
-<tr class="memdesc:af2bb9c32863430939d5f58c2c6bcfd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current buffer entry for the gauge.  <br /></td></tr>
-<tr class="separator:af2bb9c32863430939d5f58c2c6bcfd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d4d739a85501dcb1ca10f052506c6e4" id="r_a8d4d739a85501dcb1ca10f052506c6e4"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a8d4d739a85501dcb1ca10f052506c6e4">fclaw_gauge_print_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td></tr>
-<tr class="memdesc:a8d4d739a85501dcb1ca10f052506c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the buffer to a file.  <br /></td></tr>
-<tr class="separator:a8d4d739a85501dcb1ca10f052506c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f1b3be95ec2dc0b0615b25697768eb" id="r_ab0f1b3be95ec2dc0b0615b25697768eb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#ab0f1b3be95ec2dc0b0615b25697768eb">fclaw_gauges_read_data_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **gauges, int *num, int *dim)</td></tr>
+<tr class="memdesc:ab0f1b3be95ec2dc0b0615b25697768eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the data for each gauge.  <br /></td></tr>
+<tr class="separator:ab0f1b3be95ec2dc0b0615b25697768eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadef737cdde60d2768775864b3b2e030" id="r_aadef737cdde60d2768775864b3b2e030"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aadef737cdde60d2768775864b3b2e030">fclaw_gauges_create_files_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauges, int num_gauges)</td></tr>
+<tr class="memdesc:aadef737cdde60d2768775864b3b2e030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates files for each gauge.  <br /></td></tr>
+<tr class="separator:aadef737cdde60d2768775864b3b2e030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5a8d05f03bd3f99a8c7225d0918696" id="r_adb5a8d05f03bd3f99a8c7225d0918696"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#adb5a8d05f03bd3f99a8c7225d0918696">fclaw_gauges_normalize_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, int blockno, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double *xc, double *yc, double *zc)</td></tr>
+<tr class="memdesc:adb5a8d05f03bd3f99a8c7225d0918696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps gauge to normalized coordinates in a global [0,1]x[0,1] domain.  <br /></td></tr>
+<tr class="separator:adb5a8d05f03bd3f99a8c7225d0918696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050084856386e06f67397828bf9fda9a" id="r_a050084856386e06f67397828bf9fda9a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a050084856386e06f67397828bf9fda9a">fclaw_gauges_update_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
+<tr class="memdesc:a050084856386e06f67397828bf9fda9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current buffer entry for the gauge.  <br /></td></tr>
+<tr class="separator:a050084856386e06f67397828bf9fda9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657c6d669cfce69e5e9755a74255df0b" id="r_a657c6d669cfce69e5e9755a74255df0b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a657c6d669cfce69e5e9755a74255df0b">fclaw_gauges_print_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td></tr>
+<tr class="memdesc:a657c6d669cfce69e5e9755a74255df0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the buffer to a file.  <br /></td></tr>
+<tr class="separator:a657c6d669cfce69e5e9755a74255df0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8563bac193667a9db0d12c02dfd898" id="r_abd8563bac193667a9db0d12c02dfd898"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#abd8563bac193667a9db0d12c02dfd898">fclaw_gauges_move_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, double t, double dt, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td></tr>
+<tr class="memdesc:abd8563bac193667a9db0d12c02dfd898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move non-static gauges using a prescribed velocity field.  <br /></td></tr>
+<tr class="separator:abd8563bac193667a9db0d12c02dfd898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b46b58f0e6d1a8fb10aa084b83e19fb" id="r_a3b46b58f0e6d1a8fb10aa084b83e19fb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a3b46b58f0e6d1a8fb10aa084b83e19fb">fclaw_gauges_move_local_t</a>) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, double dt, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
+<tr class="memdesc:a3b46b58f0e6d1a8fb10aa084b83e19fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move non-static gauges using local (patch) information.  <br /></td></tr>
+<tr class="separator:a3b46b58f0e6d1a8fb10aa084b83e19fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5a64a9f20d631cec615b4e6cd069ed" id="r_a0d5a64a9f20d631cec615b4e6cd069ed"><td class="memItemLeft" align="right" valign="top"><a id="a0d5a64a9f20d631cec615b4e6cd069ed" name="a0d5a64a9f20d631cec615b4e6cd069ed"></a>
 typedef struct <a class="el" href="structfclaw__gauges__vtable.html">fclaw_gauges_vtable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_gauges_vtable_t</b></td></tr>
 <tr class="memdesc:a0d5a64a9f20d631cec615b4e6cd069ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">vtable for gauges <br /></td></tr>
@@ -119,60 +125,57 @@ typedef struct <a class="el" href="structfclaw__gauges__vtable.html">fclaw_gauge
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a83d73eca0d99813e6b37b97695d158b9" id="r_a83d73eca0d99813e6b37b97695d158b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a83d73eca0d99813e6b37b97695d158b9">fclaw_locate_gauges</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
-<tr class="memdesc:a83d73eca0d99813e6b37b97695d158b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the gauges in the mesh.  <br /></td></tr>
-<tr class="separator:a83d73eca0d99813e6b37b97695d158b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc675e1ab208216a1af4fa90c688ba6" id="r_a3fc675e1ab208216a1af4fa90c688ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a3fc675e1ab208216a1af4fa90c688ba6">fclaw_gauges_locate_patches</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
+<tr class="memdesc:a3fc675e1ab208216a1af4fa90c688ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the gauges in the mesh.  <br /></td></tr>
+<tr class="separator:a3fc675e1ab208216a1af4fa90c688ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca80b1729ea2ed2c1c71b5255b67098" id="r_aaca80b1729ea2ed2c1c71b5255b67098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aaca80b1729ea2ed2c1c71b5255b67098">fclaw_gauges_vtable_initialize</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
 <tr class="memdesc:aaca80b1729ea2ed2c1c71b5255b67098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the gauges vtable.  <br /></td></tr>
 <tr class="separator:aaca80b1729ea2ed2c1c71b5255b67098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17485828eb29a6e673e2251c86c6cfc8" id="r_a17485828eb29a6e673e2251c86c6cfc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fclaw__gauges_8h.html#a0d5a64a9f20d631cec615b4e6cd069ed">fclaw_gauges_vtable_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a17485828eb29a6e673e2251c86c6cfc8">fclaw_gauges_vt</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob)</td></tr>
 <tr class="memdesc:a17485828eb29a6e673e2251c86c6cfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gauges vtable.  <br /></td></tr>
 <tr class="separator:a17485828eb29a6e673e2251c86c6cfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf08549f237fb94c845ea43445f9f4f2" id="r_aaf08549f237fb94c845ea43445f9f4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aaf08549f237fb94c845ea43445f9f4f2">fclaw_gauge_normalize_coordinates</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, int blockno, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double *xc, double *yc, double *zc)</td></tr>
-<tr class="memdesc:aaf08549f237fb94c845ea43445f9f4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the data for each gauge.  <br /></td></tr>
-<tr class="separator:aaf08549f237fb94c845ea43445f9f4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa623111f4bcc289733fb9eb9bf474b8d" id="r_aa623111f4bcc289733fb9eb9bf474b8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aa623111f4bcc289733fb9eb9bf474b8d">fclaw_update_gauge</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, <a class="el" href="fclaw__gauges_8h.html#a712f34d82443f39d4ade8cba69c39454">fclaw_gauge_t</a> *g)</td></tr>
-<tr class="memdesc:aa623111f4bcc289733fb9eb9bf474b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the current buffer entry for the gauge.  <br /></td></tr>
-<tr class="separator:aa623111f4bcc289733fb9eb9bf474b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb17528169f1b347813a99f75eab904" id="r_a1cb17528169f1b347813a99f75eab904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a1cb17528169f1b347813a99f75eab904">fclaw_print_gauge_buffer</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
-<tr class="memdesc:a1cb17528169f1b347813a99f75eab904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the buffer to a file.  <br /></td></tr>
-<tr class="separator:a1cb17528169f1b347813a99f75eab904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6d7208456cfb93fe46fa909c8e8673" id="r_a2c6d7208456cfb93fe46fa909c8e8673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a2c6d7208456cfb93fe46fa909c8e8673">fclaw_gauge_allocate</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, int num_gauges, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **g)</td></tr>
-<tr class="memdesc:a2c6d7208456cfb93fe46fa909c8e8673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate gauge structures.  <br /></td></tr>
-<tr class="separator:a2c6d7208456cfb93fe46fa909c8e8673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e96c79993db2a62ea5ff93cba7c36a3" id="r_a7e96c79993db2a62ea5ff93cba7c36a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a7e96c79993db2a62ea5ff93cba7c36a3">fclaw_gauge_set_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int num, int dim, double xc, double yc, double zc, double t1, double t2, double min_time_increment)</td></tr>
-<tr class="memdesc:a7e96c79993db2a62ea5ff93cba7c36a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the data for a single gauge in 2d.  <br /></td></tr>
-<tr class="separator:a7e96c79993db2a62ea5ff93cba7c36a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a9ae5b04fbbf05922d9e157b47a686" id="r_a29a9ae5b04fbbf05922d9e157b47a686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a29a9ae5b04fbbf05922d9e157b47a686">fclaw_gauge_get_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int *num, int *dim, double *xc, double *yc, double *zc, double *t1, double *t2)</td></tr>
-<tr class="memdesc:a29a9ae5b04fbbf05922d9e157b47a686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data for a single gauge.  <br /></td></tr>
-<tr class="separator:a29a9ae5b04fbbf05922d9e157b47a686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2812708c242640c9f50a1ecd317caa61" id="r_a2812708c242640c9f50a1ecd317caa61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a2812708c242640c9f50a1ecd317caa61">fclaw_gauge_get_id</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
-<tr class="memdesc:a2812708c242640c9f50a1ecd317caa61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gauge number (index the the guage array)  <br /></td></tr>
-<tr class="separator:a2812708c242640c9f50a1ecd317caa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcda38e9cc0a95e084757a269fce028c" id="r_adcda38e9cc0a95e084757a269fce028c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#adcda38e9cc0a95e084757a269fce028c">fclaw_gauge_set_buffer_entry</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, void *guser)</td></tr>
-<tr class="memdesc:adcda38e9cc0a95e084757a269fce028c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set data for current buffer entry.  <br /></td></tr>
-<tr class="separator:adcda38e9cc0a95e084757a269fce028c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fda066c57f8fa500fad1d5143cec22" id="r_aa3fda066c57f8fa500fad1d5143cec22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aa3fda066c57f8fa500fad1d5143cec22">fclaw_gauge_get_buffer</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int *kmax, void ***gauge_buffer)</td></tr>
-<tr class="memdesc:aa3fda066c57f8fa500fad1d5143cec22"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the buffer data  <br /></td></tr>
-<tr class="separator:aa3fda066c57f8fa500fad1d5143cec22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a793ff27c05c201267de024e086f9170e" id="r_a793ff27c05c201267de024e086f9170e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a793ff27c05c201267de024e086f9170e">fclaw_gauge_set_user_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, void *user)</td></tr>
-<tr class="memdesc:a793ff27c05c201267de024e086f9170e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the the user data for a gauge  <br /></td></tr>
-<tr class="separator:a793ff27c05c201267de024e086f9170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3272578400720988ee1f6690894b2ddb" id="r_a3272578400720988ee1f6690894b2ddb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a3272578400720988ee1f6690894b2ddb">fclaw_gauge_get_user_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
-<tr class="memdesc:a3272578400720988ee1f6690894b2ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user data for gauge.  <br /></td></tr>
-<tr class="separator:a3272578400720988ee1f6690894b2ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7437527d470fd29949b3182733da85ec" id="r_a7437527d470fd29949b3182733da85ec"><td class="memItemLeft" align="right" valign="top"><a id="a7437527d470fd29949b3182733da85ec" name="a7437527d470fd29949b3182733da85ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fclaw_gauges_update_positions</b> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, double t, double dt)</td></tr>
+<tr class="separator:a7437527d470fd29949b3182733da85ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c4eba215afb1cd760f7da47049b40b" id="r_ae6c4eba215afb1cd760f7da47049b40b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#ae6c4eba215afb1cd760f7da47049b40b">fclaw_gauges_allocate</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, int num_gauges, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **g)</td></tr>
+<tr class="memdesc:ae6c4eba215afb1cd760f7da47049b40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate gauge structures.  <br /></td></tr>
+<tr class="separator:ae6c4eba215afb1cd760f7da47049b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9744cb812476744c29c0967aa541bb3d" id="r_a9744cb812476744c29c0967aa541bb3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a9744cb812476744c29c0967aa541bb3d">fclaw_gauges_set_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int num, int dim, double x0, double y0, double z0, double xc, double yc, double zc, double t1, double t2, double min_time_increment)</td></tr>
+<tr class="memdesc:a9744cb812476744c29c0967aa541bb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the data for a single gauge in 2d.  <br /></td></tr>
+<tr class="separator:a9744cb812476744c29c0967aa541bb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b550c63e20011c2eb4fab0685541067" id="r_a8b550c63e20011c2eb4fab0685541067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a8b550c63e20011c2eb4fab0685541067">fclaw_gauges_get_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int *num, int *dim, double *x0, double *y0, double *z0, double *xc, double *yc, double *zc, double *t1, double *t2)</td></tr>
+<tr class="memdesc:a8b550c63e20011c2eb4fab0685541067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data for a single gauge.  <br /></td></tr>
+<tr class="separator:a8b550c63e20011c2eb4fab0685541067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96df1744858ca2bd2ba70deacd2409c3" id="r_a96df1744858ca2bd2ba70deacd2409c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a96df1744858ca2bd2ba70deacd2409c3">fclaw_gauges_get_id</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
+<tr class="memdesc:a96df1744858ca2bd2ba70deacd2409c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gauge number (index the the guage array)  <br /></td></tr>
+<tr class="separator:a96df1744858ca2bd2ba70deacd2409c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24fe013afa8179de8ee2c0b24d632df" id="r_ac24fe013afa8179de8ee2c0b24d632df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#ac24fe013afa8179de8ee2c0b24d632df">fclaw_gauges_set_buffer_entry</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, void *guser)</td></tr>
+<tr class="memdesc:ac24fe013afa8179de8ee2c0b24d632df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set data for current buffer entry.  <br /></td></tr>
+<tr class="separator:ac24fe013afa8179de8ee2c0b24d632df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964dd1bfab2a201d9508e93cd0ad3815" id="r_a964dd1bfab2a201d9508e93cd0ad3815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a964dd1bfab2a201d9508e93cd0ad3815">fclaw_gauges_get_buffer</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, int *kmax, void ***gauge_buffer)</td></tr>
+<tr class="memdesc:a964dd1bfab2a201d9508e93cd0ad3815"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the buffer data  <br /></td></tr>
+<tr class="separator:a964dd1bfab2a201d9508e93cd0ad3815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcf8f6eedc3b8d14f6b555f337d2847" id="r_aefcf8f6eedc3b8d14f6b555f337d2847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#aefcf8f6eedc3b8d14f6b555f337d2847">fclaw_gauges_set_user_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, void *user)</td></tr>
+<tr class="memdesc:aefcf8f6eedc3b8d14f6b555f337d2847"><td class="mdescLeft">&#160;</td><td class="mdescRight">the the user data for a gauge  <br /></td></tr>
+<tr class="separator:aefcf8f6eedc3b8d14f6b555f337d2847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32aa9f1a51458eb5b22be9902687393" id="r_af32aa9f1a51458eb5b22be9902687393"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#af32aa9f1a51458eb5b22be9902687393">fclaw_gauges_get_user_data</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td></tr>
+<tr class="memdesc:af32aa9f1a51458eb5b22be9902687393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user data for gauge.  <br /></td></tr>
+<tr class="separator:af32aa9f1a51458eb5b22be9902687393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531e36b961f9026e4a4574dd3ca86a10" id="r_a531e36b961f9026e4a4574dd3ca86a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fclaw__gauges_8h.html#a531e36b961f9026e4a4574dd3ca86a10">fclaw_gauges_set_position</a> (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double xc, double yc, double zc)</td></tr>
+<tr class="memdesc:a531e36b961f9026e4a4574dd3ca86a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of moving gauges.  <br /></td></tr>
+<tr class="separator:a531e36b961f9026e4a4574dd3ca86a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Gauges. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="adcab02aea8afcb67f77a01330c5dd60b" name="adcab02aea8afcb67f77a01330c5dd60b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcab02aea8afcb67f77a01330c5dd60b">&#9670;&#160;</a></span>fclaw_gauge_create_files_t</h2>
+<a id="aadef737cdde60d2768775864b3b2e030" name="aadef737cdde60d2768775864b3b2e030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadef737cdde60d2768775864b3b2e030">&#9670;&#160;</a></span>fclaw_gauges_create_files_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_gauge_create_files_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauges, int num_gauges)</td>
+          <td class="memname">typedef void(* fclaw_gauges_create_files_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauges, int num_gauges)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,14 +192,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af4be14a17eec7ec54134a54311756bc9" name="af4be14a17eec7ec54134a54311756bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4be14a17eec7ec54134a54311756bc9">&#9670;&#160;</a></span>fclaw_gauge_normalize_t</h2>
+<a id="a3b46b58f0e6d1a8fb10aa084b83e19fb" name="a3b46b58f0e6d1a8fb10aa084b83e19fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b46b58f0e6d1a8fb10aa084b83e19fb">&#9670;&#160;</a></span>fclaw_gauges_move_local_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_gauge_normalize_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, int blockno, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double *xc, double *yc, double *zc)</td>
+          <td class="memname">typedef void(* fclaw_gauges_move_local_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, double dt, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move non-static gauges using local (patch) information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">g</td><td>the gauge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd8563bac193667a9db0d12c02dfd898" name="abd8563bac193667a9db0d12c02dfd898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8563bac193667a9db0d12c02dfd898">&#9670;&#160;</a></span>fclaw_gauges_move_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fclaw_gauges_move_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, double t, double dt, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move non-static gauges using a prescribed velocity field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">g</td><td>the gauge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb5a8d05f03bd3f99a8c7225d0918696" name="adb5a8d05f03bd3f99a8c7225d0918696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5a8d05f03bd3f99a8c7225d0918696">&#9670;&#160;</a></span>fclaw_gauges_normalize_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fclaw_gauges_normalize_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, int blockno, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g, double *xc, double *yc, double *zc)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,14 +264,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d4d739a85501dcb1ca10f052506c6e4" name="a8d4d739a85501dcb1ca10f052506c6e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d4d739a85501dcb1ca10f052506c6e4">&#9670;&#160;</a></span>fclaw_gauge_print_t</h2>
+<a id="a657c6d669cfce69e5e9755a74255df0b" name="a657c6d669cfce69e5e9755a74255df0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657c6d669cfce69e5e9755a74255df0b">&#9670;&#160;</a></span>fclaw_gauges_print_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_gauge_print_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td>
+          <td class="memname">typedef void(* fclaw_gauges_print_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *gauge)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -238,14 +287,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61b2fe5160a325235529bba8943fcc21" name="a61b2fe5160a325235529bba8943fcc21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61b2fe5160a325235529bba8943fcc21">&#9670;&#160;</a></span>fclaw_gauge_set_data_t</h2>
+<a id="ab0f1b3be95ec2dc0b0615b25697768eb" name="ab0f1b3be95ec2dc0b0615b25697768eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f1b3be95ec2dc0b0615b25697768eb">&#9670;&#160;</a></span>fclaw_gauges_read_data_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_gauge_set_data_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **gauges, int *num, int *dim)</td>
+          <td class="memname">typedef void(* fclaw_gauges_read_data_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> **gauges, int *num, int *dim)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,14 +311,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af2bb9c32863430939d5f58c2c6bcfd4e" name="af2bb9c32863430939d5f58c2c6bcfd4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2bb9c32863430939d5f58c2c6bcfd4e">&#9670;&#160;</a></span>fclaw_gauge_update_t</h2>
+<a id="a050084856386e06f67397828bf9fda9a" name="a050084856386e06f67397828bf9fda9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050084856386e06f67397828bf9fda9a">&#9670;&#160;</a></span>fclaw_gauges_update_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fclaw_gauge_update_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td>
+          <td class="memname">typedef void(* fclaw_gauges_update_t) (struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *glob, struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *block, struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *patch, int blockno, int patchno, double tcurr, struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *g)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -291,14 +340,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2c6d7208456cfb93fe46fa909c8e8673" name="a2c6d7208456cfb93fe46fa909c8e8673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c6d7208456cfb93fe46fa909c8e8673">&#9670;&#160;</a></span>fclaw_gauge_allocate()</h2>
+<a id="ae6c4eba215afb1cd760f7da47049b40b" name="ae6c4eba215afb1cd760f7da47049b40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c4eba215afb1cd760f7da47049b40b">&#9670;&#160;</a></span>fclaw_gauges_allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_allocate </td>
+          <td class="memname">void fclaw_gauges_allocate </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -335,14 +384,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3fda066c57f8fa500fad1d5143cec22" name="aa3fda066c57f8fa500fad1d5143cec22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3fda066c57f8fa500fad1d5143cec22">&#9670;&#160;</a></span>fclaw_gauge_get_buffer()</h2>
+<a id="a964dd1bfab2a201d9508e93cd0ad3815" name="a964dd1bfab2a201d9508e93cd0ad3815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964dd1bfab2a201d9508e93cd0ad3815">&#9670;&#160;</a></span>fclaw_gauges_get_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_get_buffer </td>
+          <td class="memname">void fclaw_gauges_get_buffer </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -386,14 +435,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29a9ae5b04fbbf05922d9e157b47a686" name="a29a9ae5b04fbbf05922d9e157b47a686"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a9ae5b04fbbf05922d9e157b47a686">&#9670;&#160;</a></span>fclaw_gauge_get_data()</h2>
+<a id="a8b550c63e20011c2eb4fab0685541067" name="a8b550c63e20011c2eb4fab0685541067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b550c63e20011c2eb4fab0685541067">&#9670;&#160;</a></span>fclaw_gauges_get_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_get_data </td>
+          <td class="memname">void fclaw_gauges_get_data </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -415,6 +464,24 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>z0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -469,14 +536,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2812708c242640c9f50a1ecd317caa61" name="a2812708c242640c9f50a1ecd317caa61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2812708c242640c9f50a1ecd317caa61">&#9670;&#160;</a></span>fclaw_gauge_get_id()</h2>
+<a id="a96df1744858ca2bd2ba70deacd2409c3" name="a96df1744858ca2bd2ba70deacd2409c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96df1744858ca2bd2ba70deacd2409c3">&#9670;&#160;</a></span>fclaw_gauges_get_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fclaw_gauge_get_id </td>
+          <td class="memname">int fclaw_gauges_get_id </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -507,14 +574,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3272578400720988ee1f6690894b2ddb" name="a3272578400720988ee1f6690894b2ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3272578400720988ee1f6690894b2ddb">&#9670;&#160;</a></span>fclaw_gauge_get_user_data()</h2>
+<a id="af32aa9f1a51458eb5b22be9902687393" name="af32aa9f1a51458eb5b22be9902687393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32aa9f1a51458eb5b22be9902687393">&#9670;&#160;</a></span>fclaw_gauges_get_user_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void * fclaw_gauge_get_user_data </td>
+          <td class="memname">void * fclaw_gauges_get_user_data </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -545,102 +612,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaf08549f237fb94c845ea43445f9f4f2" name="aaf08549f237fb94c845ea43445f9f4f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf08549f237fb94c845ea43445f9f4f2">&#9670;&#160;</a></span>fclaw_gauge_normalize_coordinates()</h2>
+<a id="a3fc675e1ab208216a1af4fa90c688ba6" name="a3fc675e1ab208216a1af4fa90c688ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc675e1ab208216a1af4fa90c688ba6">&#9670;&#160;</a></span>fclaw_gauges_locate_patches()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_normalize_coordinates </td>
+          <td class="memname">void fclaw_gauges_locate_patches </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
-          <td class="paramname"><em>glob</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>glob</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *&#160;</td>
-          <td class="paramname"><em>block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>blockno</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>xc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>yc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>zc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the data for each gauge. </p>
+<p>Locate the gauges in the mesh. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">glob</td><td>the global context </td></tr>
-    <tr><td class="paramname">gauges</td><td>the array of gauges </td></tr>
-    <tr><td class="paramname">num_gauges</td><td>the number of gauges</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Create files for each gauge</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gauges</td><td>the array of gauges </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_gauges</td><td>the number of gauges</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Map gauge to normalized coordinates in a global [0,1]x[0,1] domain.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>the block that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>the gauge </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xc,yc</td><td>the normalized coordinates </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="adcda38e9cc0a95e084757a269fce028c" name="adcda38e9cc0a95e084757a269fce028c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcda38e9cc0a95e084757a269fce028c">&#9670;&#160;</a></span>fclaw_gauge_set_buffer_entry()</h2>
+<a id="ac24fe013afa8179de8ee2c0b24d632df" name="ac24fe013afa8179de8ee2c0b24d632df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24fe013afa8179de8ee2c0b24d632df">&#9670;&#160;</a></span>fclaw_gauges_set_buffer_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_set_buffer_entry </td>
+          <td class="memname">void fclaw_gauges_set_buffer_entry </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -677,14 +682,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e96c79993db2a62ea5ff93cba7c36a3" name="a7e96c79993db2a62ea5ff93cba7c36a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e96c79993db2a62ea5ff93cba7c36a3">&#9670;&#160;</a></span>fclaw_gauge_set_data()</h2>
+<a id="a9744cb812476744c29c0967aa541bb3d" name="a9744cb812476744c29c0967aa541bb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9744cb812476744c29c0967aa541bb3d">&#9670;&#160;</a></span>fclaw_gauges_set_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_set_data </td>
+          <td class="memname">void fclaw_gauges_set_data </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -706,6 +711,24 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -767,14 +790,70 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a793ff27c05c201267de024e086f9170e" name="a793ff27c05c201267de024e086f9170e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a793ff27c05c201267de024e086f9170e">&#9670;&#160;</a></span>fclaw_gauge_set_user_data()</h2>
+<a id="a531e36b961f9026e4a4574dd3ca86a10" name="a531e36b961f9026e4a4574dd3ca86a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531e36b961f9026e4a4574dd3ca86a10">&#9670;&#160;</a></span>fclaw_gauges_set_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fclaw_gauge_set_user_data </td>
+          <td class="memname">void fclaw_gauges_set_position </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
+          <td class="paramname"><em>glob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>yc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the position of moving gauges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glob</td><td>the global context </td></tr>
+    <tr><td class="paramname">g</td><td>the gauge </td></tr>
+    <tr><td class="paramname">xc,yc,zc</td><td>Position of the gauge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefcf8f6eedc3b8d14f6b555f337d2847" name="aefcf8f6eedc3b8d14f6b555f337d2847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcf8f6eedc3b8d14f6b555f337d2847">&#9670;&#160;</a></span>fclaw_gauges_set_user_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fclaw_gauges_set_user_data </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
           <td class="paramname"><em>glob</em>, </td>
@@ -858,141 +937,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">glob</td><td>the global context </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a83d73eca0d99813e6b37b97695d158b9" name="a83d73eca0d99813e6b37b97695d158b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83d73eca0d99813e6b37b97695d158b9">&#9670;&#160;</a></span>fclaw_locate_gauges()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_locate_gauges </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
-          <td class="paramname"><em>glob</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Locate the gauges in the mesh. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glob</td><td>the global context </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1cb17528169f1b347813a99f75eab904" name="a1cb17528169f1b347813a99f75eab904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cb17528169f1b347813a99f75eab904">&#9670;&#160;</a></span>fclaw_print_gauge_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_print_gauge_buffer </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
-          <td class="paramname"><em>glob</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__gauge.html">fclaw_gauge</a> *&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print the buffer to a file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glob</td><td>the global context </td></tr>
-    <tr><td class="paramname">g</td><td>the gauge </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa623111f4bcc289733fb9eb9bf474b8d" name="aa623111f4bcc289733fb9eb9bf474b8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa623111f4bcc289733fb9eb9bf474b8d">&#9670;&#160;</a></span>fclaw_update_gauge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fclaw_update_gauge </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__global.html">fclaw_global</a> *&#160;</td>
-          <td class="paramname"><em>glob</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__block.html">fclaw_block</a> *&#160;</td>
-          <td class="paramname"><em>block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structfclaw__patch.html">fclaw_patch</a> *&#160;</td>
-          <td class="paramname"><em>patch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>blockno</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>patchno</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tcurr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="fclaw__gauges_8h.html#a712f34d82443f39d4ade8cba69c39454">fclaw_gauge_t</a> *&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update the current buffer entry for the gauge. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glob</td><td>the global context </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>the block that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">patch</td><td>the patch that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>the block number that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">patchno</td><td>the patch number that the gauge is in </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tcurr</td><td>the current time </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">g</td><td>the gauge </td></tr>
   </table>
   </dd>
 </dl>

@@ -25,7 +25,7 @@ var searchData=
   ['cornxlo_22',['cornxlo',['../namespaceclawpack5__amr__module.html#adffc5cdf0c109d10265681be1c5794cb',1,'clawpack5_amr_module::cornxlo'],['../namespaceamr__module.html#a75bdf69a2b0037cb7f29e416634d998f',1,'amr_module::cornxlo']]],
   ['cornyhi_23',['cornyhi',['../namespaceclawpack5__amr__module.html#a6f615b7b8d889874185f34a3f3a158fe',1,'clawpack5_amr_module::cornyhi'],['../namespaceamr__module.html#aafc7c0519168c6b55bcee394ba88355a',1,'amr_module::cornyhi']]],
   ['cornylo_24',['cornylo',['../namespaceclawpack5__amr__module.html#ae3d4609dbeb6af4d7d54a5e012fcd46d',1,'clawpack5_amr_module::cornylo'],['../namespaceamr__module.html#a7cde79e5201636701a6ed61f3d0b7762',1,'amr_module::cornylo']]],
-  ['create_5fgauge_5ffiles_25',['create_gauge_files',['../structfclaw__gauges__vtable.html#a2e052f779c5a669f28ea1928e84f735f',1,'fclaw_gauges_vtable']]],
+  ['create_5ffiles_25',['create_files',['../structfclaw__gauges__vtable.html#ad0e9d8776b085f1332532239ef97cebb',1,'fclaw_gauges_vtable']]],
   ['create_5fuser_5fdata_26',['create_user_data',['../structfclaw__patch__vtable.html#aaed07b30792e438c4d7c5059fdcb68d8',1,'fclaw_patch_vtable']]],
   ['curvature_27',['curvature',['../structfclaw2d__metric__patch__t.html#ab378ff58c10eb889a6da8ced213214f3',1,'fclaw2d_metric_patch_t']]]
 ];

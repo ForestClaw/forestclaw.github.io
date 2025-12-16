@@ -30,6 +30,6 @@ var searchData=
   ['pp_27',['pp',['../structfclaw2d__domain.html#a45e5390dc11b647d29f7c040359135d5',1,'fclaw2d_domain::pp'],['../structfclaw3d__domain.html#a62e66de0b63171b79e0dfc734834b9b1',1,'fclaw3d_domain::pp']]],
   ['pp_5fowned_28',['pp_owned',['../structfclaw2d__domain.html#a816a0afef463ba1ad614c27f2cad117c',1,'fclaw2d_domain::pp_owned'],['../structfclaw3d__domain.html#aa1f9bf1bf3f18f0997e08d72a6bda6aa',1,'fclaw3d_domain::pp_owned']]],
   ['prefix_29',['prefix',['../structfclaw__options.html#ab30200b201d82e2fa086bace4366f658',1,'fclaw_options']]],
-  ['print_5fgauge_5fbuffer_30',['print_gauge_buffer',['../structfclaw__gauges__vtable.html#adaa4612629c208da075d50743150e7a7',1,'fclaw_gauges_vtable']]],
+  ['print_5fbuffer_30',['print_buffer',['../structfclaw__gauges__vtable.html#ab2ada246f6c35881088d47be92da2c2f',1,'fclaw_gauges_vtable']]],
   ['problem_5fsetup_31',['problem_setup',['../structfclaw__vtable.html#abf6bf615acb798a157976addf1806d26',1,'fclaw_vtable']]]
 ];
